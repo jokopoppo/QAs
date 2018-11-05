@@ -46,11 +46,3 @@ print(ss)
 
 
 
-# from gensim.models import Word2Vec
-# from pythainlp.tokenize import word_tokenize
-# a = ['ฉันรักภาษาไทยเพราะฉันเป็นคนไทยและฉันเป็นคนไทย']
-# b = [list(word_tokenize(i)) for i in a] # ทำการตัดคำแล้วเก็บใน list จะได้เป็น [['ฉัน',...],['ฉัน',...]...]
-# model = Word2Vec(b, min_count=1)
-# print(model)
-# aa=model.similar_by_word('เป็น')
-# print(aa)

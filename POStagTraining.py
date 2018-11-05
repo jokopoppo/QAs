@@ -87,16 +87,30 @@ y_test = np.asarray(y_test)
 # (x_train, y_train),(x_test, y_test) = mnist.load_data()
 # x_train, x_test = x_train / 255.0, x_test / 255.0
 
-modelPOS = tf.keras.models.Sequential([
-  tf.keras.layers.Flatten(),
-  tf.keras.layers.Dense(512, activation=tf.nn.relu),
-  tf.keras.layers.Dropout(0.2),
-  tf.keras.layers.Dense(10, activation=tf.nn.softmax)
-])
-modelPOS.compile(optimizer='adam',
-                 loss='sparse_categorical_crossentropy',
-                 metrics=['accuracy'])
+modelPOS=tf.keras.models.load_model(
+    "modelPOS_1000.h5",
+    custom_objects=None,
+    compile=True
+)
 
-modelPOS.fit(x_train, y_train, epochs=100)
+# modelPOS = tf.keras.models.Sequential([
+#   tf.keras.layers.Flatten(),
+#   tf.keras.layers.Dense(512, activation=tf.nn.relu),
+#   tf.keras.layers.Dropout(0.2),
+#   tf.keras.layers.Dense(10, activation=tf.nn.softmax)
+# ])
+# modelPOS.compile(optimizer='adam',
+#                  loss='sparse_categorical_crossentropy',
+#                  metrics=['accuracy'])
+#
+# modelPOS.fit(x_train, y_train, epochs=100)
+
 test_loss, test_acc = modelPOS.evaluate(x_test, y_test)
 print('Test accuracy:', test_acc)
+
+# tf.keras.models.save_model(
+#     modelPOS,
+#     "modelPOS.h5",
+#     overwrite=True,
+#     include_optimizer=True
+# )
