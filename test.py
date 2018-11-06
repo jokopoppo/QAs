@@ -115,19 +115,34 @@ def find_by_dict():
                 search.append(data[i])
     return
 
-# import json
-#
-# index_dir = 'E:\CPE#Y4\databaseTF\documents-tokenize\\'
-#
-#
-# file = open(index_dir + str("818026") + ".json")
-# print(file)
-# data = json.load(file)
-#
-# print(data)
+import pickle
+import deepcut
+import json
+import warnings
+warnings.filterwarnings(action='ignore', category=UserWarning, module='gensim')
+warnings.filterwarnings(action='ignore', category=FutureWarning)
 
-a=[[1,2],[1,2],[1,3]]
-a = list(set(tuple(element) for element in a))
-print(a)
+from gensim.models import Word2Vec
+
+index_dir = 'E:\CPE#Y4\databaseTF\documents-tokenize\\'
+
+file = open(index_dir + str(397951) + ".json", mode = 'r' , encoding="utf-8-sig")
+data = json.load(file)
+print(data)
+
+# questions = []
+# n=0
+# for i in data['data']:
+#     pprint(n)
+#     n+=1
+#     questions.append(deepcut.tokenize(i['question']))
+
+
+# model = Word2Vec.load("E:\CPE#Y4\databaseTF\w2v_model\w2v_all_corpus.bin")
+# words = list(model.wv.vocab)
+# print("Words    :", words.__len__())
+# pprint(words)
+# ss=model.similar_by_word('วอลเลซ เสต็กเนอร์',topn=5)
+# print(ss)
 
 
