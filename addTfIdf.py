@@ -5,11 +5,13 @@ import json
 import pickle
 from pprint import pprint
 import os
+import time
 def cleanhtml(raw_html):
   cleanr = re.compile('<.*?>')
   cleantext = re.sub(cleanr, '', raw_html)
   return cleantext
 
+start = time.time()
 dataset_path = "E:\CPE#Y4\databaseTF\documents-tokenize\\"
 datasets = os.listdir(dataset_path)
 
@@ -30,8 +32,6 @@ print(files.__len__())
 #
 # print(s.__len__())
 
-# TODO fix this to open all index files and run this after indexing done
-
 def dummy_fun(doc):
     return doc
 
@@ -41,9 +41,9 @@ def dummy_fun(doc):
 #     preprocessor=dummy_fun,
 #     token_pattern=None)
 
-
-tfidf = pickle.load(open("tfidf.pickle", "rb" ) )
-response = pickle.load(open("response.pickle", "rb" ) )
+dir = 'E:\CPE#Y4\databaseTF\\tf-idf_model\\'
+tfidf = pickle.load(open(dir + "tfidf.pickle", "rb" ) )
+response = pickle.load(open(dir + "response(1).pickle", "rb" ) )
 feature_names = tfidf.get_feature_names()
 print(feature_names.__len__())
 
@@ -55,12 +55,12 @@ e_alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
 # TODO run this shit for add tfidf
 
-dictset = [alphabet,e_alphabet]
+dictset = [vowel,alphabet,e_alphabet]
 for d in dictset:
     alp=[]
     for i in d:
         alp.append({})
-    print(alp.__len__())
+    print("alp",alp.__len__())
 
     for doc in range(files.__len__()):
         print(doc)
@@ -69,22 +69,49 @@ for d in dictset:
 
         for w, s in [(feature_names[i], s) for (i, s) in tfidf_scores]:
             # print(doc,w,s)
+            if w == 'โรงเรียนเทศบาลตำบลลาดยาว':
+                print(w,doc)
             if(w[0] in d):
                 tmp = d.index(w[0])
                 if (alp[tmp].get(w) is None):
                     alp[tmp][w] = []
-                alp[tmp][w] = s
-                # print(w,alp[tmp][w])
-
+                alp[tmp][w].append([files[doc],s])
+        # if doc == 1 :
+        #     break
+    # pprint(alp)
     dict_path = 'E:\CPE#Y4\databaseTF\dict2\\'
     for i in range(alp.__len__()):
         filename = dict_path + str(d[i]) + ".json"
         print(filename)
         data = json.load(open(filename))
-
+        count = alp[i].__len__()
         for k,v in alp[i].items():
+            if k == 'โรงเรียนเทศบาลตำบลลาดยาว':
+                print(k)
+            # count-=1
+            # print(count)
+            # print(k,v)
             if(data.get(k) != None):
-                data[k][0].append(v)
+                for j in range (data[k].__len__()):
+                    if int(data[k][j][0]) == v[0][0] :
+                        if data[k][j].__len__() != 5:
+                            data[k][j].append(v[0][1])
+                            v.remove(v[0])
+                            if v :
+                                continue
+                            else:
+                                break
+                        else:
+                            data[k][j][4] = v[0][1]
+                            v.remove(v[0])
+                            if v :
+                                continue
+                            else:
+                                break
 
-
+        print('Dump !!')
         json.dump(data,open(filename,'w'), ensure_ascii=True)
+    break
+
+end = time.time()
+print(end - start)

@@ -1,21 +1,4 @@
-
-from pprint import pprint
-
-# index_dir = 'D:/CPE#Y4/databaseTF/index/'
-# tokenize_dir = 'D:/CPE#Y4/databaseTF/documents-tokenize/'
-#
-#
-# file = open(index_dir + "14" + ".json")
-# data = json.load(file)
-#
-#
-# pprint(data["วอลเลซ เสต็กเนอร์"])
-#
-
-# a=[[1,2,3,4,5,7],[5,7],[5,6,7]]
-#
-# b= list(set.intersection(*map(set,a)))
-# print(b)
+# coding=utf8
 
 def save_tokenize():
     import json
@@ -69,7 +52,7 @@ def getKeysJSON():
 def read_sample_questions():
     import json
 
-    file = open("sample_questions.json", encoding="utf-8-sig")
+    file = open("questions.json", encoding="utf-8-sig")
     data = json.load(file)
 
     for k in data:
@@ -115,34 +98,112 @@ def find_by_dict():
                 search.append(data[i])
     return
 
+def plot_classify_graph():
+    questions = [(2, 'เอเลียนส์'), (7, 'พระเจ้าอาฟองโซที่'), (13, 'เส้าเฟิง'), (4, 'กุลปราโมทย์ จิรประวัติ'),
+                 (29, 'ชิงชัน'), (1133, 'แฝด'), (1, 'เชสเปเดส'), (1345, 'สมเด็จพระราชินีนาถ'), (10, 'คุณขา'),
+                 (34, 'เสาวภา'), (922, 'ดวงใจ'), (4, 'แอนนา ฟาริส'), (2, 'หม่อมเจ้าประสพสุข'), (1, 'เฮเซเกียว'),
+                 (1, 'กาลาตราบา บัลส์'), (15, 'ไอวีลีก'), (3, 'วัดเขาจีนแล'), (3, 'กราฟบน'), (9, 'ตั๊ก ศิริพร'),
+                 (158, 'เต้ย'), (11, 'กันส์'), (10, 'ฮอลโลเวย์'), (86, 'แอตแลนติส'), (4, 'คาร์โรไลน์'),
+                 (20, 'จังหวัดคา'), (104, 'ดร.'), (13, 'มายลิตเติ้ลโพนี่'), (5, 'เจ้าหญิงคลอทิลด์'), (9, 'ยอดมนู '),
+                 (420, 'คราม'), (3088, 'เจ็ด'), (6, 'กร็องปาแล'), (1, 'ศาสตราจารย์ภาควิชาฟิสิกส์'), (1, 'ปิ่น เก็จมณี'),
+                 (106, 'ไอก์'), (22, 'ประเทศกัวเตมา'), (101, 'นาอูรู'), (14, 'แมจิก'), (173, 'เอเชียแปซิฟิก'),
+                 (6880, 'อะไร'), (37, 'คาบสมุทรจัตแลนด์'), (5, 'จงใจพระ'), (21, 'เอมี่ '), (10, 'อิงเหวิน'),
+                 (19, 'เมืองลิสบอน'), (4, 'สะเออะ'), (3801, 'พี่น้อง'), (10, 'จรุงจิตต์'), (44, 'เจอร์'), (7, 'ไนน์มา'),
+                 (116, 'กระทันหัน'), (104, 'พระเจ้าเล่าเสี้ยน'), (5, 'นิพัทธ์'), (13300, 'สโมสร'),
+                 (937, 'ประเทศสิงคโปร์'), (96, 'อ่าวเบงกอล'), (878, 'ถนัด'), (634, 'เต๋า'), (1, 'พระยายุตราชา'),
+                 (2, 'บริษัท ฮา ไม่จำกัด'), (35, 'แซ็กซัน'), (9, 'หาดเสือเต้น'), (1, 'นายแพทย์จักรีวัชร มหิดล'),
+                 (5, 'กำลังกะเหรี่ยง'), (1, 'อิวานกา ทรัมป์'), (4, 'แอนนี ลีเบอวิตซ์'), (123, 'เบิร์ด ธงไชย'),
+                 (354, 'ฉิน'), (2, 'พาราด๊อกซ์'), (3, 'แห่งเอเซีย'), (18339, 'ก่อตั้ง'), (287, 'ประเทศปานา'),
+                 (1, 'ปู่ลี กุสลธโร'), (6, 'นายวิเชษฐ์ เกษมทองศรี'), (19, 'เขื่อนปากมูล'), (11, 'เยี่ย'),
+                 (4, 'ท้าวศรีบุญเรือง'), (1, 'รัสเซียนพีระมิด'), (2, 'โทะชิอะกิ'), (16, 'เธมส์'), (8, 'ไซโจ'),
+                 (5, 'เกียรติอรดี'), (48, 'กลมกล่อม'), (331, 'กลัด'), (2, 'กังซามาร์'), (1151, 'โฆษก'), (4, 'แซ็งเตมี'),
+                 (8, 'พระครูพิศาลธรรมโกศล'), (6, 'จังหวัดใด'), (111, 'สุริยัน'), (3, 'พริ้งเกษมชัย'), (6, 'อำเภอสบ'),
+                 (8, 'เรวิญานันท์ ทาเกิด'), (3, 'กูดฟิลลิง'), (5, 'ชาติโออาร์'), (2, 'นายแพทย์วิชัย ชัยจิตวณิชกุล'),
+                 (10, 'ปภัสรา'), (2, 'ศาสตราจารย์ สม จาตุศรีพิทักษ์'), (5, 'ปีเตอร์ ดรักเกอร์'),
+                 (69, 'เทือกเขาตะนาวศรี')]
+
+    pprint(questions)
+    plot = []
+    for i in questions:
+        plot.append(i[0])
+
+    t = np.arange(100)
+    plt.plot(t, plot, 'g')
+    plt.plot(t, [3000] * 100, 'r')
+    plt.plot(t, [10000] * 100, 'r')
+    plt.show()
+    return
+
+from pprint import pprint
 import pickle
-import deepcut
+# import deepcut
 import json
 import warnings
 warnings.filterwarnings(action='ignore', category=UserWarning, module='gensim')
 warnings.filterwarnings(action='ignore', category=FutureWarning)
-
+import numpy as np
+import matplotlib.pyplot as plt
+import os
 from gensim.models import Word2Vec
 
-index_dir = 'E:\CPE#Y4\databaseTF\documents-tokenize\\'
+index_dir = 'E:\CPE#Y4\databaseTF\dict2\\'
 
-file = open(index_dir + str(397951) + ".json", mode = 'r' , encoding="utf-8-sig")
-data = json.load(file)
-print(data)
+alphabet = 'ลห' # tf-idf at 'ล','ห' is not complete
+vowel = 'โ' # tf-idf at 'โ' is not complete
+e_alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
-# questions = []
-# n=0
-# for i in data['data']:
-#     pprint(n)
-#     n+=1
-#     questions.append(deepcut.tokenize(i['question']))
+for f in vowel:
+    file = index_dir + f +".json"
+    print(file)
+    data = json.load(open(file, mode = 'r' , encoding="utf-8-sig"))
 
+    for k,v in data.items():
+        for i in range(data[k].__len__()):
+            if(data[k][i].__len__() != 5):
+                try:
+                    data[k][i].append(data[k][i-1][4])
+                except IndexError:
+                    print(k)
+    json.dump(data, open(file, 'w'), ensure_ascii=True)
 
-# model = Word2Vec.load("E:\CPE#Y4\databaseTF\w2v_model\w2v_all_corpus.bin")
-# words = list(model.wv.vocab)
-# print("Words    :", words.__len__())
-# pprint(words)
-# ss=model.similar_by_word('วอลเลซ เสต็กเนอร์',topn=5)
-# print(ss)
+# file = index_dir + 'a' +".json"
+# print(file)
+# data = json.load(open(file, mode = 'r' , encoding="utf-8-sig"))
+#
+# for k, v in data.items():
+#     for i in range(data[k].__len__()):
+#         if (data[k][i].__len__() != 5):
+#             print(data[k][i])
 
+# dataset_path = "E:\CPE#Y4\databaseTF\documents-tokenize\\"
+# datasets = os.listdir(dataset_path)
+#
+# files = []
+# for dataset in datasets:
+#     files.append(int((dataset.split("."))[0]))
+#
+# files = sorted(files)
+# print(files.__len__())
+# s=[]
+# for f in files :
+#     file = open(dataset_path + str(f) + '.json', mode = 'r' , encoding="utf-8-sig")
+#     s.append(json.load(file))
+#     print(f)
+#
+# print('s',s.__len__())
 
+def dummy_fun(doc):
+    return doc
+
+# tfidf = TfidfVectorizer(
+#
+#     tokenizer=dummy_fun,
+#     preprocessor=dummy_fun,
+#     token_pattern=None)
+
+# dir = 'E:\CPE#Y4\databaseTF\\tf-idf_model\\'
+# tfidf = pickle.load(open(dir + "tfidf.pickle", "rb" ) )
+# # response = tfidf.fit_transform(s)
+# # pickle.dump(response, open(dir + "response(1).pickle", "wb"))
+# feature_names = tfidf.get_feature_names()
+# print(feature_names.__len__()) # 1736854
