@@ -146,25 +146,25 @@ import matplotlib.pyplot as plt
 import os
 from gensim.models import Word2Vec
 
-index_dir = 'E:\CPE#Y4\databaseTF\dict2\\'
-
-alphabet = 'ลห' # tf-idf at 'ล','ห' is not complete
-vowel = 'โ' # tf-idf at 'โ' is not complete
-e_alphabet = 'abcdefghijklmnopqrstuvwxyz'
-
-for f in vowel:
-    file = index_dir + f +".json"
-    print(file)
-    data = json.load(open(file, mode = 'r' , encoding="utf-8-sig"))
-
-    for k,v in data.items():
-        for i in range(data[k].__len__()):
-            if(data[k][i].__len__() != 5):
-                try:
-                    data[k][i].append(data[k][i-1][4])
-                except IndexError:
-                    print(k)
-    json.dump(data, open(file, 'w'), ensure_ascii=True)
+# index_dir = 'E:\CPE#Y4\databaseTF\dict2\\'
+#
+# alphabet = 'ลห' # tf-idf at 'ล','ห' is not complete
+# vowel = 'โ' # tf-idf at 'โ' is not complete
+# e_alphabet = 'abcdefghijklmnopqrstuvwxyz'
+#
+# for f in vowel:
+#     file = index_dir + f +".json"
+#     print(file)
+#     data = json.load(open(file, mode = 'r' , encoding="utf-8-sig"))
+#
+#     for k,v in data.items():
+#         for i in range(data[k].__len__()):
+#             if(data[k][i].__len__() != 5):
+#                 try:
+#                     data[k][i].append(data[k][i-1][4])
+#                 except IndexError:
+#                     print(k)
+#     json.dump(data, open(file, 'w'), ensure_ascii=True)
 
 # file = index_dir + 'a' +".json"
 # print(file)
@@ -192,8 +192,8 @@ for f in vowel:
 #
 # print('s',s.__len__())
 
-def dummy_fun(doc):
-    return doc
+# def dummy_fun(doc):
+#     return doc
 
 # tfidf = TfidfVectorizer(
 #
@@ -207,3 +207,8 @@ def dummy_fun(doc):
 # # pickle.dump(response, open(dir + "response(1).pickle", "wb"))
 # feature_names = tfidf.get_feature_names()
 # print(feature_names.__len__()) # 1736854
+
+from heapq import nlargest
+
+data = [5,6,3,1,1,2,2,2,2,3,4]
+print(nlargest(3, data))

@@ -17,8 +17,6 @@ datasets = os.listdir(dataset_path)
 
 files = []
 for dataset in datasets:
-    if(dataset == 'test.txt'):
-        break
     files.append(int((dataset.split("."))[0]))
 
 files = sorted(files)
@@ -52,10 +50,9 @@ print("open")
 alphabet = 'กขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรฤลฦวศษสหฬอฮ'
 vowel = 'เแโใไ'
 e_alphabet = 'abcdefghijklmnopqrstuvwxyz'
+be_alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-# TODO run this shit for add tfidf
-
-dictset = [vowel,alphabet,e_alphabet]
+dictset = [be_alphabet]
 for d in dictset:
     alp=[]
     for i in d:
@@ -79,7 +76,7 @@ for d in dictset:
         # if doc == 1 :
         #     break
     # pprint(alp)
-    dict_path = 'E:\CPE#Y4\databaseTF\dict2\\'
+    dict_path = 'E:\CPE#Y4\databaseTF\dict2\B_alphabet\\'
     for i in range(alp.__len__()):
         filename = dict_path + str(d[i]) + ".json"
         print(filename)
@@ -111,7 +108,7 @@ for d in dictset:
 
         print('Dump !!')
         json.dump(data,open(filename,'w'), ensure_ascii=True)
-    break
+
 
 end = time.time()
 print(end - start)
