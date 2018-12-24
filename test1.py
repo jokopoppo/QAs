@@ -9,8 +9,9 @@
 #     print(key,value)
 import json
 
-file = open('result_improve_newDB.txt','r',encoding='utf-8-sig')
+file = open('result_try.txt','r',encoding='utf-8-sig')
 
+time = 0
 acc=0
 data = []
 for i in file:
@@ -18,5 +19,6 @@ for i in file:
     print(i)
     data.append(i)
     acc+=int(i[2])
-
+    time+=float(i[-1].split('sec')[0])
 print(acc/data.__len__())
+print(time/3600,'hrs')

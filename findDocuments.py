@@ -11,16 +11,16 @@ from sqlitedict import SqliteDict
 
 # initial databased
 start = time.time()
-dict = SqliteDict('doc.sqlite', autocommit=True)
+dict = SqliteDict('E:\CPE#Y4\databaseTF\lastest_db\doc.sqlite', autocommit=True)
 dict = dict['doc']
 end = time.time()
 print("Time to initial db", end - start)
 # initial data and test set
-file = open("new_sample_questions_tokenize.json", mode='r', encoding="utf-8-sig")
+file = open("test_set\\new_sample_questions_tokenize.json", mode='r', encoding="utf-8-sig")
 data = json.load(file)
-validate = json.load(open("new_sample_questions_answer.json", mode='r', encoding="utf-8-sig"))
+validate = json.load(open("test_set\\new_sample_questions_answer.json", mode='r', encoding="utf-8-sig"))
 
-doc = 3000
+doc = 0
 data = data[doc:]
 print(data.__len__())
 save = 0
@@ -55,25 +55,19 @@ for s in data:
     search.sort(key=lambda s: s[1][0][0], reverse=True)
     best_tfidf = search[0]
 
-    word = [shortest[0], best_tfidf[0]]
-    pool = [shortest[1][1:], best_tfidf[1][1:]]
-    for i in range(1,search.__len__()):
-        word.append(search[i][0])
-        pool.append(search[i][1][1:])
+    # word = [shortest[0], best_tfidf[0]]
+    # pool = [shortest[1][1:], best_tfidf[1][1:]]
+    # for i in range(1,search.__len__()):
+    #     word.append(search[i][0])
+    #     pool.append(search[i][1][1:])
+
+    word = [best_tfidf[0],''] # test
+    pool = [best_tfidf[1][1:],[]]
 
     answer_index = []
     count = []
 
     # rank answer in answer pool
-    # for i in pool:
-    #     for j in i:
-    #         try:
-    #             count[answer_index.index(j[0])] += j[1]
-    #         except ValueError:
-    #             answer_index.append(j[0])
-    #             count.append(j[1])
-
-    # rank by single tf-idf
     c={}
     for i in pool :
         for k, v in i:
@@ -85,6 +79,7 @@ for s in data:
         answer_index.append(key)
         count.append(value)
 
+    ########################################################################################
 
     answer_n = nlargest(pool[0].__len__() + pool[1].__len__(), count)
     answer = []
@@ -134,7 +129,7 @@ for s in data:
     doc += 1
     save += 1
     if save == 100 or doc == 4000:
-        with open("result_improve_newDB.txt", "a", encoding="utf-8") as text_file:
+        with open("result_only_best_tf-idf.txt", "a", encoding="utf-8") as text_file:
             text_file.write(string)
         save = 0
         string = ''
