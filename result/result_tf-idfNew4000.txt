@@ -1,0 +1,2000 @@
+question 0: 1 rank0 || 0  0 1 1 ['2517'] 200.69115352630615secs
+question 1: 0 rank85 || 3351  9 4451 54 [' 1'] 119.46672105789185secs 
+question 2: 0 rank85 || 3351  9 4451 54 [' 1'] 60.13767099380493secs 
+question 3: 0 rank209 || 12570  736 15522 1131 [] 62.69162917137146secs 
+question 4: 0 rank247 || 3013  2026 6984 5975 [] 54.341309547424316secs 
+question 5: 0 rank28 || 168  0 349 2 [] 39.722702980041504secs 
+question 6: 0 rank28 || 168  0 349 2 ['ฯ'] 22.028074741363525secs 
+question 7: 0 rank515 || cant find in best tf-idf  1477 1982 1900 ['เป็น', 'เรจโจเอมีเลีย'] 24.309969663619995secs 
+question 8: 0 rank701 || 6516  1288 8351 2242 ['พิกซาร์ส', 'แอนิแมชัน', 'ตูดิโอสร้าง'] 32.787795543670654secs 
+question 9: 0 rank701 || 6516  1288 8351 2242 ['พิกซาร์ สตูดิโอสร้าง', 'แอนิแมชัน'] 35.55981111526489secs 
+question 10: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 58569 56 ['2008', '2551', '26'] 41.14621663093567secs 
+question 11: 1 rank0 || 0  0 1 1 [] 14.735582828521729secs 
+question 12: 1 rank0 || 0  0 1 1 ['1957'] 41.319127798080444secs 
+question 13: 1 rank0 || 0  0 1 1 [] 28.79947257041931secs 
+question 14: 0 rank298 || 567  567 1378 1378 ['2514'] 49.772855281829834secs 
+question 15: 0 rank5892 || 358687  6 971858 17 [] 82.95309782028198secs 
+question 16: 0 rank11534 || cant find in best tf-idf  4 948951 5 [] 66.49213147163391secs 
+question 17: 0 rank1725 || 5245  cant find in shorttest 13300 12 [] 34.3287250995636secs 
+question 18: 0 rank1442 || 17877  cant find in shorttest 33147 6880 ['6'] 34.961538791656494secs 
+question 19: 0 rank774 || 17877  6999 33147 11415 ['1980'] 35.95980620384216secs 
+question 20: 0 rank2699 || 56248  1780 107032 2849 ['5'] 58.492777585983276secs 
+question 21: 0 rank1006 || 19578  1086 32759 1909 ['วงคีรีบูนคือ'] 16.92118787765503secs 
+question 22: 0 rank3928 || 91275  0 107032 1 [] 68.15136051177979secs 
+question 23: 0 rank3928 || 91275  0 107032 1 [] 58.0999014377594secs 
+question 24: 1 rank0 || 0  0 3 3 [] 22.347159147262573secs 
+question 25: 0 rank1322 || 5011  cant find in shorttest 5614 30 ['2018'] 33.15935182571411secs 
+question 26: 0 rank51 || 1704  1704 2508 2508 [] 19.1787326335907secs 
+question 27: 1 rank0 || 0  0 1 1 [] 18.97017526626587secs 
+question 28: 0 rank2175 || 25453  2 72032 5 [] 166.03320598602295secs 
+question 29: 0 rank5209 || 41411  4 53083 6 ['2515'] 81.63500905036926secs 
+question 30: 1 rank1 || 214  8 221 14 [] 52.433451890945435secs 
+question 31: 1 rank1 || 214  8 221 14 [] 33.702757358551025secs 
+question 32: 0 rank285 || 119  cant find in shorttest 736 4 [' โรเบิร์ต แจ็กสัน'] 39.181236028671265secs 
+question 33: 0 rank3149 || 17449  8 53083 32 ['2009'] 32.98822736740112secs 
+question 34: 0 rank1096 || 4056  cant find in shorttest 5614 4082 ['2002'] 39.4891140460968secs 
+question 35: 1 rank0 || 1  1 3 3 [' บาเบล', ' ซุมเซล'] 19.901691198349secs 
+question 36: 0 rank1808 || 17872  1575 33147 2952 ['7'] 34.23338317871094secs 
+question 37: 0 rank961 || 17872  6989 33147 11415 ['1984'] 39.33883285522461secs 
+question 38: 0 rank36 || 1597  6 1813 12 [] 24.979358673095703secs 
+question 39: 0 rank1486 || 33847  6 38327 12 [] 32.6446738243103secs 
+question 40: 1 rank0 || 123  123 387 387 [] 31.38404655456543secs 
+question 41: 1 rank0 || 2  2 15 15 [] 17.652713537216187secs 
+question 42: 1 rank0 || 0  0 4 4 ['เมืองใด'] 69.91868114471436secs 
+question 43: 0 rank10049 || 605445  28 1304195 42 ['2008', 'บริษัทไอเอ็นจี'] 107.57943630218506secs 
+question 44: 1 rank1 || 2  2 7 7 [] 32.434685707092285secs 
+question 45: 1 rank2 || 7  cant find in shorttest 9 7 [] 35.288238286972046secs 
+question 46: 1 rank0 || 1  1 4 4 ['อะไร'] 6.1026740074157715secs 
+question 47: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 251 251 ['งแพ จิน-'] 15.117424964904785secs 
+question 48: 0 rank6 || 50  4 58 5 [] 44.884382009506226secs 
+question 49: 0 rank141 || 3732  17 4493 21 [] 27.01776647567749secs 
+question 50: 1 rank0 || 0  0 3 3 ['รัศเซีย'] 34.32214593887329secs 
+question 51: 0 rank21 || 107  107 152 152 [] 35.29852652549744secs 
+question 52: 0 rank41 || 453  76 532 98 [] 24.370805740356445secs 
+question 53: 0 rank1352 || 3112  248 14430 1105 ['2520', '22'] 34.58754277229309secs 
+question 54: 0 rank720 || 5162  cant find in shorttest 33147 1 [' นีโกลัส', ' เปเรซ', '11'] 29.260663747787476secs 
+question 55: 0 rank1216 || 45963  3 66905 4 ['แม่น้ำกัวยัส'] 27.733949899673462secs 
+question 56: 1 rank1 || 1  1 2 2 [] 29.310520887374878secs 
+question 57: 0 rank22 || 166  0 623 1 [] 24.051554441452026secs 
+question 58: 1 rank0 || 0  0 1 1 [] 18.366127729415894secs 
+question 59: 0 rank581 || 37674  4244 39023 4428 ['19'] 28.292377471923828secs 
+question 60: 0 rank3276 || 8681  cant find in shorttest 26174 8711 ['24'] 21.002756118774414secs 
+question 61: 0 rank3185 || 8681  cant find in shorttest 26174 4946 ['24'] 24.421732187271118secs 
+question 62: 0 rank13032 || 565300  0 971858 1 ['-'] 127.19106960296631secs 
+question 63: 0 rank12957 || 473173  0 770922 1 ['นางแจ้ ดวง'] 56.69893550872803secs 
+question 64: 0 rank114 || 6960  173 10393 218 [] 13.731135129928589secs 
+question 65: 0 rank57 || 2349  2349 2722 2722 [] 14.762139558792114secs 
+question 66: 1 rank0 || 5  5 10 10 ['-', 'นาคารโตเกียว'] 16.595926761627197secs 
+question 67: 1 rank1 || 2  2 104 26 [] 34.74922037124634secs 
+question 68: 0 rank207 || cant find in best tf-idf  259 10393 296 [] 28.35730266571045secs 
+question 69: 0 rank22 || 583  259 838 296 [] 38.26156449317932secs 
+question 70: 0 rank12275 || 763022  0 880965 1 ['พ.ต.ท.ชัยยง ขำ'] 66.9178147315979secs 
+question 71: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 2 2 ['19'] 29.852341175079346secs 
+question 72: 0 rank10104 || 112063  cant find in shorttest 1304195 380 [] 85.3187825679779secs 
+question 73: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 53 53 [] 20.19836187362671secs 
+question 74: 0 rank1182 || 35475  1 71887 4 [] 22.458730459213257secs 
+question 75: 0 rank1519 || 35475  0 71887 1 [] 32.91410827636719secs 
+question 76: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 2 2 [] 13.668651819229126secs 
+question 77: 0 rank12 || 31  cant find in shorttest 65 2 ['แมนเซสเตอร์'] 24.395601749420166secs 
+question 78: 1 rank1 || 27  27 31 31 [] 21.479269981384277secs 
+question 79: 0 rank43 || 654  cant find in shorttest 986 2 ['สงคารม'] 36.33517622947693secs 
+question 80: 0 rank2854 || 294470  56 1304195 251 [] 108.347332239151secs 
+question 81: 0 rank2854 || 294470  56 1304195 251 [] 90.68316173553467secs 
+question 82: 1 rank0 || 9  9 34 34 [] 22.510013580322266secs 
+question 83: 0 rank2215 || 36140  1 54114 2 [] 39.816638708114624secs 
+question 84: 1 rank0 || 0  0 3 3 ['1990'] 30.978641986846924secs 
+question 85: 0 rank794 || 14679  231 25619 510 ['1955', '1968', '84'] 38.647130489349365secs 
+question 86: 1 rank2 || 45  cant find in shorttest 78 1 [] 17.308417558670044secs 
+question 87: 0 rank3805 || 47581  cant find in shorttest 72032 1 [] 21.48504090309143secs 
+question 88: 0 rank157 || 2983  1358 21097 3058 [] 41.68767762184143secs 
+question 89: 0 rank157 || 2983  1358 21097 3058 ['29'] 37.55965042114258secs 
+question 90: 0 rank1447 || 2199  cant find in shorttest 5614 38 ['-'] 39.974942684173584secs 
+question 91: 1 rank1 || 72  24 97 30 [] 27.58724284172058secs 
+question 92: 0 rank87 || 211  211 293 293 ['จักรพรรดิไทโช คือ'] 8.575798273086548secs 
+question 93: 1 rank0 || 0  0 5 3 [] 13.371849775314331secs 
+question 94: 1 rank0 || 3  3 12 12 [] 14.340361595153809secs 
+question 95: 0 rank12221 || 399701  0 1304195 1 [' โคทาโร่'] 97.99052953720093secs 
+question 96: 1 rank0 || 5  5 32 32 [] 32.244898557662964secs 
+question 97: 1 rank0 || 1  1 4 4 [] 34.55148768424988secs 
+question 98: 1 rank0 || 1  1 4 4 [] 21.963568210601807secs 
+question 99: 0 rank318 || 9851  3035 10247 3091 ['เครื่องราชอิศริยาภรณ์สหไมตรี'] 28.212090969085693secs 
+question 100: 0 Cant find doc || 49198  cant find in shorttest 51189 3487 ['เครื่องราชอิศริยาภรณ์สหไมตรี'] 29.430593967437744secs 
+question 101: 0 rank57 || 15  15 84 84 [] 30.758759260177612secs 
+question 102: 0 rank9034 || 508836  195 971858 360 ['เรือนจำอาบาชิริ'] 80.02369165420532secs 
+question 103: 0 rank3526 || 386177  21 971858 45 [] 67.70541548728943secs 
+question 104: 1 rank0 || 2  2 6 6 [] 11.809680700302124secs 
+question 105: 1 rank0 || 8  8 28 28 [] 22.606562614440918secs 
+question 106: 1 rank0 || 8  8 28 28 [] 40.30298829078674secs 
+question 107: 1 rank0 || 2  2 4 4 [] 20.541683673858643secs 
+question 108: 0 rank431 || cant find in best tf-idf  6 12737 8 [] 18.167588233947754secs 
+question 109: 0 rank6333 || 815407  6 971858 8 [] 69.52126455307007secs 
+question 110: 0 rank269 || 9963  cant find in shorttest 16709 6880 ['ซานลุยส์โปโตซี'] 18.184727430343628secs 
+question 111: 1 rank0 || 0  0 1 1 [] 30.50842809677124secs 
+question 112: 0 rank17 || cant find in best tf-idf  0 372 1 [] 15.130139350891113secs 
+question 113: 0 rank33 || 54  31 146 54 ['พรรค', '2550', '-'] 36.53825306892395secs 
+question 114: 0 rank1507 || cant find in best tf-idf  0 14430 1 [] 12.481425285339355secs 
+question 115: 0 rank642 || 1119  0 6266 1 [] 20.573271989822388secs 
+question 116: 0 rank141 || 395  26 1685 93 [] 43.28669571876526secs 
+question 117: 0 rank7420 || 20248  2802 53083 6626 [] 40.945640087127686secs 
+question 118: 0 rank623 || 24415  386 25593 391 ['72', '-'] 25.7524516582489secs 
+question 119: 0 rank623 || 24415  386 25593 391 ['72', '-'] 22.463448762893677secs 
+question 120: 0 rank1774 || 39660  713 58558 937 [] 29.258723974227905secs 
+question 121: 0 rank3475 || 43202  61 53083 70 [] 33.648308992385864secs 
+question 122: 0 rank96 || 73  73 241 241 [] 26.414246320724487secs 
+question 123: 0 rank26 || 298  73 465 241 [] 33.61706566810608secs 
+question 124: 0 rank1872 || 6657  17 26858 48 [] 37.03813457489014secs 
+question 125: 0 rank153 || 550  13 1389 49 [] 28.60916805267334secs 
+question 126: 0 rank374 || 2342  2342 3236 3236 [] 16.746047019958496secs 
+question 127: 0 rank441 || 5955  1695 8141 3318 [] 33.1328067779541secs 
+question 128: 1 rank0 || 2  2 8 8 [] 12.309596300125122secs 
+question 129: 1 rank2 || 21  0 25 2 [] 31.617538928985596secs 
+question 130: 0 rank59 || 5575  7 7217 12 ['2'] 19.214215993881226secs 
+question 131: 1 rank0 || 14  14 26 26 [] 16.62108278274536secs 
+question 132: 0 rank4731 || 298816  14 770922 26 [] 53.13170289993286secs 
+question 133: 0 rank1324 || 37392  15 58558 30 [] 40.30039930343628secs 
+question 134: 0 rank4117 || 32932  cant find in shorttest 45556 9 [] 46.04059290885925secs 
+question 135: 1 rank1 || 89  89 104 104 [] 13.97760558128357secs 
+question 136: 0 rank157 || 1016  44 1800 63 [] 16.496102809906006secs 
+question 137: 1 rank1 || 1  4 12 7 [] 35.03827452659607secs 
+question 138: 0 rank1654 || 42921  0 107032 3 ['"'] 37.45436382293701secs 
+question 139: 0 rank223 || 10841  0 21389 1 [] 19.82997155189514secs 
+question 140: 0 rank54 || 251  0 893 3 [] 11.231724739074707secs 
+question 141: 1 rank1 || 8  0 32 5 [] 28.284103870391846secs 
+question 142: 0 rank42 || 2385  cant find in shorttest 3542 2 [] 22.822497606277466secs 
+question 143: 0 rank42 || 2385  cant find in shorttest 3542 2 [] 27.977712869644165secs 
+question 144: 0 rank143 || 330  330 594 594 ['2516'] 37.36618685722351secs 
+question 145: 0 rank1977 || 17226  1705 20645 1969 [] 36.30393028259277secs 
+question 146: 0 rank8 || 111  5 549 25 [] 17.24593186378479secs 
+question 147: 1 rank0 || 1  0 3 1 [] 10.825267314910889secs 
+question 148: 0 rank3864 || cant find in best tf-idf  1 58569 3 ['22', '2559'] 57.261125326156616secs 
+question 149: 1 rank0 || 5  5 23 23 [] 24.98299288749695secs 
+question 150: 1 rank0 || 5  5 23 23 [] 17.464629888534546secs 
+question 151: 1 rank0 || 1  1 7 7 [] 22.16260552406311secs 
+question 152: 0 rank37 || 42  9 996 120 [] 20.49483370780945secs 
+question 153: 0 rank7403 || 48870  0 107032 1 ['1997'] 45.86680555343628secs 
+question 154: 1 rank0 || 0  0 1 1 [] 14.106048583984375secs 
+question 155: 1 rank0 || 3  3 9 9 ['โยเซฟส์โซน'] 17.236318588256836secs 
+question 156: 1 rank0 || 0  0 2 2 [] 35.122724294662476secs 
+question 157: 0 rank901 || 13484  211 18595 342 ['7', '2539', '2541'] 33.08563685417175secs 
+question 158: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 291 291 [] 19.46415877342224secs 
+question 159: 0 rank4974 || 51852  cant find in shorttest 52825 23 [' แมไกวร์', ' แฮร์รี'] 34.30440592765808secs 
+question 160: 1 rank0 || 0  0 3 3 [] 18.01131844520569secs 
+question 161: 0 rank20 || 403  3 1337 26 [] 19.5423002243042secs 
+question 162: 1 rank1 || 3  3 26 26 [] 11.887486457824707secs 
+question 163: 0 rank2712 || 33004  1839 33147 1853 ['ปาเวล เนดเวต'] 43.4741153717041secs 
+question 164: 0 rank1384 || 4220  0 7217 1 [] 24.556767225265503secs 
+question 165: 0 rank360 || 13016  5 14470 6 ['2'] 34.2262396812439secs 
+question 166: 0 rank5939 || 98904  3454 107032 3801 ['2548', '2'] 69.58886170387268secs 
+question 167: 0 rank100 || 398  0 1431 1 [] 25.99563503265381secs 
+question 168: 1 rank0 || 1  1 4 4 [] 27.634105682373047secs 
+question 169: 1 rank0 || 1  1 4 4 [] 22.97895383834839secs 
+question 170: 0 rank582 || 11414  2 17508 3 [] 32.00807166099548secs 
+question 171: 1 rank0 || 2  2 9 9 [] 43.19293427467346secs 
+question 172: 0 rank45 || 419  225 428 230 ['1823'] 24.47826099395752secs 
+question 173: 1 rank0 || 3  3 19 19 [] 27.11860227584839secs 
+question 174: 0 rank301 || 6522  3 14470 20 [] 11.96592664718628secs 
+question 175: 1 rank0 || 3  3 20 20 [] 33.75765872001648secs 
+question 176: 1 rank4 || 99  cant find in shorttest 226 1 ['1'] 23.713156938552856secs 
+question 177: 0 rank4033 || 22459  5 45556 9 [] 37.084693908691406secs 
+question 178: 0 rank4298 || 47085  6 53665 7 ['2558', '26'] 52.62663459777832secs 
+question 179: 0 rank11810 || cant find in best tf-idf  6 971858 7 ['2558', '26'] 94.6393473148346secs 
+question 180: 0 rank714 || 10197  cant find in shorttest 17508 6880 ['ปลาวัวดำ'] 30.90897846221924secs 
+question 181: 0 rank643 || 10197  1 17508 2 ['ปลาวัวดำ'] 44.55204367637634secs 
+question 182: 1 rank5 || 13  cant find in shorttest 17 4 ['เจ้าอภัยทัต '] 21.10406470298767secs 
+question 183: 1 rank0 || 13  13 18 18 ['1'] 25.72931694984436secs 
+question 184: 0 rank1646 || 59740  8 72032 10 ['จอห์น เอ. เอกิ้น'] 43.456881046295166secs 
+question 185: 0 rank3706 || 9574  4 53083 30 [] 36.34920144081116secs 
+question 186: 0 rank179 || 1048  169 2674 478 ['2503'] 46.74349856376648secs 
+question 187: 0 rank179 || 1048  169 2674 478 ['2503'] 52.15923357009888secs 
+question 188: 1 rank1 || 63  63 106 106 ['-'] 16.73042583465576secs 
+question 189: 1 rank0 || 2  2 13 13 [] 12.82510256767273secs 
+question 190: 0 rank2434 || 2601  2601 8652 8652 ['พระเจ้าวรวงศ์เธอพระองค์เจ้าศิริรัตนบุษบง'] 10.497560024261475secs 
+question 191: 0 rank884 || 34862  366 58558 478 [] 29.76007866859436secs 
+question 192: 0 rank1196 || 13271  0 18064 2 [] 46.150569677352905secs 
+question 193: 0 rank8 || 319  2 486 5 [] 41.9432327747345secs 
+question 194: 0 rank32 || 156  156 347 347 [] 21.18249821662903secs 
+question 195: 0 rank411 || cant find in best tf-idf  0 1338 1 [] 19.760965585708618secs 
+question 196: 0 rank104 || 17527  3 42525 8 [] 20.776344776153564secs 
+question 197: 0 rank162 || 766  0 4493 1 [] 18.604681491851807secs 
+question 198: 1 rank0 || 0  0 10 10 [] 15.746283769607544secs 
+question 199: 0 Cant find doc || 357937  cant find in shorttest 770922 1 ['ยกตรี คือ'] 46.09538197517395secs 
+question 200: 0 rank803 || 30327  cant find in shorttest 32194 26 ['นายแฮร์มันน์ ทิลเคอ'] 26.12325882911682secs 
+question 201: 0 Cant find doc || 587923  cant find in shorttest 1304195 4 [] 74.42834424972534secs 
+question 202: 0 rank3597 || 240919  337 1304195 484 ['30'] 82.14054822921753secs 
+question 203: 1 rank0 || 0  0 2 2 [] 22.523795127868652secs 
+question 204: 0 rank20 || 98  1 222 3 ['เจมส์ แอนโทนี่'] 18.729953050613403secs 
+question 205: 0 rank1577 || cant find in best tf-idf  0 14379 1 [] 31.53943181037903secs 
+question 206: 1 rank0 || 0  0 1 1 [] 22.35410165786743secs 
+question 207: 1 rank0 || 2  0 5 1 [] 16.67819309234619secs 
+question 208: 1 rank0 || 1  1 3 3 [] 13.184391260147095secs 
+question 209: 0 rank28 || 3  3 115 115 [] 25.90013575553894secs 
+question 210: 0 rank28 || 3  3 115 115 [] 29.711742401123047secs 
+question 211: 1 rank0 || 0  0 11 2 ['5', '1'] 22.947707414627075secs 
+question 212: 0 rank164 || 23666  cant find in shorttest 39023 1 [] 37.89704394340515secs 
+question 213: 0 rank162 || 23666  8 39023 10 [' ไอริส'] 32.52401781082153secs 
+question 214: 1 rank0 || 1  0 6 1 [] 26.455926656723022secs 
+question 215: 1 rank0 || 0  0 1 1 ['เขาเอ๋อเหมย์'] 25.244038105010986secs 
+question 216: 0 rank438 || 2532  0 13300 1 ['สโมสรลัตซีโย', '1900'] 31.61754083633423secs 
+question 217: 0 rank1351 || 29671  204 32759 222 ['เจมส์ ไมเคิล เบย์'] 24.68137240409851secs 
+question 218: 1 rank0 || 0  0 3 3 ['layla'] 52.862526416778564secs 
+question 219: 1 rank0 || 0  0 4 4 [] 16.902263164520264secs 
+question 220: 0 rank2427 || 21866  cant find in shorttest 53083 4 ['1980'] 43.115331172943115secs 
+question 221: 1 rank0 || 0  0 2 2 [] 19.65914511680603secs 
+question 222: 1 rank0 || 0  0 2 2 [] 22.307236433029175secs 
+question 223: 1 rank1 || 9  9 21 21 [] 48.67601203918457secs 
+question 224: 0 rank4903 || 29645  179 107032 687 ['2551'] 49.98211145401001secs 
+question 225: 1 rank0 || 2  2 5 5 [] 13.73764705657959secs 
+question 226: 0 rank11507 || 489461  0 770922 2 [' บูลกุล'] 59.28023958206177secs 
+question 227: 0 rank5300 || 814638  840 1304195 1225 [] 87.76143479347229secs 
+question 228: 0 rank8407 || 599125  2716 971858 3936 [] 86.62118983268738secs 
+question 229: 0 rank2563 || 41692  cant find in shorttest 53083 6880 ['อัศวิน รัตนประชา'] 29.79485058784485secs 
+question 230: 1 rank1 || 2  2 27 27 [] 31.328754901885986secs 
+question 231: 1 rank1 || 2  0 27 3 [] 25.697064638137817secs 
+question 232: 1 rank0 || 1  1 5 5 [] 8.15432596206665secs 
+question 233: 1 rank0 || 1  1 5 5 [] 18.408918380737305secs 
+question 234: 0 rank573 || 20786  9 42525 26 [] 26.743688344955444secs 
+question 235: 1 rank0 || 0  0 11 11 [] 24.049715518951416secs 
+question 236: 1 rank0 || 0  8 11 9 [] 14.152911901473999secs 
+question 237: 0 rank12409 || 603189  2 770922 5 [] 58.09587287902832secs 
+question 238: 0 rank1906 || 30381  1 53083 4 ['แอนนา เคย์', '2008'] 27.566019296646118secs 
+question 239: 0 rank30 || 58  2 142 5 ['3'] 18.292558908462524secs 
+question 240: 1 rank0 || 2  4 26 16 ['1480'] 27.527384042739868secs 
+question 241: 1 rank0 || 2  4 26 16 ['15'] 37.39742970466614secs 
+question 242: 1 rank0 || 1  1 4 4 [] 7.857486009597778secs 
+question 243: 0 rank567 || 13013  796 23726 1159 ['สุรพงษ์ บุนนาค'] 25.009721040725708secs 
+question 244: 1 rank0 || 0  0 1 1 ['2545'] 27.0404953956604secs 
+question 245: 0 rank26 || 36  36 80 80 [] 17.777055501937866secs 
+question 246: 0 rank74 || 2838  0 3553 1 [] 29.571211099624634secs 
+question 247: 0 rank10 || 1012  0 1204 1 ['อรุโณทัย '] 29.11779475212097secs 
+question 248: 1 rank1 || 1  1 25 25 [] 21.463686227798462secs 
+question 249: 0 rank11 || 154  154 293 293 ['2003', ' มังก์'] 33.2109158039093secs 
+question 250: 1 rank0 || 0  0 1 1 [] 22.229129314422607secs 
+question 251: 1 rank2 || 1  1 3 3 ['จังหวัดพิจิตร สิริอายุ'] 19.979662895202637secs 
+question 252: 0 rank75 || 1386  1386 3199 3199 [] 30.008238554000854secs 
+question 253: 1 rank0 || 2  2 8 8 [] 21.213781356811523secs 
+question 254: 0 rank1485 || 83523  1220 121560 1528 [] 42.152857542037964secs 
+question 255: 0 rank1485 || 83523  1220 121560 1528 ['2'] 51.77740454673767secs 
+question 256: 0 rank53 || 30184  648 30230 651 [] 14.518720388412476secs 
+question 257: 1 rank0 || 1  1 4 4 [] 24.841601848602295secs 
+question 258: 1 rank0 || 1  1 4 4 [] 19.18296718597412secs 
+question 259: 1 rank0 || 2  2 12 12 [] 20.073386907577515secs 
+question 260: 0 Cant find doc || 752642  cant find in shorttest 1304195 6880 ['โรงงานทาทา มอเตอร์ส'] 56.04678177833557secs 
+question 261: 1 rank0 || 8  8 31 31 [] 30.89382791519165secs 
+question 262: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 12250 11 [] 25.993557929992676secs 
+question 263: 0 rank3107 || 838639  46 971858 69 ['2559'] 83.53857254981995secs 
+question 264: 0 rank37 || cant find in best tf-idf  51 1869 335 ['15'] 20.917954683303833secs 
+question 265: 0 rank3968 || cant find in best tf-idf  48 66667 55 [] 38.70968270301819secs 
+question 266: 0 rank9083 || 49733  cant find in shorttest 275379 1 [] 37.066843032836914secs 
+question 267: 1 rank0 || 9  5 25 11 [] 14.574378490447998secs 
+question 268: 0 rank636 || 12005  cant find in shorttest 14379 6880 ['พรรคทาโย'] 27.931495428085327secs 
+question 269: 0 rank589 || 12005  263 14379 315 ['ทาโย'] 27.243610620498657secs 
+question 270: 1 rank0 || 0  0 3 3 [] 11.872162342071533secs 
+question 271: 1 rank0 || 0  0 5 5 [] 18.433149576187134secs 
+question 272: 1 rank0 || 0  0 8 1 ['พระวัดประยุรวงศาวาส'] 15.82408332824707secs 
+question 273: 1 rank0 || 0  0 8 1 ['พระวัดประยุรวงศาวาส'] 12.418947696685791secs 
+question 274: 0 rank11952 || 672746  1 1304195 6 ['2'] 84.28551936149597secs 
+question 275: 1 rank0 || 1  1 3 3 [] 16.61047887802124secs 
+question 276: 0 rank9 || 1648  cant find in shorttest 3465 29 ['อเล็กซานเดอร์มหาราช', '332'] 27.165462255477905secs 
+question 277: 0 rank90 || 955  15 3544 66 [] 14.402518510818481secs 
+question 278: 0 rank90 || 955  15 3544 66 ['1923'] 33.92387866973877secs 
+question 279: 0 rank3663 || 2505  cant find in shorttest 12024 6 [] 16.995990991592407secs 
+question 280: 0 rank747 || 1825  0 14430 1 [] 17.417765378952026secs 
+question 281: 0 rank11115 || cant find in best tf-idf  0 121560 1 ['มาดาร'] 34.52350878715515secs 
+question 282: 0 rank98 || 20307  8 39023 14 [] 41.80786347389221secs 
+question 283: 0 rank24 || 328  8 471 14 [] 40.02272891998291secs 
+question 284: 1 rank0 || 27  27 138 138 [' โอร์มาน'] 17.136581897735596secs 
+question 285: 0 rank10209 || 38816  cant find in shorttest 72032 3810 [' โอร์มาน', 'ประถมนาธาน'] 33.74858212471008secs 
+question 286: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 85313 6 [] 16.275808095932007secs 
+question 287: 0 rank11841 || 692723  12 1304195 19 [] 89.91078305244446secs 
+question 288: 1 rank0 || 0  0 7 7 [] 17.71512246131897secs 
+question 289: 1 rank0 || 2  2 4 4 [] 18.917370080947876secs 
+question 290: 0 rank4952 || 51323  2 107032 4 ['2552'] 56.70751190185547secs 
+question 291: 0 rank64 || 7900  cant find in shorttest 26545 6880 [] 16.554927825927734secs 
+question 292: 0 rank4659 || 20032  cant find in shorttest 66905 6880 ['นครนาฮะ'] 32.97317361831665secs 
+question 293: 0 rank3374 || 2016  0 12185 1 [' มี'] 20.720876455307007secs 
+question 294: 0 rank4220 || 14427  0 21097 1 ['เอลบรัส ', '2004'] 38.00665807723999secs 
+question 295: 1 rank0 || 0  0 1 1 ['เอลบรัส '] 39.58441209793091secs 
+question 296: 1 rank0 || 0  0 3 1 [] 35.03861689567566secs 
+question 297: 0 rank13 || 136  47 253 61 ['เฆซุส โฆอากิน เฟร์นันเดซ ซาเอนซ์ เด ลา ตอร์เร'] 20.96347451210022secs 
+question 298: 0 rank699 || 12077  6 14477 8 ['2014'] 35.741564989089966secs 
+question 299: 0 rank205 || 44760  0 53083 1 ['1993', 'ริชาร์ด สจ๊วต'] 37.303736448287964secs 
+question 300: 1 rank1 || 17  cant find in shorttest 29 2 [] 19.370391845703125secs 
+question 301: 1 rank2 || 10  10 77 77 [' เลวิน'] 14.605930805206299secs 
+question 302: 1 rank0 || 5  5 11 11 [] 12.652960538864136secs 
+question 303: 0 rank777 || 65256  0 66667 2 [] 27.587239503860474secs 
+question 304: 0 rank54 || 1201  9 3116 20 ['ๆ'] 17.527113437652588secs 
+question 305: 0 rank6 || 83  83 111 111 [] 15.465102195739746secs 
+question 306: 0 rank1584 || 65354  83 72032 111 [] 47.34824585914612secs 
+question 307: 1 rank0 || 1  1 6 6 [] 11.300429582595825secs 
+question 308: 1 rank0 || 1  1 6 6 [] 11.59101676940918secs 
+question 309: 1 rank1 || 8  8 23 23 [] 17.136581659317017secs 
+question 310: 1 rank1 || 0  0 17 17 [] 38.10038709640503secs 
+question 311: 0 rank1352 || 12297  3 42525 11 [] 21.432438611984253secs 
+question 312: 1 rank0 || 3  3 11 11 [] 22.6037380695343secs 
+question 313: 0 rank1840 || 36591  2 53665 3 ['อัทธนียา เอี่ยมวสันต์'] 42.536837339401245secs 
+question 314: 0 rank4159 || 27878  cant find in shorttest 38327 5 [' เอี่ยมวสันต์', '7'] 41.00594997406006secs 
+question 315: 0 rank21 || 241  4 1896 34 ['42'] 36.678881883621216secs 
+question 316: 0 rank1203 || 2801  33 20490 122 [] 29.39927625656128secs 
+question 317: 0 rank1520 || 27589  0 33147 1 ['สนามคือ'] 40.568246364593506secs 
+question 318: 0 rank83 || 6006  cant find in shorttest 6266 1887 [' อาหะหมัด'] 44.926899433135986secs 
+question 319: 0 rank292 || 1021  cant find in shorttest 2074 43 [' เกตลี'] 32.226770877838135secs 
+question 320: 0 rank292 || 1021  cant find in shorttest 2074 43 [' เกตลี'] 45.28618764877319secs 
+question 321: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 45556 3 ['ปี', '2560', 'ปกเกล้า อนันต์ '] 30.02416706085205secs 
+question 322: 1 rank0 || 0  0 3 3 [] 22.13518238067627secs 
+question 323: 1 rank1 || 0  0 12 12 [] 31.726889848709106secs 
+question 324: 0 rank435 || 7960  12 42525 38 [] 31.804993867874146secs 
+question 325: 1 rank2 || 1  1 13 13 [] 29.52428436279297secs 
+question 326: 1 rank0 || 0  0 1 1 [' สุธีธร'] 11.809711217880249secs 
+question 327: 1 rank0 || 0  0 5 5 [] 15.683491230010986secs 
+question 328: 0 rank2012 || 18881  137 33185 226 ['โคลิน แอนดรูว์', '83', ' เฟิร์ธ'] 31.726888179779053secs 
+question 329: 0 rank4814 || 28966  cant find in shorttest 53083 43 ['โคลิน แอนดรูว์ เฟิร์ธ', "'"] 25.52522897720337secs 
+question 330: 1 rank0 || 1  1 5 2 [] 19.604748249053955secs 
+question 331: 1 rank0 || 1  1 9 2 [] 29.290016889572144secs 
+question 332: 1 rank0 || 4  0 10 3 [' อุรัส'] 13.137219667434692secs 
+question 333: 1 rank0 || 5  4 12 10 [] 19.698474884033203secs 
+question 334: 0 rank7127 || 54136  0 64430 1 [] 30.194387435913086secs 
+question 335: 0 rank12555 || 319091  556 1150128 1766 ['นพ.ชื่น พุทธิแพทย์'] 79.8378541469574secs 
+question 336: 1 rank1 || 3  3 8 8 [] 21.697519063949585secs 
+question 337: 1 rank1 || 17  17 252 252 [] 38.609973669052124secs 
+question 338: 1 rank1 || 10  cant find in shorttest 13 2 [] 20.870073080062866secs 
+question 339: 0 rank231 || 3734  19 7987 26 [] 15.54320478439331secs 
+question 340: 0 rank31 || 5652  15 7851 53 [] 23.49445652961731secs 
+question 341: 0 rank2724 || 41483  15 65494 53 [] 35.56924343109131secs 
+question 342: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 1982 1982 ['ประเทศฝรั่งเศ', 'โกต-ดาร์มอร์'] 29.457889080047607secs 
+question 343: 1 rank0 || 0  0 2 2 ['-'] 27.88405179977417secs 
+question 344: 0 rank659 || 2146  1 15783 12 ['5'] 36.50700283050537secs 
+question 345: 1 rank0 || 4  4 7 7 [] 20.307746171951294secs 
+question 346: 0 rank12 || 2251  46 2396 49 [] 19.573530197143555secs 
+question 347: 0 rank64 || 653  0 1371 1 [] 24.29084801673889secs 
+question 348: 0 rank69 || 653  14 1371 61 [] 16.964744329452515secs 
+question 349: 1 rank0 || 2  2 7 7 [] 22.63525128364563secs 
+question 350: 0 rank9 || 48  1 49 3 ['2509'] 38.16286873817444secs 
+question 351: 0 rank12959 || 659247  9 971858 21 ['บทนริศรา', '2555'] 89.39256143569946secs 
+question 352: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 1 1 ['-', '955', '959'] 32.059653759002686secs 
+question 353: 0 rank2943 || 41830  cant find in shorttest 106671 2 ['พระเจ้าเอ็ดวิกกษัตริย์'] 31.719280242919922secs 
+question 354: 1 rank0 || 4  6 18 15 [] 17.410167694091797secs 
+question 355: 0 rank755 || 1776  1 14477 89 ['2549'] 26.056347131729126secs 
+question 356: 0 rank3316 || 270960  0 971858 1 ['11'] 87.54675817489624secs 
+question 357: 0 rank5487 || 21171  cant find in shorttest 52825 6880 ['ราอุล อัลบิโอล', ' ตอร์ตาฆาดา'] 28.559467554092407secs 
+question 358: 0 rank11843 || 840192  4 1304195 5 [] 77.3341474533081secs 
+question 359: 0 rank88 || 9028  4 14430 5 [] 24.655422687530518secs 
+question 360: 0 rank78 || 5228  3 6266 5 [] 15.25342607498169secs 
+question 361: 0 rank9889 || 268779  3 770922 4 [] 45.87791085243225secs 
+question 362: 0 rank9889 || 268779  3 770922 4 [] 68.14374947547913secs 
+question 363: 0 rank26 || 50  50 63 63 ['วิลเลียม เวิร์ดสเวิร์ธกวี'] 22.551081895828247secs 
+question 364: 0 rank8659 || 83420  1 149958 2 [] 39.646894693374634secs 
+question 365: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 21097 253 ['2551'] 36.881957054138184secs 
+question 366: 0 rank872 || 11320  4 25593 9 [' แบน', 'ม็อสตาฟา'] 46.97325563430786secs 
+question 367: 0 rank69 || 208  4 483 9 [' แบน', 'ม็อสตาฟา'] 47.48846220970154secs 
+question 368: 1 rank0 || 0  0 8 1 [] 18.99552059173584secs 
+question 369: 0 rank58 || 1134  0 1338 1 [] 18.776817560195923secs 
+question 370: 1 rank0 || 0  0 4 4 [] 9.07598614692688secs 
+question 371: 0 rank3127 || 4880  cant find in shorttest 14430 2 [] 22.994571208953857secs 
+question 372: 1 rank2 || 0  0 8 8 [] 27.571322202682495secs 
+question 373: 1 rank2 || 0  0 8 8 ['-', '1832', '1840'] 38.99079346656799secs 
+question 374: 1 rank1 || 94  7 226 20 [] 16.589837551116943secs 
+question 375: 1 rank0 || 94  19 226 109 [] 20.042146921157837secs 
+question 376: 1 rank0 || 0  0 1 1 [] 9.638347387313843secs 
+question 377: 1 rank0 || 0  0 1 1 [] 10.356625080108643secs 
+question 378: 1 rank0 || 0  0 2 2 [] 49.41021800041199secs 
+question 379: 0 rank11834 || 804124  6 1304195 8 [] 78.06062078475952secs 
+question 380: 1 rank0 || 2  2 6 6 [] 13.340638875961304secs 
+question 381: 0 rank1177 || 16489  cant find in shorttest 20645 330 ['พอล เอ็ดการ์ ฟีลิป ', '2547'] 38.32406663894653secs 
+question 382: 0 rank12 || 649  649 752 752 [] 18.823386192321777secs 
+question 383: 1 rank2 || 148  148 214 214 ['6'] 25.822027444839478secs 
+question 384: 1 rank0 || 0  0 1 1 [] 13.059417724609375secs 
+question 385: 0 rank4395 || 26303  1 45556 2 [] 21.041910648345947secs 
+question 386: 0 rank1053 || 20696  0 26174 1 ['54'] 29.755054712295532secs 
+question 387: 1 rank0 || 0  0 2 2 ['เคโซ', '54'] 35.44442677497864secs 
+question 388: 0 rank849 || 14392  6 25619 9 [] 35.22606325149536secs 
+question 389: 0 rank1245 || 14392  13 25619 20 [] 45.239325284957886secs 
+question 390: 0 rank14398 || 437069  0 770922 1 [] 55.956944942474365secs 
+question 391: 0 rank4609 || 40753  0 72032 1 [] 41.941713094711304secs 
+question 392: 0 rank3223 || 1164  1 58558 3 [] 35.387001037597656secs 
+question 393: 0 rank260 || 2382  32 5614 59 [] 39.44381523132324secs 
+question 394: 0 rank659 || 5666  cant find in shorttest 10177 2 [] 25.9157612323761secs 
+question 395: 0 rank69 || 644  27 1818 34 [' แด'] 28.961915254592896secs 
+question 396: 1 rank2 || 33  33 38 38 [' ยูนีค ทาวเวอร์'] 18.105104446411133secs 
+question 397: 0 rank2428 || 51138  33 53083 38 ['..', ' ยูนีค ทาวเวอร์'] 42.22410273551941secs 
+question 398: 1 rank0 || 0  0 3 3 [] 16.01583743095398secs 
+question 399: 1 rank0 || 11  11 21 21 ['คาฮันดิง'] 20.63575530052185secs 
+question 400: 1 rank0 || 0  0 3 3 [] 14.262261390686035secs 
+question 401: 0 rank106 || 194  cant find in shorttest 777 142 [] 40.70407485961914secs 
+question 402: 0 rank7923 || 291285  1483 770922 3450 [' คือ', 'ส่ง เทพพิมล'] 44.872997522354126secs 
+question 403: 0 rank6 || 32  32 39 39 [] 31.29951047897339secs 
+question 404: 0 rank1217 || 39856  31 58558 39 ['เดอะมิวสิคัล คือ'] 48.30117106437683secs 
+question 405: 1 rank2 || 52  1 130 4 ['2006'] 27.421257734298706secs 
+question 406: 0 rank500 || 2656  1 9547 4 ['2006'] 24.900373458862305secs 
+question 407: 0 rank3055 || 4137  0 42525 13 [] 39.38111710548401secs 
+question 408: 0 rank29 || 146  cant find in shorttest 181 6 [' เชงเคอร์ส'] 30.13351607322693secs 
+question 409: 0 rank17 || 311  cant find in shorttest 1509 1 [] 27.821557998657227secs 
+question 410: 1 rank0 || 1  1 6 6 [] 20.88569712638855secs 
+question 411: 1 rank0 || 1  1 6 6 [] 11.731607437133789secs 
+question 412: 0 rank11592 || cant find in best tf-idf  2 770922 3 ['Cedeno'] 56.95869207382202secs 
+question 413: 1 rank0 || 0  0 7 7 ['27', '2531'] 39.12374186515808secs 
+question 414: 1 rank0 || 0  0 3 3 ['11'] 22.503275394439697secs 
+question 415: 1 rank0 || 0  0 3 3 [] 40.443581342697144secs 
+question 416: 1 rank0 || 5  5 10 10 ['แอมานุแอล โลร็อง'] 26.243807792663574secs 
+question 417: 0 rank677 || 18111  2108 25593 2534 ['-', '1998', '3', '0'] 50.581509828567505secs 
+question 418: 1 rank0 || 3  3 28 28 ['1950'] 18.30308246612549secs 
+question 419: 0 rank12 || 20190  8 22955 10 ['1'] 39.253296852111816secs 
+question 420: 0 rank785 || 929  cant find in shorttest 1977 12 [] 46.67647886276245secs 
+question 421: 0 rank7 || 7751  0 72032 28 [] 28.35416316986084secs 
+question 422: 1 rank1 || 1  0 19 9 ['7'] 22.954532623291016secs 
+question 423: 0 rank21 || 156  43 366 111 [] 12.512669324874878secs 
+question 424: 0 rank18 || 156  cant find in shorttest 366 57 [] 11.669121026992798secs 
+question 425: 1 rank0 || 0  0 2 2 ['2490'] 27.493549346923828secs 
+question 426: 0 rank228 || 2523  1406 3030 1585 [] 17.808261156082153secs 
+question 427: 0 rank7710 || 651783  1 770922 3 [] 45.234869718551636secs 
+question 428: 1 rank0 || 0  0 2 2 [] 36.15382385253906secs 
+question 429: 0 Cant find doc || 621756  cant find in shorttest 770922 4946 ['ยงยศ อรุณเวสสะเศรษฐ คือ'] 37.27414798736572secs 
+question 430: 0 rank675 || 4768  4768 6249 6249 ['เจมส์ กิบสัน'] 30.259470462799072secs 
+question 431: 0 rank6389 || 477500  5 770922 8 [' คือ'] 45.20707654953003secs 
+question 432: 0 rank847 || 21108  3 26174 4 [] 27.4881591796875secs 
+question 433: 1 rank0 || 5  5 9 9 [' คือ'] 5.951660394668579secs 
+question 434: 1 rank0 || 3  3 10 10 [] 9.700835227966309secs 
+question 435: 0 rank622 || 5582  176 17572 559 [] 19.54226326942444secs 
+question 436: 0 rank10044 || 316433  176 971858 559 [] 70.01514053344727secs 
+question 437: 0 rank87 || 1127  cant find in shorttest 1311 2 [] 15.346367359161377secs 
+question 438: 1 rank0 || 0  0 3 3 [] 24.97196054458618secs 
+question 439: 0 rank27 || 270  4 282 5 [] 27.118600368499756secs 
+question 440: 1 rank1 || 1  1 5 5 [] 25.10345196723938secs 
+question 441: 1 rank0 || 9  8 17 15 [] 16.043091535568237secs 
+question 442: 1 rank0 || 9  8 17 15 [] 18.10480308532715secs 
+question 443: 0 rank504 || 12210  0 13300 1 [] 34.71055579185486secs 
+question 444: 1 rank0 || 0  0 3 3 [] 35.86653757095337secs 
+question 445: 0 rank100 || 38794  8 58558 19 [] 40.13965964317322secs 
+question 446: 1 rank5 || 179  8 209 19 ['"', '2558'] 27.967742681503296secs 
+question 447: 1 rank0 || 0  0 1 1 [] 15.027400016784668secs 
+question 448: 0 rank3935 || 3193  cant find in shorttest 12185 4946 ['สวัสดิ์ จำปาศรี มี'] 19.932794094085693secs 
+question 449: 0 rank1708 || 30394  9 52825 15 [' กลอมบ์', 'เชื่้อชาติ'] 30.586531400680542secs 
+question 450: 0 rank1708 || 30394  9 52825 15 [' กลอมบ์'] 66.27303266525269secs 
+question 451: 1 rank0 || 4  4 21 21 [] 25.701570510864258secs 
+question 452: 0 rank218 || 3601  17 3602 18 [' เฮทเซนาวเออร์'] 47.17606496810913secs 
+question 453: 0 rank9798 || cant find in best tf-idf  1 770922 2 [' คือ'] 43.99303102493286secs 
+question 454: 0 rank11173 || 850069  1 1150128 2 [] 66.66305494308472secs 
+question 455: 0 rank1363 || 14204  17 14205 18 [' เฮทเซนาวเออร์'] 45.68032431602478secs 
+question 456: 0 rank285 || 147  cant find in shorttest 1188 5 [] 24.65043544769287secs 
+question 457: 0 rank8 || 2648  30 2895 44 [] 19.745100498199463secs 
+question 458: 1 rank0 || 1  cant find in shorttest 18 6 [] 17.35521626472473secs 
+question 459: 0 rank28 || 7861  cant find in shorttest 10121 2 [] 30.039787530899048secs 
+question 460: 1 rank0 || 0  0 5 1 [' อิโต'] 35.257306814193726secs 
+question 461: 1 rank5 || 119  13 353 45 ['2538', '-', '2543'] 37.553643465042114secs 
+question 462: 0 rank8 || 119  5 353 8 [] 52.28423237800598secs 
+question 463: 0 rank4874 || 48418  cant find in shorttest 53083 22 ['2016'] 32.83600473403931secs 
+question 464: 1 rank5 || 45  cant find in shorttest 426 1 [] 23.088301181793213secs 
+question 465: 1 rank4 || 45  0 426 1 [] 15.80877161026001secs 
+question 466: 0 rank117 || 3812  0 4080 3 [] 32.38302206993103secs 
+question 467: 1 rank0 || 0  0 3 3 [' คือ'] 5.8732850551605225secs 
+question 468: 0 rank2581 || 4898  93 42525 306 [] 18.964272260665894secs 
+question 469: 0 rank8 || 20  20 40 40 [] 17.386523485183716secs 
+question 470: 0 Cant find doc || 690813  cant find in shorttest 1304195 6880 ['สภาแห่งชาติเซเนกัล'] 59.60183644294739secs 
+question 471: 0 rank84 || 942  cant find in shorttest 1345 12 ['ๆ', 'คือใคร'] 18.59137201309204secs 
+question 472: 0 rank8 || 436  10 486 17 [] 31.968732595443726secs 
+question 473: 0 rank2509 || 9008  481 54114 6282 ['รองศาสตราจารย์โคทม อารียา'] 31.39321804046631secs 
+question 474: 1 rank0 || 6  6 22 22 ['2014'] 36.04038715362549secs 
+question 475: 1 rank5 || 25  25 26 26 [] 22.432210206985474secs 
+question 476: 1 rank1 || 5  3 9 4 [] 23.588178873062134secs 
+question 477: 1 rank0 || 4  4 566 566 [] 9.544317722320557secs 
+question 478: 0 rank8 || 443  cant find in shorttest 12250 6880 [] 19.948414087295532secs 
+question 479: 0 rank21 || 7  7 85 85 ['2010'] 39.24074387550354secs 
+question 480: 0 rank7140 || 127065  cant find in shorttest 1304195 25 [' เลวิน'] 90.13189435005188secs 
+question 481: 0 rank95 || 2692  0 3273 1 [] 30.59154510498047secs 
+question 482: 0 rank95 || 2692  0 3273 1 [] 21.775782108306885secs 
+question 483: 1 rank0 || 21  21 81 81 [] 12.95007038116455secs 
+question 484: 1 rank0 || 0  0 1 1 [] 25.764063358306885secs 
+question 485: 0 Cant find doc || 945741  cant find in shorttest 971858 205 ['อเล็กซิส ซิปราส'] 65.72381615638733secs 
+question 486: 0 rank6 || 1  1 15 15 ['2'] 28.363664150238037secs 
+question 487: 1 rank1 || 3  cant find in shorttest 22 12 ['2'] 27.04019260406494secs 
+question 488: 1 rank4 || 9  9 138 138 [] 23.82250165939331secs 
+question 489: 1 rank0 || 2  2 8 8 [] 11.356697797775269secs 
+question 490: 1 rank0 || 2  2 8 8 [] 29.805466890335083secs 
+question 491: 1 rank0 || 1  0 17 1 [] 31.445706605911255secs 
+question 492: 0 rank561 || 15009  cant find in shorttest 25593 1 ['โอสมาร์ อิบัญเญซ '] 33.17936706542969secs 
+question 493: 1 rank2 || 21  21 55 55 [')', '('] 14.762145042419434secs 
+question 494: 1 rank2 || 21  21 55 55 [')', '('] 12.215864896774292secs 
+question 495: 0 rank979 || 12519  cant find in shorttest 14379 19 [] 30.69587993621826secs 
+question 496: 0 rank1585 || 17081  cant find in shorttest 20645 19 ['2498'] 32.27363634109497secs 
+question 497: 0 rank7009 || 57664  307 72032 342 ['นายฉลอง สิมะเสถียร'] 40.337441205978394secs 
+question 498: 0 Cant find doc || 1002794  cant find in shorttest 1304195 6 ['คุณสุรเกียรติ บุนนาค'] 73.23767495155334secs 
+question 499: 0 rank5579 || 42154  cant find in shorttest 53083 6880 ['2555', 'คุณสุรเกียรติ บุนนาค'] 35.434115409851074secs 
+question 500: 1 rank0 || 1  1 8 8 [] 51.847251653671265secs 
+question 501: 1 rank0 || 1  1 8 2 [] 71.09960556030273secs 
+question 502: 0 rank357 || 36264  4 121560 13 ['5', '1950'] 198.6556854248047secs 
+question 503: 0 rank7 || 125  61 131 65 [] 47.504926681518555secs 
+question 504: 1 rank0 || 0  0 3 3 [] 50.900436878204346secs 
+question 505: 1 rank0 || 0  0 2 2 [] 31.682312965393066secs 
+question 506: 1 rank0 || 0  0 2 2 [] 32.17699360847473secs 
+question 507: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 1 1 [] 17.676790714263916secs 
+question 508: 1 rank0 || 1  1 3 3 [] 22.748488426208496secs 
+question 509: 1 rank0 || 1  1 3 3 [] 19.04310154914856secs 
+question 510: 1 rank0 || 15  15 25 25 [] 47.12796974182129secs 
+question 511: 1 rank0 || 15  15 25 25 [] 32.74797606468201secs 
+question 512: 0 rank3758 || 62274  739 107032 1143 ['โทมัส คริสเตียนเซน', 'เมืองอาฮุส ประเทศ'] 54.384257078170776secs 
+question 513: 0 rank314 || 2063  1766 3774 3233 [] 21.995866298675537secs 
+question 514: 0 rank7127 || 536215  362 770922 500 [] 50.78525424003601secs 
+question 515: 1 rank0 || 3  3 6 6 [' มี'] 18.00984001159668secs 
+question 516: 0 rank36 || 43  43 331 331 [] 24.657091856002808secs 
+question 517: 0 rank36 || 43  43 331 331 ['อัฐมาศ ', 'อัศววิมล'] 29.142106533050537secs 
+question 518: 0 rank799 || 15740  7 18595 12 [] 15.089667081832886secs 
+question 519: 0 rank245 || 40224  0 53665 2 ['งอกหน้ากระดาน'] 43.77430820465088secs 
+question 520: 0 rank12427 || 351714  0 1304195 3 [] 91.66949844360352secs 
+question 521: 0 rank12 || 44  44 53 53 [] 36.71785497665405secs 
+question 522: 1 rank0 || 3  3 6 6 [] 18.625980377197266secs 
+question 523: 0 rank40 || 1054  32 1128 88 ['1', '2555'] 50.18005561828613secs 
+question 524: 1 rank0 || 2  2 8 8 [] 13.320339441299438secs 
+question 525: 0 rank1549 || 129147  64 770922 618 ['เบคแคม'] 52.36604404449463secs 
+question 526: 1 rank0 || 4  4 45 45 [] 44.91893482208252secs 
+question 527: 1 rank0 || 0  0 12 12 [] 37.018054485321045secs 
+question 528: 1 rank0 || 0  0 12 12 ['2443'] 23.62016224861145secs 
+question 529: 0 rank1751 || 13271  237 18595 449 ['7'] 29.121222496032715secs 
+question 530: 0 rank1030 || 24461  28 33185 72 [' เปื้อง'] 25.68828797340393secs 
+question 531: 1 rank0 || 1  1 4 4 [] 16.549763441085815secs 
+question 532: 1 rank0 || 0  0 2 2 [] 32.72968864440918secs 
+question 533: 0 rank1091 || 19698  0 72032 5 ['5'] 54.190037965774536secs 
+question 534: 1 rank2 || 97  0 221 5 [] 40.975537061691284secs 
+question 535: 0 rank409 || 11221  2 30230 4 ['4'] 40.60082387924194secs 
+question 536: 0 rank18 || 268  268 593 593 [] 36.677950620651245secs 
+question 537: 0 Cant find doc || 537482  cant find in shorttest 662344 1 [] 58.302850008010864secs 
+question 538: 0 rank3116 || 81758  2946 107032 3759 ['"'] 38.20480990409851secs 
+question 539: 0 rank509 || 9273  cant find in shorttest 12024 78 ['1675', '1646', '-'] 24.618724584579468secs 
+question 540: 1 rank1 || 19  19 28 28 ['พระเจ้าเจี่ย'] 32.14407658576965secs 
+question 541: 0 rank6707 || 283039  107 971858 210 ['2489'] 93.45025420188904secs 
+question 542: 0 rank88 || 646  cant find in shorttest 1197 1 [] 17.749518156051636secs 
+question 543: 1 rank2 || 0  0 14 1 ['2538'] 43.66871762275696secs 
+question 544: 0 rank1012 || 12525  2 25593 4 ['อินตาลี'] 20.348610162734985secs 
+question 545: 1 rank0 || 2  2 4 4 [] 7.947755575180054secs 
+question 546: 0 rank158 || 1059  1059 1933 1933 [] 21.4337100982666secs 
+question 547: 0 rank148 || 1059  0 1933 1 [] 17.353615283966064secs 
+question 548: 0 Cant find doc || 58902  cant find in shorttest 82260 6626 ['มาร์ติน แอนโทนี ลันด์', 'มยปล้ำ'] 33.0985689163208secs 
+question 549: 0 rank862 || 3281  3281 6249 6249 ['มาร์ติน แอนโทนี ลันด์'] 16.74424457550049secs 
+question 550: 1 rank0 || 3  0 23 1 [] 26.16307258605957secs 
+question 551: 1 rank1 || 0  0 11 2 [] 9.216310977935791secs 
+question 552: 1 rank0 || 0  0 2 2 [] 14.269859313964844secs 
+question 553: 0 rank4669 || 245626  cant find in shorttest 971858 1132 [] 70.92242908477783secs 
+question 554: 0 rank10 || 151  9 384 12 [] 19.303405046463013secs 
+question 555: 0 rank2485 || 33345  9 53083 12 ['2532'] 48.85474181175232secs 
+question 556: 1 rank0 || 3  3 13 13 [] 4.926830053329468secs 
+question 557: 0 rank2627 || 54012  326 72032 656 ['ฮัน จี-'] 44.84756922721863secs 
+question 558: 1 rank5 || 9  4 18 7 ['ชิน', ' คือ', ' บิ'] 39.719565868377686secs 
+question 559: 1 rank0 || 3  cant find in shorttest 7 6 [] 39.73479223251343secs 
+question 560: 1 rank0 || 0  0 1 1 [] 39.03466510772705secs 
+question 561: 1 rank2 || 22  4 39 6 ['เขียน', '2548'] 39.02568531036377secs 
+question 562: 1 rank2 || 36  0 61 4 [] 41.74053907394409secs 
+question 563: 1 rank2 || 36  1 61 3 [] 26.494182586669922secs 
+question 564: 0 rank1229 || 4081  2 12250 15 [] 41.65403771400452secs 
+question 565: 1 rank0 || 0  0 2 2 ['23', '1'] 29.841238021850586secs 
+question 566: 1 rank0 || 0  0 1 1 [] 43.0369656085968secs 
+question 567: 1 rank0 || 1  1 4 4 [] 31.38411235809326secs 
+question 568: 0 rank1742 || 22162  0 58558 1 ['1986', 'คริสโตฟ กีย์ เดนีส์'] 45.05143451690674secs 
+question 569: 1 rank1 || 17  17 24 24 [] 11.553217649459839secs 
+question 570: 0 rank4812 || 270419  17 275379 24 [] 42.786641120910645secs 
+question 571: 0 rank4487 || 30826  cant find in shorttest 72032 1264 ['กัญภัส ศรีณรงค์'] 41.789361238479614secs 
+question 572: 0 Cant find doc || 47311  cant find in shorttest 113479 16497 ['กัญภัส ศรีณรงค์'] 16.44404911994934secs 
+question 573: 1 rank0 || 7  7 15 15 [] 21.20590615272522secs 
+question 574: 1 rank0 || 7  7 15 15 ['อู่เยว่'] 21.053725481033325secs 
+question 575: 1 rank0 || 1  1 6 6 [] 19.80609679222107secs 
+question 576: 0 rank613 || 20210  4772 26858 5717 ['10', 'เมืองใด', '1934'] 41.31054401397705secs 
+question 577: 0 rank510 || 20210  84 26858 111 ['4', '1934', ')', '('] 41.25279927253723secs 
+question 578: 1 rank1 || 2  2 68 68 [] 16.520777702331543secs 
+question 579: 0 Cant find doc || 255017  cant find in shorttest 1304195 6880 ['โรงเรียนสาธิตมหาวิทยาลัยสารคาม'] 73.78278636932373secs 
+question 580: 1 rank0 || 0  0 3 3 [] 16.774163007736206secs 
+question 581: 1 rank0 || 0  0 3 3 [] 21.068685293197632secs 
+question 582: 1 rank4 || 378  cant find in shorttest 417 2 [] 14.38355565071106secs 
+question 583: 1 rank5 || 378  cant find in shorttest 417 8 [] 17.78047466278076secs 
+question 584: 1 rank2 || 10  10 51 51 [] 15.695048332214355secs 
+question 585: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 10 10 [] 49.941510915756226secs 
+question 586: 1 rank0 || 1  1 3 3 [] 18.31504535675049secs 
+question 587: 1 rank0 || 1  1 3 3 [] 26.511139392852783secs 
+question 588: 0 rank13 || 122  cant find in shorttest 247 27 ['2549'] 21.163430213928223secs 
+question 589: 1 rank0 || 0  0 3 3 [] 9.687108039855957secs 
+question 590: 1 rank0 || 0  0 2 2 [] 16.44607663154602secs 
+question 591: 0 rank2186 || 43706  7 45556 11 [] 17.957964658737183secs 
+question 592: 1 rank0 || 7  7 11 11 [] 8.958055973052979secs 
+question 593: 0 rank12 || 220  8 290 40 [] 16.966649055480957secs 
+question 594: 1 rank0 || 0  0 2 2 [] 21.704984188079834secs 
+question 595: 1 rank1 || 4  4 5 5 [] 14.059357404708862secs 
+question 596: 0 rank2303 || 35515  563 42525 745 [] 28.51284956932068secs 
+question 597: 1 rank0 || 5  5 12 12 [] 10.012212991714478secs 
+question 598: 0 rank54 || 452  0 1725 3 [] 31.76014804840088secs 
+question 599: 1 rank0 || 0  0 1 1 [] 11.51517939567566secs 
+question 600: 1 rank0 || 0  0 1 1 [] 21.586827039718628secs 
+question 601: 0 rank779 || cant find in best tf-idf  0 12250 3 [] 20.738569021224976secs 
+question 602: 1 rank0 || 14  14 94 94 [] 51.55581712722778secs 
+question 603: 0 rank23 || 8  3 115 21 ['เกาะอะไร'] 21.862563371658325secs 
+question 604: 0 rank37 || 208  3 1188 21 ['การบินใด'] 24.231234312057495secs 
+question 605: 1 rank0 || 0  0 1 1 [] 27.238194704055786secs 
+question 606: 0 rank319 || 4515  10 5614 16 [] 34.08194136619568secs 
+question 607: 1 rank0 || 12  12 34 34 [] 18.7568256855011secs 
+question 608: 1 rank0 || 12  12 34 34 ['ฉายาบุญเพ็ง'] 20.497212171554565secs 
+question 609: 1 rank0 || 3  3 16 8 [')', '('] 21.971011877059937secs 
+question 610: 0 rank9332 || 429798  2 1304195 35 [] 91.90140080451965secs 
+question 611: 0 rank912 || 46372  8 72032 25 ['2', '1'] 31.356589555740356secs 
+question 612: 1 rank0 || 25  cant find in shorttest 95 76 [] 22.77808117866516secs 
+question 613: 0 rank771 || cant find in best tf-idf  0 2607 6 ['1998', '64', '%'] 18.717432737350464secs 
+question 614: 1 rank1 || 3  3 20 20 [] 20.261803150177002secs 
+question 615: 0 rank61 || 547  547 851 851 [] 25.398552417755127secs 
+question 616: 0 rank61 || 547  547 851 851 [] 13.542799949645996secs 
+question 617: 0 rank20 || 774  155 5975 1346 ['ๆ'] 44.24174737930298secs 
+question 618: 0 rank221 || 2318  0 2359 1 [] 22.02612590789795secs 
+question 619: 0 rank678 || 19991  0 21379 1 [] 33.07716631889343secs 
+question 620: 1 rank0 || 0  0 3 3 ['ดร. อักษร'] 28.879613161087036secs 
+question 621: 1 rank0 || 0  0 3 3 [' บอร์เนียว'] 27.068761587142944secs 
+question 622: 0 rank407 || 8946  73 15522 157 ['สมิหลา '] 39.07655334472656secs 
+question 623: 0 rank5465 || 83413  0 107032 1 ['1957'] 73.43351435661316secs 
+question 624: 0 rank303 || 5405  13 30230 32 [] 30.772240161895752secs 
+question 625: 1 rank1 || 94  cant find in shorttest 192 13 [] 23.435019493103027secs 
+question 626: 1 rank0 || 1  1 5 5 [] 21.039170026779175secs 
+question 627: 0 rank5315 || 17320  7 45556 31 [] 29.329826593399048secs 
+question 628: 1 rank4 || 58  14 146 47 [] 19.598031997680664secs 
+question 629: 0 rank21 || 917  917 1753 1753 [] 49.251094341278076secs 
+question 630: 0 rank1297 || 2311  23 12185 48 [' บัวไทย'] 19.40136194229126secs 
+question 631: 0 rank14425 || cant find in best tf-idf  0 85313 1 [] 20.207946300506592secs 
+question 632: 0 rank37 || 443  9 640 18 [' หมู', 'สำนักพิมพ์อะไร'] 33.11348843574524secs 
+question 633: 1 rank0 || 6229  6229 11107 11107 ['2510'] 56.54220414161682secs 
+question 634: 0 rank41 || 2923  26 19703 216 [] 29.28565788269043secs 
+question 635: 0 rank317 || 1427  cant find in shorttest 7624 34 [] 17.52774477005005secs 
+question 636: 0 rank3562 || 247645  40 971858 65 [] 84.79556274414062secs 
+question 637: 0 rank1312 || 755  cant find in shorttest 11344 11 ['2'] 37.24657154083252secs 
+question 638: 1 rank3 || 433  433 535 535 [] 22.735230922698975secs 
+question 639: 0 rank34 || 553  0 730 2 [] 12.728977918624878secs 
+question 640: 1 rank2 || 2  2 12 12 [] 23.45829701423645secs 
+question 641: 0 rank2035 || 26188  2 45556 7 [' พุ่มสุโข'] 45.9003119468689secs 
+question 642: 1 rank0 || 1  0 4 1 [] 23.21362328529358secs 
+question 643: 0 rank1723 || 10739  cant find in shorttest 12024 80 ['พระเจ้าจู'] 41.64134216308594secs 
+question 644: 0 rank1723 || 10739  cant find in shorttest 12024 80 ['พระเจ้าจู', '13'] 49.77171015739441secs 
+question 645: 0 rank162 || 5058  1 14430 8 [] 25.527479648590088secs 
+question 646: 0 rank195 || 3255  cant find in shorttest 6266 6 [] 24.893499851226807secs 
+question 647: 1 rank0 || 2  2 11 11 [] 27.620472192764282secs 
+question 648: 1 rank0 || 0  0 1 1 ['กา ปืกเกอ'] 38.743037939071655secs 
+question 649: 0 rank2062 || 497575  951 662344 1208 [] 51.31786513328552secs 
+question 650: 0 rank2062 || 497575  951 662344 1208 ['ชาย'] 56.09491157531738secs 
+question 651: 1 rank0 || 3  0 20 1 [] 27.509543657302856secs 
+question 652: 1 rank0 || 3  3 20 20 [] 29.130142211914062secs 
+question 653: 1 rank0 || 7  7 630 630 [] 15.302094221115112secs 
+question 654: 1 rank0 || 1  1 11 2 [] 22.795320987701416secs 
+question 655: 0 rank46 || 997  1 1412 11 [] 22.372202157974243secs 
+question 656: 1 rank0 || 6  6 19 19 [] 13.2475905418396secs 
+question 657: 0 rank1985 || 47564  9 58558 12 [] 60.11314153671265secs 
+question 658: 0 rank1284 || cant find in best tf-idf  1 12737 3 [] 14.930091857910156secs 
+question 659: 1 rank0 || 0  1 4 2 ['-', 'Jamal ad'] 22.394328355789185secs 
+question 660: 0 rank21 || cant find in best tf-idf  1 70 3 ['-'] 23.86389398574829secs 
+question 661: 0 rank2826 || 45800  83 58558 137 [] 40.111886501312256secs 
+question 662: 0 rank3413 || 93508  180 107032 198 ['25', '2560'] 63.29751420021057secs 
+question 663: 0 rank1359 || 14242  42 26858 88 [] 46.11468195915222secs 
+question 664: 0 rank1787 || 43173  543 58558 621 [] 52.35024547576904secs 
+question 665: 0 rank9805 || 810339  23 971858 31 ['.', '15', '19', '-'] 146.66138243675232secs 
+question 666: 1 rank0 || 2  2 7 7 [] 21.86560869216919secs 
+question 667: 0 rank1579 || 61043  1 107032 3 [] 73.22441387176514secs 
+question 668: 0 rank31 || 298  cant find in shorttest 319 2 [] 28.120724201202393secs 
+question 669: 0 rank2919 || 37243  cant find in shorttest 45556 2 [] 35.591004610061646secs 
+question 670: 0 rank1328 || 95  64 52825 6842 ['พันตรีหญิง อุดมพร พลศักดิ์'] 38.723564863204956secs 
+question 671: 0 rank7288 || 95  cant find in shorttest 52825 984 ['พันตรีหญิง อุดมพร พลศักดิ์'] 28.116843461990356secs 
+question 672: 0 rank743 || 2649  30 14430 75 ['เพชรไทย '] 21.50651264190674secs 
+question 673: 1 rank0 || 2  2 8 8 [' นพจินดา'] 23.238863468170166secs 
+question 674: 1 rank0 || 0  0 1 1 [] 29.557868480682373secs 
+question 675: 1 rank1 || 21  2 56 9 [] 23.529099941253662secs 
+question 676: 1 rank0 || 0  0 1 1 ['11'] 46.894136905670166secs 
+question 677: 1 rank0 || 0  0 1 1 ['หลู่ ', '20'] 50.208783864974976secs 
+question 678: 1 rank0 || 0  0 2 2 ['20'] 82.16207981109619secs 
+question 679: 1 rank0 || 6  6 22 22 [] 24.651479482650757secs 
+question 680: 1 rank3 || 58  58 139 139 [] 20.08447575569153secs 
+question 681: 0 rank2203 || 19148  96 53083 258 ['2'] 45.35434079170227secs 
+question 682: 0 rank2203 || 19148  96 53083 258 ['5', '2551', '2'] 70.98489880561829secs 
+question 683: 0 rank6 || 33  33 60 60 [] 44.866968393325806secs 
+question 684: 1 rank5 || 18  18 33 33 ['เจ้าหญิงลัลลา มาลิกะฮ์', '5'] 34.56876254081726secs 
+question 685: 1 rank0 || 5  5 29 29 [] 20.604975700378418secs 
+question 686: 0 rank3306 || 7693  cant find in shorttest 12095 27 [] 10.306596040725708secs 
+question 687: 0 rank388 || 4104  5 7222 14 ['94'] 41.278159379959106secs 
+question 688: 0 rank7287 || 163465  cant find in shorttest 770922 4946 ['นายพุทธิพงษ์ ปุณณกันต์ คือ'] 50.94541072845459secs 
+question 689: 1 rank0 || 2  2 7 7 [] 10.901787519454956secs 
+question 690: 1 rank0 || 0  0 1 1 [] 12.144320487976074secs 
+question 691: 1 rank0 || 3  3 10 10 [] 47.236116886138916secs 
+question 692: 1 rank0 || 2  2 5 5 [] 20.216949224472046secs 
+question 693: 1 rank0 || 0  0 5 5 [] 24.24427580833435secs 
+question 694: 1 rank0 || 0  0 1 1 [] 16.078704595565796secs 
+question 695: 1 rank0 || 0  0 1 1 ['2000'] 43.26282739639282secs 
+question 696: 1 rank0 || 4  4 7 7 [] 11.786504983901978secs 
+question 697: 0 rank1567 || 63545  4 72032 7 [] 35.957465171813965secs 
+question 698: 0 rank39 || 220  220 430 430 [] 56.89271092414856secs 
+question 699: 0 rank1461 || 15861  14 17508 18 [] 52.08000898361206secs 
+question 700: 1 rank0 || 3  1 11 2 [] 27.04013466835022secs 
+question 701: 1 rank0 || 0  0 1 1 [] 7.257758855819702secs 
+question 702: 0 rank7919 || 33723  0 45556 1 [] 23.252987146377563secs 
+question 703: 1 rank0 || 0  0 2 2 [] 24.615161657333374secs 
+question 704: 0 rank104 || 99  99 339 339 [' โจวี'] 19.51713752746582secs 
+question 705: 0 rank68 || 1224  10 9014 126 [] 19.790337324142456secs 
+question 706: 0 rank6 || 324  cant find in shorttest 621 44 ['อวกาศชาเลน'] 27.16195583343506secs 
+question 707: 1 rank0 || 0  0 5 5 [] 26.745529890060425secs 
+question 708: 1 rank1 || 92  8 621 56 [] 37.4780011177063secs 
+question 709: 0 rank206 || 1868  8 22955 56 ['2005', '26'] 47.44874858856201secs 
+question 710: 1 rank0 || 13  13 24 24 [] 26.095375299453735secs 
+question 711: 1 rank3 || 6  6 44 44 [] 33.14132118225098secs 
+question 712: 1 rank1 || 361  187 621 355 [] 30.98692536354065secs 
+question 713: 1 rank3 || 256  33 621 86 [] 21.05390501022339secs 
+question 714: 1 rank4 || 344  176 621 355 [] 24.20703673362732secs 
+question 715: 0 rank8 || 344  cant find in shorttest 621 72 [] 34.586488246917725secs 
+question 716: 0 rank276 || 14  1 2744 1216 ['เมืองใด'] 32.309754371643066secs 
+question 717: 0 rank959 || 2163  8 19703 80 [] 27.48823618888855secs 
+question 718: 1 rank5 || 0  0 12 12 ['อาตูคือ'] 21.406110763549805secs 
+question 719: 0 rank2139 || 25766  1 33147 5 [] 32.092422008514404secs 
+question 720: 1 rank0 || 6  6 76 76 [] 30.85902690887451secs 
+question 721: 1 rank1 || 3  3 12 12 ['-'] 35.149049282073975secs 
+question 722: 1 rank0 || 2  0 5 1 [] 24.374847412109375secs 
+question 723: 0 rank1174 || 18093  31 72032 169 ['ดร. พิมพ์ใจ'] 40.899678230285645secs 
+question 724: 0 rank17 || 1  1 38 38 [] 16.819045782089233secs 
+question 725: 0 rank16 || 1  0 38 1 [] 40.57953238487244secs 
+question 726: 0 rank35 || 2  2 158 158 [] 29.393433570861816secs 
+question 727: 1 rank0 || 0  0 1 1 [] 19.050081729888916secs 
+question 728: 0 rank38 || 0  0 105 15 [] 30.36084771156311secs 
+question 729: 0 rank36 || 3  3 115 115 ['2549'] 37.97435641288757secs 
+question 730: 0 rank1070 || 6744  cant find in shorttest 11107 4 [] 33.67048096656799secs 
+question 731: 1 rank0 || 20  20 32 32 ['4'] 26.92200207710266secs 
+question 732: 0 rank331 || 22  22 932 932 ['2488', '2483'] 28.505923748016357secs 
+question 733: 1 rank0 || 5  5 21 21 ['5', '2390', '-', '2397'] 39.521408796310425secs 
+question 734: 0 rank4279 || 23390  6 66667 13 ['2390', '2397'] 40.039979696273804secs 
+question 735: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 312 312 ['ประเทศนามิ'] 36.13337540626526secs 
+question 736: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 293 293 [' มะโน', '10', '2527'] 35.95589733123779secs 
+question 737: 0 rank28 || 8  8 45 45 [] 31.970542907714844secs 
+question 738: 0 rank13 || 576  576 969 969 [] 42.33651781082153secs 
+question 739: 1 rank0 || 0  0 1 1 [] 34.68030285835266secs 
+question 740: 0 rank398 || 977  977 1698 1698 ['จัตวาทูนทิน'] 37.495779037475586secs 
+question 741: 1 rank2 || 1  1 24 24 ['1992', '-', '1999'] 30.486489295959473secs 
+question 742: 0 rank4844 || 33431  0 45556 3 [] 28.302414894104004secs 
+question 743: 0 rank5195 || 42706  0 53083 3 [] 37.114521503448486secs 
+question 744: 0 rank11 || 11  11 69 69 [] 38.49008393287659secs 
+question 745: 0 rank11 || 11  11 69 69 ['2537'] 30.54535222053528secs 
+question 746: 1 rank0 || 0  0 4 4 [] 13.958691358566284secs 
+question 747: 1 rank0 || 2  2 4 4 [] 24.2651424407959secs 
+question 748: 1 rank0 || 3  cant find in shorttest 8 1 [] 32.550968647003174secs 
+question 749: 1 rank0 || 0  0 2 2 ['2'] 39.29487872123718secs 
+question 750: 1 rank0 || 0  0 2 2 [] 27.690021991729736secs 
+question 751: 1 rank0 || 1  1 4 4 [] 14.078334331512451secs 
+question 752: 1 rank2 || 204  6 263 9 [] 13.874913454055786secs 
+question 753: 1 rank0 || 13  13 20 20 [] 12.089686393737793secs 
+question 754: 0 rank1622 || 548  371 20645 6984 ['2543'] 31.687300443649292secs 
+question 755: 0 rank68 || 1659  9 1853 11 [] 18.465610027313232secs 
+question 756: 1 rank4 || 36  1 70 2 ['หม่อมงามจิตต์ '] 16.103594064712524secs 
+question 757: 1 rank1 || 9  cant find in shorttest 28 4 [] 11.55910062789917secs 
+question 758: 0 rank4342 || 53691  0 71887 1 [] 29.183058500289917secs 
+question 759: 1 rank0 || 0  0 13 13 [' ภานุพันธุ์ ณ อยุธยา', '94'] 22.75511908531189secs 
+question 760: 1 rank0 || 1  1 18 18 [] 16.504884004592896secs 
+question 761: 1 rank0 || 5  5 16 16 [] 17.902151346206665secs 
+question 762: 1 rank0 || 5  5 16 16 [] 14.763537406921387secs 
+question 763: 1 rank0 || 5  5 10 10 [] 18.70400619506836secs 
+question 764: 1 rank0 || 3  3 6 6 ['ชุมพล สมรส'] 8.52122187614441secs 
+question 765: 1 rank0 || 1  1 5 5 [] 13.023898601531982secs 
+question 766: 1 rank0 || 0  0 2 2 [] 19.781126976013184secs 
+question 767: 0 rank356 || 549  549 1746 1746 ['หม่อมเจ้าครรชิตพล อาภากร '] 13.160887002944946secs 
+question 768: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 1150128 2 [] 70.62721514701843secs 
+question 769: 1 rank0 || 1  1 6 6 [] 16.359499216079712secs 
+question 770: 1 rank0 || 2  2 5 5 ['กระทรวงใด'] 8.227973461151123secs 
+question 771: 1 rank0 || 2  2 3 3 [] 13.612611770629883secs 
+question 772: 1 rank0 || 0  0 1 1 [] 7.249624490737915secs 
+question 773: 1 rank0 || 10  0 24 1 ['กับ'] 6.580444812774658secs 
+question 774: 1 rank0 || 3  3 9 9 [] 11.660796165466309secs 
+question 775: 1 rank0 || 3  3 9 9 [] 10.052131175994873secs 
+question 776: 0 rank1989 || 13349  10 45556 28 [] 20.31270670890808secs 
+question 777: 0 rank278 || 2610  10 8652 28 [] 10.42214322090149secs 
+question 778: 1 rank5 || cant find in best tf-idf  7 99 24 [] 17.713653564453125secs 
+question 779: 0 rank1200 || 53119  cant find in shorttest 332373 8711 ['ท่านผู้หญิงบัว สนิทวงศ์ สมรส'] 19.059056282043457secs 
+question 780: 0 rank4852 || 434826  6 770922 17 [] 54.61903381347656secs 
+question 781: 0 rank25 || 306  21 8652 99 [] 12.623196363449097secs 
+question 782: 1 rank0 || 1  1 4 4 [] 16.993578672409058secs 
+question 783: 0 rank923 || 5752  1 72032 47 [] 37.12582612037659secs 
+question 784: 0 rank7017 || 235578  135 662344 311 [] 53.154860496520996secs 
+question 785: 1 rank0 || 6  6 19 19 [] 17.703643321990967secs 
+question 786: 1 rank0 || 6  6 19 19 [] 12.252252340316772secs 
+question 787: 1 rank0 || 2  2 5 5 [] 20.736573696136475secs 
+question 788: 1 rank0 || 2  2 5 5 [] 15.550432920455933secs 
+question 789: 0 rank3105 || 13317  0 53083 5 [] 70.52881526947021secs 
+question 790: 0 rank441 || 9226  2 14379 5 [] 27.75828504562378secs 
+question 791: 0 rank576 || 1346  0 6260 7 [] 49.15100073814392secs 
+question 792: 0 rank150 || 7216  0 58558 1 [')', '('] 40.511157274246216secs 
+question 793: 1 rank0 || 1  1 4 4 [] 10.494947671890259secs 
+question 794: 1 rank0 || 5  5 10 10 ['หม่อมเจ้าจันทรศิริปริวัตร '] 18.03754186630249secs 
+question 795: 1 rank0 || 1  1 4 4 [] 23.59317183494568secs 
+question 796: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 1746 1746 ['หม่อมเจ้าจิตรปรีดี '] 15.669079303741455secs 
+question 797: 0 rank491 || cant find in best tf-idf  7 961 9 [] 18.413284301757812secs 
+question 798: 0 rank2683 || 9910  1582 23726 2594 ['หม่อมศิริพร ยุคล ณ '] 15.110572576522827secs 
+question 799: 1 rank0 || 4  0 12 2 [] 20.967706441879272secs 
+question 800: 0 rank14435 || cant find in best tf-idf  19 85313 25 ['หม่อมองค์'] 39.86033654212952secs 
+question 801: 0 rank11 || 41  43 203 161 [] 26.605229139328003secs 
+question 802: 1 rank0 || 0  0 2 2 [] 18.715571403503418secs 
+question 803: 0 rank1754 || 2512  2512 6481 6481 [' กฤดากร', 'พระวรวงศ์เธอ พระองค์เจ้าจรูญศักดิ์'] 16.829238653182983secs 
+question 804: 1 rank0 || 1  1 5 5 [] 13.632214307785034secs 
+question 805: 1 rank0 || 1  1 5 5 [] 7.801885604858398secs 
+question 806: 1 rank0 || 0  0 2 2 [] 24.072908878326416secs 
+question 807: 1 rank0 || 0  0 1 1 [' นพวงศ์'] 16.864686250686646secs 
+question 808: 1 rank0 || 2  2 17 17 [] 24.810948371887207secs 
+question 809: 1 rank1 || 4  cant find in shorttest 22 6 [] 20.339473485946655secs 
+question 810: 1 rank0 || 3  3 8 8 [] 17.345691680908203secs 
+question 811: 1 rank0 || 1  1 5 5 [] 22.670670986175537secs 
+question 812: 0 rank75 || 529  116 1746 161 ['เจ้าดนัยวรนุช '] 16.46575689315796secs 
+question 813: 1 rank0 || 0  0 3 3 [] 24.89031672477722secs 
+question 814: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 8652 8652 ['หม่อมเจ้าทิพยสัมพันธ์ อภิเษก'] 12.533858299255371secs 
+question 815: 0 rank9242 || 135009  1 662344 5 [] 63.42437696456909secs 
+question 816: 0 rank1720 || 4746  1 23726 5 [] 19.37453818321228secs 
+question 817: 0 rank1132 || 48773  192 58558 207 [] 53.736000061035156secs 
+question 818: 0 rank2152 || 17031  6 54731 10 [] 76.20761036872864secs 
+question 819: 0 rank1441 || 34939  cant find in shorttest 66667 4 [] 45.36937618255615secs 
+question 820: 1 rank0 || 1  1 8 8 [] 19.639496088027954secs 
+question 821: 1 rank0 || 1  1 8 8 [] 15.520350933074951secs 
+question 822: 1 rank1 || 5  5 9 9 [] 16.416532516479492secs 
+question 823: 1 rank0 || 1  1 4 4 [] 26.143690586090088secs 
+question 824: 0 rank336 || 25  0 1746 1 [] 20.299663305282593secs 
+question 825: 1 rank0 || 1  1 2 2 [] 16.66295051574707secs 
+question 826: 0 rank2653 || 63623  1 66667 2 [] 41.135579347610474secs 
+question 827: 1 rank0 || 0  0 3 3 [] 13.878816366195679secs 
+question 828: 1 rank0 || 0  0 1 1 [] 20.0497829914093secs 
+question 829: 1 rank0 || 11  11 60 60 [] 25.0520179271698secs 
+question 830: 1 rank1 || 3  3 16 16 [] 18.287418365478516secs 
+question 831: 1 rank0 || 4  4 25 25 [] 27.268269777297974secs 
+question 832: 1 rank0 || 3  3 7 7 [] 22.68951416015625secs 
+question 833: 1 rank0 || 3  3 7 7 [] 17.413374185562134secs 
+question 834: 0 rank597 || 1569  186 9016 1247 [] 48.75224781036377secs 
+question 835: 1 rank0 || 8  4 19 10 [] 25.09430170059204secs 
+question 836: 1 rank0 || 8  8 16 16 [] 23.768043756484985secs 
+question 837: 1 rank0 || 1  1 7 7 [] 35.69880199432373secs 
+question 838: 0 Cant find doc || 217083  cant find in shorttest 662344 10 [' ณ พิศณุโลก'] 67.11934661865234secs 
+question 839: 1 rank0 || 1  1 4 4 ['อะไ'] 61.84029579162598secs 
+question 840: 1 rank1 || 25  25 34 34 [] 14.032764434814453secs 
+question 841: 0 rank10082 || 625146  163 770922 210 [' หม่อมทวีวงศ์ถวัลยศักดิ์', 'หม่อมองค์'] 71.47646403312683secs 
+question 842: 1 rank0 || 5  5 16 16 [] 16.099151134490967secs 
+question 843: 0 rank210 || 2127  2 2740 3 [] 26.0758957862854secs 
+question 844: 0 rank11650 || 579119  540 770922 632 ['หม่อมองค์', ' ดร.ม.ร.ว.กัลยา ติงศภัทิย์'] 74.37143158912659secs 
+question 845: 1 rank1 || 1  1 2 2 [] 17.030601263046265secs 
+question 846: 0 rank452 || 37679  4 66667 11 [] 40.09248924255371secs 
+question 847: 1 rank1 || 4  4 5 5 [] 19.128634929656982secs 
+question 848: 1 rank4 || 9  9 10 10 ['หม่อมองค์'] 16.68175959587097secs 
+question 849: 0 rank41 || 1285  1 1338 2 ['หม่อมองค์'] 19.78986358642578secs 
+question 850: 1 rank0 || 1  1 5 5 [] 26.50538682937622secs 
+question 851: 1 rank0 || 1  1 5 5 ['หม่อมองค์'] 21.38687300682068secs 
+question 852: 1 rank0 || 0  0 5 5 ['สมเด็จพระองค์ใด'] 24.149023056030273secs 
+question 853: 1 rank2 || 6  6 8 8 ['สมเด็จพระองค์ใด'] 10.416924238204956secs 
+question 854: 1 rank0 || 0  0 2 2 ['สมเด็จพระองค์ใด', 'หญิงจุ่น'] 29.312487602233887secs 
+question 855: 1 rank0 || 2  2 4 4 [' คชเสนี'] 14.469380140304565secs 
+question 856: 1 rank0 || 1  cant find in shorttest 5 4 [] 27.559195280075073secs 
+question 857: 1 rank0 || 4  4 10 10 ['กิตติคุณ '] 20.258352279663086secs 
+question 858: 0 rank692 || 13608  4 66667 10 [] 40.452035665512085secs 
+question 859: 1 rank0 || 0  0 5 5 ['หม่อมองค์'] 16.10319209098816secs 
+question 860: 0 Cant find doc || 474501  cant find in shorttest 1150128 4 [] 92.00382995605469secs 
+question 861: 0 Cant find doc || 112197  cant find in shorttest 265122 19318 [' สมรส', 'หม่อมราชวงศ์พรระพี อาภากร'] 19.075915813446045secs 
+question 862: 1 rank0 || 0  0 1 1 [] 9.547901391983032secs 
+question 863: 1 rank2 || 0  0 8 8 [' ปันยารชุน สมรส'] 8.347954273223877secs 
+question 864: 1 rank0 || 4  3 8 6 ['หลาน', 'เจ้าจอมองค์'] 24.738775968551636secs 
+question 865: 1 rank0 || 1  1 8 8 [] 18.43402099609375secs 
+question 866: 0 rank150 || 820  820 961 961 ['มาลาทิพย์ ชยางกูร '] 13.366792917251587secs 
+question 867: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 12185 6880 ['นางประเทือง เทวกุล ณ อยุธยา'] 23.09326982498169secs 
+question 868: 1 rank0 || 8  8 18 18 [' กุญชร'] 19.448522567749023secs 
+question 869: 1 rank0 || 1  0 6 1 [] 26.78503441810608secs 
+question 870: 1 rank0 || 2  2 5 5 ['กระทรวงใด'] 9.071071147918701secs 
+question 871: 1 rank0 || 4  4 11 11 [] 46.28867554664612secs 
+question 872: 0 rank367 || 7001  1 8652 2 [] 22.648548364639282secs 
+question 873: 0 rank8 || 33  2 52 4 [] 14.900081872940063secs 
+question 874: 0 rank1053 || 24091  10 72032 24 [] 42.29739856719971secs 
+question 875: 0 rank2566 || 8287  0 23726 1 [] 17.282034158706665secs 
+question 876: 1 rank0 || 3  3 9 9 [] 12.419121026992798secs 
+question 877: 0 rank1268 || 5071  cant find in shorttest 12185 6880 [' กฤดากร', 'หม่อมหลวงแส'] 20.934574365615845secs 
+question 878: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 265122 19318 ['หม่อมหลวงนิรันดร ลดาวัลย์ สมรส'] 18.785706996917725secs 
+question 879: 0 rank14 || 185  5 961 13 [' สมรส'] 9.753765106201172secs 
+question 880: 0 rank823 || 17559  2 21904 3 [] 35.7025671005249secs 
+question 881: 1 rank0 || 1  0 3 1 [] 9.203995704650879secs 
+question 882: 1 rank3 || 9  9 15 15 [' นิมมานเหมินท์'] 28.499711990356445secs 
+question 883: 1 rank0 || 4  4 8 8 [' เทพยสุวรรณ สมรส'] 9.62123703956604secs 
+question 884: 1 rank1 || 2  2 8 8 [' เทพยสุวรรณ'] 28.27615523338318secs 
+question 885: 0 rank1585 || 21678  6 45556 17 [] 24.59301733970642secs 
+question 886: 0 rank667 || 306  0 8652 1 [' วสันตสิงห์'] 11.802109241485596secs 
+question 887: 0 rank4732 || 5645  1 45556 2 [] 26.881874084472656secs 
+question 888: 1 rank0 || 2  cant find in shorttest 4 2 [] 19.48540735244751secs 
+question 889: 1 rank0 || 6  6 15 15 ['หม่อมราชวงศ์กิติวัฒนา '] 14.60965371131897secs 
+question 890: 1 rank0 || 6  6 19 19 [] 17.89255166053772secs 
+question 891: 1 rank0 || 1  1 5 5 [] 22.760498762130737secs 
+question 892: 1 rank0 || 4  4 6 6 ['2017'] 28.189194440841675secs 
+question 893: 1 rank0 || 2  2 8 8 [] 11.895230531692505secs 
+question 894: 1 rank0 || 2  2 5 5 [] 27.66985535621643secs 
+question 895: 0 rank1058 || 6868  48 12185 70 ['หม่อมสมลักษณ์ กิติยากร '] 19.948928117752075secs 
+question 896: 0 rank2025 || 167665  0 1150128 1 [] 94.38739824295044secs 
+question 897: 0 rank185 || 827  741 961 922 ['หม่อมองค์'] 16.80246639251709secs 
+question 898: 1 rank0 || 2  2 4 4 [] 19.426313877105713secs 
+question 899: 1 rank0 || 3  3 9 9 [] 21.770891666412354secs 
+question 900: 0 rank1191 || 32653  cant find in shorttest 265122 19318 ['หม่อมราชวงศ์นริศรา จักรพงษ์ สมรส'] 24.450270652770996secs 
+question 901: 0 rank102 || 93  0 1091 1 ['หม่อมองค์'] 16.491588830947876secs 
+question 902: 1 rank0 || 1  cant find in shorttest 8 3 [' นวรัตน'] 18.486138105392456secs 
+question 903: 0 rank3271 || 28940  cant find in shorttest 42525 12 [] 23.580578088760376secs 
+question 904: 1 rank0 || 12  12 17 17 [] 17.460192918777466secs 
+question 905: 0 rank9998 || 118203  cant find in shorttest 662344 6880 ['สธนพงศ์', 'ท่านผู้หญิงบุษบา '] 64.39465141296387secs 
+question 906: 0 rank1575 || 3819  2 21904 3 [] 21.590842723846436secs 
+question 907: 1 rank0 || 5  5 12 12 [] 17.702045440673828secs 
+question 908: 0 rank31 || 876  0 961 1 [] 8.900543689727783secs 
+question 909: 1 rank3 || 10  10 19 19 ['กระชงคาราม'] 44.096113443374634secs 
+question 910: 0 rank47 || 746  8 1168 12 [] 46.93777394294739secs 
+question 911: 1 rank0 || 1  0 3 1 ['๑', '๗'] 27.34896731376648secs 
+question 912: 1 rank0 || 2  2 8 8 [] 39.51879668235779secs 
+question 913: 0 rank3164 || 162225  297 1304195 1567 ['วังจักรพงษ์ คือ'] 81.3807008266449secs 
+question 914: 1 rank0 || 1  1 18 18 [] 13.642534494400024secs 
+question 915: 0 rank3687 || 14394  8 45556 36 [] 22.307373046875secs 
+question 916: 1 rank5 || 827  1 2016 3 [] 30.70592737197876secs 
+question 917: 0 rank36 || 134  cant find in shorttest 336 1 [] 21.753867387771606secs 
+question 918: 0 rank1653 || 13550  0 66667 6 ['พระมหากษัตริย์', 'พระองค์'] 23.5271155834198secs 
+question 919: 1 rank0 || 3  3 11 11 [] 15.805752992630005secs 
+question 920: 0 rank9201 || 539361  0 770922 2 [] 52.74106192588806secs 
+question 921: 1 rank0 || 0  0 3 2 [] 14.789161205291748secs 
+question 922: 1 rank0 || 3  3 11 11 [] 22.695064544677734secs 
+question 923: 0 rank268 || 1687  1 3871 5 [] 47.32745909690857secs 
+question 924: 1 rank0 || 41  8 85 12 [] 26.81840205192566secs 
+question 925: 0 rank14 || 326  326 338 338 [] 39.96509528160095secs 
+question 926: 1 rank0 || 2  2 8 8 [] 18.80470323562622secs 
+question 927: 1 rank0 || 2  2 8 8 [] 25.821981191635132secs 
+question 928: 1 rank0 || 2  2 5 5 ['ห้า'] 43.927584171295166secs 
+question 929: 0 rank457 || 71952  18 1304195 231 [] 98.92857336997986secs 
+question 930: 0 rank6 || 135  135 1509 1509 [] 23.517138719558716secs 
+question 931: 0 rank29 || 402  15 851 55 [] 56.521461486816406secs 
+question 932: 1 rank0 || 2  2 7 7 [] 25.940661907196045secs 
+question 933: 0 rank2014 || cant find in best tf-idf  2692 6481 3343 [] 15.73673701286316secs 
+question 934: 0 rank2859 || 14084  3004 36576 6675 ['พินิจน', 'ครคือ'] 12.879572868347168secs 
+question 935: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 52 1 [] 18.755834341049194secs 
+question 936: 0 rank356 || 20968  11 25619 17 [] 23.49924659729004secs 
+question 937: 1 rank3 || 1314  450 1746 670 [] 41.3913357257843secs 
+question 938: 1 rank4 || 1314  cant find in shorttest 1746 412 ['ๆ'] 40.98996138572693secs 
+question 939: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 1369 716 ['2007'] 21.068495988845825secs 
+question 940: 1 rank0 || 3  3 10 10 [] 17.69844341278076secs 
+question 941: 1 rank0 || 3  3 10 10 [] 19.59262990951538secs 
+question 942: 1 rank0 || 1  1 29 29 [] 50.88721227645874secs 
+question 943: 1 rank0 || 2  2 37 37 [] 40.086711168289185secs 
+question 944: 0 rank31 || 134  134 420 420 [] 32.83826565742493secs 
+question 945: 0 rank31 || 134  134 420 420 [] 35.71354126930237secs 
+question 946: 1 rank0 || 3  3 23 23 [] 13.254571676254272secs 
+question 947: 1 rank0 || 3  3 23 23 [] 23.324655771255493secs 
+question 948: 0 rank784 || 8340  1 33147 5 [] 30.919354677200317secs 
+question 949: 0 rank784 || 8340  1 33147 5 ['17'] 40.17752146720886secs 
+question 950: 1 rank0 || 3  3 5 5 [] 14.269824504852295secs 
+question 951: 0 rank1725 || 20629  11 53665 18 ['2561'] 33.13136649131775secs 
+question 952: 1 rank0 || 1  1 4 4 [' คือ'] 25.840930461883545secs 
+question 953: 1 rank0 || 1  1 4 4 [] 46.575963735580444secs 
+question 954: 1 rank0 || 7  1 11 2 [] 23.15610408782959secs 
+question 955: 1 rank0 || 5  5 12 12 [] 31.261440753936768secs 
+question 956: 1 rank4 || 40  0 56 3 ['1429'] 25.920716285705566secs 
+question 957: 0 rank10911 || 445923  0 1150128 2 [] 75.90424275398254secs 
+question 958: 0 rank3909 || 62386  0 71887 1 [] 32.5231032371521secs 
+question 959: 0 rank2657 || 36006  cant find in shorttest 58558 18 [' โกไลท์'] 39.909916400909424secs 
+question 960: 0 rank4107 || 25291  678 52825 1032 [' จอห์น แกสคอยน์'] 34.280372619628906secs 
+question 961: 0 rank10715 || 884804  678 1304195 1032 [' จอห์น แกสคอยน์'] 85.44527196884155secs 
+question 962: 0 rank208 || 2039  5 21904 59 [] 31.68075942993164secs 
+question 963: 0 rank25 || 139  139 816 816 ['นายใจเด็ด ', 'พรไชยา', 'ฝ่ายคดีใด'] 14.891290426254272secs 
+question 964: 0 rank293 || 720  56 5614 275 ['2003'] 37.07689595222473secs 
+question 965: 1 rank5 || 492  492 1355 1355 [] 14.794455766677856secs 
+question 966: 0 rank1568 || 6923  8 45556 14 [] 22.17473030090332secs 
+question 967: 0 rank2590 || 235316  8 1304195 14 [] 80.29289126396179secs 
+question 968: 0 rank33 || 2602  3 5985 7 ['100'] 26.29852032661438secs 
+question 969: 0 rank533 || cant find in best tf-idf  610 33185 1706 [] 26.79936671257019secs 
+question 970: 1 rank0 || 0  0 2 2 [] 25.408047199249268secs 
+question 971: 1 rank0 || 0  0 2 2 [] 30.31098222732544secs 
+question 972: 0 rank4026 || 24633  3 45556 9 ['กชกร '] 22.588620901107788secs 
+question 973: 1 rank4 || 6  6 55 55 [' โกมลฐิติ'] 31.751132488250732secs 
+question 974: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 12250 8 [] 30.695951223373413secs 
+question 975: 0 rank4331 || 506727  7 662344 24 [] 53.200836181640625secs 
+question 976: 0 rank18 || 91  2 134 16 ['-'] 45.42454648017883secs 
+question 977: 0 rank18 || 91  2 134 16 ['-'] 41.55093836784363secs 
+question 978: 0 rank6925 || 40933  cant find in shorttest 45556 3 [] 45.4036386013031secs 
+question 979: 0 rank703 || 6707  cant find in shorttest 9547 3 [] 36.9553656578064secs 
+question 980: 1 rank1 || 8  8 42 42 ['คอตแลนต์'] 37.74906015396118secs 
+question 981: 1 rank1 || 8  8 42 42 ['คอตแลนต์', ' คือ'] 14.99092984199524secs 
+question 982: 0 rank765 || 16706  5 18595 6 ['11'] 41.380393981933594secs 
+question 983: 0 rank163 || 1254  15 1614 19 [] 40.50579524040222secs 
+question 984: 0 rank154 || 1706  9 3109 19 [] 35.515071868896484secs 
+question 985: 0 Cant find doc || 430067  cant find in shorttest 770922 3 [] 49.38001203536987secs 
+question 986: 0 rank1254 || 36107  94 58558 129 ['2531'] 41.44528079032898secs 
+question 987: 1 rank4 || 13  cant find in shorttest 59 14 ['เขมนิจ จามิกรณ์ '] 19.00673484802246secs 
+question 988: 0 rank3101 || 19380  3 45556 17 [] 28.290443420410156secs 
+question 989: 0 rank1353 || 23091  3 53083 17 ['2537'] 64.35585689544678secs 
+question 990: 0 rank1971 || 3071  0 12185 2 [] 30.51073431968689secs 
+question 991: 0 rank1111 || cant find in best tf-idf  6 14542 40 [] 39.42066049575806secs 
+question 992: 0 rank54 || 1428  7 6675 54 [] 28.128628730773926secs 
+question 993: 0 Cant find doc || 311597  cant find in shorttest 662344 59 [] 67.09875130653381secs 
+question 994: 0 rank20 || 147  147 490 490 ['ๆ', ' หอวัง'] 15.094471216201782secs 
+question 995: 0 rank650 || 58411  5 107032 11 [' แอนเดอร์สัน'] 83.92053270339966secs 
+question 996: 0 rank10753 || 546395  6 1304195 30 [] 153.5278549194336secs 
+question 997: 1 rank0 || 3  3 17 17 [] 38.05625128746033secs 
+question 998: 0 Cant find doc || 1116989  cant find in shorttest 1304195 4 [] 138.30853271484375secs 
+question 999: 0 rank45 || 156  156 406 406 [' อภิรดี ภวภูตานนท์'] 24.36972212791443secs 
+question 1000: 0 rank13448 || 289898  4 770922 12 ['เอมิกา กลิ่น'] 363.5297510623932secs 
+question 1001: 0 rank1065 || 1873  13 3462 34 [] 100.38551568984985secs 
+question 1002: 0 rank640 || 9342  33 38327 145 ['3', '2535'] 78.83331203460693secs 
+question 1003: 0 rank8025 || 11848  0 45556 29 ['หยาดทิพย์ '] 31.169872283935547secs 
+question 1004: 0 rank11 || 849  32 6481 196 [] 23.13848376274109secs 
+question 1005: 0 rank1203 || 2888  10 21904 99 ['พันธุ์สวลี '] 34.317835330963135secs 
+question 1006: 0 rank448 || 40300  30 107032 72 [] 52.15985441207886secs 
+question 1007: 0 rank480 || 40300  0 107032 2 [] 73.95600461959839secs 
+question 1008: 0 Cant find doc || 627208  cant find in shorttest 1304195 3 [] 119.7577543258667secs 
+question 1009: 0 rank894 || 4326  6 8050 29 [] 31.667144536972046secs 
+question 1010: 0 rank3452 || 767  0 12185 11 [] 25.152420043945312secs 
+question 1011: 0 rank444 || 65  65 1046 1046 ['สุวนันท์ ปุณณกันต์ คือ'] 14.750001668930054secs 
+question 1012: 0 Cant find doc || 377295  cant find in shorttest 770922 13 [] 68.40303707122803secs 
+question 1013: 0 rank4177 || 14472  15 45556 49 [] 49.69033360481262secs 
+question 1014: 0 Cant find doc || 442628  cant find in shorttest 1304195 1 [] 125.80748677253723secs 
+question 1015: 0 rank175 || 3585  5 7851 22 [] 21.25675320625305secs 
+question 1016: 0 rank9 || 45  5 209 22 ['2487'] 74.07425355911255secs 
+question 1017: 0 rank584 || 2498  46 9014 191 [] 41.19910907745361secs 
+question 1018: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 504 3 [] 11.28288984298706secs 
+question 1019: 0 rank28 || 167  4 377 41 ['34'] 27.225675582885742secs 
+question 1020: 0 rank8 || 12  12 49 49 ['รวงสุดา ลาวัณย์ประเสริฐ', '34'] 38.20854949951172secs 
+question 1021: 0 rank29 || 73  73 146 146 [' สามิภักดิ์'] 28.27033829689026secs 
+question 1022: 0 rank4015 || cant find in best tf-idf  15 770922 37 [] 69.95770788192749secs 
+question 1023: 0 rank12879 || 721369  8 1304195 38 ['ดีเจต้นหอม'] 111.04753136634827secs 
+question 1024: 1 rank2 || 1  1 17 17 [' เจนเซ่น '] 26.76777672767639secs 
+question 1025: 0 rank4758 || 15836  4 45556 13 [] 44.2481050491333secs 
+question 1026: 0 rank95 || 486  0 1205 9 [' พินดั้ม'] 20.299494743347168secs 
+question 1027: 0 rank479 || 5360  11 12185 44 [' จิราธิวัฒน์'] 25.687527894973755secs 
+question 1028: 1 rank1 || 12  cant find in shorttest 61 4 [' จิราธิวัฒน์'] 14.510002136230469secs 
+question 1029: 0 rank6 || 44  0 115 1 [' แคมเปน', '2561'] 42.43294668197632secs 
+question 1030: 0 rank149 || 16905  25 34156 78 [] 37.28772783279419secs 
+question 1031: 0 rank9838 || 41744  cant find in shorttest 45556 4 [] 55.64352774620056secs 
+question 1032: 0 rank2021 || 16108  11 45556 66 [] 36.26009130477905secs 
+question 1033: 0 rank2751 || 48238  cant find in shorttest 72032 21 [] 51.75643873214722secs 
+question 1034: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 1677 18 [] 18.66028881072998secs 
+question 1035: 0 rank49 || 1000  5 1815 31 ['เรียก', '-'] 31.055649518966675secs 
+question 1036: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 12185 6880 ['แมท ภีรนีย์ คง'] 33.63899755477905secs 
+question 1037: 1 rank0 || 5  5 8 8 [' ภิญญากมลชาติ'] 19.94877552986145secs 
+question 1038: 1 rank0 || 5  5 8 8 [' ภิญญากมลชาติ'] 13.964319229125977secs 
+question 1039: 1 rank0 || 3  2 10 8 ['เรียก'] 18.41580867767334secs 
+question 1040: 0 rank3251 || 22800  25 45556 51 ['เรียก'] 25.40599298477173secs 
+question 1041: 1 rank1 || 113  25 200 51 [] 20.848116636276245secs 
+question 1042: 0 rank3919 || 221539  11 971858 139 [] 104.91880393028259secs 
+question 1043: 0 rank11277 || 174284  3 770922 13 ['พิศมัย วิไลศักดิ์ คือ'] 54.40928316116333secs 
+question 1044: 0 rank3540 || 5037  4 45556 104 [] 50.10750722885132secs 
+question 1045: 0 rank6452 || 191719  cant find in shorttest 1304195 11 ['ต่าย เพ็ญพักตร์ ศิริกุล'] 86.78728938102722secs 
+question 1046: 1 rank1 || 33  24 219 145 ['เรียก'] 25.787768840789795secs 
+question 1047: 1 rank1 || 1  1 14 14 ['2505'] 33.270519733428955secs 
+question 1048: 0 rank970 || 3226  19 12185 107 [' จุฑารัตนกุล'] 18.330494165420532secs 
+question 1049: 0 rank8124 || 267406  19 770922 107 [' จุฑารัตนกุล'] 70.2440824508667secs 
+question 1050: 0 rank10180 || 21070  cant find in shorttest 72032 4 ['พิมพ์มาดา บริรักษ์ศุภก'] 42.50731539726257secs 
+question 1051: 0 rank3039 || 9745  0 45556 1 [] 42.036863803863525secs 
+question 1052: 0 rank628 || 1860  0 8050 9 [] 38.679370403289795secs 
+question 1053: 0 rank33 || 60  60 1032 1032 [' เทเลอร์'] 16.672385692596436secs 
+question 1054: 0 rank6052 || 181713  4 1304195 33 [] 85.69101786613464secs 
+question 1055: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 45556 11 [] 40.33191132545471secs 
+question 1056: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 770922 29 [] 65.35563468933105secs 
+question 1057: 1 rank0 || 7  7 12 12 [] 17.36400294303894secs 
+question 1058: 0 Cant find doc || 289681  cant find in shorttest 770922 8 ['สงขลา'] 68.43284201622009secs 
+question 1059: 1 rank2 || 13  13 100 100 [] 15.621090412139893secs 
+question 1060: 1 rank0 || 1  1 11 11 [] 21.11867618560791secs 
+question 1061: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 12 12 [] 14.769804239273071secs 
+question 1062: 1 rank0 || 1  1 3 3 [] 22.690405130386353secs 
+question 1063: 1 rank0 || 0  0 2 2 [] 18.36529564857483secs 
+question 1064: 1 rank0 || 0  0 2 2 [] 12.093498229980469secs 
+question 1065: 0 rank47 || 3812  20 9784 145 ['2540'] 42.209881067276secs 
+question 1066: 0 rank2681 || 89760  2825 107032 3288 ['เหนื่อย', 'วงสล็อตแมชชีน'] 43.28710913658142secs 
+question 1067: 0 rank6124 || 89760  2 107032 4 ['6', '2557'] 96.3627610206604secs 
+question 1068: 0 rank243 || 3876  3876 4204 4204 ['2549'] 52.302653789520264secs 
+question 1069: 1 rank0 || 0  0 5 5 ['2017'] 26.234700918197632secs 
+question 1070: 1 rank0 || 0  0 4 4 ['2557'] 32.721519231796265secs 
+question 1071: 0 rank94 || 3311  3311 5617 5617 ['เทวดา'] 31.753796100616455secs 
+question 1072: 0 rank94 || 3311  60 5617 116 [] 41.25400376319885secs 
+question 1073: 0 rank1764 || 4296  cant find in shorttest 20645 6 ['เคย', '2550', '23'] 45.99451398849487secs 
+question 1074: 1 rank3 || 244  13 728 47 [] 47.275086879730225secs 
+question 1075: 1 rank3 || 244  11 728 38 [] 81.37325882911682secs 
+question 1076: 0 rank7125 || 27627  0 53083 1 ['2540'] 133.05545091629028secs 
+question 1077: 0 rank284 || 1183  12 4204 116 [] 64.2046549320221secs 
+question 1078: 0 rank34 || 479  0 1371 1 [] 45.73732805252075secs 
+question 1079: 0 rank181 || 9716  6 36576 29 [] 46.76779818534851secs 
+question 1080: 0 rank4329 || 22125  0 45556 1 [] 105.94199299812317secs 
+question 1081: 0 rank2524 || 37334  21 65494 37 [' คชาภา ตันเจริญ'] 64.83390522003174secs 
+question 1082: 1 rank2 || 139  6 246 19 ['ชวน'] 32.11114192008972secs 
+question 1083: 0 rank1432 || 11391  13 21389 49 ['2512', '28'] 50.416285276412964secs 
+question 1084: 0 rank2653 || 40778  cant find in shorttest 94566 20 ['แต่งงาน'] 31.8228178024292secs 
+question 1085: 0 rank182 || 5039  7 9250 14 ['19', '2556', '2516', '31', 'าสิบ'] 46.48315215110779secs 
+question 1086: 0 rank182 || 5039  7 9250 14 [] 36.22705340385437secs 
+question 1087: 0 Cant find doc || 678129  cant find in shorttest 971858 1 [' ตั้ง'] 96.4860999584198secs 
+question 1088: 0 rank8 || 18  cant find in shorttest 23 1 ['2540'] 37.7414665222168secs 
+question 1089: 0 rank6983 || 13358  2 45556 16 ['วสวิศร์ ศตพิพัฒน์'] 40.31826162338257secs 
+question 1090: 0 rank13167 || 413287  2 1304195 16 ['วสวิศร์ ศตพิพัฒน์'] 102.33624267578125secs 
+question 1091: 0 rank10735 || 677206  14 971858 36 ['เอ ศุภชัย'] 85.29442834854126secs 
+question 1092: 0 rank3205 || cant find in best tf-idf  6 72032 49 [] 52.09301543235779secs 
+question 1093: 0 rank28 || 279  cant find in shorttest 587 1 [' ชวน'] 26.959208726882935secs 
+question 1094: 0 rank28 || 279  cant find in shorttest 587 6 [' ชวน'] 31.79933476448059secs 
+question 1095: 0 rank53 || 558  58 2289 183 [] 39.38076663017273secs 
+question 1096: 0 rank56 || 558  cant find in shorttest 2289 4 [] 25.585315704345703secs 
+question 1097: 0 rank57 || 116  cant find in shorttest 260 1 ['ๆ'] 91.84047102928162secs 
+question 1098: 0 rank38 || 214  82 526 240 ['อาวม่าย'] 44.33138918876648secs 
+question 1099: 1 rank3 || 16  2 229 32 ['25', '2521'] 32.53042554855347secs 
+question 1100: 1 rank4 || 16  13 229 154 [' แย้ม'] 44.742271423339844secs 
+question 1101: 0 rank14317 || 727338  16 1304195 52 [' หิรัณยัษฐิติ'] 110.50551295280457secs 
+question 1102: 1 rank1 || 138  2 335 28 [] 27.028364181518555secs 
+question 1103: 0 rank21 || 105  2 378 28 [] 32.865668535232544secs 
+question 1104: 0 rank828 || 2326  36 3602 63 ['17', ' คูกิมิยะ', '-', '2534'] 59.22814226150513secs 
+question 1105: 1 rank1 || 9  0 199 2 ['แนะนำ', ' คูกิมิยะ'] 32.483623027801514secs 
+question 1106: 1 rank2 || 53  53 79 79 ['นาย ณภัทร เสียง'] 23.690659999847412secs 
+question 1107: 0 rank6043 || 15276  cant find in shorttest 45556 53 ['2521', '10'] 33.563405990600586secs 
+question 1108: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 9547 2 [] 29.13845992088318secs 
+question 1109: 0 rank2267 || 15052  9 45556 74 ['2517', '2'] 30.451627016067505secs 
+question 1110: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 127 6 ['แต่งงาน'] 19.686137914657593secs 
+question 1111: 0 rank607 || 1315  9 9547 65 [] 77.83304929733276secs 
+question 1112: 0 rank572 || 5317  cant find in shorttest 14379 11 ['เมือง', ' ปุณณกันต์'] 38.4955837726593secs 
+question 1113: 0 rank3978 || 26302  13 58558 23 [] 42.25496864318848secs 
+question 1114: 0 rank1120 || 12680  15 18595 38 [] 23.53806734085083secs 
+question 1115: 0 rank10616 || 21963  14 45556 54 ['2499', '3'] 42.195207595825195secs 
+question 1116: 0 rank1370 || 3562  58 6675 185 [' ทองวัฒนา'] 25.153783798217773secs 
+question 1117: 0 rank1153 || 4511  89 15879 241 [] 35.4314239025116secs 
+question 1118: 0 rank1618 || 4511  0 15879 4 [] 38.35860300064087secs 
+question 1119: 1 rank2 || 15  15 51 51 [] 18.625229835510254secs 
+question 1120: 0 rank1078 || cant find in best tf-idf  15 12250 51 [] 30.000076293945312secs 
+question 1121: 0 rank10749 || 12503  0 40323 1 [] 47.54341673851013secs 
+question 1122: 0 rank4409 || 4509  13 12765 44 [] 15.20840072631836secs 
+question 1123: 0 rank7 || 18  0 71 1 ['ธันวาคม', '10', '2519'] 29.889089584350586secs 
+question 1124: 0 rank10970 || 28033  11 45556 52 ['2535', '30'] 34.72636389732361secs 
+question 1125: 0 rank1301 || 3991  11 9547 52 [] 29.265531063079834secs 
+question 1126: 1 rank0 || 0  0 1 1 [' ลีรัตนขจร'] 44.19339895248413secs 
+question 1127: 1 rank1 || 13  13 37 37 [] 28.79216504096985secs 
+question 1128: 1 rank0 || 13  2 37 10 [] 32.887245416641235secs 
+question 1129: 1 rank0 || 21  7 40 27 ['ๆ'] 39.53062152862549secs 
+question 1130: 0 rank2095 || 666115  21 971858 40 [' ปกรณ์'] 82.68785619735718secs 
+question 1131: 0 rank5469 || 19202  7 45556 53 ['2515', '7'] 32.35086798667908secs 
+question 1132: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 12250 6222 ['อู๋ ธนากร โปษยานนท์'] 20.275577306747437secs 
+question 1133: 0 rank3225 || 30999  10 45556 34 ['2532', '15'] 34.091391801834106secs 
+question 1134: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 65494 3 ['เรียนใด'] 27.680120944976807secs 
+question 1135: 0 rank10564 || 835701  14 1304195 31 [] 89.54905772209167secs 
+question 1136: 0 rank7 || 15  15 20 20 [] 20.157710790634155secs 
+question 1137: 0 rank1899 || 27878  4 53083 28 [] 62.16870665550232secs 
+question 1138: 0 rank10634 || 21084  0 58569 2 [] 83.11105132102966secs 
+question 1139: 0 rank4214 || 7850  cant find in shorttest 12737 1 [] 20.300782918930054secs 
+question 1140: 0 rank1339 || cant find in best tf-idf  6 12250 41 [] 18.89046049118042secs 
+question 1141: 0 rank11283 || 22553  33 72032 112 [] 47.108752489089966secs 
+question 1142: 0 rank14899 || 322950  33 971858 112 [] 96.81282663345337secs 
+question 1143: 0 rank15 || 29  18 95 33 [] 27.50154209136963secs 
+question 1144: 0 Cant find doc || 496589  cant find in shorttest 971858 1 [] 93.34802961349487secs 
+question 1145: 0 rank12 || 88  cant find in shorttest 270 8 [' อยู่'] 29.686001777648926secs 
+question 1146: 0 rank10620 || 638387  0 770922 1 [] 82.6523585319519secs 
+question 1147: 0 Cant find doc || 1057722  cant find in shorttest 1304195 3 [] 102.69020795822144secs 
+question 1148: 0 Cant find doc || 416725  cant find in shorttest 770922 4 [] 68.27065324783325secs 
+question 1149: 0 rank4120 || cant find in best tf-idf  21 40323 39 [] 29.015266180038452secs 
+question 1150: 0 rank44 || 241  241 1006 1006 [] 31.690699815750122secs 
+question 1151: 1 rank5 || 158  8 242 22 ['2535', '25'] 39.388763666152954secs 
+question 1152: 0 rank488 || 4565  8 9547 22 ['สู่่วงการ'] 41.56326723098755secs 
+question 1153: 0 rank3348 || 26000  26 45556 68 [' จิราธิวัฒน์', '(', ')', '2536', '10'] 33.62630772590637secs 
+question 1154: 0 rank746 || 7399  cant find in shorttest 11985 4 [] 19.761323928833008secs 
+question 1155: 0 Cant find doc || 223913  cant find in shorttest 275379 6 ['2529', '3'] 46.158894300460815secs 
+question 1156: 0 rank1883 || 153479  3899 196060 4895 ['พุฒิ พุฒิชัย เกษตรสิน'] 34.71056032180786secs 
+question 1157: 0 rank13901 || 439973  800 971858 1853 [' ภูธเนศ หงษ์มานพ'] 100.72652316093445secs 
+question 1158: 1 rank0 || 35  1 100 3 [] 16.5435209274292secs 
+question 1159: 1 rank0 || 35  1 100 3 ['2471', '2457', '-'] 30.665815830230713secs 
+question 1160: 1 rank1 || 1  1 3 3 ['วงยูโฟร์แทน'] 27.16061019897461secs 
+question 1161: 1 rank0 || 0  0 2 2 [] 28.674514055252075secs 
+question 1162: 1 rank0 || 0  0 2 2 [] 39.00155472755432secs 
+question 1163: 0 rank46 || 1019  1019 1343 1343 ['อเล็กซ์ โมลตัน'] 20.931857109069824secs 
+question 1164: 0 rank1162 || 23990  0 32194 1 [] 58.18887543678284secs 
+question 1165: 1 rank0 || 0  0 1 1 [] 19.28242516517639secs 
+question 1166: 1 rank0 || 0  0 1 1 ['!'] 36.308610677719116secs 
+question 1167: 1 rank5 || 45  cant find in shorttest 73 6 [] 16.517404556274414secs 
+question 1168: 0 rank3920 || 33881  cant find in shorttest 42525 1 [] 35.85313010215759secs 
+question 1169: 0 rank73 || 2243  0 5614 2 ['มะงะตะตอน'] 35.91503047943115secs 
+question 1170: 0 rank42 || 675  0 920 2 ['ไพดอเนียร์'] 48.247055530548096secs 
+question 1171: 1 rank1 || 16  16 23 23 [] 16.17994999885559secs 
+question 1172: 0 rank16 || 139  139 212 212 [] 28.692349433898926secs 
+question 1173: 1 rank0 || 0  0 4 4 [] 16.795018672943115secs 
+question 1174: 1 rank0 || 0  0 4 4 ['2547'] 43.21035075187683secs 
+question 1175: 1 rank0 || 2  2 9 9 [] 20.091278314590454secs 
+question 1176: 1 rank0 || 2  2 9 9 [] 28.388386964797974secs 
+question 1177: 0 rank183 || 15455  5071 20645 6984 ['55'] 36.43767213821411secs 
+question 1178: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 14379 17 [] 29.60539722442627secs 
+question 1179: 0 rank1684 || 61107  0 107032 1 [] 43.42724132537842secs 
+question 1180: 1 rank0 || 0  0 2 2 [] 42.682149171829224secs 
+question 1181: 0 rank500 || 7814  60 53083 325 ['2500', '2499'] 39.672932624816895secs 
+question 1182: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 2 2 ['2499'] 38.942259788513184secs 
+question 1183: 1 rank0 || 4  4 16 16 [] 23.575464010238647secs 
+question 1184: 1 rank0 || 4  4 16 16 [] 30.66821599006653secs 
+question 1185: 0 rank10 || 446  446 629 629 ['แอชิแตด'] 15.333641529083252secs 
+question 1186: 0 rank1405 || 13435  2140 16682 2617 ['ที่', 'แอซิแตด'] 41.92859625816345secs 
+question 1187: 1 rank3 || 31  31 114 114 [] 19.5703604221344secs 
+question 1188: 1 rank3 || 31  31 114 114 [] 27.598899126052856secs 
+question 1189: 1 rank0 || 5  5 16 16 [] 19.881526947021484secs 
+question 1190: 1 rank0 || 5  5 16 16 [] 41.29104208946228secs 
+question 1191: 0 rank903 || 5415  5 14565 8 [] 32.96142840385437secs 
+question 1192: 0 rank1063 || 5415  cant find in shorttest 14565 200 ['2006', '2007', '2', 'ปีเตอร์ เคราช'] 47.01719093322754secs 
+question 1193: 0 rank4267 || 20893  cant find in shorttest 64449 4 [] 34.494391441345215secs 
+question 1194: 0 rank1329 || 3223  565 11107 2303 [] 30.671643495559692secs 
+question 1195: 0 rank4626 || cant find in best tf-idf  1 72032 2 [] 42.54623603820801secs 
+question 1196: 0 rank143 || 5845  1 9014 3 [] 25.869220495224secs 
+question 1197: 0 rank164 || 5845  21 9014 27 [] 29.054086685180664secs 
+question 1198: 0 rank1999 || 9582  0 25619 1 ['เกิด', 'โระมิ'] 39.11059522628784secs 
+question 1199: 1 rank0 || 0  0 1 1 [] 35.28270506858826secs 
+question 1200: 1 rank0 || 0  0 3 3 [] 14.180667400360107secs 
+question 1201: 1 rank0 || 0  0 3 3 ['เหนือ'] 22.249969720840454secs 
+question 1202: 1 rank1 || 2  2 14 14 [] 37.766727685928345secs 
+question 1203: 0 rank191 || cant find in best tf-idf  5 1963 13 ['เปปาเเสด็จ'] 55.905240535736084secs 
+question 1204: 0 rank43 || 23963  870 30230 1495 ['ทางใด'] 26.158774614334106secs 
+question 1205: 0 Cant find doc || 707147  cant find in shorttest 971858 3810 [] 98.2762930393219secs 
+question 1206: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 1 1 [] 15.77312707901001secs 
+question 1207: 0 rank23 || 586  15 603 16 [] 48.63978934288025secs 
+question 1208: 0 rank65 || 22144  4 25619 18 ['โปรเกมอน'] 22.08944606781006secs 
+question 1209: 1 rank4 || 543  cant find in shorttest 737 30 [] 46.671173095703125secs 
+question 1210: 1 rank1 || 2  2 5 5 [] 43.60460162162781secs 
+question 1211: 0 rank14 || 80  0 105 1 ['-'] 47.236401081085205secs 
+question 1212: 0 rank240 || 4088  44 12250 682 [] 29.110514163970947secs 
+question 1213: 1 rank1 || 1  1 57 57 [] 19.808666467666626secs 
+question 1214: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 1369 88 [] 24.400896072387695secs 
+question 1215: 0 rank1011 || 4095  191 16506 891 ['เขื่อนฤาษีไศล'] 26.910587549209595secs 
+question 1216: 1 rank0 || 2  2 4 4 [] 17.74851942062378secs 
+question 1217: 1 rank0 || 0  0 2 2 [] 20.02238154411316secs 
+question 1218: 1 rank0 || 0  0 2 2 ['2560', '30'] 41.70472979545593secs 
+question 1219: 1 rank0 || 3  3 8 8 [] 20.136000156402588secs 
+question 1220: 1 rank5 || 377  14 408 16 ['เอี๋ยนโดน'] 27.668607234954834secs 
+question 1221: 0 rank10648 || 1233939  2733 1304195 2912 ['ปะเทศอิหร่าน'] 98.26401567459106secs 
+question 1222: 0 rank22 || 407  177 463 216 ['2006', 'เมืองอะซีร์'] 33.05994892120361secs 
+question 1223: 0 rank74 || 8380  cant find in shorttest 14379 2 [] 35.431679248809814secs 
+question 1224: 0 rank61 || 8380  1465 14379 2188 ['พรรคประธิปไตย', '2515'] 53.11107921600342secs 
+question 1225: 1 rank0 || 0  0 1 1 [] 19.345216512680054secs 
+question 1226: 0 rank830 || 25178  826 53083 2178 [] 40.65712761878967secs 
+question 1227: 0 rank1950 || 20070  826 58558 2178 ['2507'] 58.64179444313049secs 
+question 1228: 0 rank150 || 3173  41 4959 101 [] 12.230897188186646secs 
+question 1229: 0 rank1304 || 10902  cant find in shorttest 32759 2 ['ไอ.คิว.180'] 34.02615308761597secs 
+question 1230: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 10 3 [] 21.585984468460083secs 
+question 1231: 0 rank4056 || 101274  cant find in shorttest 971858 152 [' อไควนัส'] 98.91343975067139secs 
+question 1232: 0 rank14 || 923  6 1311 12 [] 18.18031358718872secs 
+question 1233: 0 rank14 || 923  6 1311 12 [] 29.137409448623657secs 
+question 1234: 1 rank0 || 3  3 11 11 [] 20.011821269989014secs 
+question 1235: 0 rank29 || 1709  20 4127 34 [' เบรวิส', ' พอลิซิส'] 36.68053340911865secs 
+question 1236: 0 rank224 || 3312  65 8843 129 [] 37.32363200187683secs 
+question 1237: 0 rank1244 || cant find in best tf-idf  2 12737 4 [] 16.789306163787842secs 
+question 1238: 0 rank633 || 6378  0 14379 1 ['เมื่อ', '2553'] 48.406170129776secs 
+question 1239: 0 rank13 || 1156  1156 1191 1191 [] 14.091754913330078secs 
+question 1240: 0 rank76 || 1046  9 2983 32 [] 26.561652898788452secs 
+question 1241: 1 rank1 || 0  0 2 2 [] 13.308282136917114secs 
+question 1242: 1 rank0 || 1  1 2 2 [] 14.192797183990479secs 
+question 1243: 1 rank0 || 1  1 2 2 ['83'] 44.623661518096924secs 
+question 1244: 1 rank0 || 3  3 7 7 ['1'] 31.566351652145386secs 
+question 1245: 0 rank1416 || 25734  302 42525 517 ['พระเจ้าอาฟอง', 'พรรษา'] 50.43167805671692secs 
+question 1246: 0 rank157 || 95  95 2338 2338 [] 20.450457096099854secs 
+question 1247: 1 rank0 || 19  19 776 776 [] 34.90013670921326secs 
+question 1248: 0 rank672 || 22693  cant find in shorttest 23726 186 ['โมนิวคลีโอซิส'] 30.75435781478882secs 
+question 1249: 0 rank88 || 2892  cant find in shorttest 2983 3 ['เอ็ปสไตน์', '-'] 34.23152780532837secs 
+question 1250: 0 rank22 || 121  1 372 19 [] 45.28478980064392secs 
+question 1251: 0 rank1317 || 3690  0 9155 2 ['1985'] 31.11537456512451secs 
+question 1252: 0 rank207 || 7103  495 15017 898 [] 20.078123331069946secs 
+question 1253: 0 rank245 || 7103  212 15017 746 [] 44.505499839782715secs 
+question 1254: 0 rank481 || 39287  100 64430 167 [] 33.775662660598755secs 
+question 1255: 0 rank185 || 6940  100 13460 167 [] 30.755106210708618secs 
+question 1256: 1 rank0 || 0  cant find in shorttest 4 1 ['ใประเทศเกาหลีใต้'] 48.23358869552612secs 
+question 1257: 1 rank0 || 2  2 7 7 [] 24.61388611793518secs 
+question 1258: 0 rank342 || 1836  1836 2629 2629 ['งานลิขสิทธิ์'] 26.858713150024414secs 
+question 1259: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 19 11 [] 39.6741886138916secs 
+question 1260: 0 rank198 || 1643  795 21097 2952 [] 39.36414408683777secs 
+question 1261: 0 rank43 || 1643  86 21097 433 ['1964'] 33.601346492767334secs 
+question 1262: 0 Cant find doc || 753428  cant find in shorttest 948951 6880 ['โฮเซ่ บูร์โกส'] 60.18452429771423secs 
+question 1263: 0 rank71 || 5891  287 7217 412 [] 43.22024130821228secs 
+question 1264: 0 rank41 || 702  5 6266 18 [] 26.78340435028076secs 
+question 1265: 0 rank98 || 2961  5 33147 18 ['โบ๊เบ๊ชกชนะ', '2529'] 41.4737012386322secs 
+question 1266: 0 rank441 || 7059  0 52825 1 [] 47.35849404335022secs 
+question 1267: 0 rank421 || 7059  2 52825 4 [] 35.97854232788086secs 
+question 1268: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 105 105 ['ฟรีดริช ฮอสส์'] 28.080955982208252secs 
+question 1269: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 2 2 [] 21.443540573120117secs 
+question 1270: 0 rank11490 || 350774  4 1304195 12 [' ยะมะดะ'] 236.4589400291443secs 
+question 1271: 0 rank3872 || 18157  4 72032 12 [' ยะมะดะ'] 140.16498255729675secs 
+question 1272: 0 rank84 || 17519  cant find in shorttest 18635 6880 [] 17.966463327407837secs 
+question 1273: 0 rank259 || 6788  2203 7217 2448 [] 57.00429725646973secs 
+question 1274: 0 rank260 || 3838  3838 3871 3871 ['ลาโช-เดอ-ฟง'] 21.527384519577026secs 
+question 1275: 1 rank0 || 1  1 3 3 ['ที่', '-', '-เดอ'] 52.81041860580444secs 
+question 1276: 1 rank0 || 0  0 5 5 [] 14.562087535858154secs 
+question 1277: 1 rank0 || 0  0 5 5 [] 37.61332058906555secs 
+question 1278: 1 rank1 || 1  1 11 11 [] 43.663466691970825secs 
+question 1279: 0 rank10941 || 51521  7943 66905 10722 ['คลองกานาลดูว์'] 38.5479416847229secs 
+question 1280: 1 rank2 || 136  136 360 360 ['-'] 25.866219520568848secs 
+question 1281: 0 rank86 || 278  cant find in shorttest 406 25 ['แกงสตา'] 29.76960253715515secs 
+question 1282: 0 rank14186 || 1230101  1110 1304195 1168 [] 96.46023797988892secs 
+question 1283: 0 rank134 || 591  591 607 607 [] 54.784465312957764secs 
+question 1284: 0 rank940 || 18302  1003 53083 2478 ['2531'] 44.59201407432556secs 
+question 1285: 0 rank811 || 16238  240 58558 532 ['2536'] 55.46138572692871secs 
+question 1286: 0 rank157 || 679  679 1095 1095 [' เชิญ'] 24.327030420303345secs 
+question 1287: 1 rank0 || 0  0 3 3 [] 24.39577627182007secs 
+question 1288: 1 rank0 || 0  0 3 3 ['เครื่อง', 'ประเทศเกาหลีมัก'] 17.818141222000122secs 
+question 1289: 1 rank4 || 41  41 62 62 [] 25.77489399909973secs 
+question 1290: 1 rank4 || 41  41 62 62 [] 34.08392119407654secs 
+question 1291: 0 rank62 || 45  0 1359 8 ['บริษัทอะไร'] 15.641202211380005secs 
+question 1292: 0 rank2591 || 49249  0 971858 8 [] 90.65717244148254secs 
+question 1293: 0 rank667 || 306  0 8652 1 [] 10.884876489639282secs 
+question 1294: 0 rank12139 || 492366  13 1304195 68 [] 85.11555409431458secs 
+question 1295: 0 rank7838 || 767  cant find in shorttest 12185 6880 ['สุวนันท์ ปุณณกันต์ นาม'] 18.493574380874634secs 
+question 1296: 0 rank198 || cant find in best tf-idf  0 1766 21 [] 24.940378189086914secs 
+question 1297: 1 rank0 || 2  2 4 4 [] 18.536465167999268secs 
+question 1298: 1 rank0 || 2  2 4 4 [] 33.38877987861633secs 
+question 1299: 0 rank2461 || 57486  926 72032 1216 ['5', 'พ.อ.ชินวุธ สุนทรสี'] 50.764729261398315secs 
+question 1300: 0 rank1020 || 20903  926 26174 1216 ['พ.อ.ชินวุธ สุนทรสี'] 31.646429300308228secs 
+question 1301: 0 rank895 || 8953  0 12250 1 [] 18.704018354415894secs 
+question 1302: 1 rank0 || 60  60 4080 4080 [] 24.976295709609985secs 
+question 1303: 0 rank20 || 0  2 37 32 ['ทวีปใด'] 26.384013652801514secs 
+question 1304: 0 rank6487 || 106385  cant find in shorttest 107032 8 [] 44.541014432907104secs 
+question 1305: 1 rank0 || 0  0 2 2 [] 25.976993083953857secs 
+question 1306: 1 rank0 || 6  0 14 1 ['1'] 20.20799946784973secs 
+question 1307: 1 rank0 || 6  6 14 14 ['2437'] 33.74507403373718secs 
+question 1308: 1 rank4 || cant find in best tf-idf  0 11 1 ['16'] 42.00857973098755secs 
+question 1309: 0 rank213 || 29603  365 71887 1227 [] 27.726906538009644secs 
+question 1310: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 14 14 ['2200'] 35.00858664512634secs 
+question 1311: 0 rank1619 || 17812  1 26858 4 [] 17.945109844207764secs 
+question 1312: 1 rank2 || 6  6 8 8 ['นพพงษา'] 46.44652843475342secs 
+question 1313: 1 rank0 || 0  0 6 6 [] 13.448065519332886secs 
+question 1314: 0 rank4732 || 159380  28 275379 42 ['2537', ' ละอองสุวรรณ'] 49.062804222106934secs 
+question 1315: 0 rank1222 || 28055  cant find in shorttest 53083 2 ['2522'] 40.31089687347412secs 
+question 1316: 0 rank849 || 7800  1672 14430 2619 ['คัลตาร์', ' กิลล์'] 20.85964274406433secs 
+question 1317: 1 rank4 || 111  111 169 169 [] 43.89570355415344secs 
+question 1318: 0 rank563 || 3265  1703 3444 1815 ['793'] 31.58659315109253secs 
+question 1319: 0 rank138 || 3675  15 36576 87 [] 31.31587314605713secs 
+question 1320: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 3 3 [] 41.107157468795776secs 
+question 1321: 1 rank2 || 49  0 187 1 ['-'] 34.27372646331787secs 
+question 1322: 0 rank3709 || cant find in best tf-idf  62 45556 65 ['2543'] 41.4533965587616secs 
+question 1323: 0 rank1412 || 22674  0 26174 1 ['กระทรวงใด'] 18.77588963508606secs 
+question 1324: 0 rank7972 || 795431  3 971858 5 [] 173.99253702163696secs 
+question 1325: 1 rank1 || 3  3 28 28 ['1965', '1', '1961', '10', '-'] 65.95843648910522secs 
+question 1326: 0 rank59 || 110  0 920 5 [] 26.019569635391235secs 
+question 1327: 1 rank1 || 6  cant find in shorttest 36 6 [] 20.73377299308777secs 
+question 1328: 0 rank747 || 32596  6 71887 22 [] 25.472920179367065secs 
+question 1329: 1 rank0 || 99  99 425 425 [] 29.687038898468018secs 
+question 1330: 1 rank0 || 16  16 105 105 ['2544'] 39.71226906776428secs 
+question 1331: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 71887 2 [] 31.00508975982666secs 
+question 1332: 1 rank0 || 1  0 11 1 [] 33.426413774490356secs 
+question 1333: 0 rank435 || 6286  1 14430 3 [] 47.31224060058594secs 
+question 1334: 0 rank8958 || 448751  1 971858 3 [] 102.22211861610413secs 
+question 1335: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 38327 12 [] 22.231019020080566secs 
+question 1336: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 971858 12 [] 98.45594382286072secs 
+question 1337: 1 rank0 || 8  8 14 14 [] 52.71418070793152secs 
+question 1338: 0 rank6436 || 206327  2 1304195 3 [] 105.77969169616699secs 
+question 1339: 0 rank180 || 1556  16 3273 29 [] 12.594720363616943secs 
+question 1340: 0 rank136 || 1556  158 3273 369 [] 41.62908482551575secs 
+question 1341: 0 rank1109 || 21889  8 58558 19 [] 54.772480964660645secs 
+question 1342: 0 rank1400 || cant find in best tf-idf  764 26174 1151 ['เอกเฉลิมเดช ชมพูนุช'] 42.82337427139282secs 
+question 1343: 0 rank1242 || 38679  9 53665 13 [] 31.676013231277466secs 
+question 1344: 0 rank6930 || 974289  9 1304195 13 [] 132.1541109085083secs 
+question 1345: 1 rank0 || 3  3 7 7 ['2560', '2558', '-'] 21.40152883529663secs 
+question 1346: 0 rank1053 || 9607  0 12250 1 [] 23.83083987236023secs 
+question 1347: 0 rank5658 || 24527  0 37987 1 ['2557'] 34.54919409751892secs 
+question 1348: 1 rank0 || 0  0 1 1 [] 50.07403922080994secs 
+question 1349: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 1 1 [] 24.153855085372925secs 
+question 1350: 0 Cant find doc || 913141  cant find in shorttest 971858 2 [' เป.'] 101.58008742332458secs 
+question 1351: 0 rank1071 || 12353  0 25593 1 ['อันโตนิโอ อาดัน'] 21.089398622512817secs 
+question 1352: 1 rank2 || 53  cant find in shorttest 79 5 [' เสียง'] 27.897486209869385secs 
+question 1353: 0 rank10542 || cant find in best tf-idf  3099 770922 5301 ['เจ้าฟ้าสุทัศน์'] 59.6670708656311secs 
+question 1354: 1 rank0 || 3  3 8 8 [] 39.4288763999939secs 
+question 1355: 0 rank3345 || 953165  9965 1304195 12700 ['อาคารกร็องปาแล'] 108.92486357688904secs 
+question 1356: 1 rank0 || 3  cant find in shorttest 8 1 [] 50.11932992935181secs 
+question 1357: 0 rank10 || 4398  102 10078 378 [] 65.22733569145203secs 
+question 1358: 0 rank2016 || 23041  5 72032 9 [] 39.908109188079834secs 
+question 1359: 0 rank16 || 335  0 476 2 [' วัชราพลเมฆ'] 32.31580710411072secs 
+question 1360: 1 rank0 || 0  0 4 4 ['-ลีเบอวิตซ์'] 32.30139660835266secs 
+question 1361: 0 rank12209 || 1268453  3300 1304195 3445 ['ริกะ อิชิเกะ เกิด'] 83.07400965690613secs 
+question 1362: 0 rank4482 || 942868  61 971858 65 ['อิชิเกาะ'] 149.9827423095703secs 
+question 1363: 0 rank291 || 1916  9 9014 53 ['1963'] 73.85278940200806secs 
+question 1364: 0 rank671 || 8618  9 53083 53 ['1963'] 79.52024269104004secs 
+question 1365: 1 rank0 || 4  4 6 6 ['2017'] 90.02107954025269secs 
+question 1366: 0 rank51 || 88  88 236 236 ['17', '2001'] 43.42076063156128secs 
+question 1367: 0 rank59 || 107  cant find in shorttest 566 6 [] 30.307926416397095secs 
+question 1368: 0 rank16 || 58  cant find in shorttest 183 3 [] 21.88961696624756secs 
+question 1369: 0 rank257 || 1064  58 2418 123 [] 46.860416650772095secs 
+question 1370: 0 rank30 || 156  49 206 76 ['26', '1992'] 83.04264879226685secs 
+question 1371: 1 rank0 || 0  0 1 1 ['Hubert H. Humphrey'] 37.81625413894653secs 
+question 1372: 0 rank2438 || 29538  5 53665 8 [] 28.269203662872314secs 
+question 1373: 1 rank0 || 0  0 3 3 [] 21.99023985862732secs 
+question 1374: 1 rank0 || 2  2 11 11 [] 36.74787449836731secs 
+question 1375: 0 rank1902 || 7744  cant find in shorttest 13300 6880 ['ทอตนัมฮอตสเปอร์ที่', 'ลูอิส แฮร์รี โฮลต์บี'] 23.876197338104248secs 
+question 1376: 1 rank0 || 4  4 32 32 ['เคป็อปหญิง'] 30.682810068130493secs 
+question 1377: 1 rank0 || 4  4 32 32 ['เคป็อปหญิง'] 73.26476311683655secs 
+question 1378: 0 rank19 || 1992  6 2310 11 [] 56.572181224823secs 
+question 1379: 1 rank4 || 31  5 234 51 [] 28.141799688339233secs 
+question 1380: 0 rank4545 || 8225  2 64449 88 ['เกาหลี ชินฮวา'] 35.40129518508911secs 
+question 1381: 1 rank0 || 1  cant find in shorttest 31 16 [] 36.264463663101196secs 
+question 1382: 0 rank10 || 5  8 78 21 [] 32.6813759803772secs 
+question 1383: 0 rank23 || 17899  7772 21097 8351 [] 33.477243423461914secs 
+question 1384: 0 rank23 || 17899  7772 21097 8351 ['5'] 31.431010961532593secs 
+question 1385: 1 rank0 || 0  0 3 3 [] 18.509501934051514secs 
+question 1386: 0 rank264 || cant find in best tf-idf  135 18595 216 ['2443'] 30.996172666549683secs 
+question 1387: 1 rank0 || 2  2 26 26 ['18'] 28.484530210494995secs 
+question 1388: 0 rank50 || 263  cant find in shorttest 1204 1 [] 31.24953031539917secs 
+question 1389: 1 rank0 || 4  4 21 21 [] 22.93770718574524secs 
+question 1390: 1 rank0 || 4  4 21 21 ['เข้า', 'เมื่อ'] 40.58454775810242secs 
+question 1391: 0 rank242 || 3885  3 11107 6 [] 28.779902696609497secs 
+question 1392: 0 rank225 || 931  14 15879 408 [] 24.849558353424072secs 
+question 1393: 0 rank2001 || 18058  98 32759 222 ['เจมส์ แอนโทนี่', 'บล็อกเฮด', '2004'] 33.737021684646606secs 
+question 1394: 0 rank1162 || 27043  8 72032 16 [] 38.940768241882324secs 
+question 1395: 1 rank0 || 0  0 8 8 [] 25.747349739074707secs 
+question 1396: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 2 2 [] 19.288458108901978secs 
+question 1397: 0 rank166 || cant find in best tf-idf  0 914 1 ['พระวัดพยัคฆาราม'] 21.955360412597656secs 
+question 1398: 0 rank1119 || 10446  cant find in shorttest 25593 3 [] 21.262677669525146secs 
+question 1399: 0 rank106 || 9149  1265 12578 1658 [] 34.10143327713013secs 
+question 1400: 1 rank0 || 123  123 387 387 [] 19.324816465377808secs 
+question 1401: 0 rank1202 || 4971  cant find in shorttest 19703 1 [] 32.23088049888611secs 
+question 1402: 1 rank0 || 2  2 5 5 [] 19.68074893951416secs 
+question 1403: 0 rank498 || 2352  53 18635 868 [' ครูตา', 'หลุยส์ เบรล'] 23.589669227600098secs 
+question 1404: 0 rank1426 || 7433  cant find in shorttest 66905 11 [] 34.13279128074646secs 
+question 1405: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 26858 6880 ['เออร์วิน แมจิก จอห์นสัน'] 26.68169927597046secs 
+question 1406: 0 rank14 || 1  1 76 76 [] 22.93987202644348secs 
+question 1407: 0 rank5123 || 14702  cant find in shorttest 71887 3 [] 33.48408651351929secs 
+question 1408: 0 rank64 || 752  93 3354 306 [] 39.78867483139038secs 
+question 1409: 0 rank1560 || 2052  cant find in shorttest 21495 6880 ['ศาสตราจารย์โคทม อารียา'] 19.845162868499756secs 
+question 1410: 1 rank0 || 5  5 29 29 [] 18.371866941452026secs 
+question 1411: 1 rank0 || 1  1 5 5 [] 33.423683643341064secs 
+question 1412: 1 rank1 || 21  2 56 9 [] 17.876231908798218secs 
+question 1413: 0 rank1017 || 151094  13 770922 166 [] 50.50703549385071secs 
+question 1414: 0 rank1635 || 7696  13 44998 166 [] 22.343379735946655secs 
+question 1415: 0 rank4440 || 233258  0 1304195 1 [] 91.75804090499878secs 
+question 1416: 0 rank2673 || 193773  0 971858 1 ['จดเลข'] 76.62671065330505secs 
+question 1417: 1 rank0 || 29  29 133 133 [' จาติกวณิช'] 25.454967260360718secs 
+question 1418: 1 rank0 || 29  29 133 133 [' จาติกวณิช'] 57.60200834274292secs 
+question 1419: 0 rank1635 || 233986  0 1304195 2 [] 84.20700478553772secs 
+question 1420: 0 rank1635 || 233986  0 1304195 2 [] 91.59255266189575secs 
+question 1421: 0 rank8058 || 236510  1 1304195 31 ['เพชรไทย '] 107.46736311912537secs 
+question 1422: 1 rank0 || 12  5 23 9 ['3'] 30.8028347492218secs 
+question 1423: 0 rank4431 || 602  1 21097 8 ['23'] 68.97520136833191secs 
+question 1424: 1 rank0 || 1  1 13 8 [] 36.17636752128601secs 
+question 1425: 1 rank0 || 3  3 19 19 ['เขื่อน'] 13.394636392593384secs 
+question 1426: 0 rank2065 || 887  cant find in shorttest 5975 5 [] 32.06145930290222secs 
+question 1427: 0 rank3383 || 7261  3 52825 16 [] 27.965798139572144secs 
+question 1428: 0 rank3383 || 7261  3 52825 16 [] 29.613307237625122secs 
+question 1429: 1 rank0 || 0  0 1 1 ['1'] 25.04699420928955secs 
+question 1430: 1 rank0 || 18  18 65 65 [] 23.03986358642578secs 
+question 1431: 1 rank3 || 232  18 893 65 [] 27.873796463012695secs 
+question 1432: 0 rank149 || 1317  11 4252 23 [] 40.438188791275024secs 
+question 1433: 0 rank255 || 3021  cant find in shorttest 11013 5 [' แทมโบ'] 13.228835344314575secs 
+question 1434: 1 rank0 || 0  0 2 2 ['"'] 27.06105399131775secs 
+question 1435: 0 rank11600 || 265607  3 948951 8 ['มาร์กาลี'] 74.56405591964722secs 
+question 1436: 0 rank6 || 11  3 56 8 ['มาร์กาลี'] 19.70927596092224secs 
+question 1437: 1 rank0 || 1  0 6 1 [] 35.811081886291504secs 
+question 1438: 0 rank6396 || 93230  4 275379 40 [] 45.39338135719299secs 
+question 1439: 0 rank6619 || 26322  0 70019 29 [] 29.32736325263977secs 
+question 1440: 0 rank2193 || 2377  cant find in shorttest 8050 6880 ['เขมนิจ จามิกรณ์'] 24.155007123947144secs 
+question 1441: 0 rank9658 || 370747  0 1304195 3 [] 84.80028343200684secs 
+question 1442: 1 rank0 || 21  21 81 81 [] 22.007665872573853secs 
+question 1443: 0 rank4336 || 393538  7 1304195 54 [] 85.71124482154846secs 
+question 1444: 1 rank0 || 0  0 1 1 ['11'] 30.299214124679565secs 
+question 1445: 0 rank37 || 443  9 640 18 [' หมู'] 25.943154335021973secs 
+question 1446: 0 rank448 || 36264  1 121560 3 [] 43.362595319747925secs 
+question 1447: 1 rank0 || 1  1 5 5 [] 24.671913146972656secs 
+question 1448: 0 rank1159 || 63310  33 187895 145 [] 22.96109104156494secs 
+question 1449: 0 rank106 || 67  67 364 364 ['คริสตอฟ ดินเซนฮอฟเฟอร์สถาปนิกบาโรก'] 12.82075047492981secs 
+question 1450: 0 rank70 || 67  2 364 6 [] 38.68661022186279secs 
+question 1451: 0 rank9332 || 429798  2 1304195 35 [] 86.58755660057068secs 
+question 1452: 1 rank0 || 1  3 18 11 ['พลอากาศโทกาจ'] 30.584840297698975secs 
+question 1453: 0 rank365 || 2939  52 13300 122 [] 24.204984426498413secs 
+question 1454: 0 rank13666 || 115488  5781 275379 18339 ['สโมสรฟุตบอลเอ็มโอเอฟ ศุลกากร ยูไนเต็ด'] 22.98055076599121secs 
+question 1455: 0 rank117 || 218  2 1977 19 [] 37.24055004119873secs 
+question 1456: 0 rank5610 || 38007  0 71887 2 ['"'] 29.368221044540405secs 
+question 1457: 1 rank1 || cant find in best tf-idf  0 2 1 [] 28.09780740737915secs 
+question 1458: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 2 1 [] 30.90663433074951secs 
+question 1459: 0 rank13816 || 461091  1 1304195 2 [] 116.39602589607239secs 
+question 1460: 0 rank239 || 2849  2 6260 4 [] 68.9836642742157secs 
+question 1461: 1 rank0 || 1  1 4 4 [] 32.44293785095215secs 
+question 1462: 0 rank13027 || 482718  0 1304195 1 [] 97.50679969787598secs 
+question 1463: 0 rank2408 || cant find in best tf-idf  11 72032 66 ['กิ๊ก มยุริญ'] 60.01719379425049secs 
+question 1464: 0 rank13290 || 484944  2 1304195 16 [] 110.81866002082825secs 
+question 1465: 1 rank1 || 63  63 106 106 ['-'] 48.088345527648926secs 
+question 1466: 0 rank1660 || 13816  10 32194 34 [] 34.823986768722534secs 
+question 1467: 0 rank122 || 306  7 674 31 [] 35.70873284339905secs 
+question 1468: 0 rank13833 || 554326  12 1304195 44 [] 95.88276791572571secs 
+question 1469: 0 rank604 || 1154  12 2724 44 [' คือ'] 9.762963771820068secs 
+question 1470: 1 rank0 || 0  0 5 5 [' อิโต'] 22.479928731918335secs 
+question 1471: 0 rank37 || cant find in best tf-idf  12 70 35 ['-'] 37.23181128501892secs 
+question 1472: 1 rank0 || 0  0 4 1 ['นางเต่า '] 23.0555477142334secs 
+question 1473: 0 rank36 || 402  2 851 3 [] 38.45920658111572secs 
+question 1474: 0 rank14019 || 596709  23 1304195 77 [] 113.92744326591492secs 
+question 1475: 0 rank5667 || 19276  10 45556 13 [] 35.29773688316345secs 
+question 1476: 1 rank4 || 99  cant find in shorttest 226 1 ['1'] 32.391472816467285secs 
+question 1477: 0 rank11816 || 617575  0 1304195 1 [] 97.3155083656311secs 
+question 1478: 1 rank0 || 0  0 1 1 [] 27.897446393966675secs 
+question 1479: 1 rank0 || 56  25 147 78 [] 10.983649492263794secs 
+question 1480: 0 rank12 || 44  29 68 57 [] 24.32991671562195secs 
+question 1481: 1 rank0 || 2  2 7 7 ['3'] 37.823925495147705secs 
+question 1482: 1 rank0 || 2  2 7 7 ['3'] 33.0706307888031secs 
+question 1483: 0 rank828 || 2326  36 3602 63 ['-', ' คูกิมิยะ'] 44.39601278305054secs 
+question 1484: 1 rank1 || 9  9 199 199 [' คูกิมิยะ'] 15.539482116699219secs 
+question 1485: 1 rank0 || 0  0 1 1 [] 39.77176785469055secs 
+question 1486: 1 rank0 || 3  3 9 9 ['โยเซฟส์โซน'] 27.713531255722046secs 
+question 1487: 1 rank0 || 0  0 1 1 [] 9.921485185623169secs 
+question 1488: 0 rank1384 || 4220  0 7217 1 [] 59.405304193496704secs 
+question 1489: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 1 1 [' คือ'] 7.87050986289978secs 
+question 1490: 0 Cant find doc || 704150  cant find in shorttest 1304195 16497 ['จอย รินลณี ศรีเพ็ญ'] 62.043259382247925secs 
+question 1491: 1 rank0 || 4  4 9 9 ['4', '65'] 35.38238978385925secs 
+question 1492: 1 rank0 || 4  4 9 9 [] 28.967592000961304secs 
+question 1493: 0 rank144 || cant find in best tf-idf  8 705 38 [] 23.902127742767334secs 
+question 1494: 0 rank411 || 19365  0 30230 2 ['นางบุญมา เหมือนเอี่ยม'] 54.856698513031006secs 
+question 1495: 1 rank0 || 5  5 21 7 ['1'] 17.65177059173584secs 
+question 1496: 0 rank12604 || 727293  5 1304195 9 [] 111.50639390945435secs 
+question 1497: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 1190 1190 ['แม่พระแห่งบูลอญ'] 18.553361415863037secs 
+question 1498: 1 rank0 || 0  0 1 1 ['คิส มี ไฟว์'] 39.97318434715271secs 
+question 1499: 0 rank650 || 58411  5 107032 11 [] 45.747435092926025secs 
+question 1500: 0 rank11 || 173  5 327 14 [] 39.577685832977295secs 
+question 1501: 0 rank10183 || 758587  9 1304195 19 [] 110.21381616592407secs 
+question 1502: 0 rank12901 || 773275  8 1304195 22 [] 116.03798389434814secs 
+question 1503: 0 rank647 || 3287  3 9547 9 ['2002'] 47.150617599487305secs 
+question 1504: 1 rank0 || 6  6 22 22 [] 33.55688810348511secs 
+question 1505: 0 Cant find doc || 477536  cant find in shorttest 770922 25 [] 96.83359122276306secs 
+question 1506: 0 rank31 || 350  16 634 46 [' คือ'] 13.633347988128662secs 
+question 1507: 0 rank3024 || 24221  16 45556 46 ['เต๋า'] 33.92682075500488secs 
+question 1508: 0 rank5890 || 786182  15 1304195 37 [] 100.66118335723877secs 
+question 1509: 0 rank5116 || 32808  73 53083 146 [' สามิภักดิ์', '2524'] 29.956555128097534secs 
+question 1510: 1 rank0 || 5  5 17 17 [] 67.70940589904785secs 
+question 1511: 1 rank0 || 5  5 17 17 [] 56.208268880844116secs 
+question 1512: 0 rank181 || 1025  41 1815 63 ['-'] 58.54253005981445secs 
+question 1513: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 13 2 [] 44.863157510757446secs 
+question 1514: 0 Cant find doc || 583793  cant find in shorttest 971858 27 [] 103.79428434371948secs 
+question 1515: 0 rank45 || 190  cant find in shorttest 256 11 [] 39.2165846824646secs 
+question 1516: 0 rank13288 || 798120  0 1304195 2 [] 104.59646153450012secs 
+question 1517: 1 rank1 || 0  0 3 3 ['-โฮ'] 41.209590673446655secs 
+question 1518: 1 rank0 || 14  14 47 47 ['จ้าพระยานครราชสีมา'] 23.46908926963806secs 
+question 1519: 1 rank0 || 0  0 1 1 [] 30.586155891418457secs 
+question 1520: 0 rank1051 || cant find in best tf-idf  0 12250 1 [] 20.688493967056274secs 
+question 1521: 0 rank137 || 1477  2 2033 14 [] 40.60993051528931secs 
+question 1522: 0 rank6 || 4495  2 6260 14 ['3'] 35.982757329940796secs 
+question 1523: 1 rank0 || 1  1 5 5 [] 22.800798892974854secs 
+question 1524: 0 rank14673 || 456431  0 1304195 8 [] 103.96218371391296secs 
+question 1525: 0 rank11976 || 287061  6 770922 66 [] 56.164111852645874secs 
+question 1526: 1 rank5 || 98  2 146 7 [' พุ่มสุโข'] 48.57371497154236secs 
+question 1527: 0 rank901 || 13484  211 18595 342 ['2541', '2539', ' 7'] 43.201143741607666secs 
+question 1528: 1 rank0 || 2  2 8 8 [] 48.542574405670166secs 
+question 1529: 0 rank31 || 124  cant find in shorttest 153 28 ['-'] 52.123427391052246secs 
+question 1530: 0 rank86 || 792  cant find in shorttest 1278 8 [] 36.12877154350281secs 
+question 1531: 1 rank0 || 2  2 8 8 [' นพจินดา'] 40.34558320045471secs 
+question 1532: 0 rank12746 || 918769  0 1304195 1 ['\u200b'] 108.26989412307739secs 
+question 1533: 1 rank0 || 0  0 2 2 ['โอสมาร์ อิบัญเญซ', ' บาร์บา'] 58.15969944000244secs 
+question 1534: 0 rank50 || 2116  14 2632 16 [] 63.438164949417114secs 
+question 1535: 1 rank3 || 58  58 139 139 [] 37.687963247299194secs 
+question 1536: 0 rank138 || 344  344 736 736 ['เกาะพิตต์'] 37.410698890686035secs 
+question 1537: 0 rank6124 || 959580  7 1304195 24 [] 119.36572766304016secs 
+question 1538: 1 rank0 || 2  2 7 7 [] 28.25070571899414secs 
+question 1539: 1 rank4 || 263  263 410 410 ['5'] 30.258261919021606secs 
+question 1540: 1 rank1 || 8  8 11 11 [] 37.56089210510254secs 
+question 1541: 1 rank1 || 8  8 11 11 [] 30.526223182678223secs 
+question 1542: 0 rank12025 || 979333  94 1304195 129 [] 132.2005615234375secs 
+question 1543: 1 rank5 || 12  12 14 14 [] 16.78221321105957secs 
+question 1544: 1 rank0 || 0  0 2 1 [] 43.25877618789673secs 
+question 1545: 0 rank11396 || 995699  1 1304195 3 [] 107.20312285423279secs 
+question 1546: 0 rank2610 || 15632  cant find in shorttest 18635 8 ['-'] 41.73839068412781secs 
+question 1547: 0 rank7648 || 42281  cant find in shorttest 53083 1 [] 36.66572093963623secs 
+question 1548: 1 rank0 || 0  0 1 1 [] 10.780738592147827secs 
+question 1549: 0 rank1288 || 1273  cant find in shorttest 5614 1 [] 53.65313005447388secs 
+question 1550: 0 rank3970 || 32428  cant find in shorttest 52825 1 [] 60.07504677772522secs 
+question 1551: 0 rank88 || 2739  0 4080 4 [] 61.7191686630249secs 
+question 1552: 1 rank0 || 0  0 2 2 ['นีลเส็น จำกัด มหาชน '] 30.346657037734985secs 
+question 1553: 1 rank0 || 0  0 2 2 ['นีลเส็น จำกัด มหาชน'] 30.355708122253418secs 
+question 1554: 0 rank1515 || 59740  0 72032 2 [] 51.85559034347534secs 
+question 1555: 0 rank5465 || 83413  0 107032 1 [] 74.0549008846283secs 
+question 1556: 0 rank876 || 87551  cant find in shorttest 107032 62 ['อิตออฟ'] 74.7305121421814secs 
+question 1557: 1 rank5 || 15  5 42 6 [] 25.79005789756775secs 
+question 1558: 0 rank21 || 912  3 977 6 [] 38.55510330200195secs 
+question 1559: 0 rank1936 || 56928  3 64449 6 [] 54.984132051467896secs 
+question 1560: 1 rank0 || 0  0 2 1 [] 34.04430818557739secs 
+question 1561: 1 rank0 || 2  cant find in shorttest 6 4 [] 44.56102681159973secs 
+question 1562: 0 rank312 || 4515  2 5614 5 [] 44.40774726867676secs 
+question 1563: 1 rank0 || 0  0 2 2 ['20', '2555', 'มาตัน '] 51.961705923080444secs 
+question 1564: 1 rank0 || 0  0 2 2 ['มาตัน '] 26.199990034103394secs 
+question 1565: 1 rank0 || 0  0 6 6 ['5'] 29.578741312026978secs 
+question 1566: 0 rank6306 || 1147189  9 1304195 12 [] 95.07593965530396secs 
+question 1567: 0 rank490 || 5199  539 6249 757 ['นาธาน อีเวอร์ฮาร์ต'] 30.540173053741455secs 
+question 1568: 0 rank633 || 5199  0 6249 1 ['นาธาน อีเวอร์ฮาร์ต'] 35.62680768966675secs 
+question 1569: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 149958 2 [] 41.59028720855713secs 
+question 1570: 0 rank922 || 16828  0 17508 2 [] 30.962398052215576secs 
+question 1571: 0 rank10769 || 705609  15 770922 19 [] 53.52101492881775secs 
+question 1572: 1 rank0 || 1  0 17 1 [] 57.727882862091064secs 
+question 1573: 1 rank0 || 4  4 9 9 [] 53.42944622039795secs 
+question 1574: 1 rank0 || 4  4 9 9 [] 19.665449857711792secs 
+question 1575: 0 Cant find doc || 1207484  cant find in shorttest 1304195 22 [] 88.67215704917908secs 
+question 1576: 0 rank10788 || 718601  0 770922 1 [' หัสดีวิจิตร คือ'] 52.24254274368286secs 
+question 1577: 1 rank0 || 5  1 10 3 ['๗', '๑'] 32.439313888549805secs 
+question 1578: 1 rank0 || 0  0 2 2 [] 28.42204999923706secs 
+question 1579: 1 rank0 || 3  3 16 8 [] 22.680395126342773secs 
+question 1580: 1 rank0 || 0  0 3 3 [] 29.024375438690186secs 
+question 1581: 1 rank0 || 0  0 3 3 [] 23.791424036026secs 
+question 1582: 0 rank1080 || 25643  2 26174 3 ['อเล็กซิส ซิปราส'] 40.08887267112732secs 
+question 1583: 1 rank0 || 2  2 11 11 [] 27.67620873451233secs 
+question 1584: 1 rank4 || 23  cant find in shorttest 25 23 [' แฮร์รี'] 37.676827907562256secs 
+question 1585: 0 Cant find doc || 1300456  cant find in shorttest 1304195 28 ['13'] 159.42896604537964secs 
+question 1586: 0 rank7 || 194  194 197 197 ['13'] 41.595375776290894secs 
+question 1587: 1 rank0 || 0  0 1 1 [] 51.312586069107056secs 
+question 1588: 0 rank20 || 851  851 2724 2724 [] 28.874298334121704secs 
+question 1589: 1 rank4 || 8  0 1210 347 [] 40.436484575271606secs 
+question 1590: 1 rank0 || 8  0 1210 621 [' แฮรี่ '] 27.788743019104004secs 
+question 1591: 0 rank651 || 1123  6 23726 213 [' จอบส์'] 18.75388503074646secs 
+question 1592: 1 rank0 || 0  0 77 77 [] 31.316166877746582secs 
+question 1593: 1 rank3 || 2140  cant find in shorttest 662344 6880 [] 42.98119926452637secs 
+question 1594: 0 rank617 || 316  cant find in shorttest 66905 6880 [] 25.46293878555298secs 
+question 1595: 0 rank880 || 5  53 1977 1383 [] 23.297775983810425secs 
+question 1596: 0 rank615 || 5  5 1977 1977 [] 30.01076889038086secs 
+question 1597: 1 rank2 || 79  79 214 214 [] 19.339323043823242secs 
+question 1598: 1 rank2 || 79  79 214 214 [] 19.18672776222229secs 
+question 1599: 0 rank261 || 1418  1 16709 232 [] 40.77510452270508secs 
+question 1600: 0 rank2264 || 4662  2 66905 52 [] 34.73316717147827secs 
+question 1601: 0 rank27 || 783  0 6984 1 [] 17.400020837783813secs 
+question 1602: 0 rank27 || 783  177 6984 2029 [] 24.257139921188354secs 
+question 1603: 1 rank1 || 17  17 252 252 [] 42.8375289440155secs 
+question 1604: 0 rank3223 || 1164  1 58558 3 ['2'] 65.7687451839447secs 
+question 1605: 1 rank0 || 3  0 24 1 [] 13.051123142242432secs 
+question 1606: 0 rank62 || cant find in best tf-idf  13 7932 44 [] 14.062423467636108secs 
+question 1607: 1 rank0 || 12  0 122 12 ['อยู่'] 14.360625505447388secs 
+question 1608: 1 rank0 || 3  3 15 15 [' นิมมานเหมินท์'] 20.765931367874146secs 
+question 1609: 0 rank15 || 218  0 1120 1 [' สุธีธร'] 45.95224189758301secs 
+question 1610: 0 rank27 || 78  42 509 164 [] 9.66916012763977secs 
+question 1611: 0 rank4701 || 4897  cant find in shorttest 19334 58 ['ม.ร.ว. ชิษณุสรร สวัสดิวัตน์'] 31.666382312774658secs 
+question 1612: 1 rank0 || 7  7 14 14 [] 25.62153387069702secs 
+question 1613: 1 rank0 || 3  3 17 17 [] 39.41766810417175secs 
+question 1614: 1 rank0 || 0  0 2 2 ['2490'] 40.67929482460022secs 
+question 1615: 0 rank2841 || 232012  20 1304195 68 [' นวรัตน', ' นิมิตรมงคล'] 99.19000720977783secs 
+question 1616: 0 rank624 || 7639  1 52825 6 ['10'] 28.990503549575806secs 
+question 1617: 0 rank624 || 7639  1 52825 6 [] 38.31763482093811secs 
+question 1618: 0 rank44 || 241  cant find in shorttest 1006 10 [] 28.805206060409546secs 
+question 1619: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 62 17 [] 35.60781288146973secs 
+question 1620: 1 rank0 || 0  0 5 5 [] 30.040687799453735secs 
+question 1621: 1 rank0 || 0  0 5 5 ['1994'] 41.08122229576111secs 
+question 1622: 1 rank0 || 4  4 21 21 ['54'] 25.880107164382935secs 
+question 1623: 0 rank9102 || 364306  8 1304195 13 [] 87.94405937194824secs 
+question 1624: 0 rank8190 || 364841  9 1304195 65 [] 106.77766537666321secs 
+question 1625: 0 rank13556 || 378878  0 1304195 1 [' ณ พิศณุโลก'] 95.14470744132996secs 
+question 1626: 1 rank0 || 5  0 16 1 [] 23.264037609100342secs 
+question 1627: 0 Cant find doc || 397828  cant find in shorttest 1304195 41 [] 103.55450510978699secs 
+question 1628: 0 rank31 || 479  4 1371 61 [] 38.15996265411377secs 
+question 1629: 0 rank13118 || 413231  0 1304195 3 [' สุทิน'] 104.84670662879944secs 
+question 1630: 0 rank14657 || 419820  8 1304195 52 [] 97.97007489204407secs 
+question 1631: 1 rank0 || 1  1 5 5 [] 24.846644401550293secs 
+question 1632: 1 rank0 || 0  0 9 1 ['29'] 38.155797719955444secs 
+question 1633: 0 rank7 || 482  12 961 32 [] 43.891947746276855secs 
+question 1634: 0 rank34 || 482  cant find in shorttest 961 3 [] 20.61376404762268secs 
+question 1635: 1 rank0 || 5  5 11 11 [] 22.891789436340332secs 
+question 1636: 1 rank1 || 1  0 19 9 ['7'] 30.013500690460205secs 
+question 1637: 1 rank0 || 4  4 25 25 [] 23.347609996795654secs 
+question 1638: 0 rank82 || 492  7 1098 64 [] 29.886138439178467secs 
+question 1639: 1 rank0 || 1  1 5 5 [] 26.78043794631958secs 
+question 1640: 1 rank0 || 1  1 3 3 [] 11.746511936187744secs 
+question 1641: 0 rank10638 || 467594  1 1304195 3 [] 84.94205713272095secs 
+question 1642: 0 rank41 || cant find in best tf-idf  2 1338 6 [] 32.74107050895691secs 
+question 1643: 0 rank3115 || 18184  7 42525 8 ['ฯ'] 13.17579174041748secs 
+question 1644: 0 rank9827 || 508658  6 1304195 49 [] 92.0161485671997secs 
+question 1645: 1 rank0 || 0  0 3 3 [] 22.760143280029297secs 
+question 1646: 0 rank11517 || 526590  21 1304195 39 [] 91.46957325935364secs 
+question 1647: 0 rank5769 || 38941  0 107032 2 [] 55.44562911987305secs 
+question 1648: 0 rank7089 || 16846  1 45556 2 [] 45.68693971633911secs 
+question 1649: 1 rank0 || 4  3 8 6 [] 24.498475074768066secs 
+question 1650: 1 rank2 || 4  4 11 11 [] 29.883084058761597secs 
+question 1651: 1 rank0 || 3  3 9 9 [] 28.18767809867859secs 
+question 1652: 0 rank745 || 10238  1 21904 2 [] 30.448634386062622secs 
+question 1653: 1 rank0 || 3  cant find in shorttest 10 1 [' ศักดิ์ศิริเวทย์กุล'] 13.45105528831482secs 
+question 1654: 0 rank11546 || 438829  2 971858 3 ['จริง'] 82.95077443122864secs 
+question 1655: 0 rank12504 || 579179  2 1304195 3 [] 104.14469861984253secs 
+question 1656: 0 rank14334 || 581088  800 1304195 1853 [' ภูธเนศ หงษ์มานพ'] 88.34293007850647secs 
+question 1657: 1 rank0 || 2  2 5 5 ['เจ้าพระยาพระองค์'] 22.54796862602234secs 
+question 1658: 1 rank1 || 10  0 14 2 [] 14.329977989196777secs 
+question 1659: 1 rank0 || 0  0 5 5 [] 31.725221633911133secs 
+question 1660: 0 rank15 || 29  18 95 33 [] 41.24778723716736secs 
+question 1661: 1 rank0 || 6  6 9 9 [] 21.205333948135376secs 
+question 1662: 1 rank0 || 3  0 10 1 [] 26.483295440673828secs 
+question 1663: 1 rank0 || 8  3 19 4 [] 11.765935182571411secs 
+question 1664: 0 rank14768 || 652370  4 1304195 8 [] 101.57159781455994secs 
+question 1665: 0 rank7459 || 21077  23 45556 83 [] 54.75104379653931secs 
+question 1666: 0 rank68 || 644  20 1818 47 [' แด', 'Daniel Dae'] 37.135326623916626secs 
+question 1667: 0 rank6036 || 21396  8 45556 52 [] 48.27605628967285secs 
+question 1668: 0 rank3882 || 22118  4 58558 28 ['-'] 93.12163829803467secs 
+question 1669: 0 rank14 || 83  0 178 1 [] 51.984615087509155secs 
+question 1670: 1 rank0 || 0  0 2 2 [] 22.061550855636597secs 
+question 1671: 1 rank0 || 3  3 6 6 [] 14.722090244293213secs 
+question 1672: 0 rank954 || 28223  20 53083 25 ['1979'] 58.517112731933594secs 
+question 1673: 0 rank926 || 28223  6 53083 11 ['1962'] 50.087939500808716secs 
+question 1674: 0 rank6806 || 698114  6 1304195 17 [] 123.59265804290771secs 
+question 1675: 0 rank12932 || 700662  6 1304195 19 [] 133.08903861045837secs 
+question 1676: 0 rank11 || 15  15 48 48 [] 34.28940439224243secs 
+question 1677: 0 rank12962 || 701537  15 1304195 48 [] 128.42728066444397secs 
+question 1678: 0 Cant find doc || 450230  cant find in shorttest 770922 139 ['หญิงขวัญกมล เทวกุล'] 65.87194395065308secs 
+question 1679: 0 rank14317 || 727338  16 1304195 52 [' หิรัณยัษฐิติ'] 128.32671213150024secs 
+question 1680: 0 rank159 || 703  20 961 25 [] 24.430569648742676secs 
+question 1681: 0 rank631 || 11070  4631 25593 7217 ['ฆาดา', ' ตอร์ตา', 'ราอุล อัลบิโอล'] 49.091296672821045secs 
+question 1682: 1 rank0 || 2  2 7 7 [] 35.927762031555176secs 
+question 1683: 1 rank0 || 0  0 2 2 ['1958'] 55.849618673324585secs 
+question 1684: 1 rank2 || 16  2 19 4 [] 14.79377818107605secs 
+question 1685: 0 rank14 || 146  0 181 1 [] 77.93283367156982secs 
+question 1686: 0 rank126 || 11120  45 15461 72 [] 49.301610469818115secs 
+question 1687: 0 rank78 || 5228  3 6266 5 [] 43.79213619232178secs 
+question 1688: 1 rank0 || 4  7 18 14 ['2012'] 36.538801193237305secs 
+question 1689: 0 Cant find doc || 547883  cant find in shorttest 770922 4608 ['บัณฑ์รพล วสิฐวัชรมงคล', ' คือ'] 54.14181661605835secs 
+question 1690: 0 rank11813 || 912535  14 1304195 36 ['เจมส์ อัศรัสกร'] 141.74175882339478secs 
+question 1691: 0 rank5594 || 557488  32 770922 85 [' ตั้ง'] 88.72201442718506secs 
+question 1692: 0 rank1986 || 9961  cant find in shorttest 12250 6222 ['ก๊อต จิรายุ ตันตระกูล'] 24.180323839187622secs 
+question 1693: 0 rank15 || 114  75 236 106 ['เข้า'] 31.70704460144043secs 
+question 1694: 0 rank6377 || 53555  14 66667 21 [] 65.69652271270752secs 
+question 1695: 1 rank0 || 0  0 3 3 [] 37.037057638168335secs 
+question 1696: 0 rank11966 || 980373  6 1304195 31 [] 126.24746203422546secs 
+question 1697: 1 rank0 || 19  cant find in shorttest 32 12 [] 72.36985087394714secs 
+question 1698: 1 rank0 || 0  0 2 1 [] 95.92997145652771secs 
+question 1699: 0 rank11860 || 1027087  1 1304195 2 [] 129.10729384422302secs 
+question 1700: 1 rank0 || 0  0 5 5 [] 33.260844230651855secs 
+question 1701: 1 rank0 || 4  4 11 11 [] 19.443187475204468secs 
+question 1702: 1 rank0 || 5  5 10 10 ['หม่อมเจ้าจันทรศิริปริวัตร '] 35.27222537994385secs 
+question 1703: 1 rank0 || 2  2 8 8 [] 25.353071451187134secs 
+question 1704: 0 rank8 || 837  4 961 7 [] 39.70913243293762secs 
+question 1705: 0 rank8 || 837  4 961 7 [' คือ'] 12.658676624298096secs 
+question 1706: 0 rank13 || 123  0 140 1 ['กี่กร'] 45.51225233078003secs 
+question 1707: 1 rank0 || 3  3 8 8 [] 31.308356046676636secs 
+question 1708: 0 rank675 || 4768  4768 6249 6249 ['เจมส์ กิบสัน'] 62.37518882751465secs 
+question 1709: 0 rank1402 || 22901  cant find in shorttest 26174 330 ['พอล เอ็ดการ์ ฟีลิป'] 54.10860514640808secs 
+question 1710: 1 rank2 || 53  cant find in shorttest 79 2 [] 49.624935150146484secs 
+question 1711: 1 rank0 || 0  0 3 3 [] 38.69753408432007secs 
+question 1712: 0 rank10379 || 1228011  3 1304195 4 [] 120.58323264122009secs 
+question 1713: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 770922 1631 ['พลโท พระวรวงศ์เธอ พระองค์เจ้าทศศิริวงศ์ '] 66.34680819511414secs 
+question 1714: 0 rank746 || 11959  1 12185 3 ['หม่อมนุ่ม '] 31.195043087005615secs 
+question 1715: 1 rank0 || 1  1 3 3 [] 15.282638549804688secs 
+question 1716: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 1304195 11 [] 137.16536378860474secs 
+question 1717: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 34 1 [] 17.725296020507812secs 
+question 1718: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 606 606 ['เอนค์บาติน บาดาร์', '-'] 73.65158581733704secs 
+question 1719: 1 rank2 || 15  15 36 36 ['หม่อมกมลา '] 29.40892004966736secs 
+question 1720: 0 rank3144 || 28365  15 42525 35 [] 19.36827540397644secs 
+question 1721: 1 rank0 || 5  5 10 10 [] 21.105719327926636secs 
+question 1722: 1 rank0 || 1  1 4 4 ['2535'] 40.439823150634766secs 
+question 1723: 1 rank0 || 2  2 4 4 [] 26.70563793182373secs 
+question 1724: 0 rank33 || 144  cant find in shorttest 152 2 [' เป.', '2'] 44.016382694244385secs 
+question 1725: 1 rank0 || 1  1 2 2 ['-', '1990', '2000'] 51.51964044570923secs 
+question 1726: 1 rank3 || 74  74 76 76 ['พิพิธฑสถานแห่งชาติ'] 20.783942699432373secs 
+question 1727: 0 rank1343 || cant find in best tf-idf  2106 12578 2136 ['1917', '1926'] 31.270460844039917secs 
+question 1728: 1 rank0 || 31  31 84 84 [] 35.05034112930298secs 
+question 1729: 0 rank296 || 34617  1 65494 3 [] 30.581279039382935secs 
+question 1730: 0 Cant find doc || 355322  cant find in shorttest 618846 2 [] 47.861140966415405secs 
+question 1731: 1 rank0 || 60  1 4080 16 ['15', '2012', '\u200b'] 48.61405873298645secs 
+question 1732: 0 rank508 || 111000  21 1304195 99 [] 85.28310441970825secs 
+question 1733: 0 rank15 || 28  16 961 191 [] 28.54473638534546secs 
+question 1734: 0 rank9083 || 49733  cant find in shorttest 275379 1 ['2548'] 50.99781131744385secs 
+question 1735: 1 rank0 || 27  14 96 47 [] 23.43737244606018secs 
+question 1736: 1 rank0 || 27  14 96 47 [] 21.706992864608765secs 
+question 1737: 1 rank0 || 13  2 118 32 [] 56.985721588134766secs 
+question 1738: 1 rank0 || 6  0 76 3 ['3'] 29.654053926467896secs 
+question 1739: 1 rank0 || 24  24 127 127 [] 16.106959104537964secs 
+question 1740: 1 rank1 || 24  24 85 85 ['9'] 33.33691620826721secs 
+question 1741: 0 rank66 || 423  3 3727 16 [] 31.961629390716553secs 
+question 1742: 1 rank1 || 0  0 17 17 [] 85.17480993270874secs 
+question 1743: 0 rank13 || 259  56 961 84 [] 30.94032335281372secs 
+question 1744: 1 rank1 || 9  6 28 12 [] 22.434314489364624secs 
+question 1745: 1 rank0 || 2  2 4 4 [] 12.561437129974365secs 
+question 1746: 1 rank0 || 0  0 1 1 [' ปราโมช'] 14.45038366317749secs 
+question 1747: 0 rank877 || 3418  cant find in shorttest 9547 1 ['2009'] 35.254093647003174secs 
+question 1748: 0 rank511 || 3563  3 9547 12 ['ร้อง'] 23.016496658325195secs 
+question 1749: 0 rank132 || 6960  2 10393 14 [] 17.12826704978943secs 
+question 1750: 1 rank1 || 0  0 2 2 ['1986'] 18.470285177230835secs 
+question 1751: 1 rank0 || 3  1 7 2 [] 27.73912525177002secs 
+question 1752: 1 rank0 || 3  3 4 4 [] 20.502272605895996secs 
+question 1753: 1 rank1 || 7  7 14 14 ['2'] 18.39584231376648secs 
+question 1754: 1 rank0 || 0  0 3 3 [' แม็กวิลเลียมส์'] 38.52319288253784secs 
+question 1755: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 1 1 [] 25.299354791641235secs 
+question 1756: 1 rank0 || 2  2 12 12 [] 18.130553007125854secs 
+question 1757: 0 rank476 || 63718  0 65494 3 [] 26.15311312675476secs 
+question 1758: 1 rank0 || 1  1 4 4 [] 17.864265203475952secs 
+question 1759: 1 rank0 || 9  9 34 34 [] 16.63255214691162secs 
+question 1760: 1 rank1 || 8  8 23 23 [] 33.38046336174011secs 
+question 1761: 0 rank101 || 1322  4 4493 25 [] 51.37072563171387secs 
+question 1762: 0 rank61 || 3046  2 10121 15 [] 49.50049424171448secs 
+question 1763: 0 rank438 || 2532  0 13300 1 [] 44.50599646568298secs 
+question 1764: 0 rank12681 || 348674  0 1304195 1 [] 93.63151836395264secs 
+question 1765: 1 rank0 || 3  3 7 7 [] 18.32953691482544secs 
+question 1766: 1 rank1 || 85  0 261 1 ['4'] 48.89997124671936secs 
+question 1767: 0 rank14518 || cant find in best tf-idf  0 85313 1 [] 34.06559419631958secs 
+question 1768: 1 rank0 || 11  11 55 55 [] 16.975292205810547secs 
+question 1769: 1 rank0 || 11  11 55 55 [] 29.95053195953369secs 
+question 1770: 1 rank2 || 40  12 55 43 [] 15.708746910095215secs 
+question 1771: 1 rank2 || 40  12 55 43 ['1'] 34.220086097717285secs 
+question 1772: 0 rank7 || 44  4 55 6 [] 37.20149207115173secs 
+question 1773: 0 rank7 || 44  44 55 55 [] 35.52706432342529secs 
+question 1774: 1 rank2 || 15  15 36 36 ['หม่อมกมลา '] 28.101685762405396secs 
+question 1775: 0 rank1700 || 1522  172 9547 640 ['2533', 'คือใคร'] 48.080690145492554secs 
+question 1776: 0 rank1700 || 1522  172 9547 640 [] 29.689663887023926secs 
+question 1777: 0 rank2285 || 23041  0 72032 1 ['2517', '25218'] 55.14808249473572secs 
+question 1778: 0 rank1148 || 13945  179 53083 687 ['2551'] 36.99160695075989secs 
+question 1779: 1 rank0 || 2  2 4 4 [] 14.108298063278198secs 
+question 1780: 1 rank0 || 15  10 36 24 [] 30.688623666763306secs 
+question 1781: 0 rank11 || 241  cant find in shorttest 345 11 ['พระที่นั่งไกรสร'] 42.023518562316895secs 
+question 1782: 0 rank2643 || 32808  0 107032 1 [] 53.27523899078369secs 
+question 1783: 0 rank10 || 4398  20 10078 176 [] 37.765883445739746secs 
+question 1784: 0 rank244 || 689  1 1746 3 [] 14.27959156036377secs 
+question 1785: 1 rank1 || 1  1 3 3 [] 12.253251552581787secs 
+question 1786: 1 rank0 || 4  3 8 6 [] 17.516194105148315secs 
+question 1787: 1 rank0 || 4  3 8 6 [] 28.766130685806274secs 
+question 1788: 1 rank0 || 8  8 16 16 [] 24.11156940460205secs 
+question 1789: 0 rank4405 || 222418  5 275379 9 [] 50.54457664489746secs 
+question 1790: 0 rank7842 || 995865  5 1304195 9 [] 112.45575404167175secs 
+question 1791: 1 rank1 || 3  0 28 1 ['1'] 23.72682499885559secs 
+question 1792: 1 rank0 || 2  2 6 5 [] 19.11891222000122secs 
+question 1793: 1 rank0 || 2  2 6 5 [] 9.96138072013855secs 
+question 1794: 0 rank14450 || 555727  2 1304195 4 [] 120.42842745780945secs 
+question 1795: 1 rank0 || 0  0 5 5 [] 45.28535270690918secs 
+question 1796: 0 rank622 || 3265  1 4633 2 [] 138.55093836784363secs 
+question 1797: 0 rank1074 || 5906  1 14430 2 [] 47.02030658721924secs 
+question 1798: 0 rank1281 || 4747  0 13460 1 [] 47.06468391418457secs 
+question 1799: 1 rank0 || 4  4 11 11 [] 37.54922533035278secs 
+question 1800: 0 rank10 || 903  0 1262 1 [] 44.57767844200134secs 
+question 1801: 0 rank10 || 903  0 1262 1 [] 41.56803917884827secs 
+question 1802: 0 Cant find doc || 376221  cant find in shorttest 770922 4608 ['หม่อมหลวงจรัญ สนิทวงศ์ คือ'] 42.0257363319397secs 
+question 1803: 1 rank5 || 16  16 141 141 [' บราวน์'] 39.14000725746155secs 
+question 1804: 1 rank5 || 16  16 141 141 [' บราวน์'] 25.96561574935913secs 
+question 1805: 1 rank0 || 0  0 1 1 [' มะโน'] 32.95036697387695secs 
+question 1806: 1 rank0 || 1  1 5 5 [] 16.340335369110107secs 
+question 1807: 1 rank0 || 1  1 5 5 [] 12.092685222625732secs 
+question 1808: 1 rank0 || 9  5 25 11 ['1873'] 31.57218647003174secs 
+question 1809: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 770922 1560 ['พลโท พระวรวงศ์เธอ พระองค์เจ้าทศศิริวงศ์ '] 53.54395627975464secs 
+question 1810: 0 rank11447 || 1228011  5488 1304195 6088 ['พลโท พระวรวงศ์เธอ พระองค์เจ้าทศศิริวงศ์'] 86.07010293006897secs 
+question 1811: 0 rank4952 || 51323  2 107032 4 [] 103.12105512619019secs 
+question 1812: 0 rank1829 || 42952  1 66667 6 ['1576', '2'] 119.02691292762756secs 
+question 1813: 0 rank1130 || 28055  2 53083 11 [] 40.900474071502686secs 
+question 1814: 1 rank0 || 3  3 6 6 [' คือ'] 13.62977385520935secs 
+question 1815: 0 rank6806 || 698114  6 1304195 17 [] 173.0102620124817secs 
+question 1816: 0 rank22 || 41  cant find in shorttest 203 164 ['เอก พลโท พระวรวงศ์เธอ พระองค์'] 66.26268935203552secs 
+question 1817: 0 rank11 || 41  41 203 203 ['พลตำรวจเอก พลโท พระวรวงศ์เธอ พระองค์'] 43.33639407157898secs 
+question 1818: 0 Cant find doc || 450230  cant find in shorttest 770922 139 ['หญิงขวัญกมล เทวกุล'] 66.64955472946167secs 
+question 1819: 1 rank0 || 0  0 2 2 ['83'] 86.73192048072815secs 
+question 1820: 1 rank1 || 3  3 12 12 ['-'] 58.48400115966797secs 
+question 1821: 1 rank0 || 6  6 12 12 ['2007', 'ประเทศฟีจีมี'] 33.28480625152588secs 
+question 1822: 0 rank10351 || 748425  6434 1304195 10875 ['แอนนา เคย์ ฟาริส'] 122.52576518058777secs 
+question 1823: 1 rank0 || 0  0 4 4 [] 20.191286087036133secs 
+question 1824: 0 rank271 || 529  0 1746 2 [] 21.094996213912964secs 
+question 1825: 1 rank0 || 2  2 17 17 [] 12.994470596313477secs 
+question 1826: 1 rank0 || 2  2 17 17 [] 18.483375787734985secs 
+question 1827: 1 rank1 || 7  7 103 103 ['ซีเคร็ตออฟมายฮาร์ต'] 45.094961643218994secs 
+question 1828: 1 rank2 || 49  0 187 1 ['-'] 47.234275579452515secs 
+question 1829: 0 rank886 || 7800  cant find in shorttest 14430 898 ['แบล็คแมม', 'คัลตาร์', ' กิลล์'] 48.34599709510803secs 
+question 1830: 1 rank0 || 4  0 12 2 [] 25.6486759185791secs 
+question 1831: 1 rank0 || 4  0 12 2 [] 21.195354461669922secs 
+question 1832: 0 rank9102 || 364306  8 1304195 13 [] 116.87898111343384secs 
+question 1833: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 8652 8652 ['หม่อมเจ้าทิพยสัมพันธ์ อภิเษก'] 23.283326148986816secs 
+question 1834: 0 Cant find doc || 585313  cant find in shorttest 971858 3949 ['เอกเฉลิมเดช ชมพูนุช'] 93.53332042694092secs 
+question 1835: 1 rank0 || 0  0 8 8 [] 10.207395076751709secs 
+question 1836: 1 rank0 || 1  1 4 4 [] 20.46318244934082secs 
+question 1837: 1 rank0 || 1  1 4 4 [] 22.48198890686035secs 
+question 1838: 1 rank0 || 0  0 3 3 [] 24.18274974822998secs 
+question 1839: 1 rank0 || 0  0 3 3 [] 16.783679962158203secs 
+question 1840: 0 rank47 || 246  0 590 1 [] 29.043594121932983secs 
+question 1841: 1 rank0 || 0  0 2 2 [] 40.255332708358765secs 
+question 1842: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 770922 4608 ['หม่อมเจ้าจิตร์ปรีดี ประวิตร คือ'] 50.52832007408142secs 
+question 1843: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 1746 1746 ['หม่อมเจ้าจิตรปรีดี ', 'ประวิตร '] 18.276468515396118secs 
+question 1844: 1 rank0 || 8  3 19 4 [] 20.510401010513306secs 
+question 1845: 1 rank0 || 8  3 19 4 ['.'] 34.055070638656616secs 
+question 1846: 0 rank1336 || 12353  4876 25593 7217 ['อันโตนิโอ อาดัน การ์ริโด'] 36.81079173088074secs 
+question 1847: 0 rank978 || 2854  0 6249 1 ['โฟเลา ', 'นิวย์'] 27.676085472106934secs 
+question 1848: 0 rank1068 || 2854  cant find in shorttest 6249 33 ['โฟเลา ', 'นิวย์', ' ซีนัว'] 48.953468322753906secs 
+question 1849: 1 rank2 || 1  1 3 3 [] 42.25155806541443secs 
+question 1850: 1 rank0 || 0  0 1 1 [] 19.920246362686157secs 
+question 1851: 1 rank0 || 0  0 1 1 [] 25.98007321357727secs 
+question 1852: 0 rank157 || 2078  5 2594 7 [] 14.893311262130737secs 
+question 1853: 0 rank14651 || 843537  0 1304195 2 [] 130.31302404403687secs 
+question 1854: 1 rank0 || 0  0 4 4 [] 40.10182023048401secs 
+question 1855: 1 rank0 || 0  0 4 4 [] 37.168994665145874secs 
+question 1856: 1 rank0 || 1  1 8 8 [] 18.517165899276733secs 
+question 1857: 1 rank0 || 1  1 8 8 [] 27.312849521636963secs 
+question 1858: 1 rank0 || 0  0 3 3 [] 33.469162940979004secs 
+question 1859: 0 Cant find doc || 537555  cant find in shorttest 770922 4608 ['โท ดิเรกสิน รัตนสิน'] 54.367023944854736secs 
+question 1860: 1 rank0 || 0  0 1 1 [] 37.35605335235596secs 
+question 1861: 1 rank0 || 2  2 5 5 [] 37.00487756729126secs 
+question 1862: 0 rank906 || 6744  2 11107 5 [] 46.91972613334656secs 
+question 1863: 0 rank426 || 1505  cant find in shorttest 1824 2 [] 21.29082441329956secs 
+question 1864: 1 rank0 || 11  11 60 60 [] 26.993108987808228secs 
+question 1865: 0 rank3556 || 149444  1 770922 6 ['เจ้าบวรเดช '] 75.08483815193176secs 
+question 1866: 1 rank0 || 5  5 11 11 [] 26.786983966827393secs 
+question 1867: 1 rank0 || 5  5 11 11 [] 18.43666696548462secs 
+question 1868: 0 rank38 || 403  403 2065 2065 [' สมรส', ' หม่อมราชวงศ์ ชิษณุสรร สวัสดิวัตน์'] 9.385347843170166secs 
+question 1869: 0 rank1552 || 127166  403 770922 2065 [' หม่อมราชวงศ์ ชิษณุสรร สวัสดิวัตน์'] 59.356290340423584secs 
+question 1870: 1 rank0 || 20  20 32 32 [] 33.478336572647095secs 
+question 1871: 1 rank0 || 2  2 8 8 [] 10.866498231887817secs 
+question 1872: 1 rank0 || 2  2 8 8 [] 11.543795824050903secs 
+question 1873: 1 rank0 || 1  1 3 3 [] 17.3818256855011secs 
+question 1874: 1 rank0 || 0  0 1 1 [] 42.9536292552948secs 
+question 1875: 1 rank0 || 0  0 1 1 [] 30.35832452774048secs 
+question 1876: 0 rank182 || 760  2 5614 3 ['แก้วมะเริ่ม'] 47.19869065284729secs 
+question 1877: 1 rank2 || 6  cant find in shorttest 8 2 [] 46.67658066749573secs 
+question 1878: 0 rank12 || 147  1 160 2 [] 45.26595115661621secs 
+question 1879: 0 Cant find doc || 737068  cant find in shorttest 971858 6325 ['คุณนิพัทธ์', ' ทองเล็ก'] 80.27405595779419secs 
+question 1880: 1 rank0 || 1  1 5 5 [] 32.183838844299316secs 
+question 1881: 1 rank0 || 2  2 7 7 [] 13.34606409072876secs 
+question 1882: 0 rank11825 || 1008728  0 1304195 1 [] 114.10810685157776secs 
+question 1883: 1 rank0 || 2  2 14 9 [] 46.42172455787659secs 
+question 1884: 1 rank0 || 2  2 14 9 [] 50.00278902053833secs 
+question 1885: 1 rank0 || 0  0 2 2 [' ประสูติ'] 17.505725383758545secs 
+question 1886: 0 rank8 || 837  4 961 7 [' คือ'] 13.20220685005188secs 
+question 1887: 1 rank0 || 0  0 5 5 [' คือ'] 15.941358089447021secs 
+question 1888: 1 rank0 || 3  0 11 1 [] 22.141583919525146secs 
+question 1889: 0 rank398 || 977  977 1698 1698 ['5', 'จัตวาทูนทิน'] 57.38611626625061secs 
+question 1890: 0 rank139 || 1528  1 1779 2 [] 57.87001395225525secs 
+question 1891: 1 rank0 || 1  1 2 2 [] 34.91675424575806secs 
+question 1892: 0 rank673 || 4795  1 6249 5 [] 48.6610164642334secs 
+question 1893: 0 rank745 || 10238  1 21904 2 [] 37.18661165237427secs 
+question 1894: 0 rank11867 || cant find in best tf-idf  101 770922 210 [' หม่อมเจ้าจุลเจิม ยุคล', ' คือ'] 63.56562566757202secs 
+question 1895: 0 rank391 || 63039  4 72032 5 ['จังหวัดพัทลุ', 'เรียนกี่'] 78.38466334342957secs 
+question 1896: 1 rank1 || 265  46 384 69 ['2559'] 26.21579885482788secs 
+question 1897: 1 rank0 || 1  1 5 5 [] 14.787482738494873secs 
+question 1898: 1 rank0 || 1  1 5 5 [] 28.113238096237183secs 
+question 1899: 1 rank2 || 53  cant find in shorttest 79 2 [] 20.085083484649658secs 
+question 1900: 1 rank0 || 6  6 9 9 [] 22.999050617218018secs 
+question 1901: 1 rank0 || 6  6 9 9 [] 12.53350830078125secs 
+question 1902: 1 rank0 || 3  cant find in shorttest 8 1 [] 34.96226477622986secs 
+question 1903: 1 rank0 || 5  5 10 10 ['หม่อมเจ้าจันทรศิริปริวัตร '] 28.062072038650513secs 
+question 1904: 1 rank0 || 5  5 10 10 ['หม่อมเจ้าจันทรศิริปริวัตร '] 16.32503318786621secs 
+question 1905: 0 rank865 || 9746  cant find in shorttest 10078 1 [] 94.69880390167236secs 
+question 1906: 0 rank11254 || cant find in best tf-idf  1 770922 2 [] 63.63487648963928secs 
+question 1907: 0 rank41 || 1285  0 1338 1 [] 37.33580780029297secs 
+question 1908: 1 rank0 || 0  0 4 4 [] 19.70634150505066secs 
+question 1909: 1 rank0 || 0  0 5 5 [] 47.2928364276886secs 
+question 1910: 1 rank0 || 0  0 5 5 [] 33.977110147476196secs 
+question 1911: 0 rank41 || 4706  50 4981 57 [] 119.27183771133423secs 
+question 1912: 0 rank6528 || 940527  708 971858 726 ['2543'] 144.01747369766235secs 
+question 1913: 1 rank0 || 2  2 5 5 [] 35.724560022354126secs 
+question 1914: 0 Cant find doc || 606301  cant find in shorttest 770922 4608 ['หม่อมเจ้าจรูญฤทธิเดช ชยางกูร '] 84.46243381500244secs 
+question 1915: 1 rank0 || 12  12 17 17 [] 27.98199200630188secs 
+question 1916: 1 rank0 || 12  12 17 17 [] 14.198383331298828secs 
+question 1917: 0 rank701 || 32617  1 32759 2 ['สึโนวามี'] 43.395514488220215secs 
+question 1918: 1 rank0 || 1  1 8 8 [] 13.974073886871338secs 
+question 1919: 1 rank0 || 1  1 8 8 [' นวรัตน'] 12.681198835372925secs 
+question 1920: 0 rank9444 || 112773  cant find in shorttest 770922 1631 ['หม่อมราชวงศ์นริศรา จักรพงษ์ คือ'] 58.269360065460205secs 
+question 1921: 0 rank416 || 44032  cant find in shorttest 332373 8711 ['หม่อมราชวงศ์นริศรา จักรพงษ์ สมรส'] 25.17814874649048secs 
+question 1922: 0 rank7 || 482  12 961 32 [] 13.250929117202759secs 
+question 1923: 0 rank7 || 482  12 961 32 [] 12.56022310256958secs 
+question 1924: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 770922 2 [] 62.28189969062805secs 
+question 1925: 1 rank0 || 13  13 268 268 [] 23.997437953948975secs 
+question 1926: 0 rank17 || 420  13 9122 268 [] 23.186153173446655secs 
+question 1927: 0 rank133 || 186  35 3724 205 [] 44.346405029296875secs 
+question 1928: 0 rank7965 || 12241  cant find in shorttest 71887 8 [] 40.17523145675659secs 
+question 1929: 1 rank3 || 273  273 4889 4889 [] 24.054544925689697secs 
+question 1930: 1 rank1 || 10  10 226 226 [] 29.37264657020569secs 
+question 1931: 0 rank634 || 36707  1 107032 26 [] 52.44981408119202secs 
+question 1932: 0 rank10 || 1  1 26 26 [] 34.0349497795105secs 
+question 1933: 0 rank8 || 26  26 65 65 [] 9.461018800735474secs 
+question 1934: 1 rank0 || 5  5 10 10 [] 14.239550352096558secs 
+question 1935: 1 rank3 || 32  6 37 10 ['-'] 41.77861404418945secs 
+question 1936: 0 rank14548 || 870878  1 971858 16 [] 95.63863515853882secs 
+question 1937: 0 rank171 || 11506  1 11779 2 ['5', ' สัมภวคุปต์'] 46.444804191589355secs 
+question 1938: 0 rank171 || 11506  1 11779 2 ['5', ' สัมภวคุปต์'] 22.71291208267212secs 
+question 1939: 1 rank0 || 1  1 6 6 ['30'] 42.9252495765686secs 
+question 1940: 0 rank993 || 6215  240 9155 247 ['ปาร์เลอามองแปร์'] 47.18908619880676secs 
+question 1941: 1 rank0 || 19  19 2532 2532 [] 12.089174747467041secs 
+question 1942: 1 rank1 || 89  0 104 1 ['2425'] 48.791565895080566secs 
+question 1943: 1 rank0 || 19  19 2532 2532 [] 12.780056953430176secs 
+question 1944: 0 rank100 || 956  cant find in shorttest 1327 78 [] 42.71856236457825secs 
+question 1945: 1 rank1 || 9  9 1296 1296 [] 19.995519399642944secs 
+question 1946: 1 rank0 || 3  3 6 6 [' คือ'] 10.925934791564941secs 
+question 1947: 1 rank0 || 3  3 6 6 [] 16.502613306045532secs 
+question 1948: 1 rank0 || 8  8 16 16 [] 33.61685562133789secs 
+question 1949: 1 rank0 || 8  8 16 16 [] 22.68476438522339secs 
+question 1950: 1 rank4 || 36  1 70 2 ['หม่อมงามจิตต์ '] 18.055914640426636secs 
+question 1951: 0 rank707 || 4136  1 8652 2 ['หม่อมงามจิตต์ '] 12.692367792129517secs 
+question 1952: 0 rank349 || 3605  cant find in shorttest 19243 8711 ['การ์ตูนเอ็กซ์เมน'] 23.39405870437622secs 
+question 1953: 0 rank25 || 231  231 510 510 ['เลโอเนล กีเยร์โม ซานเชซ ลีเนโรส'] 34.85291600227356secs 
+question 1954: 0 rank7 || 102  102 134 134 [] 32.50385856628418secs 
+question 1955: 1 rank2 || 15  15 36 36 ['หม่อมกมลา '] 32.1681170463562secs 
+question 1956: 1 rank2 || 15  15 36 36 ['หม่อมกมลา '] 13.135024309158325secs 
+question 1957: 0 rank935 || 51  51 1977 1977 [] 21.699145078659058secs 
+question 1958: 1 rank0 || 3  0 11 2 [] 41.56146430969238secs 
+question 1959: 0 rank1350 || 129  40 34902 3003 ['ประเทศฝรั่งเศส'] 11.197845458984375secs 
+question 1960: 0 rank8 || 2648  30 2895 44 [] 15.63686990737915secs 
+question 1961: 0 rank220 || 149  149 3739 3739 [] 21.56634521484375secs 
+question 1962: 1 rank1 || cant find in best tf-idf  0 6 1 [] 42.19595694541931secs 
+question 1963: 1 rank0 || 8  8 16 16 [] 24.92358899116516secs 
+question 1964: 0 rank414 || 479  1 4393 12 [] 24.588514804840088secs 
+question 1965: 0 Cant find doc || cant find in best tf-idf  cant find in shorttest 2594 154 ['หม่อมกอบแก้ว อาภากร '] 17.278586864471436secs 
+question 1966: 1 rank0 || 6  6 28 28 [] 18.52496600151062secs 
+question 1967: 0 rank35 || cant find in best tf-idf  4 914 7 [] 19.028241872787476secs 
+question 1968: 1 rank0 || 8  4 19 10 [] 19.31554889678955secs 
+question 1969: 1 rank0 || 8  4 19 10 [] 12.246870040893555secs 
+question 1970: 1 rank0 || 12  5 23 9 ['3'] 34.8977267742157secs 
+question 1971: 0 rank29 || 74  cant find in shorttest 370 19 [] 64.7474057674408secs 
+question 1972: 1 rank0 || 3  3 96 96 [] 32.013136863708496secs 
+question 1973: 1 rank0 || 0  0 1 1 [' คือ'] 10.154960632324219secs 
+question 1974: 1 rank0 || 0  0 1 1 [' คือ'] 10.086968898773193secs 
+question 1975: 0 rank9117 || 20520  4 45556 8 [] 39.222782611846924secs 
+question 1976: 0 rank3549 || cant find in best tf-idf  9 72032 11 [] 65.48391461372375secs 
+question 1977: 0 rank12 || 14005  14005 16088 16088 [] 17.57328224182129secs 
+question 1978: 1 rank0 || 5  5 9 9 [] 32.27999448776245secs 
+question 1979: 0 rank1395 || 3659  3659 6984 6984 ['45'] 16.603020429611206secs 
+question 1980: 0 rank158 || 432  2 961 10 [] 31.51042342185974secs 
+question 1981: 0 rank1395 || 3659  cant find in shorttest 6984 4 ['45'] 31.28390598297119secs 
+question 1982: 0 rank11314 || 412020  1 1304195 4 [] 116.23266458511353secs 
+question 1983: 0 rank707 || 4136  1 8652 2 ['หม่อมงามจิตต์ '] 13.619453191757202secs 
+question 1984: 0 rank179 || 1605  1 2594 2 ['หม่อมงามจิตต์ '] 11.651708602905273secs 
+question 1985: 0 rank11 || 29  6 54 41 [] 66.71158695220947secs 
+question 1986: 0 rank5317 || 89194  2 149958 16 [] 54.795849084854126secs 
+question 1987: 0 rank124 || 6  6 419 419 ['ทวีปใด'] 13.191565752029419secs 
+question 1988: 1 rank1 || 108  9 115 12 [] 37.219112157821655secs 
+question 1989: 1 rank3 || 108  108 115 115 [] 15.722542524337769secs 
+question 1990: 0 rank1543 || 70759  49 275379 173 [] 53.96472501754761secs 
+question 1991: 0 rank156 || 2672  87 66905 2948 [] 30.274953842163086secs 
+question 1992: 0 rank322 || 7652  52 38327 208 [] 25.91035032272339secs 
+question 1993: 0 rank316 || 7652  343 38327 872 [] 40.72428250312805secs 
+question 1994: 0 rank26 || 164  27 407 68 [] 36.79562711715698secs 
+question 1995: 1 rank3 || 27  6 83 9 [] 34.08079504966736secs 
+question 1996: 0 rank7612 || 24831  7 107032 28 [' มาร์เลย์'] 59.984628438949585secs 
+question 1997: 0 rank540 || 643  cant find in shorttest 1818 1 ['2017'] 39.53049325942993secs 
+question 1998: 0 rank169 || 643  0 1818 3 [] 35.75206661224365secs 
+question 1999: 1 rank0 || 13  13 1933 1933 [] 28.88904905319214secs 

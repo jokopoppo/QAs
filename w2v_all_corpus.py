@@ -1,64 +1,45 @@
 # coding=utf8
+
 import warnings
 warnings.filterwarnings(action='ignore', category=UserWarning, module='gensim')
 warnings.filterwarnings(action='ignore', category=FutureWarning)
-
 from gensim.models import Word2Vec
-from pythainlp.tokenize import word_tokenize , sent_tokenize
-
-import re
 import os
-import deepcut
+import json
+import re
+def cleadata(data_tokenize):
 
-def cleanhtml(raw_html):
-  cleanr = re.compile('<.*?>')
-  cleantext = re.sub(cleanr, '', raw_html)
-  return cleantext
+    data_tokenize.pop(0)
+    data_tokenize.pop()
+    for i in range(data_tokenize.__len__()):
+        if data_tokenize[i].isnumeric():
+            data_tokenize[i] = "NUM"
+    return data_tokenize
 
-path = 'D:/CPE#Y4/documents-nsc/'
-datasets = os.listdir(path)
-# print(datasets.__len__())
-fs = []
-for dataset in datasets:
-    if(dataset == 'test.txt'):
-        break
-    fs.append(int((dataset.split("."))[0]))
+datasets_dir = 'E:/CPE#Y4/databaseTF/documents-tokenize/'
+datasets = os.listdir(datasets_dir)
 
-fs = sorted(fs)
+model = Word2Vec.load("word2vec_model\word2vec.model")
+print("Words in model",model.wv.vocab.__len__())
 
-data=[]
-count = 0
-for i in range(19000,20000):
+for i in range(110000,datasets.__len__()):
+    # print(datasets[i])
+    # exit(0)
+    data = json.load(open(datasets_dir+datasets[i],'r',encoding='utf-8-sig'))
+    data = cleadata(data)
+    print("DOC",i,set(data).__len__(),end=" ")
+    model.build_vocab([data],update=True)
+    print(model.train([data], total_examples=1, epochs=1))
 
-    text_file = open(path+ str(fs[i]) + '.txt', mode = 'r' ,  encoding="utf-8")
-    data.append(text_file.read())
-    data[-1]=cleanhtml(data[-1])
+    if i%1000 == 0 :
+        model.save("word2vec_model\word2vec.model")
+        model = Word2Vec.load("word2vec_model\word2vec.model")
+        print("Words in model", model.wv.vocab.__len__())
 
-    if(i%100 == 0 or i == (fs.__len__() - 1 )):
-        print(i,count)
-        count+=1
-        print("#readed_file", data.__len__())
+model.save("word2vec_model\word2vec.model")
 
-        tokendata = [list(deepcut.tokenize(i)) for i in data]
-
-        print("Start training")
-        # model = Word2Vec(tokendata, min_count=1,window=5,sg=1)
-        model = Word2Vec.load("w2v_all_corpus.bin")
-
-        words = list(model.wv.vocab)
-        print("Words    :", words.__len__())
-
-        model.build_vocab(tokendata, update=True)
-        model.train(tokendata, total_examples=1, epochs=1)
-
-        words = list(model.wv.vocab)
-        print("Words    :", words.__len__())
-
-        model.save('w2v_all_corpus.bin')
-        data=[]
-
-# test model
+# # test model
 # ss=model.similar_by_word('พี่น้อง',topn=5)
 # print(ss)
 
-
+# TODO run this

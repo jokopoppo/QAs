@@ -134,6 +134,27 @@ def plot_classify_graph():
     plt.show()
     return
 
+def fill_tfidf():
+    index_dir = 'E:\CPE#Y4\databaseTF\dict2\\'
+
+    alphabet = 'ลห' # tf-idf at 'ล','ห' is not complete
+    vowel = 'โ' # tf-idf at 'โ' is not complete
+    e_alphabet = 'abcdefghijklmnopqrstuvwxyz'
+
+    for f in vowel:
+        file = index_dir + f +".json"
+        print(file)
+        data = json.load(open(file, mode = 'r' , encoding="utf-8-sig"))
+
+        for k,v in data.items():
+            for i in range(data[k].__len__()):
+                if(data[k][i].__len__() != 5):
+                    try:
+                        data[k][i].append(data[k][i-1][4])
+                    except IndexError:
+                        print(k)
+        json.dump(data, open(file, 'w'), ensure_ascii=True)
+    return
 from pprint import pprint
 import pickle
 # import deepcut
@@ -146,25 +167,7 @@ import matplotlib.pyplot as plt
 import os
 from gensim.models import Word2Vec
 
-# index_dir = 'E:\CPE#Y4\databaseTF\dict2\\'
-#
-# alphabet = 'ลห' # tf-idf at 'ล','ห' is not complete
-# vowel = 'โ' # tf-idf at 'โ' is not complete
-# e_alphabet = 'abcdefghijklmnopqrstuvwxyz'
-#
-# for f in vowel:
-#     file = index_dir + f +".json"
-#     print(file)
-#     data = json.load(open(file, mode = 'r' , encoding="utf-8-sig"))
-#
-#     for k,v in data.items():
-#         for i in range(data[k].__len__()):
-#             if(data[k][i].__len__() != 5):
-#                 try:
-#                     data[k][i].append(data[k][i-1][4])
-#                 except IndexError:
-#                     print(k)
-#     json.dump(data, open(file, 'w'), ensure_ascii=True)
+
 
 # file = index_dir + 'a' +".json"
 # print(file)

@@ -51,8 +51,8 @@ alphabet = 'กขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถ�
 vowel = 'เแโใไ'
 e_alphabet = 'abcdefghijklmnopqrstuvwxyz'
 be_alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-
-dictset = [be_alphabet]
+num = '0123456789'
+dictset = [num]
 for d in dictset:
     alp=[]
     for i in d:
@@ -76,7 +76,7 @@ for d in dictset:
         # if doc == 1 :
         #     break
     # pprint(alp)
-    dict_path = 'E:\CPE#Y4\databaseTF\dict2\B_alphabet\\'
+    dict_path = 'E:\CPE#Y4\databaseTF\dict2\\'
     for i in range(alp.__len__()):
         filename = dict_path + str(d[i]) + ".json"
         print(filename)
