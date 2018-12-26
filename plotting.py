@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import os
+
 def plotAccuracy(file):
     for f in file :
         data = open('result\\'+f, 'r', encoding='utf-8-sig')
@@ -21,7 +22,7 @@ def plotAccuracy(file):
                 topN[i] = 1000000
         # print(topN)
 
-        rank = [1,5, 10, 20, 50, 100, 500, 1000, 2000, 3000, 5000, 10000]
+        rank = [1,5, 10, 20, 50, 100, 500, 1000]
         acc = []
         for n in rank:
             acc.append(0)
@@ -44,7 +45,23 @@ def plotAccuracy(file):
     plt.show()
 
 file = os.listdir('result/')
-for i in range(file.__len__()):
-    print(i,file[i])
-plotAccuracy(file)
+# print(file)
+# file.remove('old_result')
+# for i in range(file.__len__()):
+#     print(i,file[i])
+# plotAccuracy(file)
 
+f = file[5]
+print(f)
+data = open('result\\'+f, 'r', encoding='utf-8-sig')
+
+l1 = []
+l0 = []
+for i in data:
+    i=i.split(']')
+    i[-2] = i[-2].split()
+    l1.append(int(i[-2][0]))
+    l0.append(int(i[-2][1]))
+# plt.hist(l0,100,color='b')
+plt.hist(l1,100,color='g')
+plt.show()

@@ -4,7 +4,6 @@ from sqlitedict import SqliteDict
 import itertools
 import time
 doc = SqliteDict('doc.sqlite' , autocommit=True)
-dict = SqliteDict('db.sqlite' , autocommit=True)
 dir = 'E:\CPE#Y4\databaseTF\dict2\\'
 
 # all = {}

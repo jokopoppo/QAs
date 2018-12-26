@@ -1,4 +1,4 @@
- question 0: 1 rank0 || [['Benji', '']] cant find in best tf-idf  0 2 [] 0.0010082721710205078secs
+question 0: 1 rank0 || [['Benji', '']] cant find in best tf-idf  0 2 [] 0.0010082721710205078secs
 question 1: 1 rank2 || [['ลูนา', '']] cant find in best tf-idf  0 14 [] 0.0009946823120117188secs 
 question 2: 1 rank2 || [['ลูนา', '']] cant find in best tf-idf  0 14 [] 0.000997781753540039secs 
 question 3: 0 rank35 || [['นาซี', '']] cant find in best tf-idf  0 578 [] 0.001355886459350586secs 

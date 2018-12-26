@@ -8,6 +8,7 @@ import json
 import time
 from heapq import nlargest
 from sqlitedict import SqliteDict
+import numpy as np
 
 # initial databased
 start = time.time()
@@ -49,28 +50,33 @@ for s in data:
         except KeyError:
             cantfind.append((s[f]))
 
+    ########################################################################################
+
     # rank by tf-idf & shortest
-    search.sort(key=lambda s: len(s[1]))
-    shortest = search[0]
+    word = []
+    pool = []
     search.sort(key=lambda s: s[1][0][0], reverse=True)
-    best_tfidf = search[0]
+    if(search.__len__() > 2):
+        search.pop()
+    word.append(search[0][0])
+    pool.append(search[0][1][1:])
 
-    # word = [shortest[0], best_tfidf[0]]
-    # pool = [shortest[1][1:], best_tfidf[1][1:]]
-    # for i in range(1,search.__len__()):
-    #     word.append(search[i][0])
-    #     pool.append(search[i][1][1:])
+    search.sort(key=lambda s: len(s[1]))
+    word.insert(0,search[0][0])
+    pool.insert(0,search[0][1][1:])
 
-    word = [best_tfidf[0],''] # test
-    pool = [best_tfidf[1][1:],[]]
+
+    ########################################################################################
 
     answer_index = []
     count = []
 
     # rank answer in answer pool
     c={}
-    for i in pool :
-        for k, v in i:
+    for i in range(pool.__len__()) :
+        for k, v in pool[i]:
+            if(i==0): # # weight shortest in case shortest + best tf-idf
+                v*=3
             try:
                 c[k] += v
             except KeyError:
@@ -103,13 +109,13 @@ for s in data:
         find[1].index(str(validate[doc]))
         ans_int = ' '
     except ValueError:
-        ans_int = ' cant find in best tf-idf '
+        ans_int = ' cb '
 
     try:
         find[0].index(str(validate[doc]))
         ans_int += ' '
     except ValueError:
-        ans_int += ' cant find in shortest '
+        ans_int += ' cs '
 
     ########################################################################################
 
@@ -120,7 +126,7 @@ for s in data:
             string += ': 0'
         string += " rank" + str(answer.index(str(validate[doc]))) + ' || [' + str(word) + ']' + ans_int + str(find[1].__len__()) + ' ' + str(find[0].__len__()) + ' ' + str(cantfind)
     except ValueError:
-        string += ": 0 Cant find doc" + ' || [' + str(word) + ']' + ans_int + str(
+        string += ": 0 cdoc" + ' || [' + str(word) + ']' + ans_int + str(
             find[1].__len__()) + ' ' + str(find[0].__len__()) + ' ' + str(cantfind)
 
     end = time.time()
@@ -129,13 +135,12 @@ for s in data:
     doc += 1
     save += 1
     if save == 100 or doc == 4000:
-        with open("result_only_best_tf-idf.txt", "a", encoding="utf-8") as text_file:
+        with open("result_remove_leastTF-IDF_weight_shortest_and_bestTF-IDF.txt", "a", encoding="utf-8") as text_file:
             text_file.write(string)
         save = 0
         string = ''
     if doc == 4000:
         break
 
-# c.close()
 # os.system("shutdown /s /t 90")
 
