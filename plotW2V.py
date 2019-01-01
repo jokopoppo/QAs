@@ -80,7 +80,7 @@ def display_N_words_tsnescatterplot(model,n):
 # print(data)
 # exit(0)
 fp = mpl.font_manager.FontProperties(family='JasmineUPC',size=24)
-model = Word2Vec.load("word2vec_model\word2vec.model")
-display_closestwords_tsnescatterplot(model, 'คณะกรรมการปฏิรูป')
+model = Word2Vec.load("E:\CPE#Y4\databaseTF\word2vec_model_lastest\word2vec.model")
+display_closestwords_tsnescatterplot(model, 'อินทรีย์')
 # display_N_words_tsnescatterplot(model,3000)
 

@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import os
-
+from pprint import pprint
 def plotAccuracy(file):
     for f in file :
         data = open('result\\'+f, 'r', encoding='utf-8-sig')
@@ -22,7 +22,7 @@ def plotAccuracy(file):
                 topN[i] = 1000000
         # print(topN)
 
-        rank = [1,5, 10, 20, 50, 100, 500, 1000]
+        rank = [1,5, 10, 20, 50, 100]
         acc = []
         for n in rank:
             acc.append(0)
@@ -45,23 +45,38 @@ def plotAccuracy(file):
     plt.show()
 
 file = os.listdir('result/')
-# print(file)
-# file.remove('old_result')
-# for i in range(file.__len__()):
-#     print(i,file[i])
-# plotAccuracy(file)
+print(file)
+file.remove('old_result')
+for i in range(file.__len__()):
+    print(i,file[i])
+plotAccuracy(file)
 
-f = file[5]
-print(f)
-data = open('result\\'+f, 'r', encoding='utf-8-sig')
+# f = file[8]
+# print(f)
+# data = open('result\\'+f, 'r', encoding='utf-8-sig')
 
-l1 = []
-l0 = []
-for i in data:
-    i=i.split(']')
-    i[-2] = i[-2].split()
-    l1.append(int(i[-2][0]))
-    l0.append(int(i[-2][1]))
-# plt.hist(l0,100,color='b')
-plt.hist(l1,100,color='g')
-plt.show()
+# l1 = []
+# l0 = []
+# for i in data:
+#     i=i.split(']')
+#     i[-2] = i[-2].split()
+#     l1.append(int(i[-2][0]))
+#     l0.append(int(i[-2][1]))
+# plt.hist(l0,100,color='g')
+# plt.show()
+
+# f=file[3]
+# print(f)
+# data = open('result\\'+f, 'r', encoding='utf-8-sig')
+#
+# no=[]
+# for i in data:
+#     if 'Cant find doc' in i :
+#         i=i.split(' || ')
+#         i[0] = i[0].split()
+#         i[1] = i[1].split('[[')
+#         i[1][1] = i[1][1].split(", '']]")
+#         i[1][1][0] = i[1][1][0].split("'")
+#         no.append([i[0][1].split(':')[0],i[1][1][0][1]])
+# print(no.__len__())
+# pprint(no)

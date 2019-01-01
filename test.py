@@ -211,7 +211,3 @@ from gensim.models import Word2Vec
 # feature_names = tfidf.get_feature_names()
 # print(feature_names.__len__()) # 1736854
 
-from heapq import nlargest
-
-data = [5,6,3,1,1,2,2,2,2,3,4]
-print(nlargest(3, data))
