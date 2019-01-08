@@ -9,6 +9,7 @@ import time
 from heapq import nlargest
 from sqlitedict import SqliteDict
 import numpy as np
+from pythainlp.corpus import wordnet , stopwords
 
 # initial databased
 start = time.time()
@@ -17,8 +18,9 @@ dict = dict['doc']
 end = time.time()
 print("Time to initial db", end - start)
 # initial data and test set
-file = open("test_set\\new_sample_questions_tokenize.json", mode='r', encoding="utf-8-sig")
-data = json.load(file)
+q = open("test_set\\new_sample_questions_tokenize.json", mode='r', encoding="utf-8-sig")
+n_q =  open("no_stop_words_questions_.json", mode='r', encoding="utf-8-sig")
+data = json.load(n_q)
 validate = json.load(open("test_set\\new_sample_questions_answer.json", mode='r', encoding="utf-8-sig"))
 
 doc = 0
@@ -26,6 +28,7 @@ data = data[doc:]
 print(data.__len__())
 save = 0
 string = ''
+question_words = stopwords.words('thai')
 
 for s in data:
     start = time.time()
@@ -50,7 +53,7 @@ for s in data:
     # # find by sqlitedict
 
     for f in range(s.__len__()):
-        if (s[f].isspace()):
+        if (s[f].isspace()) or (s[f] in question_words):
             continue
         if (s[f][0] == ' ') or (s[f][-1] == ' '):
             s[f] = s[f].strip()
@@ -58,8 +61,25 @@ for s in data:
         try:
             tmp = dict[s[f][0]][s[f]]
             search.append((s[f], tmp))
-        except KeyError:
-            cantfind.append((s[f]))
+
+        except KeyError:  # # if no index find by synonyms
+            cantfind.append(s[f])
+            synonyms = []
+            for syn in wordnet.synsets(s[f]):
+                for i in syn.lemma_names('tha'):
+                    synonyms.append(i)
+
+            # if synonyms.__len__() == 0 :
+            #     synonyms = deepcut.tokenize(s[f])
+            if s[f] in synonyms :
+                synonyms.remove(s[f])
+            for i in synonyms:
+                try:
+                    tmp = dict[i[0]][i]
+                    search.append((i, tmp))
+                    break
+                except KeyError:
+                    cantfind.append(i)
 
     ########################################################################################
 
@@ -67,19 +87,17 @@ for s in data:
     word = []
     pool = []
     search.sort(key=lambda s: s[1][0][0], reverse=True)
-    for i in range(4):
-        if (search.__len__() > 1):
+    for i in range(0):
+        if (search.__len__() > 2):
             search.pop()
         else:
             break
-    # word.append(search[0][0])
-    # pool.append(search[0][1][1:])
 
     search.sort(key=lambda s: len(s[1]))
-    for i in range(2):
+    for i in range(1):
         try:
-            word.insert(i, search[i][0])
-            pool.insert(i, search[i][1][1:])
+            word.insert(0, search[i][0])
+            pool.insert(0, search[i][1][1:])
         except IndexError:
             break
     # weight shortest in case shortest + best tf-idf
@@ -99,22 +117,20 @@ for s in data:
                 c[k] += v
             except KeyError:
                 c[k] = v
+
     for key, value in c.items():
         answer_index.append(key)
         count.append(value)
 
     ########################################################################################
-    n = 0
-    for i in pool:
-        n+= i.__len__()
-    answer_n = nlargest(n, count)
+    answer_n = nlargest(count.__len__(), count)
     answer = []
     for i in answer_n:
         index = count.index(i)
         answer.append(answer_index[index])
         answer_index.pop(index)
         count.pop(index)
-    # print(answer_n)
+
     print(answer.__len__(), answer[:6])
 
     # write in text file
@@ -127,9 +143,8 @@ for s in data:
             find[-1].append(j[0])
         try:
             find[i].index(str(validate[doc]))
-            ans_int = ' '
         except ValueError:
-            ans_int = ' c[' + str(i) + '] '
+            ans_int += ' c[' + str(i) + '] '
 
     ########################################################################################
 
@@ -153,7 +168,7 @@ for s in data:
     doc += 1
     save += 1
     if save == 100 or doc == 4000:
-        with open("result_rLeast1st2nd3rd4th_and_shortest1st2nd.txt", "a", encoding="utf-8") as text_file:
+        with open("result_noStopWords_onlyShortest.txt", "a", encoding="utf-8") as text_file:
             text_file.write(string)
         save = 0
         string = ''

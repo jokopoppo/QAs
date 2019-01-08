@@ -12,7 +12,12 @@ def plotAccuracy(file):
             i = i.replace('cant find in shortest', 'cs')
             i = i.replace('Cant find doc', 'cd')
             a.append(i.split())
-            topN.append(a[-1][3])
+
+            try:
+                topN.append(a[-1][3])
+            except IndexError:
+                print(a[-1])
+                exit(0)
         if(topN.__len__() < 4000):
             continue
         for i in range(a.__len__()):
@@ -22,7 +27,7 @@ def plotAccuracy(file):
                 topN[i] = 1000000
         # print(topN)
 
-        rank = [1,5, 10, 20, 50, 100]
+        rank = [1,5, 10, 20, 50, 100 ,200 ,300]
         acc = []
         for n in rank:
             acc.append(0)
@@ -47,6 +52,7 @@ def plotAccuracy(file):
 file = os.listdir('result/')
 print(file)
 file.remove('old_result')
+file.remove('addSyms')
 for i in range(file.__len__()):
     print(i,file[i])
 plotAccuracy(file)
