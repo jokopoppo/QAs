@@ -2,23 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1435f1f5-46db-4b0a-9944-9c0267199b80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/questionsPreprocess.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addsynnonyms.py" beforeDir="false" afterPath="$PROJECT_DIR$/addSynnonyms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/findDocuments.py" beforeDir="false" afterPath="$PROJECT_DIR$/findDocuments.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/plotting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/result_only_shortest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/old_result/result_only_shortest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/result_rLeast1st2nd3rd4th_and_shortest1st2nd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/old_result/result_rLeast1st2nd3rd4th_and_shortest1st2nd.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/result_rLeast1st2nd3rd_and_shortest1st2nd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/old_result/result_rLeast1st2nd3rd_and_shortest1st2nd.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/result_rLeast1st2nd_and_shortest1st2nd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/old_result/result_rLeast1st2nd_and_shortest1st2nd.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/result_rLeast1st_and_shortest1st2nd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/old_result/result_rLeast1st_and_shortest1st2nd.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/result_rLeast_1st2nd_shortest_and_bestTF-IDF.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/old_result/result_rLeast_1st2nd_shortest_and_bestTF-IDF.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/result_remove_leastTF-IDF_1st2nd_shortest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/old_result/result_remove_leastTF-IDF_1st2nd_shortest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/result_remove_leastTF-IDF_shortest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/old_result/result_remove_leastTF-IDF_shortest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/result_remove_leastTF-IDF_weight_shortest_and_bestTF-IDF.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/old_result/result_remove_leastTF-IDF_weight_shortest_and_bestTF-IDF.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/result_shortest1st2nd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/old_result/result_shortest1st2nd.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/result_shortest_and_2nd_shortest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/old_result/result_shortest_and_2nd_shortest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/result_weight_shortest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/old_result/result_weight_shortest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/result_addSynonyms_rLeast_only_shortest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/addSyms/result_addSynonyms_rLeast_only_shortest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/result_addSynonyms_shortest1st2nd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/addSyms/result_addSynonyms_shortest1st2nd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/result_rQuestionWordsAndCut_shortest1st2nd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/addSyms/result_rQuestionWordsAndCut_shortest1st2nd.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,13 +20,13 @@
     <session id="-1641781116">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="106" />
+          <entry key="project.closed" value="111" />
           <entry key="project.open.time.0" value="8" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.14" value="3" />
-          <entry key="project.open.time.16" value="4" />
+          <entry key="project.open.time.16" value="5" />
           <entry key="project.open.time.17" value="6" />
           <entry key="project.open.time.18" value="10" />
           <entry key="project.open.time.19" value="9" />
@@ -46,12 +35,13 @@
           <entry key="project.open.time.22" value="10" />
           <entry key="project.open.time.23" value="3" />
           <entry key="project.open.time.24" value="4" />
-          <entry key="project.open.time.25" value="4" />
+          <entry key="project.open.time.25" value="5" />
           <entry key="project.open.time.26" value="2" />
-          <entry key="project.open.time.28" value="3" />
+          <entry key="project.open.time.28" value="4" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.35" value="2" />
+          <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="5" />
           <entry key="project.open.time.5" value="3" />
@@ -60,46 +50,46 @@
           <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.70" value="1" />
-          <entry key="project.opened" value="118" />
+          <entry key="project.opened" value="122" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="json" value="14" />
-          <entry key="py" value="220" />
-          <entry key="txt" value="85" />
+          <entry key="py" value="223" />
+          <entry key="txt" value="88" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="14" />
-          <entry key="PLAIN_TEXT" value="85" />
-          <entry key="Python" value="220" />
+          <entry key="PLAIN_TEXT" value="88" />
+          <entry key="Python" value="223" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="21" />
           <entry key="dummy" value="72" />
-          <entry key="py" value="40922" />
+          <entry key="py" value="41341" />
           <entry key="txt" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="102" />
-          <entry key="Python" value="40943" />
+          <entry key="Python" value="41362" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/findDocuments.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+            <state relative-caret-position="306">
+              <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
               <folding>
                 <element signature="e#15#29#0" expanded="true" />
               </folding>
@@ -108,24 +98,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test1.py">
+        <entry file="file://$PROJECT_DIR$/plotting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="35" selection-start-line="35" selection-end-line="35" selection-end-column="26" />
+            <state relative-caret-position="459">
+              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
               <folding>
-                <element signature="e#39#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/questionsPreprocess.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-              <folding>
-                <element signature="e#15#26#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -142,8 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dum</find>
-      <find>'182413'</find>
       <find>.jso</find>
       <find>397951</find>
       <find>data</find>
@@ -170,8 +146,10 @@
       <find>ทัก</find>
       <find>348427</find>
       <find>คือ</find>
-      <find>cdoc</find>
       <find>โมเมนตัม</find>
+      <find>อะไร</find>
+      <find>กี่</find>
+      <find>cdoc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -213,12 +191,12 @@
         <option value="$PROJECT_DIR$/wordnet.py" />
         <option value="$PROJECT_DIR$/result_addSynonyms_rLeast1st2nd3rd_shortest1st2nd.txt" />
         <option value="$PROJECT_DIR$/result/result_addSynonyms_rLeast1st2nd3rd_shortest1st2nd.txt" />
-        <option value="$PROJECT_DIR$/plotting.py" />
-        <option value="$PROJECT_DIR$/findDocuments.py" />
         <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/py36/Lib/site-packages/pythainlp/tokenize/__init__.py" />
         <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/py36/Lib/site-packages/pylexto/__init__.py" />
-        <option value="$PROJECT_DIR$/test1.py" />
         <option value="$PROJECT_DIR$/questionsPreprocess.py" />
+        <option value="$PROJECT_DIR$/test1.py" />
+        <option value="$PROJECT_DIR$/plotting.py" />
+        <option value="$PROJECT_DIR$/findDocuments.py" />
       </list>
     </option>
   </component>
@@ -232,7 +210,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,6 +226,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -257,13 +235,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\CPE#Y4\TF\result" />
-      <recent name="E:\CPE#Y4\TF\result\addSyms" />
-      <recent name="E:\CPE#Y4\TF\result\old_result" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\CPE#Y4\TF" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\CPE#Y4\TF\result\old_result" />
+      <recent name="E:\CPE#Y4\TF" />
+      <recent name="E:\CPE#Y4\TF\result" />
+      <recent name="E:\CPE#Y4\TF\result\n_q" />
+      <recent name="E:\CPE#Y4\TF\result\addSyms" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -278,7 +258,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.questionsPreprocess">
+  <component name="RunManager" selected="Python.plotting">
     <configuration name="findDocuments" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TF" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -393,10 +373,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.questionsPreprocess" />
-        <item itemvalue="Python.test1" />
         <item itemvalue="Python.plotting" />
         <item itemvalue="Python.findDocuments" />
+        <item itemvalue="Python.test1" />
+        <item itemvalue="Python.questionsPreprocess" />
         <item itemvalue="Python.wordnet" />
       </list>
     </recent_temporary>
@@ -424,15 +404,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="735" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25198728" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49602544" visible="true" weight="0.32392028" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49602544" weight="0.32392028" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49920508" weight="0.3986711" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -469,13 +448,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sortIndex.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" selection-start-line="5" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readJSON2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -645,16 +617,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/result/result_addSynonyms_and_shortest1st2nd.txt" />
-    <entry file="file://$PROJECT_DIR$/result/result_addSynonyms_shortest1st2nd.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plotting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/indexing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -665,7 +627,6 @@
     <entry file="file://$PROJECT_DIR$/no_stop_words_questions_.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/result/result_noStopWords_onlyShortest.txt" />
     <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/py36/Lib/encodings/cp1252.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
@@ -694,39 +655,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result/result_rQuestionWordsAndCut_shortest1st2nd.txt">
+    <entry file="file://$PROJECT_DIR$/result/addSyms/result_rQuestionWordsAndCut_shortest1st2nd.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3043" column="37" selection-start-line="3043" selection-start-column="29" selection-end-line="3043" selection-end-column="37" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questionsPreprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/addSyms/result_addSynonyms_shortest1st2nd.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/old_result/result_noStopWords_onlyShortest.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35683">
+          <caret line="2099" column="31" selection-start-line="2099" selection-start-column="28" selection-end-line="2099" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/result_nq_weight10_shortest1st_plus2nd_intersect_all.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/findDocuments.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        <state relative-caret-position="306">
+          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
           <folding>
             <element signature="e#15#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test1.py">
+    <entry file="file://$PROJECT_DIR$/plotting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="35" selection-start-line="35" selection-end-line="35" selection-end-column="26" />
+        <state relative-caret-position="459">
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
           <folding>
-            <element signature="e#39#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questionsPreprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-          <folding>
-            <element signature="e#15#26#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>

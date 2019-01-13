@@ -27,7 +27,7 @@ def plotAccuracy(file):
                 topN[i] = 1000000
         # print(topN)
 
-        rank = [1,5, 10, 20, 50, 100 ,200 ,300]
+        rank = [1,5, 10, 20,30, 50, 100 ,200 ,300]
         acc = []
         for n in rank:
             acc.append(0)
@@ -53,6 +53,7 @@ file = os.listdir('result/')
 print(file)
 file.remove('old_result')
 file.remove('addSyms')
+file.remove('n_q')
 for i in range(file.__len__()):
     print(i,file[i])
 plotAccuracy(file)

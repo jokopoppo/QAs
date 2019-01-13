@@ -19,7 +19,7 @@ end = time.time()
 print("Time to initial db", end - start)
 # initial data and test set
 q = open("test_set\\new_sample_questions_tokenize.json", mode='r', encoding="utf-8-sig")
-n_q =  open("no_stop_words_questions_.json", mode='r', encoding="utf-8-sig")
+n_q = open("no_stop_words_questions_.json", mode='r', encoding="utf-8-sig")
 data = json.load(n_q)
 validate = json.load(open("test_set\\new_sample_questions_answer.json", mode='r', encoding="utf-8-sig"))
 
@@ -94,10 +94,10 @@ for s in data:
             break
 
     search.sort(key=lambda s: len(s[1]))
-    for i in range(1):
+    for i in range(search.__len__()):
         try:
-            word.insert(0, search[i][0])
-            pool.insert(0, search[i][1][1:])
+            word.append(search[i][0])
+            pool.append(search[i][1][1:])
         except IndexError:
             break
     # weight shortest in case shortest + best tf-idf
@@ -111,12 +111,18 @@ for s in data:
 
     # rank answer in answer pool
     c = {}
+    weight = [5,2]
     for i in range(pool.__len__()):
         for k, v in pool[i]:
             try:
-                c[k] += v
+                if i == 0 or i == 1:
+                    c[k] += v*weight[i]
+                else:
+                    c[k] += v
             except KeyError:
-                c[k] = v
+                if i == 0 or i == 1:
+                    c[k] = v*weight[i]
+
 
     for key, value in c.items():
         answer_index.append(key)
@@ -168,7 +174,7 @@ for s in data:
     doc += 1
     save += 1
     if save == 100 or doc == 4000:
-        with open("result_noStopWords_onlyShortest.txt", "a", encoding="utf-8") as text_file:
+        with open("result/result_nq_weight5short1st_weight2short2nd_intersect_all.txt", "a", encoding="utf-8") as text_file:
             text_file.write(string)
         save = 0
         string = ''

@@ -28,11 +28,12 @@ from pythainlp.tokenize import word_tokenize
 #         print(i)
 #
 # print(cdoc)
+words = stopwords.words('thai')
 
 n_q = json.load(open("no_stop_words_questions_.json", mode='r', encoding="utf-8-sig"))
 
-words = stopwords.words('thai')
-
-print(words.index('8;kp'))
+s = 'จังหวัดไหน'
+# print(deepcut.tokenize(s))
+# print(pythainlp.word_tokenize(s,engine = 'deepcut'))
 
 
