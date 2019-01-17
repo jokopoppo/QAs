@@ -66,8 +66,10 @@ for d in dictset:
 
         for w, s in [(feature_names[i], s) for (i, s) in tfidf_scores]:
             # print(doc,w,s)
-            if w == 'โรงเรียนเทศบาลตำบลลาดยาว':
-                print(w,doc)
+            if w == 'หม่อมหลวงขวัญทิพย์ เทวกุล':
+
+                exit(0)
+
             if(w[0] in d):
                 tmp = d.index(w[0])
                 if (alp[tmp].get(w) is None):

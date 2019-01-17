@@ -4,7 +4,7 @@ import time
 from pprint import pprint
 
 start = time.time()
-doc = SqliteDict('E:\CPE#Y4\databaseTF\lastest_db\doc.sqlite', autocommit=True)
+doc = SqliteDict('E:\CPE#Y4\databaseTF\doc.sqlite', autocommit=True)
 dict = doc['doc']
 print(time.time() - start)
 
@@ -33,7 +33,7 @@ for a in al :
                     try:
                         check = []
                         tmp2 = dict[i[0]][i]
-                        for d, _ in dict[i[0]][i][1:]:
+                        for d, _ in tmp2[1:]:
                             check.append(d)
 
                         for d, t in tmp[1:]:

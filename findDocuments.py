@@ -1,26 +1,23 @@
 # coding=utf8
 
-import sqlite3
-import os
-from pprint import pprint
 import json
 # import deepcut
 import time
 from heapq import nlargest
 from sqlitedict import SqliteDict
-import numpy as np
 from pythainlp.corpus import wordnet , stopwords
+from usage import alarm , rreplace
 
 # initial databased
 start = time.time()
-dict = SqliteDict('E:\CPE#Y4\databaseTF\lastest_db\doc.sqlite', autocommit=True)
+dict = SqliteDict('E:\CPE#Y4\databaseTF\lastest_db\doc_add_missing.sqlite', autocommit=True)
 dict = dict['doc']
 end = time.time()
 print("Time to initial db", end - start)
 # initial data and test set
 q = open("test_set\\new_sample_questions_tokenize.json", mode='r', encoding="utf-8-sig")
 n_q = open("no_stop_words_questions_.json", mode='r', encoding="utf-8-sig")
-data = json.load(n_q)
+data = json.load(q)
 validate = json.load(open("test_set\\new_sample_questions_answer.json", mode='r', encoding="utf-8-sig"))
 
 doc = 0
@@ -29,21 +26,27 @@ print(data.__len__())
 save = 0
 string = ''
 question_words = stopwords.words('thai')
+question_words.append('กี่')
+question_words.append('ใด')
 
 for s in data:
     start = time.time()
     string += "question " + str(doc)
     print("question", doc, s, validate[doc])
 
-    # segment until no space
+    # segment until no space and do rule-based
     r = []
     for i in s:
         if ' ' in i:
-            r.append(i)
             for j in i.split():
                 s.append(j)
+        elif i.endswith('คือ'):
+            r.append(i)
+            s.append(rreplace(i,'คือ','',1))
     for i in r:
         s.remove(i)
+
+    ########################################################################################
 
     s.sort()
     s = list(set(s))
@@ -111,16 +114,16 @@ for s in data:
 
     # rank answer in answer pool
     c = {}
-    weight = [5,2]
+    weight = [5,1]
     for i in range(pool.__len__()):
         for k, v in pool[i]:
             try:
-                if i == 0 or i == 1:
+                if i < weight.__len__():
                     c[k] += v*weight[i]
                 else:
                     c[k] += v
             except KeyError:
-                if i == 0 or i == 1:
+                if i < weight.__len__():
                     c[k] = v*weight[i]
 
 
@@ -174,11 +177,11 @@ for s in data:
     doc += 1
     save += 1
     if save == 100 or doc == 4000:
-        with open("result/result_nq_weight5short1st_weight2short2nd_intersect_all.txt", "a", encoding="utf-8") as text_file:
+        with open("result/result_q_weight5_cut_suffix.txt", "a", encoding="utf-8") as text_file:
             text_file.write(string)
         save = 0
         string = ''
     if doc == 4000:
         break
-
-# os.system("shutdown /s /t 90")
+alarm()
+# os.system("shutdown /s /t 30")

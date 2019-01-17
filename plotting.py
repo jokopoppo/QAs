@@ -50,10 +50,9 @@ def plotAccuracy(file):
     plt.show()
 
 file = os.listdir('result/')
+file = file[4:]
 print(file)
-file.remove('old_result')
-file.remove('addSyms')
-file.remove('n_q')
+
 for i in range(file.__len__()):
     print(i,file[i])
 plotAccuracy(file)
