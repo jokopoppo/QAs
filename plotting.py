@@ -37,8 +37,8 @@ def plotAccuracy(file):
             acc[-1] = acc[-1] / topN.__len__()
             # print(n, acc[-1])
 
-        plt.xlabel('Accuracy')
-        plt.ylabel('Rank N ')
+        plt.xlabel('Rank N')
+        plt.ylabel('Accuracy')
         plt.title('Accuracy in N rank')
 
         plt.plot(rank, acc,marker='o', label=str(file.index(f)))
@@ -57,32 +57,3 @@ for i in range(file.__len__()):
     print(i,file[i])
 plotAccuracy(file)
 
-# f = file[8]
-# print(f)
-# data = open('result\\'+f, 'r', encoding='utf-8-sig')
-
-# l1 = []
-# l0 = []
-# for i in data:
-#     i=i.split(']')
-#     i[-2] = i[-2].split()
-#     l1.append(int(i[-2][0]))
-#     l0.append(int(i[-2][1]))
-# plt.hist(l0,100,color='g')
-# plt.show()
-
-# f=file[3]
-# print(f)
-# data = open('result\\'+f, 'r', encoding='utf-8-sig')
-#
-# no=[]
-# for i in data:
-#     if 'Cant find doc' in i :
-#         i=i.split(' || ')
-#         i[0] = i[0].split()
-#         i[1] = i[1].split('[[')
-#         i[1][1] = i[1][1].split(", '']]")
-#         i[1][1][0] = i[1][1][0].split("'")
-#         no.append([i[0][1].split(':')[0],i[1][1][0][1]])
-# print(no.__len__())
-# pprint(no)

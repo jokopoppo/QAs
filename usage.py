@@ -1,6 +1,5 @@
 def rreplace(s, old, new, occurrence):
     li = s.rsplit(old, occurrence)
-    print(li)
     return new.join(li)
 
 def alarm():

@@ -38,11 +38,9 @@ for s in data:
     r = []
     for i in s:
         if ' ' in i:
+            r.append(i)
             for j in i.split():
                 s.append(j)
-        elif i.endswith('คือ'):
-            r.append(i)
-            s.append(rreplace(i,'คือ','',1))
     for i in r:
         s.remove(i)
 
@@ -56,7 +54,7 @@ for s in data:
     # # find by sqlitedict
 
     for f in range(s.__len__()):
-        if (s[f].isspace()) or (s[f] in question_words):
+        if (s[f].isspace()) :
             continue
         if (s[f][0] == ' ') or (s[f][-1] == ' '):
             s[f] = s[f].strip()
@@ -72,7 +70,9 @@ for s in data:
                 for i in syn.lemma_names('tha'):
                     synonyms.append(i)
 
-            # if synonyms.__len__() == 0 :
+            if synonyms.__len__() == 0 :
+                if s[f].endswith('คือ'):
+                    synonyms.append(rreplace(s[f], 'คือ', '', 1))
             #     synonyms = deepcut.tokenize(s[f])
             if s[f] in synonyms :
                 synonyms.remove(s[f])
@@ -177,7 +177,7 @@ for s in data:
     doc += 1
     save += 1
     if save == 100 or doc == 4000:
-        with open("result/result_q_weight5_cut_suffix.txt", "a", encoding="utf-8") as text_file:
+        with open("result/result_q_weight5_withQW_cut_suffix.txt", "a", encoding="utf-8") as text_file:
             text_file.write(string)
         save = 0
         string = ''
