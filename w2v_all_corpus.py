@@ -42,4 +42,3 @@ model.save("word2vec_model\word2vec.model")
 # ss=model.similar_by_word('พี่น้อง',topn=5)
 # print(ss)
 
-# TODO run this

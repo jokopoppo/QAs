@@ -1,24 +1,23 @@
-import pythainlp
-from fill_missing_doc import check_tokenizeJSON
-
 from usage import rreplace
+s = ['ยกตรี คือ', 'เฮเลน โกลก', 'จักรพรรดิไทโช คือ', 'ใคร']
+from pythainlp.corpus import stopwords
 
-q = [3043 , 3147 , 3583]
-#
-# for i in q :
-#     check_tokenizeJSON(i)
-s = ['โมเมนตัมคือ' , 'เคลย์มอร์คือ' , 'คือไมโอซินคือ' ,'คือ']
+suffix = ['คือ', 'กี่', 'ใด']
 r = []
-n=0
-
 for i in s:
+    print(i)
     if ' ' in i:
-        r.append(i)
         for j in i.split():
             s.append(j)
-    elif i.endswith('คือ'):
+
         r.append(i)
-        s.append(rreplace(i,'คือ',' ',1))
-for i in r:
+        print(s)
+        continue
+    for j in suffix:
+        if i.endswith(j):
+            s.append(rreplace(i, j, ' ', 1))
+            r.append(i)
+            break
+for i in r :
     s.remove(i)
 print(s)

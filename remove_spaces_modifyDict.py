@@ -4,7 +4,7 @@ import time
 from pprint import pprint
 
 start = time.time()
-doc = SqliteDict('E:\CPE#Y4\databaseTF\doc.sqlite', autocommit=True)
+doc = SqliteDict('E:\CPE#Y4\databaseTF\lastest_db\doc_add_missing.sqlite', autocommit=True)
 dict = doc['doc']
 print(time.time() - start)
 
