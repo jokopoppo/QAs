@@ -1,23 +1,22 @@
-from usage import rreplace
-s = ['ยกตรี คือ', 'เฮเลน โกลก', 'จักรพรรดิไทโช คือ', 'ใคร']
-from pythainlp.corpus import stopwords
+from fill_missing_doc import check_tokenizeJSON
 
-suffix = ['คือ', 'กี่', 'ใด']
-r = []
-for i in s:
-    print(i)
-    if ' ' in i:
-        for j in i.split():
-            s.append(j)
+path = 'result/result_q_weight5_fill_c[0].txt'
+file = open(path, mode='r', encoding="utf-8-sig")
 
-        r.append(i)
-        print(s)
-        continue
-    for j in suffix:
-        if i.endswith(j):
-            s.append(rreplace(i, j, ' ', 1))
-            r.append(i)
+q = []
+
+for i in file:
+    tmp = i.split()[3].split('rank')[-1]
+    num = i.split()[1].split(':')[0]
+    tmp2 = i.split(']]')[-1].split()
+    for j in tmp2 :
+        if j.isnumeric():
+            print(tmp,j)
+            q.append([int(num),int(tmp),int(j)])
             break
-for i in r :
-    s.remove(i)
-print(s)
+
+q.sort(key=lambda s: s[1] ,reverse=True)
+print(q)
+
+for i in q[:7]:
+    check_tokenizeJSON(i[0])

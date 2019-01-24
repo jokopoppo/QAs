@@ -54,30 +54,4 @@ def fill_missing():
     print(time.time() - start)
     return dict
 
-# check_tokenizeJSON(25)
 
-# q,ww = check_cdoc('result/result_q_weight5_fill_cant_find.txt')
-# # print(ww)
-#
-# word = []
-# for i in ww :
-#     word.append(i[0])
-# print(word.__len__(),word)
-#
-# answer = json.load(open("test_set/new_sample_questions_answer.json", mode='r', encoding="utf-8-sig"))
-# doc = SqliteDict('E:\CPE#Y4\databaseTF\lastest_db\doc_add_missing.sqlite',autocommit=True)
-# dict = doc['doc']
-#
-# for i in range(q.__len__()):
-#     if word[i].isspace() or (not word[i]):
-#         continue
-#     print("WORD :",word[i] , [str(answer[q[i]]), dict[word[i][0]][word[i]][0][0]])
-#     dict[word[i][0]][word[i]].append([str(answer[q[i]]), dict[word[i][0]][word[i]][0][0]])
-#     print("INDEX :",dict[word[i][0]][word[i]][-3] ,dict[word[i][0]][word[i]][-2],dict[word[i][0]][word[i]][-1])
-#
-# start = time.time()
-# doc['doc'] = dict
-# doc.commit()
-# print(time.time() - start)
-# alarm()
-#

@@ -3,13 +3,13 @@ from fill_missing_doc import check_tokenizeJSON , check_cdoc
 from pprint import pprint
 from usage import rreplace , alarm
 
-def fill_cant_find():
+def fill_cant_find(path):
     from sqlitedict import SqliteDict
-    q, rank, cant = check_rank('result/result_q_weight5_cut_suffix_before_search.txt')
+    q, rank, cant = check_rank(path)
 
     doc = SqliteDict('E:\CPE#Y4\databaseTF\lastest_db\doc_add_missing.sqlite', autocommit=True)
     dict = doc['doc']
-
+    print('Done Initial Dict',)
     for k in cant:
         for word in k:
             if not word or word == '"' or word == '-':
@@ -23,7 +23,7 @@ def fill_cant_find():
                         for index in dict[i][j][1:]:
                             found.append(index)
                         print(word, j, end=' ')
-            print("LEN", found.__len__())
+            print(word,"LEN", found.__len__())
             if 0 < found.__len__() < 16:
                 mean = 0
                 min = 10
@@ -75,8 +75,10 @@ def check_rank(path):
     return q,rank,cant
 
 q,rank,cant = check_rank("result/result_q_weight5_fill_c[0].txt")
-check_tokenizeJSON(190)
+check_tokenizeJSON(1274)
 
-# TODO try to improve more
+# fill_cant_find("result/result_q_weight5_fill_c[0].txt")
+print(cant)
+
 
 

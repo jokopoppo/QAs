@@ -12,12 +12,12 @@ from sklearn.manifold import TSNE
 import matplotlib as mpl
 from pprint import pprint
 
-def display_closestwords_tsnescatterplot(model, word):
+def display_closestwords_tsnescatterplot(model, word,topn):
     arr = np.empty((0, 100), dtype='f')
     word_labels = [word]
 
     # get close words
-    close_words = model.similar_by_word(word,topn=10)
+    close_words = model.similar_by_word(word,topn=topn)
 
     # add the vector for each of the closest words to the array
     arr = np.append(arr, np.array([model.wv[word]]), axis=0)
@@ -40,6 +40,8 @@ def display_closestwords_tsnescatterplot(model, word):
         plt.annotate(label, xy=(x, y), xytext=(0, 0), textcoords='offset points',fontproperties=fp)
     plt.xlim(x_coords.min() + 0.00005, x_coords.max() + 0.00005)
     plt.ylim(y_coords.min() + 0.00005, y_coords.max() + 0.00005)
+    plt.tick_params(axis='x', labelsize=20)
+    plt.tick_params(axis='y', labelsize=20)
     plt.show()
 
 def display_N_words_tsnescatterplot(model,n):
@@ -74,13 +76,15 @@ def display_N_words_tsnescatterplot(model,n):
         print(tmp)
     plt.xlim(x_coords.min() + 0.00005, x_coords.max() + 0.00005)
     plt.ylim(y_coords.min() + 0.00005, y_coords.max() + 0.00005)
+    plt.tick_params(axis='x', labelsize=20)
+    plt.tick_params(axis='y', labelsize=20)
     plt.show()
 
 # data = json.load(open('E:\CPE#Y4\databaseTF\documents-tokenize\\955245.json',encoding='utf-8-sig'))
 # print(data)
 # exit(0)
-fp = mpl.font_manager.FontProperties(family='JasmineUPC',size=24)
+fp = mpl.font_manager.FontProperties(family='JasmineUPC',size=28)
 model = Word2Vec.load("E:\CPE#Y4\databaseTF\word2vec_model_lastest\word2vec.model")
-display_closestwords_tsnescatterplot(model, 'อินทรีย์')
+display_closestwords_tsnescatterplot(model, 'พี่',10)
 # display_N_words_tsnescatterplot(model,3000)
 
