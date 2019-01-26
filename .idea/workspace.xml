@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1435f1f5-46db-4b0a-9944-9c0267199b80" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findAnswer.py" beforeDir="false" afterPath="$PROJECT_DIR$/findAnswer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/result_q_weight5_fill_c[0].txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/result_q_weight5_fill_c[0](best).txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +55,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="json" value="17" />
-          <entry key="py" value="298" />
+          <entry key="py" value="299" />
           <entry key="txt" value="148" />
         </counts>
       </usages-collector>
@@ -62,54 +63,48 @@
         <counts>
           <entry key="JSON" value="17" />
           <entry key="PLAIN_TEXT" value="148" />
-          <entry key="Python" value="298" />
+          <entry key="Python" value="299" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="21" />
           <entry key="dummy" value="164" />
-          <entry key="py" value="51387" />
+          <entry key="py" value="51636" />
           <entry key="txt" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="196" />
-          <entry key="Python" value="51408" />
+          <entry key="Python" value="51657" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/findAnswer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="58" />
+            <state relative-caret-position="239">
+              <caret line="88" column="25" lean-forward="true" selection-start-line="85" selection-start-column="14" selection-end-line="88" selection-end-column="25" />
               <folding>
-                <marker date="1548485593796" expanded="true" signature="58:343" ph="..." />
-                <marker date="1548485593796" expanded="true" signature="198:258" ph="..." />
+                <marker date="1548487521267" expanded="true" signature="58:336" ph="..." />
+                <marker date="1548487521267" expanded="true" signature="212:251" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/result/result_q_weight5_fill_c[0].txt">
+        <entry file="file://$PROJECT_DIR$/findDocuments.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="163" column="35" selection-start-line="163" selection-start-column="35" selection-end-line="163" selection-end-column="35" />
+            <state relative-caret-position="224">
+              <caret line="196" column="7" lean-forward="true" selection-start-line="196" selection-start-column="7" selection-end-line="196" selection-end-column="7" />
+              <folding>
+                <element signature="e#15#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,7 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>คุณสุรเกียรติ</find>
       <find>จักรพรรดิซุโตะกุ</find>
       <find>เมือง</find>
       <find>นินจา</find>
@@ -155,6 +149,7 @@
       <find>๓</find>
       <find>[</find>
       <find>57</find>
+      <find>933649</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -208,8 +203,8 @@
         <option value="$PROJECT_DIR$/fill_missing_doc.py" />
         <option value="$PROJECT_DIR$/try_to_improve_findDOC.py" />
         <option value="$PROJECT_DIR$/findAswer.py" />
-        <option value="$PROJECT_DIR$/findAnswer.py" />
         <option value="$PROJECT_DIR$/test1.py" />
+        <option value="$PROJECT_DIR$/findAnswer.py" />
       </list>
     </option>
   </component>
@@ -752,38 +747,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/findDocuments.py">
+    <entry file="file://$PROJECT_DIR$/test1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="47" column="47" selection-start-line="47" selection-start-column="15" selection-end-line="47" selection-end-column="47" />
-          <folding>
-            <element signature="e#15#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result/result_q_weight5_fill_c[0].txt">
+    <entry file="file://$PROJECT_DIR$/result/result_q_weight5_fill_c[0](best).txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="163" column="35" selection-start-line="163" selection-start-column="35" selection-end-line="163" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/findAnswer.py">
+    <entry file="file://$PROJECT_DIR$/findDocuments.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="58" />
+        <state relative-caret-position="224">
+          <caret line="196" column="7" lean-forward="true" selection-start-line="196" selection-start-column="7" selection-end-line="196" selection-end-column="7" />
           <folding>
-            <marker date="1548485593796" expanded="true" signature="58:343" ph="..." />
-            <marker date="1548485593796" expanded="true" signature="198:258" ph="..." />
+            <element signature="e#15#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test1.py">
+    <entry file="file://$PROJECT_DIR$/findAnswer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        <state relative-caret-position="239">
+          <caret line="88" column="25" lean-forward="true" selection-start-line="85" selection-start-column="14" selection-end-line="88" selection-end-column="25" />
+          <folding>
+            <marker date="1548487521267" expanded="true" signature="58:336" ph="..." />
+            <marker date="1548487521267" expanded="true" signature="212:251" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

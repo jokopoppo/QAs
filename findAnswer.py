@@ -26,7 +26,7 @@ for i in range(a.__len__()):
     answer_end = a[i]['answer_end_position']
 
     if answer.isnumeric():
-        real_answer.append([i,answer])
+        real_answer.append([article_id,answer])
         doc = json.load(open('E:\CPE#Y4\databaseTF\documents-tokenize\\'+str(article_id)+'.json','r',encoding='utf-8-sig'))
         sentence_answer = []
         l = 0
@@ -39,7 +39,7 @@ for i in range(a.__len__()):
                     except IndexError:
                         break
 
-                question_index.append([i])
+                question_index.append([article_id])
                 break
 
         for k in question[i]:
@@ -47,9 +47,11 @@ for i in range(a.__len__()):
                 if k.endswith(w) or k.startswith(w):
                     for j in sentence_answer:
                         if hasNumbers(j):
-                            for num in extractNumberFromString(j):
-                                question_index[-1].append(num)
+                            question_index[-1].append(j)
+                            # for num in extractNumberFromString(j):
+                            #     question_index[-1].append(num)
                     break
+
         question_index[-1][1:] = list(set(question_index[-1][1:]))
         print(question_index[-1])
 
@@ -75,26 +77,32 @@ print("Time to initial db", time.time() - start)
 
 check_tfidf = []
 for i in question_index :
-    if i.__len__() > 2:
-        tmp = []
-        for j in i[1:]:
-            try :
-                tmp.append(dict[j[0]][j][0][0])
-            except KeyError:
-                tmp.append(0)
-        check_tfidf.append(i[tmp.index(max(tmp)) + 1])
-    else:
-        try:
-            check_tfidf.append(i[1])
-        except IndexError:
-            check_tfidf.append(' ')
+    tmp = []
+    for j in i[1:]:
+        try :
+            for k in dict[j[0]][j][1:]:
+                if k[0] == str(i[0]):
+                    tmp.append(k[1])
+            # if tmp.__len__() < 1 :
+            #     print(j, i[0])
+            #     print(dict[j[0]][j][1:])
+            #     exit(0)
+        except KeyError:
+            tmp.append(0)
+    check_tfidf.append(i[tmp.index(max(tmp)) + 1])
+
 
 print(real_answer.__len__())
 print(check_tfidf.__len__())
 
+string = ''
 miss = 0
 for i in range(real_answer.__len__()):
     if real_answer[i] != check_tfidf[i]:
+        string += question_index[i][0] + ' ' + real_answer[i] + ' ' + check_tfidf[i] + '\n'
         miss+=1
 print(miss)
+
+with open("result_find_answer_word.txt", "a", encoding="utf-8") as text_file:
+    text_file.write(string)
 # TODO find the way to extract the answer from sentence
