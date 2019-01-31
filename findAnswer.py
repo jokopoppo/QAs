@@ -17,6 +17,7 @@ a = a['data']
 question = json.load(open('test_set\\new_sample_questions_tokenize.json', 'r', encoding='utf-8-sig'))
 
 question_index = []
+doc_id = []
 real_answer = []
 question_words = ['กี่', 'ปี', 'เท่า' ,'ใด' , 'ไร' ,'อะไร']
 for i in range(a.__len__()):
@@ -39,7 +40,7 @@ for i in range(a.__len__()):
                     except IndexError:
                         break
 
-                question_index.append([article_id])
+                doc_id.append([article_id])
                 break
 
         for k in question[i]:
@@ -47,21 +48,23 @@ for i in range(a.__len__()):
                 if k.endswith(w) or k.startswith(w):
                     for j in sentence_answer:
                         if hasNumbers(j):
-                            question_index[-1].append(j)
+                            doc_id[-1].append(j)
                             # for num in extractNumberFromString(j):
                             #     question_index[-1].append(num)
                     break
 
-        question_index[-1][1:] = list(set(question_index[-1][1:]))
-        print(question_index[-1])
-
-print("Q:",question_index.__len__(),real_answer.__len__())
+        doc_id[-1][1:] = list(set(doc_id[-1][1:]))
+        question_index.append(i)
+        print(i,question[i])
+        print(sentence_answer, doc_id[-1])
+exit(0)
+print("Q:", doc_id.__len__(), real_answer.__len__())
 
 test1 = []
 test2 = []
 for i in real_answer:
     test1.append(i[0])
-for i in question_index:
+for i in doc_id:
     test2.append(i[0])
 
 print(set(test1) - set(test2))
@@ -76,13 +79,17 @@ dict = dict['doc']
 print("Time to initial db", time.time() - start)
 
 check_tfidf = []
-for i in question_index :
+for i in doc_id:
     tmp = []
     for j in i[1:]:
         try :
             for k in dict[j[0]][j][1:]:
                 if k[0] == str(i[0]):
                     tmp.append(k[1])
+                    break
+                else:
+                    tmp.append(0)
+                    break
             # if tmp.__len__() < 1 :
             #     print(j, i[0])
             #     print(dict[j[0]][j][1:])
@@ -98,8 +105,8 @@ print(check_tfidf.__len__())
 string = ''
 miss = 0
 for i in range(real_answer.__len__()):
-    if real_answer[i] != check_tfidf[i]:
-        string += question_index[i][0] + ' ' + real_answer[i] + ' ' + check_tfidf[i] + '\n'
+    if real_answer[i][1] != extractNumberFromString(check_tfidf[i])[0]:
+        string += str(question_index[i]) + ' ' +str(doc_id[i][0]) + ' ' + str(real_answer[i][1]) + ' ' + extractNumberFromString(check_tfidf[i])[0] + ' ' + str(doc_id[i][1:]) + '\n'
         miss+=1
 print(miss)
 
