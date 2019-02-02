@@ -28,6 +28,43 @@ def normalized_edit_similarity(a, b):
 def order_consistency(index_a,index_b,l):
     return 1.0 - abs(index_a - index_b)/l
 
+
+def relevance_score(question,sentence,candidate,question_word):
+
+    for i in question:
+        if i == ' ':
+            question.remove(i)
+        for w in question_words:
+            if (w != question_word) and (i.endswith(w) and i.startswith(w)):
+                print(i)
+                question.remove(i)
+                break
+    # print(question)
+    # print(sentence)
+    a = []
+    question_word_index = question.index(question_word)
+    l = 2*question.__len__()
+    for i in candidate :
+        a.append([])
+        for j in range(i-l,i+l):
+            if (i != j) and (0 <= j < sentence.__len__()) and (sentence[j] in question):
+                if question.index(sentence[j]) < question_word_index:
+                    a[-1].append([question.index(sentence[j]), j, 0.5])
+                else:
+                    a[-1].append([question.index(sentence[j]), j, 0.25])
+        print(a[-1])
+
+    m = question.__len__() - 1
+
+    score = []
+    for i in range(a.__len__()) :
+        tmp = 0
+        for j in a[i]:
+            tmp += (1-abs(j[1] - candidate[i])/l)*(1 - abs(j[0] - question_word_index)/m + j[2])
+        score.append(tmp)
+
+    return score
+
 a = json.load(open('test_set/new_sample_questions.json',encoding='utf-8-sig'))
 a = a['data']
 question = json.load(open('test_set\\new_sample_questions_tokenize.json', 'r', encoding='utf-8-sig'))
@@ -36,7 +73,7 @@ question_index = []
 doc_id = []
 real_answer = []
 question_words = ['กี่', 'อะไร', 'ใด', 'เท่า', 'ปี']
-wrong = 949
+wrong = 0
 all_rs = []
 possible_answer = []
 for i in range(wrong,a.__len__()):
@@ -55,61 +92,40 @@ for i in range(wrong,a.__len__()):
         sentence_answer = make_sentence_answer(doc,answer_begin)
         doc_id.append([article_id])
 
+        question_word_index = []
         for j in question[i]:
             for w in question_words:
                 if j.endswith(w) or j.startswith(w):
-                    # s = s.replace(w,'')
+                    question_word_index = [question[i].index(j),j]
                     for k in range(sentence_answer.__len__()):
                         if hasNumbers(sentence_answer[k]):
                             doc_id[-1].append(k)
-                            # for num in extractNumberFromString(j):
-                            #     question_index[-1].append(num)
                     break
 
         doc_id[-1][1:] = list(set(doc_id[-1][1:]))
-        print(sentence_answer, doc_id[-1])
-        if doc_id[-1].__len__() < 3:
-            all_rs.append(1)
-            possible_answer.append(sentence_answer[doc_id[-1][1]])
-            doc_id[-1].insert(1, extractNumberFromString(sentence_answer[doc_id[-1][1]])[0])
-            continue
-
-        rs = []
         possible_answer.append([])
         for j in doc_id[-1][1:]:
-            print(sentence_answer[j])
             possible_answer[-1].append(sentence_answer[j])
-            score = []
-            od = []
-            for k in range(question[i].__len__()):
-                tmp = ''.join(sentence_answer[j-k:j-k + question[i].__len__()])
-                if not tmp :
-                    continue
-                od = []
-                for l in range(question[i].__len__()):
-                    try:
-                        od.append(order_consistency(sentence_answer.index(question[i][l]), l, question[i].__len__()))
-                    except ValueError:
-                        od.append(0)
-                print(normalized_edit_similarity(s, tmp),sum(od)/od.__len__())
-                score.append(normalized_edit_similarity(s, tmp) + sum(od)/od.__len__())
-            rs.append(max(score))
-        print(rs)
-        all_rs.append(rs)
-        tmp_answer = extractNumberFromString(sentence_answer[doc_id[-1][rs.index(max(rs)) + 1]])
-        doc_id[-1].insert(1,tmp_answer[0])
-        exit(0)
+        print(possible_answer[-1])
+        print(question_word_index,question[i])
+        print(sentence_answer, doc_id[-1])
+
+        score = relevance_score(question[i], sentence_answer, doc_id[-1][1:], question_word_index[1])
+        all_rs.append(score)
+        doc_id[-1].insert(1,extractNumberFromString(sentence_answer[doc_id[-1][score.index(max(score)) + 1]]))
 
 print("Q:", doc_id.__len__(), real_answer.__len__())
 
 string = ''
 miss = 0
 for i in range(real_answer.__len__()):
-    if real_answer[i][1] != doc_id[i][1]:
-        string += str(question_index[i]) + ' ' + str(real_answer[i]) + ' ' + str(doc_id[i][1]) + ' ' + str(possible_answer[i]) + ' ' + str(all_rs[i]) +'\n'
+
+
+    if real_answer[i][1] != doc_id[i][1][0]:
+        string += str(question_index[i]) + ' ' + str(real_answer[i]) + ' ' + str(doc_id[i][1][0]) + ' ' + str(possible_answer[i]) + ' ' + str(all_rs[i]) +'\n'
         miss+=1
 print(miss)
 string += str(miss)
-with open("result_find_answer_word(1).txt", "a", encoding="utf-8") as text_file:
+with open("result_find_answer_word.txt", "a", encoding="utf-8") as text_file:
     text_file.write(string)
 # TODO find the way to extract the answer from sentence
