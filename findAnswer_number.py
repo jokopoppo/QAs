@@ -25,10 +25,6 @@ def normalized_edit_similarity(a, b):
     import editdistance
     return 1.0 - editdistance.eval(a, b)/(1.0 * max(len(a), len(b)))
 
-def order_consistency(index_a,index_b,l):
-    return 1.0 - abs(index_a - index_b)/l
-
-
 def relevance_score(question,sentence,candidate,question_word):
 
     for i in question:
@@ -36,7 +32,6 @@ def relevance_score(question,sentence,candidate,question_word):
             question.remove(i)
         for w in question_words:
             if (w != question_word) and (i.endswith(w) and i.startswith(w)):
-                print(i)
                 question.remove(i)
                 break
     # print(question)
@@ -52,7 +47,7 @@ def relevance_score(question,sentence,candidate,question_word):
                     a[-1].append([question.index(sentence[j]), j, 0.5])
                 else:
                     a[-1].append([question.index(sentence[j]), j, 0.25])
-        print(a[-1])
+        # print(a[-1])
 
     m = question.__len__() - 1
 
@@ -65,6 +60,17 @@ def relevance_score(question,sentence,candidate,question_word):
 
     return score
 
+def find_question_word(question,doc_id):
+    for j in question:
+        for w in question_words:
+            if j.endswith(w) or j.startswith(w):
+                if j.endswith('ปี'):
+                    continue
+                for k in range(sentence_answer.__len__()):
+                    if hasNumbers(sentence_answer[k]):
+                        doc_id.append(k)
+                return [question.index(j), j],doc_id
+
 a = json.load(open('test_set/new_sample_questions.json',encoding='utf-8-sig'))
 a = a['data']
 question = json.load(open('test_set\\new_sample_questions_tokenize.json', 'r', encoding='utf-8-sig'))
@@ -72,7 +78,7 @@ question = json.load(open('test_set\\new_sample_questions_tokenize.json', 'r', e
 question_index = []
 doc_id = []
 real_answer = []
-question_words = ['กี่', 'อะไร', 'ใด', 'เท่า', 'ปี']
+question_words = ['กี่', 'ใด', 'เท่า', 'ปี', 'อะไร']
 wrong = 0
 all_rs = []
 possible_answer = []
@@ -84,7 +90,6 @@ for i in range(wrong,a.__len__()):
 
     if answer.isnumeric():
         s = ''.join(question[i])
-        print(i, s)
         question_index.append(i)
         real_answer.append([article_id,answer])
         doc = json.load(open('E:\CPE#Y4\databaseTF\documents-tokenize\\'+str(article_id)+'.json','r',encoding='utf-8-sig'))
@@ -92,20 +97,13 @@ for i in range(wrong,a.__len__()):
         sentence_answer = make_sentence_answer(doc,answer_begin)
         doc_id.append([article_id])
 
-        question_word_index = []
-        for j in question[i]:
-            for w in question_words:
-                if j.endswith(w) or j.startswith(w):
-                    question_word_index = [question[i].index(j),j]
-                    for k in range(sentence_answer.__len__()):
-                        if hasNumbers(sentence_answer[k]):
-                            doc_id[-1].append(k)
-                    break
+        question_word_index,doc_id[-1] = find_question_word(question[i],doc_id[-1])
 
-        doc_id[-1][1:] = list(set(doc_id[-1][1:]))
         possible_answer.append([])
         for j in doc_id[-1][1:]:
             possible_answer[-1].append(sentence_answer[j])
+
+        print(i, s)
         print(possible_answer[-1])
         print(question_word_index,question[i])
         print(sentence_answer, doc_id[-1])
@@ -120,12 +118,11 @@ string = ''
 miss = 0
 for i in range(real_answer.__len__()):
 
-
     if real_answer[i][1] != doc_id[i][1][0]:
         string += str(question_index[i]) + ' ' + str(real_answer[i]) + ' ' + str(doc_id[i][1][0]) + ' ' + str(possible_answer[i]) + ' ' + str(all_rs[i]) +'\n'
         miss+=1
 print(miss)
 string += str(miss)
-with open("result_find_answer_word.txt", "a", encoding="utf-8") as text_file:
+with open("result_find_answer_word(1).txt", "w", encoding="utf-8") as text_file:
     text_file.write(string)
 # TODO find the way to extract the answer from sentence

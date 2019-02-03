@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1435f1f5-46db-4b0a-9944-9c0267199b80" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/findAnswer_other.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findAnswer.py" beforeDir="false" afterPath="$PROJECT_DIR$/findAnswer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result_find_answer_word(1).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result_find_answer_word.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result_find_answer_word.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findAnswer.py" beforeDir="false" afterPath="$PROJECT_DIR$/findAnswer_number.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +17,7 @@
     <session id="-1641781116">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="141" />
+          <entry key="project.closed" value="142" />
           <entry key="project.open.time.0" value="8" />
           <entry key="project.open.time.1" value="6" />
           <entry key="project.open.time.10" value="1" />
@@ -43,6 +42,7 @@
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.35" value="2" />
           <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.39" value="2" />
           <entry key="project.open.time.4" value="5" />
           <entry key="project.open.time.40" value="1" />
@@ -53,73 +53,63 @@
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.70" value="1" />
           <entry key="project.open.time.93" value="1" />
-          <entry key="project.opened" value="157" />
+          <entry key="project.opened" value="158" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="json" value="18" />
-          <entry key="py" value="312" />
-          <entry key="txt" value="174" />
+          <entry key="py" value="319" />
+          <entry key="txt" value="183" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="18" />
-          <entry key="PLAIN_TEXT" value="174" />
-          <entry key="Python" value="312" />
+          <entry key="PLAIN_TEXT" value="183" />
+          <entry key="Python" value="319" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="21" />
-          <entry key="dummy" value="164" />
-          <entry key="py" value="55602" />
-          <entry key="txt" value="33" />
+          <entry key="dummy" value="178" />
+          <entry key="py" value="56393" />
+          <entry key="txt" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="197" />
-          <entry key="Python" value="55623" />
+          <entry key="PLAIN_TEXT" value="214" />
+          <entry key="Python" value="56414" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/findAnswer.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/findAnswer_number.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+            <state relative-caret-position="210">
+              <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="95" selection-end-column="34" />
               <folding>
                 <element signature="e#54#101#0" />
                 <element signature="e#136#186#0" />
                 <element signature="e#241#590#0" />
                 <element signature="e#634#722#0" />
-                <marker date="1549096062222" expanded="true" signature="11:1787" ph="..." />
-                <marker date="1549096062222" expanded="true" signature="236:1787" ph="..." />
+                <marker date="1549180678350" expanded="true" signature="11:1862" ph="..." />
+                <marker date="1549180678350" expanded="true" signature="236:1862" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/result_find_answer_word.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-                <marker date="1549096651648" expanded="true" signature="225:269" ph="..." />
-                <marker date="1549096651648" expanded="true" signature="1513:1649" ph="..." />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -135,9 +125,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ลาโช</find>
-      <find>cdoc</find>
-      <find>c[0]</find>
       <find>นิน</find>
       <find>ฮิกกิ้นส์</find>
       <find>ปี 1933</find>
@@ -165,6 +152,9 @@
       <find>answer_word</find>
       <find>0.18999999999999995</find>
       <find>poss</find>
+      <find>2675</find>
+      <find>เลข</find>
+      <find>อะไร</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -173,7 +163,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sample_questions.json" />
         <option value="$PROJECT_DIR$/indexing.py" />
         <option value="$PROJECT_DIR$/sortIndex.py" />
         <option value="$PROJECT_DIR$/new_sample_questions.json" />
@@ -218,10 +207,13 @@
         <option value="$PROJECT_DIR$/fill_missing_doc.py" />
         <option value="$PROJECT_DIR$/try_to_improve_findDOC.py" />
         <option value="$PROJECT_DIR$/findAswer.py" />
-        <option value="$PROJECT_DIR$/result_find_answer_word(1).txt" />
-        <option value="$PROJECT_DIR$/result_find_answer_word.txt" />
         <option value="$PROJECT_DIR$/findAnswer.py" />
+        <option value="$PROJECT_DIR$/findAnswer_other.py" />
+        <option value="$PROJECT_DIR$/result_find_answer_word(2).txt" />
+        <option value="$PROJECT_DIR$/result_find_answer_word.txt" />
+        <option value="$PROJECT_DIR$/result_find_answer_word(1).txt" />
         <option value="$PROJECT_DIR$/test1.py" />
+        <option value="$PROJECT_DIR$/findAnswer_number.py" />
       </list>
     </option>
   </component>
@@ -288,7 +280,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test1">
+  <component name="RunManager" selected="Python.findAnswer_number">
     <configuration name="findAnswer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TF" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -301,7 +293,49 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/findAnswer.py" />
+      <option name="SCRIPT_NAME" value="E:\CPE#Y4\TF\findAnswer_number.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="findAnswer_number" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TF" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/findAnswer_number.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="findAnswer_other" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TF" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/findAnswer_other.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -322,49 +356,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="E:\CPE#Y4\TF\findAnswer.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="plotW2V" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TF" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plotW2V.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="plotting" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TF" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="E:\CPE#Y4\TF\plot_graph_histogram.py" />
+      <option name="SCRIPT_NAME" value="E:\CPE#Y4\TF\findAnswer_number.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -395,19 +387,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.plotting" />
-      <item itemvalue="Python.plotW2V" />
       <item itemvalue="Python.test1" />
       <item itemvalue="Python.findAswer" />
       <item itemvalue="Python.findAnswer" />
+      <item itemvalue="Python.findAnswer_other" />
+      <item itemvalue="Python.findAnswer_number" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.findAnswer_number" />
         <item itemvalue="Python.test1" />
+        <item itemvalue="Python.findAnswer_other" />
         <item itemvalue="Python.findAnswer" />
         <item itemvalue="Python.findAswer" />
-        <item itemvalue="Python.plotW2V" />
-        <item itemvalue="Python.plotting" />
       </list>
     </recent_temporary>
   </component>
@@ -491,19 +483,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/addSynnonyms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" lean-forward="true" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/old_result/result_shortest1st2nd.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/addSyms/result_addSynonyms_rLeast_shortest1st2nd.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/result/addSyms/result_addSynonyms_rLeast1st2nd_shortest1st2nd.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -763,42 +742,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result_find_answer_word(1).txt">
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/py36/Lib/site-packages/pythainlp/tag/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/findAnswer_other.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+          <folding>
+            <element signature="e#46#96#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_find_answer_word(2).txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/findDocuments.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/findAnswer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
-          <folding>
-            <element signature="e#54#101#0" />
-            <element signature="e#136#186#0" />
-            <element signature="e#241#590#0" />
-            <element signature="e#634#722#0" />
-            <marker date="1549096062222" expanded="true" signature="11:1787" ph="..." />
-            <marker date="1549096062222" expanded="true" signature="236:1787" ph="..." />
-          </folding>
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/result_find_answer_word.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/result_find_answer_word(1).txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-756" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/findAnswer_number.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="95" selection-end-column="34" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <marker date="1549096651648" expanded="true" signature="225:269" ph="..." />
-            <marker date="1549096651648" expanded="true" signature="1513:1649" ph="..." />
+            <element signature="e#54#101#0" />
+            <element signature="e#136#186#0" />
+            <element signature="e#241#590#0" />
+            <element signature="e#634#722#0" />
+            <marker date="1549180678350" expanded="true" signature="11:1862" ph="..." />
+            <marker date="1549180678350" expanded="true" signature="236:1862" ph="..." />
           </folding>
         </state>
       </provider>
