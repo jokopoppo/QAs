@@ -7,7 +7,10 @@ def extractNumberFromString(string):
 def hasNumbers(inputString):
     return any(char.isdigit() for char in inputString)
 
-def make_sentence_answer(doc,answer_begin,n=15):
+def make_sentence_answer(article_id,answer_begin,n=15):
+    doc = json.load(
+        open('E:\CPE#Y4\databaseTF\documents-tokenize\\' + str(article_id) + '.json', 'r',
+             encoding='utf-8-sig'))
     sentence_answer = []
     l = 0
     for j in range(doc.__len__()):
@@ -27,13 +30,13 @@ def normalized_edit_similarity(a, b):
 
 def relevance_score(question,sentence,candidate,question_word):
 
-    for i in question:
-        if i == ' ':
-            question.remove(i)
-        for w in question_words:
-            if (w != question_word) and (i.endswith(w) and i.startswith(w)):
-                question.remove(i)
-                break
+    # for i in question:
+        # if i == ' ':
+        #     question.remove(i)
+        # for w in question_words:
+        #     if (w != question_word) and (i.endswith(w) and i.startswith(w)):
+        #         question.remove(i)
+        #         break
     # print(question)
     # print(sentence)
     a = []
@@ -55,7 +58,7 @@ def relevance_score(question,sentence,candidate,question_word):
     for i in range(a.__len__()) :
         tmp = 0
         for j in a[i]:
-            tmp += (1-abs(j[1] - candidate[i])/l)*(1 - abs(j[0] - question_word_index)/m + j[2])
+            tmp += (1-abs(j[1] - candidate[i])/l)*(1 - abs(j[0] - question_word_index)/m )
         score.append(tmp)
 
     return score
@@ -92,9 +95,8 @@ for i in range(wrong,a.__len__()):
         s = ''.join(question[i])
         question_index.append(i)
         real_answer.append([article_id,answer])
-        doc = json.load(open('E:\CPE#Y4\databaseTF\documents-tokenize\\'+str(article_id)+'.json','r',encoding='utf-8-sig'))
 
-        sentence_answer = make_sentence_answer(doc,answer_begin)
+        sentence_answer = make_sentence_answer(article_id,answer_begin)
         doc_id.append([article_id])
 
         question_word_index,doc_id[-1] = find_question_word(question[i],doc_id[-1])
@@ -123,6 +125,6 @@ for i in range(real_answer.__len__()):
         miss+=1
 print(miss)
 string += str(miss)
-with open("result_find_answer_word(1).txt", "w", encoding="utf-8") as text_file:
+with open("result_find_answer_word_number(1).txt", "w", encoding="utf-8") as text_file:
     text_file.write(string)
 # TODO find the way to extract the answer from sentence

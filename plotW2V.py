@@ -1,16 +1,13 @@
 # coding=utf8
 
-import json
 import warnings
 warnings.filterwarnings(action='ignore', category=UserWarning, module='gensim')
 warnings.filterwarnings(action='ignore', category=FutureWarning)
-from gensim.test.utils import common_texts, get_tmpfile
 from gensim.models import Word2Vec
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.manifold import TSNE
 import matplotlib as mpl
-from pprint import pprint
 
 def display_closestwords_tsnescatterplot(model, word,topn):
     arr = np.empty((0, 100), dtype='f')

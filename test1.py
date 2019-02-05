@@ -1,11 +1,14 @@
-a = []
-b = []
-with open("result_find_answer_word.txt", "r", encoding="utf-8") as text_file:
-    for i in text_file:
-        a.append(i.split()[0])
 
-with open("result_find_answer_word(1).txt", "r", encoding="utf-8") as text_file:
-    for i in text_file:
-        b.append(i.split()[0])
+def similar(a, b):
+    from difflib import SequenceMatcher
+    return SequenceMatcher(None, a, b).ratio()
 
-print(list(set(b)-set(a)))
+def normalized_edit_similarity(a, b):
+    import editdistance
+    return 1.0 - editdistance.eval(a, b)/(1.0 * max(len(a), len(b)))
+
+print(similar('สุเทพ เทือกสุบรรณ','ภรรยาสุเทพ เทือกสุบรรณ'))
+print(similar('สุเทพ เทือกสุบรรณ','สุเทพ เทือกสุบรรณ'))
+
+print(normalized_edit_similarity('สุเทพ เทือกสุบรรณ','ภรรยาสุเทพ เทือกสุบรรณ'))
+print(normalized_edit_similarity('สุเทพ เทือกสุบรรณ','สุเทพ เทือกสุบรรณ'))
