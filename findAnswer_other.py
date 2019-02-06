@@ -36,7 +36,7 @@ question_index = []
 doc_id = []
 real_answer = []
 question_words = ['กี่', 'อะไร', 'ใด', 'เท่า', 'ปี' ,'ใคร' , 'ว่า' ,'อะไร']
-classes = ['number' , 'ใคร' , 'ว่า อะไร']
+classes = ['number' , 'ใคร' , 'ว่า อะไร' ,'ประเทศ อะไร' ,'จังหวัด อะไร' ,'เมือง อะไร']
 wrong = 0
 all_rs = []
 possible_answer = []
@@ -52,28 +52,34 @@ for i in range(wrong,a.__len__()):
     answer_end = a[i]['answer_end_position']
     sentence_answer = make_sentence_answer(article_id, answer_begin)
 
-    if not answer.isnumeric() and 'ใคร' not in question[i] and 'ว่า' in question[i]  and 'อะไร' in question[i]:
-        # print(i,answer,question[i])
-        # print(sentence_answer)
-        n+=1
-        ans.append([i, answer])
-        s_ans.append(sentence_answer)
-        wv.append([])
-        for j in sentence_answer:
-            if (j in answer) and (j.__len__() >= 2):
-                wv[-1].append(j)
+    if not answer.isnumeric() and 'ใคร' not in question[i] and 'อะไร' not in question[i]:
+        # if 'อะไร' in question[i] and question[i][question[i].index('อะไร') - 1] != 'ว่า' \
+        #         and question[i][question[i].index('อะไร') - 1] != 'ประเทศ' \
+        #         and question[i][question[i].index('อะไร') - 1] != 'จังหวัด' \
+        #         and question[i][question[i].index('อะไร') - 1] != 'เมือง':
+            print(i,answer,question[i])
+            # print(sentence_answer)
+            n+=1
+            ans.append([i, answer])
+            s_ans.append(sentence_answer)
+            wv.append([])
+            for j in sentence_answer:
+                if (j in answer) and (j.__len__() >= 2):
+                    wv[-1].append(j)
 
 print(n)
-
-string = ''
-for i in range(ans.__len__()):
-    if wv[i].__len__() < 1 :
-        for j in s_ans[i]:
-            d = similar(j,ans[i][1])
-            if d > 0.45:
-                wv[i].append(j)
 #
-        print(ans[i],wv[i],s_ans[i])
-        string += str(wv[i]) + '\n'
-# with open("train_set_for_classify/something_name_no_wv.txt", "w", encoding="utf-8") as text_file:
+# count = 0
+# string = ''
+# for i in range(ans.__len__()):
+#     if wv[i].__len__() < 1 :
+#         for j in s_ans[i]:
+#             d = similar(j,ans[i][1])
+#             if d > 0.55:
+#                 wv[i].append(j)
+#         print(ans[i],wv[i],s_ans[i])
+#         count+=1
+#         string += str(wv[i]) + '\n'
+# print(count)
+# with open("train_set_for_classify/city_name_no_wv.txt", "w", encoding="utf-8") as text_file:
 #     text_file.write(string)
