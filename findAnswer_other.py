@@ -28,8 +28,15 @@ def make_sentence_answer(article_id,answer_begin,n=15):
             break
     return sentence_answer
 
-def check_question_type(a,b,n):
-    return b in question[i] and question[i][question[i].index(b) - n] == a
+def check_question_type(a):
+
+    c = a.split()
+    n = a.count(' ')
+
+    if n == 0:
+        return c[0] in question[i]
+    else:
+        return c[1] in question[i] and question[i][question[i].index(c[1]) - n] == c[0]
 
 a = json.load(open('test_set/new_sample_questions.json',encoding='utf-8-sig'))
 a = a['data']
@@ -39,9 +46,25 @@ question_index = []
 doc_id = []
 real_answer = []
 question_words = ['กี่', 'อะไร', 'ใด', 'เท่า', 'ปี' ,'ใคร' , 'ว่า' ,'อะไร']
-classes = ['number', 'กี่', 'ใคร', 'ว่า อะไร', 'ประเทศ อะไร', 'จังหวัด อะไร', 'เมือง อะไร' , 'ประเทศ ใด', 'จังหวัด ใด', 'เมือง ใด' ,'คน ใด'
-           , 'เมื่อ ใด', 'เวลา ใด', 'ภาค ใด', 'แคว้น ใด', 'ที่ ใด', 'ที่ ไหน', 'เท่า ไร', 'เมื่อ ไร', 'อย่าง ไร', 'ชื่อ อะไร', 'other ใด', 'other อะไร']
+classes = ['ใคร', 'ว่า อะไร', 'ประเทศ อะไร', 'จังหวัด อะไร', 'เมือง อะไร' , 'ประเทศ ใด', 'จังหวัด ใด', 'เมือง ใด' ,'คน ใด'
+           , 'เมื่อ ใด', 'เวลา ใด', 'ภาค ใด', 'แคว้น ใด', 'ที่ ใด', 'ที่ ไหน', 'เท่า ไร', 'เมื่อ ไร', 'อย่าง ไร', 'ชื่อ อะไร', 'ปี อะไร', 'พ.ศ. อะไร', 'ค.ศ. อะไร', 'other ใด', 'other อะไร']
 # 145 questions cant find question word because token words are not good enough .
+question_type = [['กี่', 'ปี ใด', 'ปี อะไร', 'พ.ศ.  อะไร', 'ค.ศ.  อะไร', 'พ.ศ. อะไร', 'ค.ศ. อะไร', 'พ.ศ. ใด', 'พ.ศ.  ใด', 'ค.ศ. ใด', 'ค.ศ.  ใด', 'เท่า ไร', 'เท่า ไหร่', 'เท่า ใด']
+                 , ['เมื่อ ไร'] # date format
+                 , ['ใคร', 'ว่า อะไร', 'ชื่อ อะไร', 'คน ใด', 'คน ไหน', 'คือใคร'] # human name
+                 , ['อย่าง ไร'] # something name
+                 , ['ประเทศ ใด', 'ประเทศ อะไร']
+                 , ['จังหวัดใด','จังหวัด ใด', 'จังหวัด อะไร']
+                 , ['เมืองใด','เมือง ใด', 'เมือง อะไร']
+                 , ['ภาค ใด']
+                 , ['แคว้น ใด']
+                 , ['ทวีปใด']
+                 , ['ที่ ไหน'] # where
+                 , ['อะไร'] # other what
+                 , ['ใด'] # other dai
+                 , ['ไหน'] # other nhai
+                 ]
+
 wrong = 0
 all_rs = []
 possible_answer = []
@@ -57,24 +80,10 @@ for i in range(wrong,a.__len__()):
     answer_end = a[i]['answer_end_position']
     sentence_answer = make_sentence_answer(article_id, answer_begin)
 
-    if not answer.isnumeric() and 'ใคร' not in question[i] and 'ไร' not in question[i]\
-            and 'กี่' not in question[i] and 'อะไร' not in question[i] and 'ใด' not in question[i]\
-            and not check_question_type('ประเทศ','ใด',1) \
-            and not check_question_type('จังหวัด', 'ใด',1) \
-            and not check_question_type('เมือง', 'ใด',1) \
-            and not check_question_type('คน', 'ใด',1) \
-            and not check_question_type('ปี', 'ใด', 1) \
-            and not check_question_type('พ.ศ.', 'ใด', 2) \
-            and not check_question_type('ค.ศ.', 'ใด', 2)\
-            and not check_question_type('เมื่อ','ใด',1) \
-            and not check_question_type('เวลา', 'ใด', 1) \
-            and not check_question_type('ภาค', 'ใด', 1) \
-            and not check_question_type('แคว้น', 'ใด', 1) \
-            and not check_question_type('ที่', 'ใด', 1) \
-            and not check_question_type('ที่','ไหน', 1):
-
-            print(i,answer,question[i])
-        #   print(sentence_answer)
+    for l in range(question_type.__len__()):
+        if any(check_question_type(k) for k in question_type[l]):
+            print(l,i,answer,question[i])
+            # print(sentence_answer)
             n+=1
             ans.append([i, answer])
             s_ans.append(sentence_answer)
@@ -82,6 +91,7 @@ for i in range(wrong,a.__len__()):
             for j in sentence_answer:
                 if (j in answer) and (j.__len__() >= 2):
                     wv[-1].append(j)
+            break
 
 print(n)
 
