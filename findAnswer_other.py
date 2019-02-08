@@ -49,21 +49,18 @@ question_words = ['กี่', 'อะไร', 'ใด', 'เท่า', 'ปี
 classes = ['ใคร', 'ว่า อะไร', 'ประเทศ อะไร', 'จังหวัด อะไร', 'เมือง อะไร' , 'ประเทศ ใด', 'จังหวัด ใด', 'เมือง ใด' ,'คน ใด'
            , 'เมื่อ ใด', 'เวลา ใด', 'ภาค ใด', 'แคว้น ใด', 'ที่ ใด', 'ที่ ไหน', 'เท่า ไร', 'เมื่อ ไร', 'อย่าง ไร', 'ชื่อ อะไร', 'ปี อะไร', 'พ.ศ. อะไร', 'ค.ศ. อะไร', 'other ใด', 'other อะไร']
 # 145 questions cant find question word because token words are not good enough .
-question_type = [['กี่', 'ปี ใด', 'ปี อะไร', 'พ.ศ.  อะไร', 'ค.ศ.  อะไร', 'พ.ศ. อะไร', 'ค.ศ. อะไร', 'พ.ศ. ใด', 'พ.ศ.  ใด', 'ค.ศ. ใด', 'ค.ศ.  ใด', 'เท่า ไร', 'เท่า ไหร่', 'เท่า ใด']
-                 , ['เมื่อ ไร'] # date format
-                 , ['ใคร', 'ว่า อะไร', 'ชื่อ อะไร', 'คน ใด', 'คน ไหน', 'คือใคร'] # human name
-                 , ['อย่าง ไร'] # something name
+question_type = [['กี่', 'ปี ใด', 'ปี อะไร', 'พ.ศ.  อะไร', 'ค.ศ.  อะไร', 'พ.ศ. อะไร', 'ค.ศ. อะไร', 'พ.ศ. ใด', 'พ.ศ.  ใด', 'ค.ศ. ใด', 'ค.ศ.  ใด', 'เท่า ไร', 'เท่า ไหร่', 'เท่า ใด' ,'คริสต์ศักราช ใด', 'จำนวน ใด']
+                 , ['เมื่อ ไร', 'เวลา ใด', 'วัน ใด' ,'เมื่อ ใด', 'วัน ที่'] # date format
+                 , ['ใคร', 'ว่า อะไร', 'ชื่อ อะไร', 'คน ใด', 'คน ไหน', 'คือใคร', 'ผู้ ใด'] # human name
                  , ['ประเทศ ใด', 'ประเทศ อะไร']
                  , ['จังหวัดใด','จังหวัด ใด', 'จังหวัด อะไร']
                  , ['เมืองใด','เมือง ใด', 'เมือง อะไร']
                  , ['ภาค ใด']
                  , ['แคว้น ใด']
-                 , ['ทวีปใด']
-                 , ['ที่ ไหน'] # where
-                 , ['อะไร'] # other what
-                 , ['ใด'] # other dai
-                 , ['ไหน'] # other nhai
-                 ]
+                 , ['ทวีปใด', 'ทวีป อะไร', 'ทวีป ใด', 'ภูมิภาค ไหน']
+                 , ['ที่ ไหน', 'ที่ ใด'] # where
+                 , ['อะไร', 'อย่าง ไร', 'ใด', 'ไหน'] # other what, other dai, other nhai
+                  ]
 
 wrong = 0
 all_rs = []
@@ -73,6 +70,7 @@ n = 0
 ans = []
 s_ans = []
 wv = []
+
 for i in range(wrong,a.__len__()):
     article_id = a[i]['article_id']
     answer = a[i]['answer']
@@ -82,30 +80,56 @@ for i in range(wrong,a.__len__()):
 
     for l in range(question_type.__len__()):
         if any(check_question_type(k) for k in question_type[l]):
-            print(l,i,answer,question[i])
-            # print(sentence_answer)
+            if l != 11:
+                # print(l,i,answer,question[i])
+                # print(sentence_answer)
+                n+=1
+
+                ans.append([l, answer])
+                s_ans.append(sentence_answer)
+                wv.append([])
+                for j in sentence_answer:
+                    if (j in answer) and (j.__len__() >= 2):
+                        wv[-1].append(j)
+            break
+
+        elif l == 10 and not any(check_question_type(k) for k in question_type[l]):
+            # print(l,i,answer,question[i])
             n+=1
-            ans.append([i, answer])
+
+            ans.append([l, answer])
             s_ans.append(sentence_answer)
             wv.append([])
             for j in sentence_answer:
                 if (j in answer) and (j.__len__() >= 2):
                     wv[-1].append(j)
-            break
 
 print(n)
 
-# count = 0
-# string = ''
-# for i in range(ans.__len__()):
-#     if wv[i].__len__() > 0 :
-#         # for j in s_ans[i]:
-#         #     d = similar(j,ans[i][1])
-#         #     if d > 0.55:
-#         #         wv[i].append(j)
-#         print(ans[i],wv[i],s_ans[i])
-#         count+=1
-#         string += str(wv[i]) + '\n'
-# print(count)
-# with open("train_set_for_classify/ที่ไหน.txt", "a", encoding="utf-8") as text_file:
-#     text_file.write(string)
+miss = 0
+count = 0
+string = ''
+lab = [6,7,8,9,10]
+
+for label in lab:
+    for i in range(ans.__len__()):
+        if ans[i][0] == label:
+            if wv[i].__len__() < 1:
+                for j in s_ans[i]:
+                    d = similar(j, ans[i][1])
+                    if d > 0.45:
+                        wv[i].append(j)
+
+                if wv[i].__len__() < 1:
+                    miss += 1
+                print(ans[i], wv[i], s_ans[i])
+                count += 1
+                string += str(wv[i]) + '\n'
+            else:
+                print(ans[i], wv[i], s_ans[i])
+                count += 1
+                string += str(wv[i]) + '\n'
+
+    print(count, miss)
+    with open("train_set_for_classify//" + str(label) + ".txt", "w", encoding="utf-8") as text_file:
+        text_file.write(string)
