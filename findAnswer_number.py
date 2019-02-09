@@ -30,15 +30,6 @@ def normalized_edit_similarity(a, b):
 
 def relevance_score(question,sentence,candidate,question_word):
 
-    # for i in question:
-        # if i == ' ':
-        #     question.remove(i)
-        # for w in question_words:
-        #     if (w != question_word) and (i.endswith(w) and i.startswith(w)):
-        #         question.remove(i)
-        #         break
-    # print(question)
-    # print(sentence)
     a = []
     question_word_index = question.index(question_word)
     l = 2*question.__len__()
@@ -113,18 +104,20 @@ for i in range(wrong,a.__len__()):
         score = relevance_score(question[i], sentence_answer, doc_id[-1][1:], question_word_index[1])
         all_rs.append(score)
         doc_id[-1].insert(1,extractNumberFromString(sentence_answer[doc_id[-1][score.index(max(score)) + 1]]))
+        print(score)
 
+        if score.__len__() > 1:
+            exit(0)
 print("Q:", doc_id.__len__(), real_answer.__len__())
 
-string = ''
-miss = 0
-for i in range(real_answer.__len__()):
-
-    if real_answer[i][1] != doc_id[i][1][0]:
-        string += str(question_index[i]) + ' ' + str(real_answer[i]) + ' ' + str(doc_id[i][1][0]) + ' ' + str(possible_answer[i]) + ' ' + str(all_rs[i]) +'\n'
-        miss+=1
-print(miss)
-string += str(miss)
-with open("result_find_answer_word_number(1).txt", "w", encoding="utf-8") as text_file:
-    text_file.write(string)
-# TODO find the way to extract the answer from sentence
+# string = ''
+# miss = 0
+# for i in range(real_answer.__len__()):
+#
+#     if real_answer[i][1] != doc_id[i][1][0]:
+#         string += str(question_index[i]) + ' ' + str(real_answer[i]) + ' ' + str(doc_id[i][1][0]) + ' ' + str(possible_answer[i]) + ' ' + str(all_rs[i]) +'\n'
+#         miss+=1
+# print(miss)
+# string += str(miss)
+# with open("result_find_answer_word_number(1).txt", "w", encoding="utf-8") as text_file:
+#     text_file.write(string)

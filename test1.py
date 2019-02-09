@@ -1,7 +1,10 @@
-import numpy as np
-from tempfile import TemporaryFile
-outfile = TemporaryFile()
+from pythainlp.number import *
+import deepcut
+s = ['ใน', 'ปี', ' ', '2560', ' ', 'ปกเกล้า อนันต์', ' ', 'เล่น', 'ใน', 'ตำแหน่ง', 'กอง', 'กลาง', ' ', 'ให้', 'กับ', 'สโมสรใด']
+tmp_q = []
+for i in s:
+    for w in deepcut.tokenize(i):
+        tmp_q.append(w)
+s = tmp_q
 
-# x = np.arange(10)
-# np.savetxt('test.out', x, delimiter=',')
-print(np.loadtxt('test.out'))
+print(s)

@@ -1,11 +1,11 @@
 # coding=utf8
 
-from pythainlp.corpus import stopwords
-from ast import literal_eval
 import warnings
 warnings.filterwarnings(action='ignore', category=UserWarning, module='gensim')
 warnings.filterwarnings(action='ignore', category=FutureWarning)
 from gensim.models import Word2Vec
+from pythainlp.corpus import stopwords
+from ast import literal_eval
 import numpy as np
 
 stop_words = stopwords.words('thai')
