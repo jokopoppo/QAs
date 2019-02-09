@@ -1,10 +1,8 @@
 from pythainlp.number import *
-import deepcut
-s = ['ใน', 'ปี', ' ', '2560', ' ', 'ปกเกล้า อนันต์', ' ', 'เล่น', 'ใน', 'ตำแหน่ง', 'กอง', 'กลาง', ' ', 'ให้', 'กับ', 'สโมสรใด']
-tmp_q = []
-for i in s:
-    for w in deepcut.tokenize(i):
-        tmp_q.append(w)
-s = tmp_q
+from word2number import w2n
 
-print(s)
+s = ['ควาย','เจ็ด','ยี่สิบ']
+thai_number_text = [u'หนึ่ง', u'สอง', u'สาม', u'สี่', u'ห้า', u'หก', u'เจ็ด', u'แปด', u'เก้า']
+
+for i in s:
+    print(w2n.word_to_num(i))

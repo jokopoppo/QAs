@@ -1,12 +1,13 @@
 import json
 import tensorflow as tf
-import deepcut
 import warnings
+
 warnings.filterwarnings(action='ignore', category=UserWarning, module='gensim')
 warnings.filterwarnings(action='ignore', category=FutureWarning)
 from gensim.models import Word2Vec
 import numpy as np
 from pythainlp.number import *
+
 
 def normalized_edit_similarity(a, b):
     import editdistance
@@ -17,17 +18,17 @@ def similar(a, b):
     from difflib import SequenceMatcher
     return SequenceMatcher(None, a, b).ratio()
 
+
 def extractNumberFromString(string):
     import re
-    return re.findall('\d+', string )
+    return re.findall('\d+', string)
+
 
 def hasNumbers(inputString):
-
-    try:
-        text_to_num(inputString)
-        return True
-    except KeyError:
-        return any(char.isdigit() for char in inputString)
+    for i in thai_number_text:
+        if inputString.startswith(i) or inputString.endswith(i):
+            return True
+    return any(char.isdigit() for char in inputString)
 
 
 def make_sentence_answer(article_id, answer_begin, n=15):
@@ -47,7 +48,8 @@ def make_sentence_answer(article_id, answer_begin, n=15):
             break
     return sentence_answer
 
-def check_question_type(a,question):
+
+def check_question_type(a, question):
     c = a.split()
     n = a.count(' ')
 
@@ -56,17 +58,19 @@ def check_question_type(a,question):
     else:
         return c[1] in question and question[question.index(c[1]) - n] == c[0]
 
-def find_question_word(question,question_words):
+
+def find_question_word(question, question_words):
     for w in question_words:
         c = w.split()
         n = w.count(' ')
-        if check_question_type(w,question):
+        if check_question_type(w, question):
             if n == 0:
-                return [question.index(c[0]),c[0]]
+                return [question.index(c[0]), c[0]]
             else:
-                return [question.index(c[1]),c[1]]
+                return [question.index(c[1]), c[1]]
 
-def find_candidate(possible_answer,doc_id,sentence_answer,l):
+
+def find_candidate(possible_answer, doc_id, sentence_answer, l):
     words = []
     words_index = []
     for k in range(sentence_answer.__len__()):
@@ -86,22 +90,22 @@ def find_candidate(possible_answer,doc_id,sentence_answer,l):
             predicted_lalel.append(tmp)
             if tmp == label:
                 possible_answer.append(sentence_answer[words_index[k]])
-                doc_id.append(k)
-        if possible_answer.__len__() > 0 :
+                doc_id.append(words_index[k])
+        if possible_answer.__len__() > 0:
             break
         else:
             label = max(set(predicted_lalel), key=predicted_lalel.count)
 
-    return possible_answer,doc_id
+    return possible_answer, doc_id
 
-def relevance_score(question,sentence,candidate,question_word):
 
+def relevance_score(question, sentence, candidate, question_word):
     a = []
     question_word_index = question.index(question_word)
-    l = 2*question.__len__()
-    for i in candidate :
+    l = 2 * question.__len__()
+    for i in candidate:
         a.append([])
-        for j in range(i-l,i+l):
+        for j in range(i - l, i + l):
             if (i != j) and (0 <= j < sentence.__len__()) and (sentence[j] in question):
                 if question.index(sentence[j]) < question_word_index:
                     a[-1].append([question.index(sentence[j]), j, 0.5])
@@ -112,13 +116,14 @@ def relevance_score(question,sentence,candidate,question_word):
     m = question.__len__() - 1
 
     score = []
-    for i in range(a.__len__()) :
+    for i in range(a.__len__()):
         tmp = 0
         for j in a[i]:
-            tmp += (1-abs(j[1] - candidate[i])/l)*(1 - abs(j[0] - question_word_index)/m )
+            tmp += (1 - abs(j[1] - candidate[i]) / l) * (1 - abs(j[0] - question_word_index) / m)
         score.append(tmp)
 
     return score
+
 
 def find_answer_word():
     print(i, s)
@@ -152,7 +157,8 @@ question_type = [
     , ['ทวีปใด', 'ทวีป อะไร', 'ทวีป ใด', 'ภูมิภาค ไหน']
     , ['ที่ ไหน', 'ที่ ใด']  # where
     , ['อะไร', 'อย่าง ไร', 'ใด', 'ไหน']  # other what, other dai, other nhai
-    ]
+]
+thai_number_text = [u'หนึ่ง', u'สอง', u'สาม', u'สี่', u'ห้า', u'หก', u'เจ็ด', u'แปด', u'เก้า', u'สิบ', u'สิบเอ็ด']
 
 wrong = 0
 all_rs = []
@@ -179,12 +185,12 @@ for i in range(wrong, a.__len__()):
     doc_id.append([article_id])
     s = ''.join(question[i])
     for l in range(question_type.__len__()):
-        if any(check_question_type(k,question[i]) for k in question_type[l]):
+        if any(check_question_type(k, question[i]) for k in question_type[l]):
             if l > 1:
                 possible_answer[-1], doc_id[-1] = find_candidate(possible_answer[-1], doc_id[-1], sentence_answer, l)
                 question_word_index = find_question_word(question[i], question_type[l])
                 find_answer_word()
-            else :
+            else:
                 for k in range(sentence_answer.__len__()):
                     if hasNumbers(sentence_answer[k]):
                         doc_id[-1].append(k)
@@ -193,15 +199,18 @@ for i in range(wrong, a.__len__()):
                 find_answer_word()
             break
 
-        elif l == 10 and not any(check_question_type(k,question[i]) for k in question_type[l]):
+        elif l == 10 and not any(check_question_type(k, question[i]) for k in question_type[l]):
+            print("\n#############################\n")
             tmp_q = []
             for q in question[i]:
-                for w in deepcut.tokenize(q):
-                    tmp_q.append(w)
-            question[i] = tmp_q
-
+                tmp = []
+                for w in question_type[l]:
+                    tmp.append(similar(q, w))
+                tmp_q.append([question[i].index(q), max(tmp)])
+            tmp_q.sort(key=lambda s: s[1], reverse=True)
+            question_word_index = [tmp_q[0][0], question[i][tmp_q[0][0]]]
             possible_answer[-1], doc_id[-1] = find_candidate(possible_answer[-1], doc_id[-1], sentence_answer, l)
-            question_word_index = find_question_word(question[i], question_type[l])
+
             find_answer_word()
 
 print(n)
@@ -210,9 +219,11 @@ string = ''
 miss = 0
 for i in range(real_answer.__len__()):
 
-    if real_answer[i] != doc_id[i][1][0]:
-        string += str(i) + ' ' + str(real_answer[i]) + ' ' + str(doc_id[i][1][0]) + ' ' + str(possible_answer[i]) + ' ' + str(all_rs[i]) +'\n'
-        miss+=1
+    if real_answer[i] != doc_id[i][1]:
+        tmp = similar(real_answer[i], doc_id[i][1])
+        string += str(i) + ' ' + str(real_answer[i]) + ' ' + str(doc_id[i][1]) + ' ' + str(tmp) + ' ' + str(
+            possible_answer[i]) + ' ' + str(all_rs[i]) + '\n'
+        miss += 1
 print(miss)
 string += str(miss)
 with open("result_find_answer_all.txt", "w", encoding="utf-8") as text_file:
