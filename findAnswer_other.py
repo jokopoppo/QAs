@@ -106,30 +106,30 @@ for i in range(wrong,a.__len__()):
 
 print(n)
 
-miss = 0
-count = 0
-string = ''
-lab = [6,7,8,9,10]
-
-for label in lab:
-    for i in range(ans.__len__()):
-        if ans[i][0] == label:
-            if wv[i].__len__() < 1:
-                for j in s_ans[i]:
-                    d = similar(j, ans[i][1])
-                    if d > 0.45:
-                        wv[i].append(j)
-
-                if wv[i].__len__() < 1:
-                    miss += 1
-                print(ans[i], wv[i], s_ans[i])
-                count += 1
-                string += str(wv[i]) + '\n'
-            else:
-                print(ans[i], wv[i], s_ans[i])
-                count += 1
-                string += str(wv[i]) + '\n'
-
-    print(count, miss)
-    with open("train_set_for_classify//" + str(label) + ".txt", "w", encoding="utf-8") as text_file:
-        text_file.write(string)
+# miss = 0
+# count = 0
+# string = ''
+# lab = [6,7,8,9,10]
+#
+# for label in lab:
+#     for i in range(ans.__len__()):
+#         if ans[i][0] == label:
+#             if wv[i].__len__() < 1:
+#                 for j in s_ans[i]:
+#                     d = similar(j, ans[i][1])
+#                     if d > 0.45:
+#                         wv[i].append(j)
+#
+#                 if wv[i].__len__() < 1:
+#                     miss += 1
+#                 print(ans[i], wv[i], s_ans[i])
+#                 count += 1
+#                 string += str(wv[i]) + '\n'
+#             else:
+#                 print(ans[i], wv[i], s_ans[i])
+#                 count += 1
+#                 string += str(wv[i]) + '\n'
+#
+#     print(count, miss)
+#     with open("train_set_for_classify//" + str(label) + ".txt", "w", encoding="utf-8") as text_file:
+#         text_file.write(string)
