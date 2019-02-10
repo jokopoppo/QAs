@@ -1,8 +1,7 @@
-from pythainlp.number import *
-from word2number import w2n
-
-s = ['ควาย','เจ็ด','ยี่สิบ']
-thai_number_text = [u'หนึ่ง', u'สอง', u'สาม', u'สี่', u'ห้า', u'หก', u'เจ็ด', u'แปด', u'เก้า']
-
-for i in s:
-    print(w2n.word_to_num(i))
+import json
+tmp = [{"question_id":1,"question":"สุนัขตัวแรกรับบทเป็นเบนจี้ในภาพยนตร์เรื่อง Benji ที่ออกฉายในปี พ.ศ. 2517 มีชื่อว่าอะไร","answer":"ฮิกกิ้นส์","answer_begin_position ":529,"answer_end_position":538,"article_id":115035}]
+data = {}
+data['data'] = tmp
+print(data)
+with open('test,json', 'w' , encoding="utf-8") as outfile:
+    json.dump(data,outfile,indent=4,ensure_ascii=False)

@@ -41,12 +41,15 @@ def make_sentence_answer(article_id, answer_begin, n=15):
         l += doc[j].__len__()
         if l >= answer_begin - 1:
             for k in range(j - n, j + n):
+                if k < j:
+                    l -= doc[k].__len__()
                 try:
                     sentence_answer.append(doc[k])
+
                 except IndexError:
                     break
             break
-    return sentence_answer
+    return sentence_answer, l
 
 
 def check_question_type(a, question):
@@ -125,15 +128,25 @@ def relevance_score(question, sentence, candidate, question_word):
     return score
 
 
-def find_answer_word():
+def find_answer_word(rand):
     print(i, s)
-    print(possible_answer[-1])
-    print(question_word_index, question[i])
-    print(sentence_answer, doc_id[-1])
+    # print(possible_answer[-1])
+    # print(question_word_index, question[i])
+    # print(sentence_answer, doc_id[-1])
 
     score = relevance_score(question[i], sentence_answer, doc_id[-1][1:], question_word_index[1])
     all_rs.append(score)
-    doc_id[-1].insert(1, sentence_answer[doc_id[-1][score.index(max(score)) + 1]])
+
+    tmp = doc_id[-1][score.index(max(score)) + 1]
+    for j in sentence_answer:
+        if j != sentence_answer[tmp]:
+            rand += j.__len__()
+        else:
+            break
+    answer_position.append([rand, rand + sentence_answer[tmp].__len__()])
+    doc_id[-1].insert(1, sentence_answer[tmp])
+
+
 
 
 a = json.load(open('test_set/new_sample_questions.json', encoding='utf-8-sig'))
@@ -163,6 +176,7 @@ thai_number_text = [u'หนึ่ง', u'สอง', u'สาม', u'สี่'
 wrong = 0
 all_rs = []
 possible_answer = []
+answer_position = []
 n = 0
 
 wv_model = Word2Vec.load("E:\CPE#Y4\databaseTF\word2vec_model_lastest\word2vec.model")
@@ -173,12 +187,13 @@ classify_model = tf.keras.models.load_model(
     compile=True
 )
 
+answer_json = []
 for i in range(wrong, a.__len__()):
-    article_id = a[i]['article_id']
+    article_id = a[i]['article_id']  ### input
     answer = a[i]['answer']
     answer_begin = a[i]['answer_begin_position ']
     answer_end = a[i]['answer_end_position']
-    sentence_answer = make_sentence_answer(article_id, answer_begin)
+    sentence_answer, rand = make_sentence_answer(article_id, answer_begin)  ### input
 
     real_answer.append(answer)
     possible_answer.append([])
@@ -189,14 +204,14 @@ for i in range(wrong, a.__len__()):
             if l > 1:
                 possible_answer[-1], doc_id[-1] = find_candidate(possible_answer[-1], doc_id[-1], sentence_answer, l)
                 question_word_index = find_question_word(question[i], question_type[l])
-                find_answer_word()
+                find_answer_word(rand)
             else:
                 for k in range(sentence_answer.__len__()):
                     if hasNumbers(sentence_answer[k]):
                         doc_id[-1].append(k)
                         possible_answer[-1].append(sentence_answer[k])
                 question_word_index = find_question_word(question[i], question_type[l])
-                find_answer_word()
+                find_answer_word(rand)
             break
 
         elif l == 10 and not any(check_question_type(k, question[i]) for k in question_type[l]):
@@ -211,20 +226,31 @@ for i in range(wrong, a.__len__()):
             question_word_index = [tmp_q[0][0], question[i][tmp_q[0][0]]]
             possible_answer[-1], doc_id[-1] = find_candidate(possible_answer[-1], doc_id[-1], sentence_answer, l)
 
-            find_answer_word()
+            find_answer_word(rand)
 
+    for_answer_json = {}
+    for_answer_json['question_id'] = i+1
+    for_answer_json['question'] = s
+    for_answer_json['answer'] = doc_id[i][1]
+    for_answer_json['answer_begin_position '] = answer_position[i][0]
+    for_answer_json['answer_end_position'] = answer_position[i][1]
+    for_answer_json['article_id'] = article_id
+    answer_json.append(for_answer_json)
 print(n)
 
-string = ''
-miss = 0
-for i in range(real_answer.__len__()):
+with open('output_answer,json', 'w' , encoding="utf-8") as outfile:
+    json.dump(answer_json,outfile,indent=4,ensure_ascii=False)
 
-    if real_answer[i] != doc_id[i][1]:
-        tmp = similar(real_answer[i], doc_id[i][1])
-        string += str(i) + ' ' + str(real_answer[i]) + ' ' + str(doc_id[i][1]) + ' ' + str(tmp) + ' ' + str(
-            possible_answer[i]) + ' ' + str(all_rs[i]) + '\n'
-        miss += 1
-print(miss)
-string += str(miss)
-with open("result_find_answer_all.txt", "w", encoding="utf-8") as text_file:
-    text_file.write(string)
+# string = ''
+# miss = 0
+# for i in range(real_answer.__len__()):
+#
+#     if real_answer[i] != doc_id[i][1]:
+#         tmp = similar(real_answer[i], doc_id[i][1])
+#         string += str(i) + ' ' + str([real_answer[i]]) + ' ' + str([doc_id[i][1]]) + ' ' + str(tmp) + ' ' + str(
+#             possible_answer[i]) + ' ' + str(all_rs[i]) + '\n'
+#         miss += 1
+# print(miss)
+# string += str(miss)
+# with open("result_find_answer_all.txt", "w", encoding="utf-8") as text_file:
+#     text_file.write(string)
