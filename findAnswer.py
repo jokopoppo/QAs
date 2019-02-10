@@ -238,7 +238,7 @@ for i in range(wrong, a.__len__()):
     answer_json.append(for_answer_json)
 print(n)
 
-with open('output_answer,json', 'w' , encoding="utf-8") as outfile:
+with open('output_answer.json', 'w' , encoding="utf-8") as outfile:
     json.dump(answer_json,outfile,indent=4,ensure_ascii=False)
 
 # string = ''
