@@ -1,0 +1,290 @@
+[
+   {
+      "rank":0,
+      "question_id":1,
+      "question":"สุนัขตัวแรกรับบทเป็นเบนจี้ในภาพยนตร์เรื่อง Benji ที่ออกฉายในปี พ.ศ. 2517 มีชื่อว่าอะไร",
+      "answer_begin_position ":468,
+      "answer_end_position":527,
+      "article_id":115035,
+      "similarity_score":32.90196990966797
+   },
+   {
+      "rank":1,
+      "question_id":5,
+      "question":"ห้องทำงานรูปไข่ สร้างขึ้นในสมัยอดีตประธานาธิบดีคนใดของสหรัฐอเมริกา",
+      "answer_begin_position ":226,
+      "answer_end_position":314,
+      "article_id":193032,
+      "similarity_score":32.79692840576172
+   },
+   {
+      "rank":2,
+      "question_id":16,
+      "question":"ท่าอากาศยานสุโขทัย เปิดทำการครั้งแรกเมื่อไร",
+      "answer_begin_position ":743,
+      "answer_end_position":805,
+      "article_id":152042,
+      "similarity_score":38.578983306884766
+   },
+   {
+      "rank":3,
+      "question_id":28,
+      "question":"อางี้ หรือ วนิดา ตันติวิทยาพิทักษ์ จบชั้นมัธยมศึกษาจากโรงเรียนอะไร",
+      "answer_begin_position ":65,
+      "answer_end_position":174,
+      "article_id":154178,
+      "similarity_score":41.56023025512695
+   },
+   {
+      "rank":4,
+      "question_id":29,
+      "question":"หลังจากหลบเข้าป่า วนิดา ตันติวิทยาพิทักษ์  กลับมาเรียนต่อกี่ปีจึงสำเร็จการศึกษา",
+      "answer_begin_position ":65,
+      "answer_end_position":174,
+      "article_id":154178,
+      "similarity_score":36.127838134765625
+   },
+   {
+      "rank":5,
+      "question_id":33,
+      "question":"บ้านเกิดของเซอร์ปีเตอร์ โรเบิร์ต แจ็กสัน อยู่ที่เมืองใดในประเทศนิวซีแลนด์",
+      "answer_begin_position ":173,
+      "answer_end_position":246,
+      "article_id":169077,
+      "similarity_score":31.65476417541504
+   },
+   {
+      "rank":6,
+      "question_id":34,
+      "question":"ภาพยนตร์เรื่อง The Lovely Bones ในปี 2009 กำกับโดยใคร",
+      "answer_begin_position ":275,
+      "answer_end_position":351,
+      "article_id":169077,
+      "similarity_score":33.57483673095703
+   },
+   {
+      "rank":7,
+      "question_id":41,
+      "question":"มะม่วงเป็นพืชไม้ยืนต้นอยู่ในสกุลอะไร",
+      "answer_begin_position ":541,
+      "answer_end_position":593,
+      "article_id":116635,
+      "similarity_score":35.0284538269043
+   },
+   {
+      "rank":8,
+      "question_id":42,
+      "question":"ที่ตั้งของอุทยานแห่งชาติสิรินาถ อยู่ในจังหวัดอะไร",
+      "answer_begin_position ":4480,
+      "answer_end_position":4546,
+      "article_id":83670,
+      "similarity_score":38.82270812988281
+   },
+   {
+      "rank":9,
+      "question_id":43,
+      "question":"ไอเอ็นจีเป็นบริษัทในเนเธอร์แลนด์ที่ให้บริการเกี่ยวกับการเงิน มีสำนักงานใหญ่อยู่ที่เมืองใด",
+      "answer_begin_position ":192,
+      "answer_end_position":265,
+      "article_id":226323,
+      "similarity_score":32.899410247802734
+   },
+   {
+      "rank":10,
+      "question_id":44,
+      "question":"ในปี 2008 นิตยสารฟอร์บได้จัดอันดับให้บริษัทไอเอ็นจีมีขนาดใหญ่ติดอันดับที่เท่าไรของโลก",
+      "answer_begin_position ":66,
+      "answer_end_position":146,
+      "article_id":226323,
+      "similarity_score":37.54163360595703
+   },
+   {
+      "rank":11,
+      "question_id":47,
+      "question":"โยโกะ โอะโนะ ทำอาชีพอะไร",
+      "answer_begin_position ":162,
+      "answer_end_position":238,
+      "article_id":83322,
+      "similarity_score":39.21660232543945
+   },
+   {
+      "rank":12,
+      "question_id":54,
+      "question":"นักมวยสากลชาวอาร์เจนตินาคนใดที่เสียชีวิตเมื่อ 22 พฤศจิกายน พ.ศ. 2520",
+      "answer_begin_position ":860,
+      "answer_end_position":924,
+      "article_id":61815,
+      "similarity_score":31.491418838500977
+   },
+   {
+      "rank":13,
+      "question_id":55,
+      "question":"การชกป้องกันแชมป์ครั้งที่ 11 ของปัสกวัล นีโกลัส เปเรซ แพ้ให้กับใคร",
+      "answer_begin_position ":1729,
+      "answer_end_position":1796,
+      "article_id":61815,
+      "similarity_score":36.04764175415039
+   },
+   {
+      "rank":14,
+      "question_id":57,
+      "question":"โลกรอญโญตั้งอยู่ริมฝั่งแม่น้ำเอโบรทางภาคเหนือของประเทศอะไร",
+      "answer_begin_position ":334,
+      "answer_end_position":402,
+      "article_id":121614,
+      "similarity_score":33.69598388671875
+   },
+   {
+      "rank":15,
+      "question_id":58,
+      "question":"ศูนย์กลางการผลิตไวน์ริโอฆาอยู่ที่จังหวัดอะไรในประเทศสเปน",
+      "answer_begin_position ":286,
+      "answer_end_position":358,
+      "article_id":121614,
+      "similarity_score":32.38987731933594
+   },
+   {
+      "rank":16,
+      "question_id":61,
+      "question":"นายกรัฐมนตรีคนที่ 24 ของประเทศไทยคือใคร",
+      "answer_begin_position ":1034,
+      "answer_end_position":1126,
+      "article_id":123257,
+      "similarity_score":37.88180923461914
+   },
+   {
+      "rank":17,
+      "question_id":62,
+      "question":"ภรรยาของนายกรัฐมนตรีคนที่ 24 ของประเทศไทยมีชื่อว่าอะไร",
+      "answer_begin_position ":1034,
+      "answer_end_position":1126,
+      "article_id":123257,
+      "similarity_score":36.29023742675781
+   },
+   {
+      "rank":18,
+      "question_id":68,
+      "question":"โทมัส เจคอบ ฮิลฟิเกอร์ เกิดที่เมืองอะไรในรัฐนิวยอร์ก",
+      "answer_begin_position ":1257,
+      "answer_end_position":1333,
+      "article_id":48590,
+      "similarity_score":38.15654754638672
+   },
+   {
+      "rank":19,
+      "question_id":72,
+      "question":"การคมนาคมของแคว้นมาร์เค ของประเทศอิตาลีในช่วงคริสต์ศตวรรษที่ 19 เดินทางด้วยวิธีใด",
+      "answer_begin_position ":837,
+      "answer_end_position":921,
+      "article_id":252741,
+      "similarity_score":31.97896385192871
+   },
+   {
+      "rank":20,
+      "question_id":73,
+      "question":"ยอดดอยที่มีความสูงที่สุดในประเทศไทยคือดอยอะไร",
+      "answer_begin_position ":115,
+      "answer_end_position":196,
+      "article_id":17499,
+      "similarity_score":33.771507263183594
+   },
+   {
+      "rank":21,
+      "question_id":74,
+      "question":"พระอัฐิของพระเจ้าอินทวิชยานนท์ส่วนหนึ่งอยู่ที่ดอยอะไรในจังหวัดเชียงใหม่",
+      "answer_begin_position ":275,
+      "answer_end_position":358,
+      "article_id":17499,
+      "similarity_score":36.6087646484375
+   },
+   {
+      "rank":22,
+      "question_id":75,
+      "question":"ภาษาโตเบโล ที่ทั้งหมดกี่สำเนียง",
+      "answer_begin_position ":144,
+      "answer_end_position":232,
+      "article_id":127946,
+      "similarity_score":28.059219360351562
+   },
+   {
+      "rank":23,
+      "question_id":76,
+      "question":"เฮเลโวรูรู  เป็นหนึ่งในสำเนียงของภาษาอะไร",
+      "answer_begin_position ":106,
+      "answer_end_position":189,
+      "article_id":127946,
+      "similarity_score":29.40068244934082
+   },
+   {
+      "rank":24,
+      "question_id":77,
+      "question":"นักร้องนำวงเดอะสมิธส์ ของประเทศอังกฤษคือใคร",
+      "answer_begin_position ":65,
+      "answer_end_position":148,
+      "article_id":252354,
+      "similarity_score":34.81126022338867
+   },
+   {
+      "rank":25,
+      "question_id":78,
+      "question":"วงเดอะสมิธส์ วงดนตรีออลเทอร์นาทิฟร็อกจากแมนเซสเตอร์ ประเทศอังกฤษ ถูกยุบวงเมื่อปีใด",
+      "answer_begin_position ":65,
+      "answer_end_position":148,
+      "article_id":252354,
+      "similarity_score":31.22701644897461
+   },
+   {
+      "rank":26,
+      "question_id":81,
+      "question":"คำกล่าวทักทายของคนไทยที่ใช้เมื่อแรกพบกัน หรือเพื่อบอกลา คือคำว่าอะไร",
+      "answer_begin_position ":1473,
+      "answer_end_position":1532,
+      "article_id":74213,
+      "similarity_score":34.60484313964844
+   },
+   {
+      "rank":27,
+      "question_id":82,
+      "question":"ผู้ที่ริเริ่มใช้คำว่า สวัสดี เป็นคำกล่าวทักทาย คือใคร",
+      "answer_begin_position ":159,
+      "answer_end_position":232,
+      "article_id":74213,
+      "similarity_score":34.406002044677734
+   },
+   {
+      "rank":28,
+      "question_id":83,
+      "question":"อำเภอหัวไทร จังหวัดนครศรีธรรมราช ด้านทิศเหนือติดต่อกับอำเภออะไร",
+      "answer_begin_position ":357,
+      "answer_end_position":430,
+      "article_id":128702,
+      "similarity_score":34.33848190307617
+   },
+   {
+      "rank":29,
+      "question_id":89,
+      "question":"เขตบริหารพิเศษฮ่องกง เข้าร่วมแข่งขันกีฬาโอลิมปิกฤดูร้อนครั้งที่เท่าไร",
+      "answer_begin_position ":110,
+      "answer_end_position":185,
+      "article_id":259484,
+      "similarity_score":27.300498962402344
+   },
+   {
+      "rank":30,
+      "question_id":90,
+      "question":"เขตบริหารพิเศษฮ่องกง เข้าร่วมแข่งขันกีฬาโอลิมปิกฤดูร้อนครั้งที่ 29 ที่ประเทศอะไร",
+      "answer_begin_position ":110,
+      "answer_end_position":185,
+      "article_id":259484,
+      "similarity_score":24.519428253173828
+   },
+   {
+      "rank":31,
+      "question_id":96,
+      "question":"อุปกรณ์แปลงร่างที่เรียกว่า อุลตร้าแบดจ์ ของ ฮิงาชิ โคทาโร่ ทำให้แปลงร่างเป็นอะไร",
+      "answer_begin_position ":862,
+      "answer_end_position":934,
+      "article_id":123034,
+      "similarity_score":39.4408073425293
+   }
+]

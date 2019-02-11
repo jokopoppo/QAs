@@ -73,30 +73,14 @@ def find_question_word(question, question_words):
 
 
 def find_candidate(possible_answer, doc_id, sentence_answer, l):
-    words = []
-    words_index = []
-    for k in range(sentence_answer.__len__()):
-        if sentence_answer[k] != ' ' and not sentence_answer[k].isnumeric():
-            try:
-                words.append(wv_model.wv[sentence_answer[k]])
-                words_index.append(k)
-            except KeyError:
-                continue
-    words = np.asarray(words)
-    predictions = classify_model.predict(words)
-    predicted_label = []
-    label = l
-    for n in range(2):
-        for k in range(predictions.__len__()):
-            tmp = np.argmax(predictions[k]) + 2
-            predicted_label.append(tmp)
-            if tmp == label:
-                possible_answer.append(sentence_answer[words_index[k]])
-                doc_id.append(words_index[k])
-        if possible_answer.__len__() > 0:
-            break
-        else:
-            label = max(set(predicted_label), key=predicted_label.count)
+    n=0
+    while possible_answer.__len__() < 1 :
+        for k in range(sentence_answer.__len__()):
+            if sentence_answer[k] != ' ' and not sentence_answer[k].isnumeric():
+                if sentence_answer[k] in word_class[l+n]:
+                    possible_answer.append(sentence_answer[k])
+                    doc_id.append(k)
+        n+=1
 
     return possible_answer, doc_id
 ## TODO edit find candidate
@@ -129,9 +113,9 @@ def relevance_score(question, sentence, candidate, question_word):
 
 def find_answer_word(rand):
     print(i, s)
-    # print(possible_answer[-1])
-    # print(question_word_index, question[i])
-    # print(sentence_answer, doc_id[-1])
+    print(possible_answer[-1])
+    print(question_word_index, question[i])
+    print(sentence_answer, doc_id[-1])
 
     score = relevance_score(question[i], sentence_answer, doc_id[-1][1:], question_word_index[1])
     all_rs.append(score)
@@ -178,24 +162,30 @@ month = ['มกราคม', 'ม.ค.',
          'กันยายน', 'ก.ย.',
          'ตุลาคม', 'ต.ค.',
          'พฤศจิกายน', 'พ.ย.',
-         ' ธันวาคม', 'ธ.ค.']
+         ' ธันวาคม', 'ธ.ค.',
+         'พ.ศ.','ค.ศ.']
 
-wrong = 0
+class_label = [2,3,4,5,6,7,8,9,10]
+word_class = [[],[]]
+for i in class_label:
+    tmp = json.load(open("word_class//" + str(i) + ".json", "r", encoding="utf-8"))
+    word_class.append(set(tmp))
+wrong = 148
 all_rs = []
 possible_answer = []
 answer_position = []
-n = 0
-
-wv_model = Word2Vec.load("E:\CPE#Y4\databaseTF\word2vec_model_lastest\word2vec.model")
-
-classify_model = tf.keras.models.load_model(
-    'model.h5py',
-    custom_objects=None,
-    compile=True
-)
-
 answer_json = []
+
 for i in range(wrong, a.__len__()):
+
+    article_id = a[i]['article_id']  ### input
+    answer = a[i]['answer']
+    answer_begin = a[i]['answer_begin_position ']
+    answer_end = a[i]['answer_end_position']
+    sentence_answer, rand = make_sentence_answer(article_id, answer_begin)  ### input
+
+    real_answer.append(answer)
+    s = ''.join(question[i])
     possible_answer.append([])
     doc_id.append([article_id])
 
@@ -203,7 +193,6 @@ for i in range(wrong, a.__len__()):
         if any(check_question_type(k, question[i]) for k in question_type[l]):
             if l > 1:
                 possible_answer[-1], doc_id[-1] = find_candidate(possible_answer[-1], doc_id[-1], sentence_answer, l)
-
 
             elif l == 0:
                 for k in range(sentence_answer.__len__()):
@@ -216,7 +205,9 @@ for i in range(wrong, a.__len__()):
                     if sentence_answer[k] in month:
                         doc_id[-1].append(k)
                         possible_answer[-1].append(sentence_answer[k])
-
+                    else:
+                        possible_answer[-1], doc_id[-1] = find_candidate(possible_answer[-1], doc_id[-1],
+                                                                         sentence_answer, l)
             question_word_index = find_question_word(question[i], question_type[l])
             break
 
@@ -232,17 +223,7 @@ for i in range(wrong, a.__len__()):
             question_word_index = [tmp_q[0][0], question[i][tmp_q[0][0]]]
             possible_answer[-1], doc_id[-1] = find_candidate(possible_answer[-1], doc_id[-1], sentence_answer, l)
 
-
     find_answer_word(rand)
-
-    article_id = a[i]['article_id']  ### input
-    answer = a[i]['answer']
-    answer_begin = a[i]['answer_begin_position ']
-    answer_end = a[i]['answer_end_position']
-    sentence_answer, rand = make_sentence_answer(article_id, answer_begin)  ### input
-
-    real_answer.append(answer)
-    s = ''.join(question[i])
 
     for_answer_json = {}
     for_answer_json['question_id'] = i+1
@@ -252,7 +233,6 @@ for i in range(wrong, a.__len__()):
     for_answer_json['answer_end_position'] = answer_position[i][1]
     for_answer_json['article_id'] = article_id
     answer_json.append(for_answer_json)
-print(n)
 
 with open('output_answer.json', 'w' , encoding="utf-8") as outfile:
     json.dump(answer_json,outfile,indent=4,ensure_ascii=False)
