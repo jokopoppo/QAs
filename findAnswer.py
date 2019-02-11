@@ -1,7 +1,6 @@
 import json
 import tensorflow as tf
 import warnings
-
 warnings.filterwarnings(action='ignore', category=UserWarning, module='gensim')
 warnings.filterwarnings(action='ignore', category=FutureWarning)
 from gensim.models import Word2Vec
@@ -85,22 +84,22 @@ def find_candidate(possible_answer, doc_id, sentence_answer, l):
                 continue
     words = np.asarray(words)
     predictions = classify_model.predict(words)
-    predicted_lalel = []
+    predicted_label = []
     label = l
     for n in range(2):
         for k in range(predictions.__len__()):
             tmp = np.argmax(predictions[k]) + 2
-            predicted_lalel.append(tmp)
+            predicted_label.append(tmp)
             if tmp == label:
                 possible_answer.append(sentence_answer[words_index[k]])
                 doc_id.append(words_index[k])
         if possible_answer.__len__() > 0:
             break
         else:
-            label = max(set(predicted_lalel), key=predicted_lalel.count)
+            label = max(set(predicted_label), key=predicted_label.count)
 
     return possible_answer, doc_id
-
+## TODO edit find candidate
 
 def relevance_score(question, sentence, candidate, question_word):
     a = []
@@ -146,9 +145,6 @@ def find_answer_word(rand):
     answer_position.append([rand, rand + sentence_answer[tmp].__len__()])
     doc_id[-1].insert(1, sentence_answer[tmp])
 
-
-
-
 a = json.load(open('test_set/new_sample_questions.json', encoding='utf-8-sig'))
 a = a['data']
 question = json.load(open('test_set\\new_sample_questions_tokenize.json', 'r', encoding='utf-8-sig'))
@@ -156,7 +152,6 @@ question = json.load(open('test_set\\new_sample_questions_tokenize.json', 'r', e
 question_index = []
 doc_id = []
 real_answer = []
-question_words = ['กี่', 'อะไร', 'ใด', 'เท่า', 'ปี', 'ใคร', 'ว่า', 'อะไร']
 question_type = [
     ['กี่', 'ปี ใด', 'ปี อะไร', 'พ.ศ.  อะไร', 'ค.ศ.  อะไร', 'พ.ศ. อะไร', 'ค.ศ. อะไร', 'พ.ศ. ใด', 'พ.ศ.  ใด', 'ค.ศ. ใด',
      'ค.ศ.  ใด', 'เท่า ไร', 'เท่า ไหร่', 'เท่า ใด', 'คริสต์ศักราช ใด', 'จำนวน ใด']
@@ -172,6 +167,18 @@ question_type = [
     , ['อะไร', 'อย่าง ไร', 'ใด', 'ไหน']  # other what, other dai, other nhai
 ]
 thai_number_text = [u'หนึ่ง', u'สอง', u'สาม', u'สี่', u'ห้า', u'หก', u'เจ็ด', u'แปด', u'เก้า', u'สิบ', u'สิบเอ็ด']
+month = ['มกราคม', 'ม.ค.',
+         'กุมภาพันธ์', 'ก.พ.',
+         'มีนาคม', 'มี.ค.',
+         'เมษายน', 'เม.ย.',
+         'พฤษภาคม', 'พ.ค.',
+         'มิถุนายน', 'มิ.ย.',
+         'กรกฎาคม', 'ก.ค.',
+         'สิงหาคม', 'ส.ค.',
+         'กันยายน', 'ก.ย.',
+         'ตุลาคม', 'ต.ค.',
+         'พฤศจิกายน', 'พ.ย.',
+         ' ธันวาคม', 'ธ.ค.']
 
 wrong = 0
 all_rs = []
@@ -189,29 +196,28 @@ classify_model = tf.keras.models.load_model(
 
 answer_json = []
 for i in range(wrong, a.__len__()):
-    article_id = a[i]['article_id']  ### input
-    answer = a[i]['answer']
-    answer_begin = a[i]['answer_begin_position ']
-    answer_end = a[i]['answer_end_position']
-    sentence_answer, rand = make_sentence_answer(article_id, answer_begin)  ### input
-
-    real_answer.append(answer)
     possible_answer.append([])
     doc_id.append([article_id])
-    s = ''.join(question[i])
+
     for l in range(question_type.__len__()):
         if any(check_question_type(k, question[i]) for k in question_type[l]):
             if l > 1:
                 possible_answer[-1], doc_id[-1] = find_candidate(possible_answer[-1], doc_id[-1], sentence_answer, l)
-                question_word_index = find_question_word(question[i], question_type[l])
-                find_answer_word(rand)
-            else:
+
+
+            elif l == 0:
                 for k in range(sentence_answer.__len__()):
                     if hasNumbers(sentence_answer[k]):
                         doc_id[-1].append(k)
                         possible_answer[-1].append(sentence_answer[k])
-                question_word_index = find_question_word(question[i], question_type[l])
-                find_answer_word(rand)
+
+            else:
+                for k in range(sentence_answer.__len__()):
+                    if sentence_answer[k] in month:
+                        doc_id[-1].append(k)
+                        possible_answer[-1].append(sentence_answer[k])
+
+            question_word_index = find_question_word(question[i], question_type[l])
             break
 
         elif l == 10 and not any(check_question_type(k, question[i]) for k in question_type[l]):
@@ -226,7 +232,17 @@ for i in range(wrong, a.__len__()):
             question_word_index = [tmp_q[0][0], question[i][tmp_q[0][0]]]
             possible_answer[-1], doc_id[-1] = find_candidate(possible_answer[-1], doc_id[-1], sentence_answer, l)
 
-            find_answer_word(rand)
+
+    find_answer_word(rand)
+
+    article_id = a[i]['article_id']  ### input
+    answer = a[i]['answer']
+    answer_begin = a[i]['answer_begin_position ']
+    answer_end = a[i]['answer_end_position']
+    sentence_answer, rand = make_sentence_answer(article_id, answer_begin)  ### input
+
+    real_answer.append(answer)
+    s = ''.join(question[i])
 
     for_answer_json = {}
     for_answer_json['question_id'] = i+1
@@ -241,16 +257,4 @@ print(n)
 with open('output_answer.json', 'w' , encoding="utf-8") as outfile:
     json.dump(answer_json,outfile,indent=4,ensure_ascii=False)
 
-# string = ''
-# miss = 0
-# for i in range(real_answer.__len__()):
-#
-#     if real_answer[i] != doc_id[i][1]:
-#         tmp = similar(real_answer[i], doc_id[i][1])
-#         string += str(i) + ' ' + str([real_answer[i]]) + ' ' + str([doc_id[i][1]]) + ' ' + str(tmp) + ' ' + str(
-#             possible_answer[i]) + ' ' + str(all_rs[i]) + '\n'
-#         miss += 1
-# print(miss)
-# string += str(miss)
-# with open("result_find_answer_all.txt", "w", encoding="utf-8") as text_file:
-#     text_file.write(string)
+
