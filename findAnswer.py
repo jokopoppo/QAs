@@ -170,11 +170,12 @@ word_class = [[],[]]
 for i in class_label:
     tmp = json.load(open("word_class//" + str(i) + ".json", "r", encoding="utf-8"))
     word_class.append(set(tmp))
-wrong = 148
+wrong = 0
 all_rs = []
 possible_answer = []
 answer_position = []
 answer_json = []
+
 
 for i in range(wrong, a.__len__()):
 
@@ -208,6 +209,7 @@ for i in range(wrong, a.__len__()):
                     else:
                         possible_answer[-1], doc_id[-1] = find_candidate(possible_answer[-1], doc_id[-1],
                                                                          sentence_answer, l)
+
             question_word_index = find_question_word(question[i], question_type[l])
             break
 
