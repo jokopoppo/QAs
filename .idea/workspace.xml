@@ -4,7 +4,6 @@
     <list default="true" id="1435f1f5-46db-4b0a-9944-9c0267199b80" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/findAnswer.py" beforeDir="false" afterPath="$PROJECT_DIR$/findAnswer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_answer.json" beforeDir="false" afterPath="$PROJECT_DIR$/output_answer.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +15,7 @@
     <session id="-1641781116">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="161" />
+          <entry key="project.closed" value="162" />
           <entry key="project.open.time.0" value="8" />
           <entry key="project.open.time.1" value="7" />
           <entry key="project.open.time.10" value="1" />
@@ -24,7 +23,7 @@
           <entry key="project.open.time.14" value="4" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="7" />
-          <entry key="project.open.time.17" value="10" />
+          <entry key="project.open.time.17" value="11" />
           <entry key="project.open.time.18" value="14" />
           <entry key="project.open.time.19" value="11" />
           <entry key="project.open.time.20" value="17" />
@@ -53,12 +52,12 @@
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.70" value="1" />
           <entry key="project.open.time.93" value="1" />
-          <entry key="project.opened" value="177" />
+          <entry key="project.opened" value="178" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="json" value="56" />
+          <entry key="json" value="57" />
           <entry key="out" value="2" />
           <entry key="output_answer,json" value="1" />
           <entry key="py" value="386" />
@@ -68,7 +67,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="56" />
+          <entry key="JSON" value="57" />
           <entry key="PLAIN_TEXT" value="295" />
           <entry key="Python" value="386" />
         </counts>
@@ -78,7 +77,7 @@
           <entry key="Python Console" value="21" />
           <entry key="dummy" value="178" />
           <entry key="json" value="9" />
-          <entry key="py" value="68509" />
+          <entry key="py" value="68992" />
           <entry key="txt" value="89" />
         </counts>
       </usages-collector>
@@ -86,23 +85,23 @@
         <counts>
           <entry key="JSON" value="9" />
           <entry key="PLAIN_TEXT" value="267" />
-          <entry key="Python" value="68530" />
+          <entry key="Python" value="69013" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/findAnswer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="177" lean-forward="true" selection-start-line="177" selection-end-line="177" />
+            <state relative-caret-position="1893">
+              <caret line="246" selection-start-line="246" selection-end-line="246" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1549899885367" expanded="true" signature="1581:1586" ph="..." />
-                <marker date="1549899885367" expanded="true" signature="1722:1723" ph="..." />
-                <marker date="1549899885367" expanded="true" signature="3362:3922" ph="..." />
+                <marker date="1549944546224" expanded="true" signature="1612:1617" ph="..." />
+                <marker date="1549944546224" expanded="true" signature="1753:1754" ph="..." />
+                <marker date="1549944546224" expanded="true" signature="3395:3968" ph="..." />
               </folding>
             </state>
           </provider>
@@ -111,16 +110,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/candidates.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="4" selection-start-line="1" selection-start-column="3" selection-end-line="18" selection-end-column="4" />
+            <state relative-caret-position="85">
+              <caret line="5" column="28" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/output_answer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="-543110">
               <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
             </state>
           </provider>
@@ -448,12 +447,12 @@
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21303657" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21303657" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49602544" visible="true" weight="0.32225913" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49602544" visible="true" weight="0.32225913" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49920508" weight="0.3986711" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -693,30 +692,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output_answer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/candidates.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="4" selection-start-line="1" selection-start-column="3" selection-end-line="18" selection-end-column="4" />
+        <state relative-caret-position="85">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/findAnswer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="177" lean-forward="true" selection-start-line="177" selection-end-line="177" />
+        <state relative-caret-position="1893">
+          <caret line="246" selection-start-line="246" selection-end-line="246" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1549899885367" expanded="true" signature="1581:1586" ph="..." />
-            <marker date="1549899885367" expanded="true" signature="1722:1723" ph="..." />
-            <marker date="1549899885367" expanded="true" signature="3362:3922" ph="..." />
+            <marker date="1549944546224" expanded="true" signature="1612:1617" ph="..." />
+            <marker date="1549944546224" expanded="true" signature="1753:1754" ph="..." />
+            <marker date="1549944546224" expanded="true" signature="3395:3968" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_answer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-543110">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
         </state>
       </provider>
     </entry>
