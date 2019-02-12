@@ -179,35 +179,39 @@ possible_answer = []
 answer_position = []
 answer_json = []
 
-inp = []
-for i in range(wrong, a.__len__()):
+inp = json.load(open("candidates_out.json", "r", encoding="utf-8"))
+for i in range(inp.__len__()):
+    inp[i] = inp[i][0]
 
-    article_id = a[i]['article_id']  ### input
+for i in range(wrong, inp.__len__()):
     answer = a[i]['answer']
-    answer_begin = a[i]['answer_begin_position ']
-    answer_end = a[i]['answer_end_position']
-    inp.append(make_sentence_answer(article_id, answer_begin))  ### input
+    # inp.append(make_sentence_answer(article_id, answer_begin))  ### input
     real_answer.append(answer)
     s = ''.join(question[i])
     possible_answer.append([])
     doc_id.append([])
     answer_position.append([])
+
     rr_score = []
     for l in range(question_type.__len__()):
         if any(check_question_type(k, question[i]) for k in question_type[l]):
             question_word_index = find_question_word(question[i], question_type[l])
             for j in inp[i]:
-                doc_id[-1].append([article_id])
+                doc_id[-1].append([j["article_id"]])
                 possible_answer[-1].append([])
                 if l > 1:
                     possible_answer[-1][-1], doc_id[-1][-1] = find_candidate(possible_answer[-1][-1], doc_id[-1][-1], j['sentence'], l)
-                    rr_score.append(find_answer_word(j,j['begin_position']))
+                    rr_score.append(find_answer_word(j,j['answer_begin_position ']))
                 elif l == 0:
                     for k in range(j['sentence'].__len__()):
                         if hasNumbers(j['sentence'][k]):
                             doc_id[-1][-1].append(k)
                             possible_answer[-1][-1].append(j['sentence'][k])
-                    rr_score.append(find_answer_word(j,j['begin_position']))
+                    if possible_answer[-1][-1].__len__() < 1 :
+                        possible_answer[-1].pop()
+                        doc_id[-1].pop()
+                        continue
+                    rr_score.append(find_answer_word(j,j['answer_begin_position ']))
                 else:
                     for k in range(j['sentence'].__len__()):
                         if j['sentence'][k] in month:
@@ -215,7 +219,7 @@ for i in range(wrong, a.__len__()):
                             possible_answer[-1][-1].append(j['sentence'][k])
                         else:
                             possible_answer[-1][-1], doc_id[-1][-1] = find_candidate(possible_answer[-1][-1], doc_id[-1][-1],j['sentence'], l)
-                    rr_score.append(find_answer_word(j,j['begin_position']))
+                    rr_score.append(find_answer_word(j,j['answer_begin_position ']))
             break
 
         elif l == 10 and not any(check_question_type(k, question[i]) for k in question_type[l]):
@@ -228,11 +232,11 @@ for i in range(wrong, a.__len__()):
             tmp_q.sort(key=lambda s: s[1], reverse=True)
             question_word_index = [tmp_q[0][0], question[i][tmp_q[0][0]]]
             for j in inp[i]:
-                doc_id[-1].append([article_id])
+                doc_id[-1].append([j["article_id"]])
                 possible_answer[-1].append([])
                 print("\n#############################\n")
                 possible_answer[-1][-1], doc_id[-1][-1] = find_candidate(possible_answer[-1][-1], doc_id[-1][-1], j['sentence'], l)
-                rr_score.append(find_answer_word(j,j['begin_position']))
+                rr_score.append(find_answer_word(j,j['answer_begin_position ']))
 
     print(doc_id[i][rr_score.index(max(rr_score))])
 
@@ -242,7 +246,7 @@ for i in range(wrong, a.__len__()):
     for_answer_json['answer'] = doc_id[i][rr_score.index(max(rr_score))][1]
     for_answer_json['answer_begin_position '] = answer_position[i][rr_score.index(max(rr_score))][0] #### w8 input
     for_answer_json['answer_end_position'] = answer_position[i][rr_score.index(max(rr_score))][1] #### w8 input
-    for_answer_json['article_id'] = article_id #### w8 input
+    for_answer_json['article_id'] = doc_id[i][rr_score.index(max(rr_score))][1] #### w8 input
     answer_json.append(for_answer_json)
 
 with open('output_answer.json', 'w' , encoding="utf-8") as outfile:
