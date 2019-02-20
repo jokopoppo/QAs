@@ -2,11 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1435f1f5-46db-4b0a-9944-9c0267199b80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/candidates_out.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output_answerNSC.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candidates.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/candidates_out.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classify.py" beforeDir="false" afterPath="$PROJECT_DIR$/classify.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/findAnswer.py" beforeDir="false" afterPath="$PROJECT_DIR$/findAnswer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_answer.json" beforeDir="false" afterPath="$PROJECT_DIR$/output_answer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findDocuments.py" beforeDir="false" afterPath="$PROJECT_DIR$/findDocuments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.h5py" beforeDir="false" afterPath="$PROJECT_DIR$/model.h5py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_answer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_graph_histogram.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_graph_histogram.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_find_answer_all.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_find_answer_word_number(1).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_find_answer_word_number.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_output_findDOC.json" beforeDir="false" afterPath="$PROJECT_DIR$/test_output_findDOC.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/word_class/10.json" beforeDir="false" afterPath="$PROJECT_DIR$/word_class/word_10class/10.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/word_class/11.json" beforeDir="false" afterPath="$PROJECT_DIR$/word_class/word_10class/11.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/word_class/2.json" beforeDir="false" afterPath="$PROJECT_DIR$/word_class/word_10class/2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/word_class/3.json" beforeDir="false" afterPath="$PROJECT_DIR$/word_class/word_10class/3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/word_class/4.json" beforeDir="false" afterPath="$PROJECT_DIR$/word_class/word_10class/4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/word_class/5.json" beforeDir="false" afterPath="$PROJECT_DIR$/word_class/word_10class/5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/word_class/6.json" beforeDir="false" afterPath="$PROJECT_DIR$/word_class/word_10class/6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/word_class/7.json" beforeDir="false" afterPath="$PROJECT_DIR$/word_class/word_10class/7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/word_class/8.json" beforeDir="false" afterPath="$PROJECT_DIR$/word_class/word_10class/8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/word_class/9.json" beforeDir="false" afterPath="$PROJECT_DIR$/word_class/word_10class/9.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +37,7 @@
     <session id="-1641781116">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="163" />
+          <entry key="project.closed" value="169" />
           <entry key="project.open.time.0" value="8" />
           <entry key="project.open.time.1" value="7" />
           <entry key="project.open.time.10" value="1" />
@@ -27,16 +46,16 @@
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="7" />
           <entry key="project.open.time.17" value="11" />
-          <entry key="project.open.time.18" value="14" />
+          <entry key="project.open.time.18" value="15" />
           <entry key="project.open.time.19" value="11" />
           <entry key="project.open.time.20" value="17" />
-          <entry key="project.open.time.21" value="16" />
-          <entry key="project.open.time.22" value="17" />
+          <entry key="project.open.time.21" value="17" />
+          <entry key="project.open.time.22" value="18" />
           <entry key="project.open.time.23" value="11" />
           <entry key="project.open.time.24" value="5" />
-          <entry key="project.open.time.25" value="6" />
-          <entry key="project.open.time.26" value="5" />
-          <entry key="project.open.time.27" value="2" />
+          <entry key="project.open.time.25" value="7" />
+          <entry key="project.open.time.26" value="6" />
+          <entry key="project.open.time.27" value="3" />
           <entry key="project.open.time.28" value="4" />
           <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.30" value="2" />
@@ -55,24 +74,24 @@
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.70" value="1" />
           <entry key="project.open.time.93" value="1" />
-          <entry key="project.opened" value="179" />
+          <entry key="project.opened" value="185" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="json" value="63" />
+          <entry key="json" value="92" />
           <entry key="out" value="2" />
           <entry key="output_answer,json" value="1" />
-          <entry key="py" value="386" />
+          <entry key="py" value="398" />
           <entry key="test,json" value="5" />
-          <entry key="txt" value="287" />
+          <entry key="txt" value="288" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="63" />
-          <entry key="PLAIN_TEXT" value="295" />
-          <entry key="Python" value="386" />
+          <entry key="JSON" value="92" />
+          <entry key="PLAIN_TEXT" value="296" />
+          <entry key="Python" value="398" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -80,7 +99,7 @@
           <entry key="Python Console" value="21" />
           <entry key="dummy" value="178" />
           <entry key="json" value="9" />
-          <entry key="py" value="69273" />
+          <entry key="py" value="70688" />
           <entry key="txt" value="89" />
         </counts>
       </usages-collector>
@@ -88,47 +107,13 @@
         <counts>
           <entry key="JSON" value="9" />
           <entry key="PLAIN_TEXT" value="267" />
-          <entry key="Python" value="69294" />
+          <entry key="Python" value="70709" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/findAnswer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="683">
-              <caret line="211" column="40" lean-forward="true" selection-start-line="211" selection-start-column="40" selection-end-line="211" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <marker date="1549966587482" expanded="true" signature="1612:1617" ph="..." />
-                <marker date="1549966587482" expanded="true" signature="1753:1754" ph="..." />
-                <marker date="1549966587482" expanded="true" signature="3395:3968" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/output_answer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/candidates_out.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2352">
-              <caret line="247" column="30" selection-start-line="247" selection-start-column="20" selection-end-line="247" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -139,15 +124,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>'ว่า', 'อะไร'</find>
-      <find>พ.ศ.</find>
-      <find>ใด</find>
-      <find>กี่</find>
-      <find>ชื่อ', 'อะไร</find>
-      <find>คน</find>
-      <find>12</find>
-      <find>13</find>
-      <find>14</find>
       <find>ทวีป</find>
       <find>ค.ศ.</find>
       <find>[]</find>
@@ -169,6 +145,15 @@
       <find>&quot;question_id&quot;:139</find>
       <find>&quot;question_id&quot;:2615</find>
       <find>&quot;question_id&quot;: 2615</find>
+      <find>&quot;โทรทัศน์&quot;</find>
+      <find>547560</find>
+      <find>validate'</find>
+      <find>validate</find>
+      <find>กี่</find>
+      <find>คน</find>
+      <find>คน&quot;</find>
+      <find>&quot;คน&quot;</find>
+      <find>'คน'</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -177,8 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/result_remove_leastTF-IDF_1st2nd_shortest.txt" />
-        <option value="$PROJECT_DIR$/result_rLeast_1st2nd_shortest_and_bestTF-IDF.txt" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/result_rLeast1st2nd3rd_and_shortest1st2nd.txt" />
         <option value="$PROJECT_DIR$/result/result_rLeast1st2nd3rd_and_shortest1st2nd.txt" />
@@ -217,7 +200,6 @@
         <option value="$PROJECT_DIR$/findAnswer_other.py" />
         <option value="$PROJECT_DIR$/findAnswer_number.py" />
         <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/py36/Lib/site-packages/pythainlp/number/__init__.py" />
-        <option value="$PROJECT_DIR$/findDocuments.py" />
         <option value="$PROJECT_DIR$/word_class/NameWords.txt" />
         <option value="$PROJECT_DIR$/word_class/Country.txt" />
         <option value="$PROJECT_DIR$/word_class/human_name.json" />
@@ -225,13 +207,16 @@
         <option value="$PROJECT_DIR$/word_class/Winner_Boss/AllNameDictionary.txt" />
         <option value="$PROJECT_DIR$/word_class/Winner_Boss/Country.txt" />
         <option value="$PROJECT_DIR$/word_class/Winner_Boss/2.txt" />
-        <option value="$PROJECT_DIR$/classify.py" />
+        <option value="$PROJECT_DIR$/findDocuments.py" />
+        <option value="$PROJECT_DIR$/word_class/11.json" />
         <option value="$PROJECT_DIR$/test1.py" />
+        <option value="$PROJECT_DIR$/classify.py" />
         <option value="$PROJECT_DIR$/findAnswer.py" />
+        <option value="$PROJECT_DIR$/plot_graph_histogram.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="15" />
     <option name="width" value="1890" />
     <option name="height" value="1020" />
@@ -258,6 +243,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -269,23 +255,22 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="isspace&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/CPE#Y4/TF/findAnswer.py&#10;isspace&#9;null&#9;null" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../2019-02-10" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\CPE#Y4\TF" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\CPE#Y4\TF\word_class\word_10class" />
       <recent name="E:\CPE#Y4\TF\train_set_for_classify" />
       <recent name="E:\CPE#Y4\TF\train_set_for_classify\classes" />
       <recent name="E:\CPE#Y4\TF\result\1-16-2019" />
       <recent name="E:\CPE#Y4\TF\result\old_result" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\CPE#Y4\TF" />
     </key>
   </component>
@@ -301,7 +286,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.findAnswer">
+  <component name="RunManager" selected="Python.plot_graph_histogram">
     <configuration name="classify" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TF" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -344,27 +329,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="findAnswer_number" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TF" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/findAnswer_number.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="findDocuments" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TF" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -378,6 +342,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/findDocuments.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="plot_graph_histogram" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TF" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plot_graph_histogram.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -409,18 +394,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.test1" />
-      <item itemvalue="Python.findAnswer_number" />
       <item itemvalue="Python.classify" />
       <item itemvalue="Python.findAnswer" />
       <item itemvalue="Python.findDocuments" />
+      <item itemvalue="Python.plot_graph_histogram" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.plot_graph_histogram" />
+        <item itemvalue="Python.classify" />
         <item itemvalue="Python.findAnswer" />
         <item itemvalue="Python.test1" />
-        <item itemvalue="Python.classify" />
         <item itemvalue="Python.findDocuments" />
-        <item itemvalue="Python.findAnswer_number" />
       </list>
     </recent_temporary>
   </component>
@@ -447,21 +432,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="735" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21303657" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21303657" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49602544" visible="true" weight="0.32225913" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49523053" visible="true" weight="0.32225913" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49920508" weight="0.3986711" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49920508" weight="0.32890365" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32890365" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50397456" side_tool="true" weight="0.32890365" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5047695" side_tool="true" weight="0.32225913" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49602544" weight="0.32890365" />
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.49920508" weight="0.32890365" />
@@ -530,41 +514,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/train_set_for_classify/7.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/py36/Lib/site-packages/pythainlp/number/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-268">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test,json" />
-    <entry file="file://$PROJECT_DIR$/result_find_answer_all.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_output_findDOC.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state>
-          <caret column="1672786" selection-start-column="1672786" selection-end-column="1672786" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/result_q_weight5_fill_c[0](best).txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/word_class/LastNameDictionary.txt" />
-    <entry file="file://$PROJECT_DIR$/word_class/FirstNameDictionary.txt" />
-    <entry file="file://$PROJECT_DIR$/word_class/AllNameDictionary.txt" />
-    <entry file="file://$PROJECT_DIR$/word_class/NameWords.txt" />
-    <entry file="file://$PROJECT_DIR$/word_class/Hotel.txt" />
-    <entry file="file://$PROJECT_DIR$/word_class/Temple.txt" />
-    <entry file="file://$PROJECT_DIR$/word_class/name_place.json" />
     <entry file="file://$PROJECT_DIR$/word_class/dictionary2.txt" />
     <entry file="file://$PROJECT_DIR$/word_class/noun.json" />
     <entry file="file://$PROJECT_DIR$/word_class/DepartmentStore.txt" />
@@ -575,19 +524,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/findDocuments.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="979">
-          <caret line="207" column="13" selection-start-line="207" selection-start-column="13" selection-end-line="207" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/word_class/place_name.json" />
     <entry file="file://$PROJECT_DIR$/word_class/human_name.json" />
     <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/word_class/11.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/word_class/Country.txt" />
@@ -617,25 +556,6 @@
         <state relative-caret-position="-427921" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/word_class/10.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-288505">
-          <caret line="279578" column="16" selection-start-line="279578" selection-start-column="16" selection-end-line="279578" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/word_class/9.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-427921" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classify.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="56" column="62" selection-start-line="56" selection-start-column="62" selection-end-line="56" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/train_set_for_classify/2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13107">
@@ -643,22 +563,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/save_data_for_classify.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-184">
-          <caret line="7" column="13" selection-start-line="7" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/word_class/3.json">
+    <entry file="file://$PROJECT_DIR$/word_class/word_10class/3.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-76871" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/word_class/2.json">
+    <entry file="file://$PROJECT_DIR$/candidates_form.json" />
+    <entry file="file://$PROJECT_DIR$/candidates.json" />
+    <entry file="file://$PROJECT_DIR$/candidates_out.json" />
+    <entry file="file://$PROJECT_DIR$/candidate_sentences_continue.json" />
+    <entry file="file://$PROJECT_DIR$/candidate_sentences.json" />
+    <entry file="file://$PROJECT_DIR$/candidate1000.json" />
+    <entry file="file://$PROJECT_DIR$/word_class/word_10class/2.json">
       <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="179">
-          <caret line="37039" column="8" lean-forward="true" selection-start-line="37039" selection-start-column="8" selection-end-line="37039" selection-end-column="8" />
+        <state relative-caret-position="117">
+          <caret line="2799" column="12" selection-start-line="2799" selection-start-column="12" selection-end-line="2799" selection-end-column="12" />
         </state>
       </provider>
       <provider editor-type-id="text-editor">
@@ -667,58 +586,139 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_set/new_sample_questions.json">
+    <entry file="file://$PROJECT_DIR$/save_data_for_classify.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret column="26873" selection-start-column="26856" selection-end-column="26873" />
+        <state relative-caret-position="799">
+          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/candidate_sentence/candidate_sentences_492.json">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/findDocuments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="39" selection-start-line="19" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_class/word_10class/11.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="11" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_class/word_10class/9.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_class/word_10class/10.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1156">
+          <caret line="279578" column="16" selection-start-line="279578" selection-start-column="16" selection-end-line="279578" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/candidates_form.json">
+    <entry file="file://$PROJECT_DIR$/output_answer_492.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/candidates.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        <state relative-caret-position="17">
+          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/candidates_out.json">
+    <entry file="file://$PROJECT_DIR$/test_set/new_sample_questions.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2352">
-          <caret line="247" column="30" selection-start-line="247" selection-start-column="20" selection-end-line="247" selection-end-column="30" />
+        <state>
+          <caret column="85" selection-start-column="85" selection-end-column="85" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output_answer.json">
+    <entry file="file://$PROJECT_DIR$/output_answer_492(1).json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="32" />
+        <state relative-caret-position="-918" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/py36/Lib/site-packages/tensorflow/python/keras/engine/training_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="324" selection-start-line="324" selection-end-line="324" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_class/2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9125581" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_class/3.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-221694">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_class/5.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2550" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classify.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#366#662#0" />
+            <element signature="e#702#1261#0" />
+            <marker date="1550652844559" expanded="true" signature="1281:1963" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_answerNSC.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-134617">
+          <caret line="68" column="23" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot_graph_histogram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <marker date="1550653407973" expanded="true" signature="2435:3084" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/findAnswer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="211" column="40" lean-forward="true" selection-start-line="211" selection-start-column="40" selection-end-line="211" selection-end-column="40" />
+        <state relative-caret-position="272">
+          <caret line="148" column="28" selection-start-line="148" selection-start-column="28" selection-end-line="148" selection-end-column="28" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1549966587482" expanded="true" signature="1612:1617" ph="..." />
-            <marker date="1549966587482" expanded="true" signature="1753:1754" ph="..." />
-            <marker date="1549966587482" expanded="true" signature="3395:3968" ph="..." />
+            <marker date="1550653407900" expanded="true" signature="1507:1512" ph="..." />
+            <marker date="1550653407900" expanded="true" signature="1648:1649" ph="..." />
+            <marker date="1550653407900" expanded="true" signature="3375:3922" ph="..." />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_find_answer_word_number.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThaiQACorpus-EvaluationDataset-tokenize.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

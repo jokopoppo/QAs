@@ -1,6 +1,12 @@
 import matplotlib.pyplot as plt
 import os
 from pprint import pprint
+import json
+
+def similar(a, b):
+    from difflib import SequenceMatcher
+    return SequenceMatcher(None, a, b).ratio()
+
 def plotAccuracy(file):
     for f in file :
         data = open('result\\'+f, 'r', encoding='utf-8-sig')
@@ -77,15 +83,51 @@ def plot_histogram(file,n,color):
     plt.title('Histogram of shortest list',size=25)
     plt.show()
 
+def plot_histogram_with_list(data,color):
 
+    # This is  the colormap I'd like to use.
+    cm = plt.cm.get_cmap('RdYlBu_r')
 
-file = os.listdir('result/')
-file = file[4:]
-print(file)
+    # Plot histogram.
+    n, bins, patches = plt.hist(data, 50, color='green')
+    bin_centers = 0.5 * (bins[:-1] + bins[1:])
 
-for i in range(file.__len__()):
-    print(i,file[i])
+    # scale values to interval [0,1]
+    col = bin_centers - min(bin_centers)
+    col /= max(col)
+
+    for c, p in zip(col, patches):
+        plt.setp(p, 'facecolor', cm(c))
+
+    plt.tick_params(axis='x', labelsize=10)
+    plt.tick_params(axis='y', labelsize=10)
+    plt.grid(axis='y',)
+    plt.xlabel('Similarity Score',size=15)
+    plt.ylabel('Number of Answer',size=15)
+    plt.title('Histogram of Similarity',size=15)
+    plt.show()
+
+    # plt.hist(l, 50, color=color)
+
+    # plt.show()
+
+# file = os.listdir('result/')
+# file = file[4:]
+# print(file)
+#
+# for i in range(file.__len__()):
+#     print(i,file[i])
 # plotAccuracy([file[4]])
 
-plot_histogram(file[4],1,'lightgreen')
+# plot_histogram(file[4],1,'lightgreen')
 
+answer = json.load(open('output_answer.json', mode='r', encoding="utf-8-sig"))
+validate = json.load(open('test_set\\new_sample_questions.json', mode='r', encoding="utf-8-sig"))
+validate = validate['data']
+
+acc = []
+for i in range(validate.__len__()):
+    print(validate[i]['answer'],answer[i]['answer'])
+    acc.append(similar(validate[i]['answer'],answer[i]['answer']))
+
+plot_histogram_with_list(acc,'lightgreen')

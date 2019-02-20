@@ -16,10 +16,11 @@ def findDocuments():
     end = time.time()
     print("Time to initial db", end - start)
     # initial data and test set
-    q = open("test_set\\new_sample_questions_tokenize.json", mode='r', encoding="utf-8-sig")
-    n_q = open("no_stop_words_questions_.json", mode='r', encoding="utf-8-sig")
+    # q = open('ThaiQACorpus-EvaluationDataset-tokenize.json', mode='r', encoding="utf-8-sig")
+    q = open('new_sample_questions_tokenize.json', mode='r', encoding="utf-8-sig")
+    # n_q = open("no_stop_words_questions_.json", mode='r', encoding="utf-8-sig")
     data = json.load(q)
-    validate = json.load(open("test_set\\new_sample_questions_answer.json", mode='r', encoding="utf-8-sig"))
+    # validate = json.load(open("test_set\\new_sample_questions_answer.json", mode='r', encoding="utf-8-sig"))
 
     doc = 0
     data = data[doc:]
@@ -34,7 +35,7 @@ def findDocuments():
     for s in data:
         start = time.time()
         string += "question " + str(doc)
-        print("question", doc, s, validate[doc])
+        print("question", doc, s)
 
         # segment until no space and do rule-based
         suffix = ['คือ', 'กี่', 'ใด']
@@ -154,49 +155,50 @@ def findDocuments():
 
         print(answer.__len__(), answer[:6])
         test_output.append(answer[:50]) ### return this .
-        # write in text file
-        answer = list(answer)
-        ans_int = ''
-        find = []
-        for i in range(pool.__len__()):
-            find.append([])
-            for j in pool[i]:
-                find[-1].append(j[0])
-            try:
-                find[i].index(str(validate[doc]))
-            except ValueError:
-                ans_int += ' c[' + str(i) + '] '
-
-        ########################################################################################
-
-        try:
-            if answer.index(str(validate[doc])) < 6:
-                string += ': 1'
-            else:
-                string += ': 0'
-            string += " rank" + str(answer.index(str(validate[doc])))
-        except ValueError:
-            string += ": 0 cdoc"
-
-        string += ' || [' + str(word) + ']' + ans_int
-        for i in range(find.__len__()):
-            string += str(find[i].__len__()) + ' '
-        string += str(cantfind)
-
-        end = time.time()
-        print(end - start, 'secs')
-        string += ' ' + str(end - start) + 'secs \n'
-        doc += 1
-        save += 1
-        if save == 100 or doc == 4000:
-            with open("result/result_q_weight5_fill_c[0].txt", "a", encoding="utf-8") as text_file:
-                text_file.write(string)
-            save = 0
-            string = ''
-        if doc == 4000:
-            break
-    # os.system("shutdown /s /t 30")
     return test_output
+        # # write in text file
+        # answer = list(answer)
+        # ans_int = ''
+        # find = []
+        # for i in range(pool.__len__()):
+        #     find.append([])
+        #     for j in pool[i]:
+        #         find[-1].append(j[0])
+        #     try:
+        #         find[i].index(str(validate[doc]))
+        #     except ValueError:
+        #         ans_int += ' c[' + str(i) + '] '
+        #
+        # ########################################################################################
+        #
+        # try:
+        #     if answer.index(str(validate[doc])) < 6:
+        #         string += ': 1'
+        #     else:
+        #         string += ': 0'
+        #     string += " rank" + str(answer.index(str(validate[doc])))
+        # except ValueError:
+        #     string += ": 0 cdoc"
+        #
+        # string += ' || [' + str(word) + ']' + ans_int
+        # for i in range(find.__len__()):
+        #     string += str(find[i].__len__()) + ' '
+        # string += str(cantfind)
+        #
+        # end = time.time()
+        # print(end - start, 'secs')
+        # string += ' ' + str(end - start) + 'secs \n'
+        # doc += 1
+        # save += 1
+        # if save == 100 or doc == 4000:
+        #     with open("result/result_q_weight5_fill_c[0].txt", "a", encoding="utf-8") as text_file:
+        #         text_file.write(string)
+        #     save = 0
+        #     string = ''
+        # if doc == 4000:
+        #     break
+    # os.system("shutdown /s /t 30")
+
 
 test_output = findDocuments()
 alarm()
