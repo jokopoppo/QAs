@@ -89,7 +89,7 @@ def plot_histogram_with_list(data,color):
     cm = plt.cm.get_cmap('RdYlBu_r')
 
     # Plot histogram.
-    n, bins, patches = plt.hist(data, 50, color='green')
+    n, bins, patches = plt.hist(data, 50, color=color)
     bin_centers = 0.5 * (bins[:-1] + bins[1:])
 
     # scale values to interval [0,1]
@@ -121,9 +121,9 @@ def plot_histogram_with_list(data,color):
 
 # plot_histogram(file[4],1,'lightgreen')
 
-answer = json.load(open('output_answer.json', mode='r', encoding="utf-8-sig"))
+answer = json.load(open('output_answer_492(1).json', mode='r', encoding="utf-8-sig"))
 validate = json.load(open('test_set\\new_sample_questions.json', mode='r', encoding="utf-8-sig"))
-validate = validate['data']
+validate = validate['data'][:2000]
 
 acc = []
 for i in range(validate.__len__()):

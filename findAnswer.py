@@ -20,7 +20,7 @@ def extractNumberFromString(string):
     return re.findall('\d+', string)
 
 
-def hasNumbers(inputString):
+def hasNumbers(inputString, thai_number_text):
     for i in thai_number_text:
         if inputString.startswith(i) or inputString.endswith(i):
             return True
@@ -69,11 +69,10 @@ def find_question_word(question, question_words):
                 return [question.index(c[1]), c[1]]
 
 
-def find_candidate(possible_answer, doc_id, sentence_answer, l):
-
+def find_candidate(possible_answer, doc_id, sentence_answer, l, word_class):
     for n in range(2):
         for k in range(sentence_answer.__len__()):
-            if n == 1 and possible_answer.__len__() < 1 :
+            if n == 1 and possible_answer.__len__() < 1:
                 possible_answer.append(sentence_answer[k])
                 doc_id.append(k)
             elif sentence_answer[k] != ' ' and not sentence_answer[k].isnumeric():
@@ -110,7 +109,7 @@ def relevance_score(question, sentence, candidate, question_word):
     return score
 
 
-def find_answer_word(j, rand):
+def find_answer_word(j, rand, doc_id, question_word_index, answer_position):
     # print(possible_answer[-1])
     # print(question_word_index)
     print(j['sentence'], doc_id[-1])
@@ -129,129 +128,137 @@ def find_answer_word(j, rand):
     return max(score)
 
 
-# a = json.load(open('test_set/new_sample_questions.json', encoding='utf-8-sig'))
-# a = a['data']
+def findAnswer(question, inp):
+    question_index = []
+    doc_id = []
+    real_answer = []
+    question_type = [
+        ['กี่', 'ปี ใด', 'ปี อะไร', 'พ.ศ.  อะไร', 'ค.ศ.  อะไร', 'พ.ศ. อะไร', 'ค.ศ. อะไร', 'พ.ศ. ใด', 'พ.ศ.  ใด',
+         'ค.ศ. ใด',
+         'ค.ศ.  ใด', 'เท่า ไร', 'เท่า ไหร่', 'เท่า ใด', 'คริสต์ศักราช ใด', 'จำนวน ใด']
+        , ['เมื่อ ไร', 'เวลา ใด', 'วัน ใด', 'เมื่อ ใด', 'วัน ที่']  # date format
+        , ['ใคร', 'ว่า อะไร', 'ชื่อ อะไร', 'คน ใด', 'คน ไหน', 'คือใคร', 'ผู้ ใด']  # human name
+        , ['ประเทศ ใด', 'ประเทศ อะไร'
+            , 'จังหวัดใด', 'จังหวัด ใด', 'จังหวัด อะไร'
+            , 'เมืองใด', 'เมือง ใด', 'เมือง อะไร'
+            , 'ภาค ใด'
+            , 'แคว้น ใด'
+            , 'ทวีปใด', 'ทวีป อะไร', 'ทวีป ใด', 'ภูมิภาค ไหน'
+            , 'ที่ ไหน', 'ที่ ใด', 'ใด', 'ไหน']  # where
+        , ['อะไร', 'อย่าง ไร']  # other what, other dai, other nhai
+    ]
+    thai_number_text = [u'หนึ่ง', u'สอง', u'สาม', u'สี่', u'ห้า', u'หก', u'เจ็ด', u'แปด', u'เก้า', u'สิบ', u'สิบเอ็ด']
+    month = ['มกราคม', 'ม.ค.',
+             'กุมภาพันธ์', 'ก.พ.',
+             'มีนาคม', 'มี.ค.',
+             'เมษายน', 'เม.ย.',
+             'พฤษภาคม', 'พ.ค.',
+             'มิถุนายน', 'มิ.ย.',
+             'กรกฎาคม', 'ก.ค.',
+             'สิงหาคม', 'ส.ค.',
+             'กันยายน', 'ก.ย.',
+             'ตุลาคม', 'ต.ค.',
+             'พฤศจิกายน', 'พ.ย.',
+             ' ธันวาคม', 'ธ.ค.',
+             'พ.ศ.', 'ค.ศ.']
 
-question_index = []
-doc_id = []
-real_answer = []
-question_type = [
-    ['กี่', 'ปี ใด', 'ปี อะไร', 'พ.ศ.  อะไร', 'ค.ศ.  อะไร', 'พ.ศ. อะไร', 'ค.ศ. อะไร', 'พ.ศ. ใด', 'พ.ศ.  ใด', 'ค.ศ. ใด',
-     'ค.ศ.  ใด', 'เท่า ไร', 'เท่า ไหร่', 'เท่า ใด', 'คริสต์ศักราช ใด', 'จำนวน ใด']
-    , ['เมื่อ ไร', 'เวลา ใด', 'วัน ใด', 'เมื่อ ใด', 'วัน ที่']  # date format
-    , ['ใคร', 'ว่า อะไร', 'ชื่อ อะไร', 'คน ใด', 'คน ไหน', 'คือใคร', 'ผู้ ใด']  # human name
-    , ['ประเทศ ใด', 'ประเทศ อะไร']
-    , ['จังหวัดใด', 'จังหวัด ใด', 'จังหวัด อะไร']
-    , ['เมืองใด', 'เมือง ใด', 'เมือง อะไร']
-    , ['ภาค ใด']
-    , ['แคว้น ใด']
-    , ['ทวีปใด', 'ทวีป อะไร', 'ทวีป ใด', 'ภูมิภาค ไหน']
-    , ['ที่ ไหน', 'ที่ ใด', 'ใด', 'ไหน']  # where
-    , ['อะไร', 'อย่าง ไร']  # other what, other dai, other nhai
-]
-thai_number_text = [u'หนึ่ง', u'สอง', u'สาม', u'สี่', u'ห้า', u'หก', u'เจ็ด', u'แปด', u'เก้า', u'สิบ', u'สิบเอ็ด']
-month = ['มกราคม', 'ม.ค.',
-         'กุมภาพันธ์', 'ก.พ.',
-         'มีนาคม', 'มี.ค.',
-         'เมษายน', 'เม.ย.',
-         'พฤษภาคม', 'พ.ค.',
-         'มิถุนายน', 'มิ.ย.',
-         'กรกฎาคม', 'ก.ค.',
-         'สิงหาคม', 'ส.ค.',
-         'กันยายน', 'ก.ย.',
-         'ตุลาคม', 'ต.ค.',
-         'พฤศจิกายน', 'พ.ย.',
-         ' ธันวาคม', 'ธ.ค.',
-         'พ.ศ.', 'ค.ศ.']
+    class_label = [2, 3, 4]
+    word_class = [[], []]
+    for i in class_label:
+        tmp = json.load(open("word_class//" + str(i) + ".json", "r", encoding="utf-8"))
+        word_class.append(set(tmp))
 
-class_label = [2, 3, 4, 5, 6, 7, 8, 9, 10]
-word_class = [[], []]
-for i in class_label:
-    tmp = json.load(open("word_class//" + str(i) + ".json", "r", encoding="utf-8"))
-    word_class.append(set(tmp))
+    wrong = 0
+    all_rs = []
+    possible_answer = []
+    answer_position = []
+    answer_json = []
 
-wrong = 0
-all_rs = []
-possible_answer = []
-answer_position = []
-answer_json = []
+    print(inp.__len__())
+    for i in range(wrong, inp.__len__()):
+        # inp.append(make_sentence_answer(article_id, answer_begin))
+        s = ''.join(question[i])
+        possible_answer.append([])
+        doc_id.append([])
+        answer_position.append([])
+        print(i, s)
+        rr_score = []
+        for l in range(question_type.__len__()):
+            if any(check_question_type(k, question[i]) for k in question_type[l]):
+                question_word_index = find_question_word(question[i], question_type[l])
+                for j in inp[i][:26]:
+                    doc_id[-1].append([j["article_id"]])
+                    possible_answer[-1].append([])
+                    if l > 1:
+                        possible_answer[-1][-1], doc_id[-1][-1] = find_candidate(possible_answer[-1][-1],
+                                                                                 doc_id[-1][-1],
+                                                                                 j['sentence'], l, word_class)
+                        rr_score.append(find_answer_word(j, j['answer_begin_position '], doc_id, question_word_index,
+                                                         answer_position))
+                    elif l == 0:
+                        for k in range(j['sentence'].__len__()):
+                            if hasNumbers(j['sentence'][k], thai_number_text):
+                                doc_id[-1][-1].append(k)
+                                possible_answer[-1][-1].append(j['sentence'][k])
+                        if possible_answer[-1][-1].__len__() < 1:
+                            doc_id[-1].pop()
+                            possible_answer[-1].pop()
+                            continue
+                        #     for k in range(j['sentence'].__len__()):
+                        #         doc_id[-1][-1].append(k)
+                        #         possible_answer[-1][-1].append(j['sentence'][k])
+                        rr_score.append(find_answer_word(j, j['answer_begin_position '], doc_id, question_word_index,
+                                                         answer_position))
+                    else:
+                        for k in range(j['sentence'].__len__()):
+                            if j['sentence'][k] in month:
+                                doc_id[-1][-1].append(k)
+                                possible_answer[-1][-1].append(j['sentence'][k])
+                            else:
+                                possible_answer[-1][-1], doc_id[-1][-1] = find_candidate(possible_answer[-1][-1],
+                                                                                         doc_id[-1][-1], j['sentence'],
+                                                                                         l, word_class)
+                        rr_score.append(find_answer_word(j, j['answer_begin_position '], doc_id, question_word_index,
+                                                         answer_position))
+                break
+
+            elif l == class_label[-1] and not any(check_question_type(k, question[i]) for k in question_type[l]):
+                tmp_q = []
+                for q in question[i]:
+                    tmp = []
+                    for w in question_type[l]:
+                        tmp.append(similar(q, w))
+                    tmp_q.append([question[i].index(q), max(tmp)])
+                tmp_q.sort(key=lambda s: s[1], reverse=True)
+                question_word_index = [tmp_q[0][0], question[i][tmp_q[0][0]]]
+                for j in inp[i][:26]:
+                    doc_id[-1].append([j["article_id"]])
+                    possible_answer[-1].append([])
+                    print("\n#############################\n")
+                    possible_answer[-1][-1], doc_id[-1][-1] = find_candidate(possible_answer[-1][-1], doc_id[-1][-1],
+                                                                             j['sentence'], l, word_class)
+                    rr_score.append(
+                        find_answer_word(j, j['answer_begin_position '], doc_id, question_word_index, answer_position))
+        print(rr_score)
+        print(rr_score.index(max(rr_score)), doc_id[i][rr_score.index(max(rr_score))])
+
+        for_answer_json = {}
+        for_answer_json['question_id'] = i + 1
+        for_answer_json['question'] = s
+        for_answer_json['answer'] = doc_id[i][rr_score.index(max(rr_score))][1]
+        for_answer_json['answer_begin_position '] = answer_position[i][rr_score.index(max(rr_score))][0]
+        for_answer_json['answer_end_position'] = answer_position[i][rr_score.index(max(rr_score))][1]
+        for_answer_json['article_id'] = doc_id[i][rr_score.index(max(rr_score))][0]
+        answer_json.append(for_answer_json)
+    return answer_json
+
 
 # question = json.load(open('ThaiQACorpus-EvaluationDataset-tokenize.json', 'r', encoding='utf-8-sig'))
 question = json.load(open('test_set\\new_sample_questions_tokenize.json', mode='r', encoding="utf-8-sig"))
-inp = json.load(open("candidate_sentence\\candidate_sentences_492.json", "r", encoding="utf-8"))
+inp = json.load(open("E:\\CPE#Y4\\databaseTF\\candidate_sentence\\candidate_sentences_492.json", "r", encoding="utf-8"))
 for i in range(inp.__len__()):
     inp[i] = inp[i][0]
 
-print(inp.__len__())
-for i in range(wrong, inp.__len__()):
-    # inp.append(make_sentence_answer(article_id, answer_begin))
-    s = ''.join(question[i])
-    possible_answer.append([])
-    doc_id.append([])
-    answer_position.append([])
-    print(i, s)
-    rr_score = []
-    for l in range(question_type.__len__()):
-        if any(check_question_type(k, question[i]) for k in question_type[l]):
-            question_word_index = find_question_word(question[i], question_type[l])
-            for j in inp[i][:26]:
-                doc_id[-1].append([j["article_id"]])
-                possible_answer[-1].append([])
-                if l > 1:
-                    possible_answer[-1][-1], doc_id[-1][-1] = find_candidate(possible_answer[-1][-1], doc_id[-1][-1],
-                                                                             j['sentence'], l)
-                    rr_score.append(find_answer_word(j, j['answer_begin_position ']))
-                elif l == 0:
-                    for k in range(j['sentence'].__len__()):
-                        if hasNumbers(j['sentence'][k]):
-                            doc_id[-1][-1].append(k)
-                            possible_answer[-1][-1].append(j['sentence'][k])
-                    if possible_answer[-1][-1].__len__() < 1:
-                        doc_id[-1].pop()
-                        possible_answer[-1].pop()
-                        continue
-                    #     for k in range(j['sentence'].__len__()):
-                    #         doc_id[-1][-1].append(k)
-                    #         possible_answer[-1][-1].append(j['sentence'][k])
-                    rr_score.append(find_answer_word(j, j['answer_begin_position ']))
-                else:
-                    for k in range(j['sentence'].__len__()):
-                        if j['sentence'][k] in month:
-                            doc_id[-1][-1].append(k)
-                            possible_answer[-1][-1].append(j['sentence'][k])
-                        else:
-                            possible_answer[-1][-1], doc_id[-1][-1] = find_candidate(possible_answer[-1][-1],
-                                                                                     doc_id[-1][-1], j['sentence'], l)
-                    rr_score.append(find_answer_word(j, j['answer_begin_position ']))
-            break
-
-        elif l == 10 and not any(check_question_type(k, question[i]) for k in question_type[l]):
-            tmp_q = []
-            for q in question[i]:
-                tmp = []
-                for w in question_type[l]:
-                    tmp.append(similar(q, w))
-                tmp_q.append([question[i].index(q), max(tmp)])
-            tmp_q.sort(key=lambda s: s[1], reverse=True)
-            question_word_index = [tmp_q[0][0], question[i][tmp_q[0][0]]]
-            for j in inp[i][:26]:
-                doc_id[-1].append([j["article_id"]])
-                possible_answer[-1].append([])
-                print("\n#############################\n")
-                possible_answer[-1][-1], doc_id[-1][-1] = find_candidate(possible_answer[-1][-1], doc_id[-1][-1],
-                                                                         j['sentence'], l)
-                rr_score.append(find_answer_word(j, j['answer_begin_position ']))
-    print(rr_score)
-    print(rr_score.index(max(rr_score)), doc_id[i][rr_score.index(max(rr_score))])
-
-    for_answer_json = {}
-    for_answer_json['question_id'] = i + 1
-    for_answer_json['question'] = s
-    for_answer_json['answer'] = doc_id[i][rr_score.index(max(rr_score))][1]
-    for_answer_json['answer_begin_position '] = answer_position[i][rr_score.index(max(rr_score))][0]
-    for_answer_json['answer_end_position'] = answer_position[i][rr_score.index(max(rr_score))][1]
-    for_answer_json['article_id'] = doc_id[i][rr_score.index(max(rr_score))][0]
-    answer_json.append(for_answer_json)
-
+answer_json = findAnswer(question, inp)
 with open('output_answer_492(1).json', 'w', encoding="utf-8") as outfile:
     json.dump(answer_json, outfile, indent=4, ensure_ascii=False)
