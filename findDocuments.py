@@ -17,7 +17,7 @@ def findDocuments():
     print("Time to initial db", end - start)
     # initial data and test set
     # q = open('ThaiQACorpus-EvaluationDataset-tokenize.json', mode='r', encoding="utf-8-sig")
-    q = open('new_sample_questions_tokenize.json', mode='r', encoding="utf-8-sig")
+    q = open('test_set\\new_sample_questions_tokenize.json', mode='r', encoding="utf-8-sig")
     # n_q = open("no_stop_words_questions_.json", mode='r', encoding="utf-8-sig")
     data = json.load(q)
     # validate = json.load(open("test_set\\new_sample_questions_answer.json", mode='r', encoding="utf-8-sig"))
@@ -155,6 +155,7 @@ def findDocuments():
 
         print(answer.__len__(), answer[:6])
         test_output.append(answer[:50]) ### return this .
+        doc+=1
     return test_output
         # # write in text file
         # answer = list(answer)

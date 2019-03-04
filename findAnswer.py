@@ -83,7 +83,7 @@ def find_candidate(possible_answer, doc_id, sentence_answer, l, word_class):
     return possible_answer, doc_id
 
 
-def relevance_score(question, sentence, candidate, question_word):
+def relevance_score(question, sentence, similarity_score,max_similarity_score, doc_rank, candidate, question_word):
     a = []
     question_word_index = question.index(question_word)
     l = 2 * question.__len__()
@@ -92,9 +92,9 @@ def relevance_score(question, sentence, candidate, question_word):
         for j in range(i - l, i + l):
             if (i != j) and (0 <= j < sentence.__len__()) and (sentence[j] in question):
                 if question.index(sentence[j]) < question_word_index:
-                    a[-1].append([question.index(sentence[j]), j, 0.5])
+                    a[-1].append([question.index(sentence[j]), j, 1])
                 else:
-                    a[-1].append([question.index(sentence[j]), j, 0.25])
+                    a[-1].append([question.index(sentence[j]), j, 1])
         # print(a[-1])
 
     m = question.__len__() - 1
@@ -103,18 +103,18 @@ def relevance_score(question, sentence, candidate, question_word):
     for i in range(a.__len__()):
         tmp = 0
         for j in a[i]:
-            tmp += (1 - abs(j[1] - candidate[i]) / l) * (1 - abs(j[0] - question_word_index) / m)
+            tmp += (1 - abs(j[1] - candidate[i]) / l) * (1 - abs(j[0] - question_word_index) / m) * (1 - doc_rank/3) #* (1 - similarity_score/max_similarity_score)
         score.append(tmp)
 
     return score
 
 
-def find_answer_word(j, rand, doc_id, question_word_index, answer_position):
+def find_answer_word(question,j,max_similarity_score, rand, doc_id, question_word_index, answer_position):
     # print(possible_answer[-1])
     # print(question_word_index)
-    print(j['sentence'], doc_id[-1])
+    # print(j['sentence'], doc_id[-1])
 
-    score = relevance_score(question[i], j['sentence'], doc_id[-1][-1][1:], question_word_index[1])
+    score = relevance_score(question, j['sentence'], j['similarity_score'],max_similarity_score, j['doc_rank'], doc_id[-1][-1][1:], question_word_index[1])
 
     tmp = doc_id[-1][-1][score.index(max(score)) + 1]
     doc_id[-1][-1].insert(1, j['sentence'][tmp])
@@ -129,9 +129,7 @@ def find_answer_word(j, rand, doc_id, question_word_index, answer_position):
 
 
 def findAnswer(question, inp):
-    question_index = []
     doc_id = []
-    real_answer = []
     question_type = [
         ['กี่', 'ปี ใด', 'ปี อะไร', 'พ.ศ.  อะไร', 'ค.ศ.  อะไร', 'พ.ศ. อะไร', 'ค.ศ. อะไร', 'พ.ศ. ใด', 'พ.ศ.  ใด',
          'ค.ศ. ใด',
@@ -169,45 +167,43 @@ def findAnswer(question, inp):
         word_class.append(set(tmp))
 
     wrong = 0
-    all_rs = []
     possible_answer = []
     answer_position = []
     answer_json = []
 
     print(inp.__len__())
     for i in range(wrong, inp.__len__()):
+        max_similarity_score = inp[i][-1]['similarity_score']
         # inp.append(make_sentence_answer(article_id, answer_begin))
         s = ''.join(question[i])
         possible_answer.append([])
         doc_id.append([])
         answer_position.append([])
-        print(i, s)
+        print(i+1,"/",inp.__len__(), s)
         rr_score = []
         for l in range(question_type.__len__()):
             if any(check_question_type(k, question[i]) for k in question_type[l]):
                 question_word_index = find_question_word(question[i], question_type[l])
-                for j in inp[i][:26]:
+                for j in inp[i]:
                     doc_id[-1].append([j["article_id"]])
                     possible_answer[-1].append([])
                     if l > 1:
                         possible_answer[-1][-1], doc_id[-1][-1] = find_candidate(possible_answer[-1][-1],
                                                                                  doc_id[-1][-1],
                                                                                  j['sentence'], l, word_class)
-                        rr_score.append(find_answer_word(j, j['answer_begin_position '], doc_id, question_word_index,
+                        rr_score.append(find_answer_word(question[i],j,max_similarity_score, j['answer_begin_position '], doc_id, question_word_index,
                                                          answer_position))
                     elif l == 0:
+
                         for k in range(j['sentence'].__len__()):
                             if hasNumbers(j['sentence'][k], thai_number_text):
                                 doc_id[-1][-1].append(k)
                                 possible_answer[-1][-1].append(j['sentence'][k])
                         if possible_answer[-1][-1].__len__() < 1:
-                            doc_id[-1].pop()
-                            possible_answer[-1].pop()
-                            continue
-                        #     for k in range(j['sentence'].__len__()):
-                        #         doc_id[-1][-1].append(k)
-                        #         possible_answer[-1][-1].append(j['sentence'][k])
-                        rr_score.append(find_answer_word(j, j['answer_begin_position '], doc_id, question_word_index,
+                            for k in range(j['sentence'].__len__()):
+                                doc_id[-1][-1].append(k)
+                                possible_answer[-1][-1].append(j['sentence'][k])
+                        rr_score.append(find_answer_word(question[i],j,max_similarity_score, j['answer_begin_position '], doc_id, question_word_index,
                                                          answer_position))
                     else:
                         for k in range(j['sentence'].__len__()):
@@ -218,7 +214,7 @@ def findAnswer(question, inp):
                                 possible_answer[-1][-1], doc_id[-1][-1] = find_candidate(possible_answer[-1][-1],
                                                                                          doc_id[-1][-1], j['sentence'],
                                                                                          l, word_class)
-                        rr_score.append(find_answer_word(j, j['answer_begin_position '], doc_id, question_word_index,
+                        rr_score.append(find_answer_word(question[i],j,max_similarity_score, j['answer_begin_position '], doc_id, question_word_index,
                                                          answer_position))
                 break
 
@@ -231,16 +227,17 @@ def findAnswer(question, inp):
                     tmp_q.append([question[i].index(q), max(tmp)])
                 tmp_q.sort(key=lambda s: s[1], reverse=True)
                 question_word_index = [tmp_q[0][0], question[i][tmp_q[0][0]]]
-                for j in inp[i][:26]:
+                for j in inp[i]:
                     doc_id[-1].append([j["article_id"]])
                     possible_answer[-1].append([])
-                    print("\n#############################\n")
+                    # print("\n#############################\n")
                     possible_answer[-1][-1], doc_id[-1][-1] = find_candidate(possible_answer[-1][-1], doc_id[-1][-1],
                                                                              j['sentence'], l, word_class)
                     rr_score.append(
-                        find_answer_word(j, j['answer_begin_position '], doc_id, question_word_index, answer_position))
-        print(rr_score)
-        print(rr_score.index(max(rr_score)), doc_id[i][rr_score.index(max(rr_score))])
+                        find_answer_word(question[i],j,max_similarity_score, j['answer_begin_position '], doc_id, question_word_index, answer_position))
+
+        # print(rr_score)
+        # print(rr_score.index(max(rr_score)), doc_id[i][rr_score.index(max(rr_score))])
 
         for_answer_json = {}
         for_answer_json['question_id'] = i + 1
@@ -255,10 +252,11 @@ def findAnswer(question, inp):
 
 # question = json.load(open('ThaiQACorpus-EvaluationDataset-tokenize.json', 'r', encoding='utf-8-sig'))
 question = json.load(open('test_set\\new_sample_questions_tokenize.json', mode='r', encoding="utf-8-sig"))
-inp = json.load(open("E:\\CPE#Y4\\databaseTF\\candidate_sentence\\candidate_sentences_492.json", "r", encoding="utf-8"))
-for i in range(inp.__len__()):
-    inp[i] = inp[i][0]
+inp = json.load(open('candidate_sentences4000_top3doc_rank1000.json', "r", encoding="utf-8"))
+doc_n = 3
+# for i in range(inp.__len__()):
+#     inp[i] = inp[i][0]
 
 answer_json = findAnswer(question, inp)
-with open('output_answer_492(1).json', 'w', encoding="utf-8") as outfile:
+with open('output/output_answer_4000_top3doc_rank1000.json', 'w', encoding="utf-8") as outfile:
     json.dump(answer_json, outfile, indent=4, ensure_ascii=False)

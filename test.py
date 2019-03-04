@@ -155,59 +155,7 @@ def fill_tfidf():
                         print(k)
         json.dump(data, open(file, 'w'), ensure_ascii=True)
     return
-from pprint import pprint
-import pickle
-# import deepcut
-import json
-import warnings
-warnings.filterwarnings(action='ignore', category=UserWarning, module='gensim')
-warnings.filterwarnings(action='ignore', category=FutureWarning)
-import numpy as np
-import matplotlib.pyplot as plt
-import os
-from gensim.models import Word2Vec
 
-
-
-# file = index_dir + 'a' +".json"
-# print(file)
-# data = json.load(open(file, mode = 'r' , encoding="utf-8-sig"))
-#
-# for k, v in data.items():
-#     for i in range(data[k].__len__()):
-#         if (data[k][i].__len__() != 5):
-#             print(data[k][i])
-
-# dataset_path = "E:\CPE#Y4\databaseTF\documents-tokenize\\"
-# datasets = os.listdir(dataset_path)
-#
-# files = []
-# for dataset in datasets:
-#     files.append(int((dataset.split("."))[0]))
-#
-# files = sorted(files)
-# print(files.__len__())
-# s=[]
-# for f in files :
-#     file = open(dataset_path + str(f) + '.json', mode = 'r' , encoding="utf-8-sig")
-#     s.append(json.load(file))
-#     print(f)
-#
-# print('s',s.__len__())
-
-# def dummy_fun(doc):
-#     return doc
-
-# tfidf = TfidfVectorizer(
-#
-#     tokenizer=dummy_fun,
-#     preprocessor=dummy_fun,
-#     token_pattern=None)
-
-# dir = 'E:\CPE#Y4\databaseTF\\tf-idf_model\\'
-# tfidf = pickle.load(open(dir + "tfidf.pickle", "rb" ) )
-# # response = tfidf.fit_transform(s)
-# # pickle.dump(response, open(dir + "response(1).pickle", "wb"))
-# feature_names = tfidf.get_feature_names()
-# print(feature_names.__len__()) # 1736854
+for i in range(1000000):
+    print(i,'/',1000000,end='\r')
 
