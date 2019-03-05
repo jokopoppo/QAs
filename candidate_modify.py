@@ -2,10 +2,12 @@ import json
 
 def sort_and_save_candidate(f,n_doc,n_rank):
     tmp = []
+    file = []
+    for i in f:
+        print("Load File . . .")
+        file.append(json.load(open("E:\\CPE#Y4\\databaseTF\\candidate_sentence\\ground_truth\\" + i, "r", encoding="utf-8")))
 
-    for file in f:
-        inp = json.load(open("E:\\CPE#Y4\\databaseTF\\candidate_sentence\\" + file, "r", encoding="utf-8"))
-
+    for inp in file:
         for i in range(inp.__len__()):
             print(str(i + 1) + "/" + str(inp.__len__()))
             print(inp[i].__len__())
@@ -38,7 +40,7 @@ def append_candidate(f):
         json.dump(inp, outfile,ensure_ascii=False,indent=1)
 
 f = ['candidate_sentences_492.json','candidate_sentences[2000-4000].json']
-sort_and_save_candidate(f,3,1000)
+sort_and_save_candidate(f,7,None)
 # append_candidate(f)
 
 

@@ -83,7 +83,7 @@ def find_candidate(possible_answer, doc_id, sentence_answer, l, word_class):
     return possible_answer, doc_id
 
 
-def relevance_score(question, sentence, similarity_score,max_similarity_score, doc_rank, candidate, question_word):
+def relevance_score(question, sentence, similarity_score,max_similarity_score, doc_rank,doc_n, candidate, question_word):
     a = []
     question_word_index = question.index(question_word)
     l = 2 * question.__len__()
@@ -103,7 +103,7 @@ def relevance_score(question, sentence, similarity_score,max_similarity_score, d
     for i in range(a.__len__()):
         tmp = 0
         for j in a[i]:
-            tmp += (1 - abs(j[1] - candidate[i]) / l) * (1 - abs(j[0] - question_word_index) / m) * (1 - doc_rank/3) #* (1 - similarity_score/max_similarity_score)
+            tmp += (1 - abs(j[1] - candidate[i]) / l) * (1 - abs(j[0] - question_word_index) / m) * (1 - doc_rank/doc_n) #* (1 - similarity_score/max_similarity_score)
         score.append(tmp)
 
     return score
@@ -114,7 +114,7 @@ def find_answer_word(question,j,max_similarity_score, rand, doc_id, question_wor
     # print(question_word_index)
     # print(j['sentence'], doc_id[-1])
 
-    score = relevance_score(question, j['sentence'], j['similarity_score'],max_similarity_score, j['doc_rank'], doc_id[-1][-1][1:], question_word_index[1])
+    score = relevance_score(question, j['sentence'], j['similarity_score'],max_similarity_score, j['doc_rank'],doc_n, doc_id[-1][-1][1:], question_word_index[1])
 
     tmp = doc_id[-1][-1][score.index(max(score)) + 1]
     doc_id[-1][-1].insert(1, j['sentence'][tmp])
@@ -238,10 +238,11 @@ def findAnswer(question, inp):
 
         # print(rr_score)
         # print(rr_score.index(max(rr_score)), doc_id[i][rr_score.index(max(rr_score))])
-
+        # print(''.join(inp[i][rr_score.index(max(rr_score))]['sentence']))
         for_answer_json = {}
         for_answer_json['question_id'] = i + 1
         for_answer_json['question'] = s
+        for_answer_json['sentence'] = ''.join(inp[i][rr_score.index(max(rr_score))]['sentence'])
         for_answer_json['answer'] = doc_id[i][rr_score.index(max(rr_score))][1]
         for_answer_json['answer_begin_position '] = answer_position[i][rr_score.index(max(rr_score))][0]
         for_answer_json['answer_end_position'] = answer_position[i][rr_score.index(max(rr_score))][1]
@@ -252,11 +253,11 @@ def findAnswer(question, inp):
 
 # question = json.load(open('ThaiQACorpus-EvaluationDataset-tokenize.json', 'r', encoding='utf-8-sig'))
 question = json.load(open('test_set\\new_sample_questions_tokenize.json', mode='r', encoding="utf-8-sig"))
-inp = json.load(open('candidate_sentences4000_top3doc_rank1000.json', "r", encoding="utf-8"))
-doc_n = 3
+inp = json.load(open('candidate_sentences4000_top10doc_rankNone.json', "r", encoding="utf-8"))
+doc_n = 10
 # for i in range(inp.__len__()):
 #     inp[i] = inp[i][0]
 
 answer_json = findAnswer(question, inp)
-with open('output/output_answer_4000_top3doc_rank1000.json', 'w', encoding="utf-8") as outfile:
+with open('output/output_answer_4000_top10doc_rankNone(test).json', 'w', encoding="utf-8") as outfile:
     json.dump(answer_json, outfile, indent=4, ensure_ascii=False)

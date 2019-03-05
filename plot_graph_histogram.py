@@ -135,10 +135,10 @@ def plot_histogram_with_list(data,color,label):
 file = os.listdir('output/')
 file.remove('old')
 file.remove('test')
-pprint(file)
 a = []
 color = []
 for f in file:
+    print(f)
     answer = json.load(open("output\\" + f, mode='r', encoding="utf-8-sig"))
     validate = json.load(open('test_set\\new_sample_questions.json', mode='r', encoding="utf-8-sig"))
     validate = validate['data']
@@ -146,10 +146,11 @@ for f in file:
     acc = []
     for i in range(validate.__len__()):
         # print(validate[i]['answer'],answer[i]['answer'])
-        acc.append(similar(validate[i]['answer'],answer[i]['answer']))
+        tmp = similar(validate[i]['answer'],answer[i]['answer'])
+        acc.append(tmp)
 
     a.append(acc)
     r = lambda: random.randint(0, 255)
     color.append('#%02X%02X%02X' % (r(), r(), r()))
-pprint(file)
+
 plot_histogram_with_list(a,color,file)
