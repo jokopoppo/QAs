@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1435f1f5-46db-4b0a-9944-9c0267199b80" name="Default Changelist" comment="" />
+    <list default="true" id="1435f1f5-46db-4b0a-9944-9c0267199b80" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test1.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +31,7 @@
           <entry key="project.open.time.22" value="20" />
           <entry key="project.open.time.23" value="12" />
           <entry key="project.open.time.24" value="6" />
-          <entry key="project.open.time.25" value="8" />
+          <entry key="project.open.time.25" value="9" />
           <entry key="project.open.time.26" value="8" />
           <entry key="project.open.time.27" value="4" />
           <entry key="project.open.time.28" value="4" />
@@ -50,7 +52,7 @@
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.70" value="1" />
           <entry key="project.open.time.93" value="1" />
-          <entry key="project.opened" value="202" />
+          <entry key="project.opened" value="203" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -58,7 +60,7 @@
           <entry key="json" value="138" />
           <entry key="out" value="2" />
           <entry key="output_answer,json" value="1" />
-          <entry key="py" value="423" />
+          <entry key="py" value="429" />
           <entry key="test,json" value="5" />
           <entry key="txt" value="290" />
         </counts>
@@ -67,7 +69,7 @@
         <counts>
           <entry key="JSON" value="138" />
           <entry key="PLAIN_TEXT" value="298" />
-          <entry key="Python" value="423" />
+          <entry key="Python" value="429" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -75,7 +77,7 @@
           <entry key="Python Console" value="21" />
           <entry key="dummy" value="201" />
           <entry key="json" value="9" />
-          <entry key="py" value="73604" />
+          <entry key="py" value="74431" />
           <entry key="txt" value="89" />
         </counts>
       </usages-collector>
@@ -83,7 +85,7 @@
         <counts>
           <entry key="JSON" value="9" />
           <entry key="PLAIN_TEXT" value="290" />
-          <entry key="Python" value="73625" />
+          <entry key="Python" value="74452" />
         </counts>
       </usages-collector>
     </session>
@@ -91,12 +93,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/qa_model2.py">
+        <entry file="file://$PROJECT_DIR$/test1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-712">
+            <state relative-caret-position="191">
+              <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
               <folding>
-                <element signature="e#0#42#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
+                <marker date="1552965423586" expanded="true" signature="289:422" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/findAnswer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="263" lean-forward="true" selection-start-line="261" selection-end-line="263" />
             </state>
           </provider>
         </entry>
@@ -197,10 +210,10 @@
         <option value="$PROJECT_DIR$/output_answer_from_ideal_sentence.json" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/findDocuments.py" />
-        <option value="$PROJECT_DIR$/test1.py" />
         <option value="$PROJECT_DIR$/plot_graph_histogram.py" />
         <option value="$PROJECT_DIR$/candidate_modify.py" />
         <option value="$PROJECT_DIR$/findAnswer.py" />
+        <option value="$PROJECT_DIR$/test1.py" />
       </list>
     </option>
   </component>
@@ -231,7 +244,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,6 +255,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -275,7 +288,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.plot_graph_histogram">
+  <component name="RunManager" selected="Python.test1 (1)">
     <configuration name="candidate_modify" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TF" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -390,10 +403,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test1 (1)" />
         <item itemvalue="Python.plot_graph_histogram" />
         <item itemvalue="Python.findAnswer" />
         <item itemvalue="Python.candidate_modify" />
-        <item itemvalue="Python.test1 (1)" />
         <item itemvalue="Python.findDocuments" />
       </list>
     </recent_temporary>
@@ -422,20 +435,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21303657" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21303657" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49523053" weight="0.320598" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49523053" visible="true" weight="0.320598" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49920508" weight="0.3986711" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49920508" weight="0.32890365" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32890365" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5047695" side_tool="true" weight="0.32225913" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49602544" visible="true" weight="0.32890365" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49602544" weight="0.32890365" />
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.49920508" weight="0.32890365" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -503,21 +517,20 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/candidates_form.json" />
     <entry file="file://$PROJECT_DIR$/candidates.json" />
     <entry file="file://$PROJECT_DIR$/candidates_out.json" />
     <entry file="file://$PROJECT_DIR$/candidate_sentences_continue.json" />
     <entry file="file://$PROJECT_DIR$/candidate_sentences.json" />
     <entry file="file://$PROJECT_DIR$/candidate1000.json" />
     <entry file="file://$PROJECT_DIR$/word_class/word_10class/2.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="117">
-          <caret line="2799" column="12" selection-start-line="2799" selection-start-column="12" selection-end-line="2799" selection-end-column="12" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="37045" column="4" selection-start-line="37045" selection-start-column="4" selection-end-line="37045" selection-end-column="4" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="117">
+          <caret line="2799" column="12" selection-start-line="2799" selection-start-column="12" selection-end-line="2799" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -630,24 +643,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/output_findDOC4000.json" />
-    <entry file="file://$PROJECT_DIR$/findDocuments.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="157" column="14" selection-start-line="157" selection-start-column="14" selection-end-line="157" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classify.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="41" column="78" selection-start-line="41" selection-start-column="78" selection-end-line="41" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -659,11 +658,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qa_model1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-347">
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-347" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/output/output_answer_4000_top6doc_rankNone.json">
@@ -676,29 +671,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plot_graph_histogram.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="148" column="63" selection-start-line="148" selection-start-column="63" selection-end-line="148" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/output/output_answer_4000_top9doc_rankNone.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/candidate_sentences4000_top10doc_rankNone.json" />
-    <entry file="file://$PROJECT_DIR$/findAnswer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="261" column="59" selection-start-line="261" selection-start-column="59" selection-end-line="261" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qa_model2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-712">
           <folding>
             <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot_graph_histogram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="134" selection-start-line="134" selection-end-line="134" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/findDocuments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="209" column="61" selection-start-line="209" selection-start-column="5" selection-end-line="209" selection-end-column="61" />
+          <folding>
+            <element signature="e#15#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/w2v_all_corpus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-336">
+          <caret line="9" selection-start-line="9" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/findAnswer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="263" lean-forward="true" selection-start-line="261" selection-end-line="263" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1552965423586" expanded="true" signature="289:422" ph="..." />
           </folding>
         </state>
       </provider>
