@@ -1,7 +1,5 @@
-import pythainlp
-from fill_missing_doc import check_tokenizeJSON , check_cdoc
-from pprint import pprint
-from usage import rreplace , alarm
+from preprocess.fill_missing_doc import check_tokenizeJSON
+
 
 def fill_cant_find(path):
     from sqlitedict import SqliteDict

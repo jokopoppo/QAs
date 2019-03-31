@@ -19,7 +19,7 @@ saved_path = 'E:\CPE#Y4\databaseTF\\new-documents-tokenize\\'
 file = os.listdir(path)
 
 # word = set([])
-current = 72008
+current = 8277
 for i in range(current,file.__len__()):
 
     f = open(path + file[i], 'r', encoding="utf-8-sig")
@@ -36,11 +36,12 @@ for i in range(current,file.__len__()):
     with open(saved_path + file[i].replace('.txt','') +'.json', 'w', encoding="utf-8") as outfile:
         json.dump(saved, outfile, ensure_ascii=False)
     print(((i + 1) / file.__len__()) * 100, '. . .', i + 1, '/', file.__len__())
+    exit(0)
     if i==80000:
         break
 # with open('all_word.json', 'w', encoding="utf-8") as outfile:
 #     json.dump(list(word), outfile, ensure_ascii=False)
-os.system("shutdown /s /t 30")
+# os.system("shutdown /s /t 30")
 
 
 

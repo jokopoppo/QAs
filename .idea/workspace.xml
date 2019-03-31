@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/preprocess/new_preprocess.py" description="def cleanhtml(raw_html):&#10;  cleanr = re.compile('&lt;...." line="5" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1435f1f5-46db-4b0a-9944-9c0267199b80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preprocess/Tfidf_Model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preprocess/create_DB_sqlite.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preprocess/indexing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preprocess/sortIndex.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preprocess/space_segment.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/TF.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TF.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findAnswer.py" beforeDir="false" afterPath="$PROJECT_DIR$/findAnswer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KeyValueStore.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addSynnonyms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addSynnonyms.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocess/addSynnonyms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addTfIdf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addTfIdf.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocess/addTfIdf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fill_missing_doc.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocess/fill_missing_doc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findAnswer_number.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/findDocuments.py" beforeDir="false" afterPath="$PROJECT_DIR$/findDocuments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_preprocess.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocess/new_preprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sortIndex.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/new_preprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try_to_improve_findDOC.py" beforeDir="false" afterPath="$PROJECT_DIR$/try_to_improve_findDOC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/word2vecTraining.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,42 +38,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/TF$test.coverage" NAME="test Coverage Results" MODIFIED="1553526506948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TF$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1553665437729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TF$new_preprocess.coverage" NAME="new_preprocess Coverage Results" MODIFIED="1553611323751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TF$Tfidf_Model.coverage" NAME="Tfidf_Model Coverage Results" MODIFIED="1553665355627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TF$test.coverage" NAME="test Coverage Results" MODIFIED="1553652831563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TF$indexing.coverage" NAME="indexing Coverage Results" MODIFIED="1553658087774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/new_preprocess.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <marker date="1553510324997" expanded="true" signature="289:421" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test.py">
+        <entry file="file://$PROJECT_DIR$/findDocuments.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+            <state relative-caret-position="1224">
+              <caret line="121" column="42" lean-forward="true" selection-start-line="121" selection-start-column="42" selection-end-line="121" selection-end-column="42" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/indexing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#15#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,11 +69,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>คน</find>
-      <find>คน&quot;</find>
-      <find>&quot;คน&quot;</find>
-      <find>'คน'</find>
-      <find>find_ca</find>
       <find>has</find>
       <find>&quot;question_id&quot;: 4000</find>
       <find>find_answe</find>
@@ -99,6 +94,11 @@
       <find>doc_rank</find>
       <find>'doc_rank'</find>
       <find>พระยาศรีธรรมาธิราช</find>
+      <find>เรือนใจ</find>
+      <find>0901</find>
+      <find>'0901'</find>
+      <find>[]</find>
+      <find>dict</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -107,17 +107,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wordnet.py" />
-        <option value="$PROJECT_DIR$/result_addSynonyms_rLeast1st2nd3rd_shortest1st2nd.txt" />
-        <option value="$PROJECT_DIR$/result/result_addSynonyms_rLeast1st2nd3rd_shortest1st2nd.txt" />
-        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/py36/Lib/site-packages/pythainlp/tokenize/__init__.py" />
-        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/py36/Lib/site-packages/pylexto/__init__.py" />
         <option value="$PROJECT_DIR$/questionsPreprocess.py" />
         <option value="$PROJECT_DIR$/modifyDict.py" />
-        <option value="$PROJECT_DIR$/addTfIdf.py" />
         <option value="$PROJECT_DIR$/result/result_q_weight5short1st_weight1short2nd_intersect_all(1).txt" />
         <option value="$PROJECT_DIR$/usage.py" />
-        <option value="$PROJECT_DIR$/remove_spaces_modifyDict.py" />
         <option value="$PROJECT_DIR$/try_to_improve.py" />
         <option value="$PROJECT_DIR$/plotting.py" />
         <option value="$PROJECT_DIR$/fill_missing_doc.py" />
@@ -151,13 +144,20 @@
         <option value="$PROJECT_DIR$/word_class/11.json" />
         <option value="$PROJECT_DIR$/classify.py" />
         <option value="$PROJECT_DIR$/output_answer_from_ideal_sentence.json" />
-        <option value="$PROJECT_DIR$/findDocuments.py" />
         <option value="$PROJECT_DIR$/plot_graph_histogram.py" />
         <option value="$PROJECT_DIR$/candidate_modify.py" />
         <option value="$PROJECT_DIR$/findAnswer.py" />
-        <option value="$PROJECT_DIR$/test1.py" />
         <option value="$PROJECT_DIR$/new_preprocess.py" />
+        <option value="$PROJECT_DIR$/Tfidf_Model.py" />
+        <option value="$PROJECT_DIR$/sortIndex.py" />
+        <option value="$PROJECT_DIR$/remove_spaces_modifyDict.py" />
+        <option value="$PROJECT_DIR$/indexing.py" />
+        <option value="$PROJECT_DIR$/test1.py" />
+        <option value="$PROJECT_DIR$/addTfIdf.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/create_DB_sqlite.py" />
+        <option value="$PROJECT_DIR$/findDocuments.py" />
+        <option value="$PROJECT_DIR$/addSynnonyms.py" />
       </list>
     </option>
   </component>
@@ -165,20 +165,6 @@
     <option name="x" value="15" />
     <option name="width" value="1890" />
     <option name="height" value="1020" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State />
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>Buildout</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -188,7 +174,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -199,19 +184,34 @@
             <path>
               <item name="TF" type="b2602c69:ProjectViewProjectNode" />
               <item name="TF" type="462c0819:PsiDirectoryNode" />
-              <item name="test_set" type="462c0819:PsiDirectoryNode" />
+              <item name="preprocess" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/CPE#Y4/TF/findAnswer.py&#10;isspace&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="pyconsole" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="TF" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="TF" />
+      </console-settings>
+    </option>
+    <option name="myShowVariablesByDefault" value="false" />
+    <option name="myIpythonEnabled" value="false" />
+    <option name="myUseExistingConsole" value="true" />
+  </component>
+  <component name="PyCoverageOptionsProvider">
+    <option name="myUseBundledCoveragePy" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -238,8 +238,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
-    <configuration name="findAnswer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.addSynnonyms">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="TF" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="addSynnonyms" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TF" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -252,7 +274,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/findAnswer.py" />
+      <option name="SCRIPT_NAME" value="E:\CPE#Y4\TF\preprocess\addSynnonyms.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -261,7 +283,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="new_preprocess" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="addTfIdf" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TF" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -274,7 +296,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/new_preprocess.py" />
+      <option name="SCRIPT_NAME" value="E:\CPE#Y4\TF\preprocess\addTfIdf.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -283,7 +305,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="plot_graph_histogram" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="create_DB_sqlite" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TF" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -296,7 +318,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plot_graph_histogram.py" />
+      <option name="SCRIPT_NAME" value="E:\CPE#Y4\TF\preprocess\create_DB_sqlite.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -327,7 +349,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TF" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -340,7 +362,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:\CPE#Y4\TF\new_preprocess.py" />
+      <option name="SCRIPT_NAME" value="E:\CPE#Y4\TF\preprocess\create_DB_sqlite.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -350,19 +372,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.findAnswer" />
-      <item itemvalue="Python.plot_graph_histogram" />
-      <item itemvalue="Python.test1 (1)" />
+      <item itemvalue="Python.test1" />
+      <item itemvalue="Python.addTfIdf" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.new_preprocess" />
+      <item itemvalue="Python.create_DB_sqlite" />
+      <item itemvalue="Python.addSynnonyms" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.addSynnonyms" />
+        <item itemvalue="Python.create_DB_sqlite" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.new_preprocess" />
-        <item itemvalue="Python.test1 (1)" />
-        <item itemvalue="Python.plot_graph_histogram" />
-        <item itemvalue="Python.findAnswer" />
+        <item itemvalue="Python.test1" />
+        <item itemvalue="Python.addTfIdf" />
       </list>
     </recent_temporary>
   </component>
@@ -379,12 +401,15 @@
       <workItem from="1553412954667" duration="1410000" />
       <workItem from="1553415355110" duration="2657000" />
       <workItem from="1553425837826" duration="4563000" />
-      <workItem from="1553477550921" duration="14252000" />
+      <workItem from="1553477550921" duration="14906000" />
+      <workItem from="1553571577822" duration="14458000" />
+      <workItem from="1553652703761" duration="8287000" />
+      <workItem from="1553663418160" duration="2143000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22882000" />
+    <option name="totallyTimeSpent" value="48424000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -397,30 +422,32 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22834007" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2400636" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49523053" visible="true" weight="0.3216783" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49473685" visible="true" weight="0.3216783" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49920508" weight="0.3986711" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49920508" weight="0.32890365" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49920508" weight="0.32867134" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32890365" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5047695" side_tool="true" weight="0.32225913" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49602544" weight="0.32890365" />
-      <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.49920508" weight="0.32890365" />
-      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Messages" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49602544" weight="0.32692307" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49554655" type="SLIDING" weight="0.32867134" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50526315" side_tool="true" weight="0.3210084" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.32867134" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.32955465" />
+      <window_info anchor="right" x="0" y="0" width="273" height="504" id="Documentation" order="5" side_tool="true" weight="0.32955465" />
+      <window_info anchor="right" id="Coverage" order="6" side_tool="true" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21303657" />
@@ -497,87 +524,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/word_class/word_10class/2.json">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="37045" column="4" selection-start-line="37045" selection-start-column="4" selection-end-line="37045" selection-end-column="4" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="117">
-          <caret line="2799" column="12" selection-start-line="2799" selection-start-column="12" selection-end-line="2799" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/save_data_for_classify.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/candidate_sentence/candidate_sentences_492.json" />
-    <entry file="file://$PROJECT_DIR$/word_class/word_10class/11.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="11" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/word_class/word_10class/9.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/word_class/word_10class/10.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1156">
-          <caret line="279578" column="16" selection-start-line="279578" selection-start-column="16" selection-end-line="279578" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_set/new_sample_questions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="85" selection-start-column="85" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/py36/Lib/site-packages/tensorflow/python/keras/engine/training_utils.py" />
-    <entry file="file://$PROJECT_DIR$/word_class/2.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9125581" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/word_class/3.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221694">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/word_class/5.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2550" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result_find_answer_word_number.txt" />
-    <entry file="file://$PROJECT_DIR$/output_answerNSC.json" />
-    <entry file="file://$PROJECT_DIR$/output_answer_492(1).json" />
-    <entry file="file://$PROJECT_DIR$/output_answer_492.json" />
-    <entry file="file://$PROJECT_DIR$/output_answer_from_ideal_sentence.json" />
-    <entry file="file://$PROJECT_DIR$/test_set/ThaiQACorpus-EvaluationDataset-tokenize.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/test/output_answerNSC.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="151" column="30" lean-forward="true" selection-start-line="151" selection-start-column="30" selection-end-line="151" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output_answer_[2000-4000].json" />
-    <entry file="file://$PROJECT_DIR$/candidate_sentences[2000-4000].json" />
-    <entry file="file://$PROJECT_DIR$/candidate_sentences_492.json" />
-    <entry file="file://$PROJECT_DIR$/candidate_sentences4000.json" />
     <entry file="file://$PROJECT_DIR$/output/old/output_answer_4000_w_similarity.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="543677">
@@ -591,18 +537,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../databaseTF/candidate_sentence/candidate_sentences_492.json" />
     <entry file="file://$PROJECT_DIR$/output/output_answer_4000.json" />
-    <entry file="file://$PROJECT_DIR$/result/result_q_weight5_fill_c[0](best).txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5916" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_set/new_sample_questions_answer.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addSynnonyms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102" />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/output_findDOC4000.json" />
     <entry file="file://$PROJECT_DIR$/classify.py">
@@ -649,20 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/w2v_all_corpus.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-336">
-          <caret line="9" selection-start-line="9" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/findDocuments.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="200" column="25" selection-start-line="200" selection-end-line="201" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -676,39 +598,205 @@
     <entry file="file://$PROJECT_DIR$/usage.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/new_preprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1553510324997" expanded="true" signature="289:421" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/indexing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/all_word.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test_set/questions_tokenize.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/../databaseTF/new-documents-tokenize/8818.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8257" selection-start-column="8250" selection-end-column="8257" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../databaseTF/index/0.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="4871" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POStagTraining.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1428" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KeyValueStore.py" />
+    <entry file="file://$PROJECT_DIR$/findAnswer_number.py" />
+    <entry file="file://$PROJECT_DIR$/preprocess/new_preprocess.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+            <marker date="1553611323685" expanded="true" signature="289:421" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess/space_segment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_umd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="196" selection-start-line="196" selection-end-line="196" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word2vecTraining.py" />
+    <entry file="file://$PROJECT_DIR$/w2v_all_corpus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340">
+          <caret line="9" selection-start-line="9" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/TF/Lib/site-packages/sklearn/feature_extraction/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="1595" column="8" selection-start-line="1595" selection-start-column="8" selection-end-line="1595" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readJSON2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-969" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readJSON.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/result_q_weight5_fill_c[0](best).txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_set/new_sample_questions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret column="202" selection-start-column="192" selection-end-column="202" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_set/questions.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/output_answer_4000_top3doc_rankNone.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="27" column="97" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess/Tfidf_Model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="59" lean-forward="true" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/remove_spaces_modifyDict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-544">
+          <caret line="6" column="91" selection-start-line="6" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/result_q_weight5_fill_missing.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/result_q_weight5_fill_cant_find.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess/indexing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess/sortIndex.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess/addTfIdf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="72" column="45" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess/create_DB_sqlite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess/addSynnonyms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" selection-start-column="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess/fill_missing_doc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#116#598#0" />
+            <element signature="e#626#1152#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/findDocuments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="121" column="42" lean-forward="true" selection-start-line="121" selection-start-column="42" selection-end-line="121" selection-end-column="42" />
+          <folding>
+            <element signature="e#15#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
