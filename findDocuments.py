@@ -5,53 +5,15 @@ import json
 import time
 from heapq import nlargest
 from sqlitedict import SqliteDict
-from pythainlp.corpus import wordnet , stopwords
-from usage import alarm , rreplace
+from pythainlp.corpus import wordnet, stopwords
+from usage import alarm, rreplace
 
-def write_result(document_candidate):
 
-    # # write in text file
-    # answer = list(answer)
-    # ans_int = ''
-    # find = []
-    # for i in range(pool.__len__()):
-    #     find.append([])
-    #     for j in pool[i]:
-    #         find[-1].append(j[0])
-    #     try:
-    #         find[i].index(str(validate[doc]))
-    #     except ValueError:
-    #         ans_int += ' c[' + str(i) + '] '
-    #
-    # ########################################################################################
-    #
-    # try:
-    #     if answer.index(str(validate[doc])) < 6:
-    #         string += ': 1'
-    #     else:
-    #         string += ': 0'
-    #     string += " rank" + str(answer.index(str(validate[doc])))
-    # except ValueError:
-    #     string += ": 0 cdoc"
-    #
-    # string += ' || [' + str(word) + ']' + ans_int
-    # for i in range(find.__len__()):
-    #     string += str(find[i].__len__()) + ' '
-    # string += str(cantfind)
-    #
-    # end = time.time()
-    # print(end - start, 'secs')
-    # string += ' ' + str(end - start) + 'secs \n'
-    # doc += 1
-    # save += 1
-    # if save == 100 or doc == 4000:
-    #     with open("result/result_q_weight5_fill_c[0].txt", "a", encoding="utf-8") as text_file:
-    #         text_file.write(string)
-    #     save = 0
-    #     string = ''
-    # if doc == 4000:
-    #     break
+def write_result():
+    # write in text file
+
     return
+
 
 def findDocuments():
     # initial databased
@@ -75,13 +37,14 @@ def findDocuments():
     question_words.append('ใด')
 
     test_output = []
+    no_word = []
     for s in data:
         string += "question " + str(doc)
         print("question", doc, s)
 
         # segment until no space and do rule-based
         suffix = ['คือ', 'กี่', 'ใด']
-        r=[]
+        r = []
         for i in s:
             if ' ' in i:
                 for j in i.split():
@@ -93,7 +56,7 @@ def findDocuments():
                     s.append(rreplace(i, j, ' ', 1))
                     r.append(i)
                     break
-        for i in r :
+        for i in r:
             s.remove(i)
         ########################################################################################
 
@@ -121,7 +84,7 @@ def findDocuments():
                     for i in syn.lemma_names('tha'):
                         synonyms.append(i)
 
-                if s[f] in synonyms :
+                if s[f] in synonyms:
                     synonyms.remove(s[f])
                 for i in synonyms:
                     try:
@@ -130,7 +93,7 @@ def findDocuments():
                         break
                     except KeyError:
                         cantfind.append(i)
-
+        no_word.append(cantfind)
         ########################################################################################
 
         # remove least mean tf-idf
@@ -158,18 +121,17 @@ def findDocuments():
 
         # rank answer in answer pool
         c = {}
-        weight = [5,1]
+        weight = [5, 1]
         for i in range(pool.__len__()):
             for k, v in pool[i]:
                 try:
                     if i < weight.__len__():
-                        c[k] += v*weight[i]
+                        c[k] += v * weight[i]
                     else:
                         c[k] += v
                 except KeyError:
                     if i < weight.__len__():
-                        c[k] = v*weight[i]
-
+                        c[k] = v * weight[i]
 
         for key, value in c.items():
             answer_index.append(key)
@@ -185,19 +147,18 @@ def findDocuments():
             count.pop(index)
 
         print(answer.__len__(), answer[:6])
-        test_output.append(answer[:50]) ### return this .
-        doc+=1
-    return test_output
+        test_output.append(answer)  ### return this .
+        doc += 1
+
+    return test_output, no_word
+
 
 # os.system("shutdown /s /t 30")
 
-
-test_output = findDocuments()
+test_output, no_word = findDocuments()
 alarm()
 
-for i in range(test_output.__len__()):
-    print(i,test_output[i].__len__(),test_output[i])
-
-with open('test_output_findDOC.json', 'w' , encoding="utf-8") as outfile:
-    json.dump(test_output,outfile,ensure_ascii=False)
-
+with open('test_output.json', 'w', encoding="utf-8") as outfile:
+    json.dump(test_output, outfile, ensure_ascii=False)
+with open('no_word.json', 'w', encoding="utf-8") as outfile:
+    json.dump(no_word, outfile, ensure_ascii=False)

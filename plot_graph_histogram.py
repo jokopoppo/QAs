@@ -10,6 +10,7 @@ def similar(a, b):
 
 def plotAccuracy(file):
     for f in file :
+
         data = open('result\\'+f, 'r', encoding='utf-8-sig')
 
         a = []
@@ -32,8 +33,7 @@ def plotAccuracy(file):
                 topN[i] = int(topN[i].split('rank')[1])
             except IndexError:
                 topN[i] = 1000000
-        print(topN)
-        return topN
+
         rank = [1,5, 10, 20,30, 50, 100 ,200 ,300]
         acc = []
         for n in rank:
@@ -55,7 +55,30 @@ def plotAccuracy(file):
     plt.grid(axis='x')
     plt.tick_params(axis='x', labelsize=20)
     plt.tick_params(axis='y', labelsize=20)
-    plt.show()
+
+def plotAccuracy_withList(topN,label):
+
+    rank = [1,5, 10, 20,30, 50, 100 ,200 ,300]
+    acc = []
+    for n in rank:
+        acc.append(0)
+        for i in topN:
+            if i < n:
+                acc[-1] += 1
+        acc[-1] = acc[-1] / topN.__len__()
+        # print(n, acc[-1])
+
+    plt.xlabel('Rank N',size = 25)
+    plt.ylabel('Accuracy' , size=25)
+    plt.title('Accuracy in N rank',size =25)
+
+    plt.plot(rank, acc,marker='o', label=label)
+    plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left', borderaxespad=0.)
+
+    plt.grid(axis='y')
+    plt.grid(axis='x')
+    plt.tick_params(axis='x', labelsize=20)
+    plt.tick_params(axis='y', labelsize=20)
 
 def plot_histogram(file,n,color):
 
@@ -85,8 +108,6 @@ def plot_histogram(file,n,color):
     plt.show()
 
 def plot_histogram_with_list(data,color,label):
-
-
     # This is  the colormap I'd like to use.
     # cm = plt.cm.get_cmap('RdYlBu_r')
 
@@ -101,7 +122,7 @@ def plot_histogram_with_list(data,color,label):
     # for c, p in zip(col, patches):
     #     plt.setp(p, 'facecolor', cm(c))
 
-    plt.hist(data, 50, color=color, alpha=0.5, label=[i for i in label])
+    plt.hist(data, 4000, color=color, alpha=0.5, label=[i for i in label])
 
     plt.legend(loc='upper right')
     plt.tick_params(axis='x', labelsize=10)
@@ -113,44 +134,28 @@ def plot_histogram_with_list(data,color,label):
 
     plt.show()
 
-# file = os.listdir('result/')
-# file = file[4:]
-# print(file)
 
-# for i in range(file.__len__()):
-#     print(i,file[i])
-# show = plotAccuracy([file[4]])
-# print(show)
-# acc=[]
-# for i in show:
-#     if i <= 50 :
-#         acc.append(i)
-#
-# plot_histogram_with_list(acc,'lightgreen')
-
-# plot_histogram(file[4],1,'lightgreen')
-
-# answer = json.load(open('output_answer_from_ideal_sentence.json', mode='r', encoding="utf-8-sig"))
-
-file = os.listdir('output/')
-file.remove('old')
-file.remove('test')
-a = []
 color = []
-for f in file:
-    print(f)
-    answer = json.load(open("output\\" + f, mode='r', encoding="utf-8-sig"))
-    validate = json.load(open('test_set\\new_sample_questions.json', mode='r', encoding="utf-8-sig"))
-    validate = validate['data']
+r = lambda: random.randint(0, 255)
+color.append('#%02X%02X%02X' % (r(), r(), r()))
 
-    acc = []
-    for i in range(validate.__len__()):
-        # print(validate[i]['answer'],answer[i]['answer'])
-        tmp = similar(validate[i]['answer'],answer[i]['answer'])
-        acc.append(tmp)
+test_output = json.load(open('test_output.json', 'r', encoding='utf-8'))
+no_word = json.load(open('no_word.json', 'r', encoding='utf-8'))
+validate = json.load(open("test_set\\new_sample_questions_answer.json", mode='r', encoding="utf-8-sig"))
 
-    a.append(acc)
-    r = lambda: random.randint(0, 255)
-    color.append('#%02X%02X%02X' % (r(), r(), r()))
+acc = []
+out_of_range = 0
+for i in range(no_word.__len__()):
+    try:
+        print(i,test_output[i].index(str(validate[i])))
+        acc.append(test_output[i].index(str(validate[i])))
+        if test_output[i].index(str(validate[i])) > 5:
+            out_of_range+=1
+    except ValueError:
+        print(i, no_word[i])
 
-plot_histogram_with_list(a,color,file)
+print(acc,out_of_range)
+# plot_histogram_with_list(acc,color,'accuracy in n rank')
+plotAccuracy(['result_q_weight5_fill_c[0](best).txt'])
+plotAccuracy_withList(acc,'new-preprocess')
+plt.show()
