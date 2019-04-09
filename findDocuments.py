@@ -158,7 +158,7 @@ def findDocuments():
 test_output, no_word = findDocuments()
 alarm()
 
-with open('test_output.json', 'w', encoding="utf-8") as outfile:
+with open('new-db.json', 'w', encoding="utf-8") as outfile:
     json.dump(test_output, outfile, ensure_ascii=False)
 with open('no_word.json', 'w', encoding="utf-8") as outfile:
     json.dump(no_word, outfile, ensure_ascii=False)

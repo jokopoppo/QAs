@@ -5,11 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1435f1f5-46db-4b0a-9944-9c0267199b80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/elastic_search_index.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_set/all_word.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_set/all_word_no_space.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_word.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_word_no_space.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/candidate_document_4000.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elastic_search_index.py" beforeDir="false" afterPath="$PROJECT_DIR$/elastic_search_index.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/findDocuments.py" beforeDir="false" afterPath="$PROJECT_DIR$/findDocuments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/no_word.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/plot_graph_histogram.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_graph_histogram.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocess/addTfIdf.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocess/addTfIdf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/result_q_weight5_cut_suffix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/old_result/result_q_weight5_cut_suffix.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/result_q_weight5_cut_suffix_before_search.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/old_result/result_q_weight5_cut_suffix_before_search.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/result_q_weight5_fill_c[0](best).txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/old_result/result_q_weight5_fill_c[0](BEST).txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/result_q_weight5_fill_c[0].txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/old_result/result_q_weight5_fill_c[0].txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/result_q_weight5_fill_cant_find.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/old_result/result_q_weight5_fill_cant_find.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/result_q_weight5_fill_missing.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/old_result/result_q_weight5_fill_missing.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/result_q_weight5_withQW_cut_suffix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/old_result/result_q_weight5_withQW_cut_suffix.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/result_q_weight5short1st_weight1short2nd_intersect_all(1).txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/old_result/result_q_weight5short1st_weight1short2nd_intersect_all(1).txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_output.json" beforeDir="false" afterPath="$PROJECT_DIR$/document_candidate/new-db.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,26 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/findDocuments.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="23" />
-              <folding>
-                <element signature="e#15#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/elastic_search_index.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#6#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="62" column="18" lean-forward="true" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -53,10 +53,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plot_graph_histogram.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2635">
-              <caret line="159" column="41" selection-start-line="159" selection-start-column="41" selection-end-line="159" selection-end-column="41" />
+            <state relative-caret-position="221">
+              <caret line="167" lean-forward="true" selection-start-line="167" selection-end-line="167" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#2246#2952#0" />
+                <element signature="e#3883#4207#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/findDocuments.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+              <folding>
+                <element signature="e#15#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,8 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/questionsPreprocess.py" />
-        <option value="$PROJECT_DIR$/modifyDict.py" />
         <option value="$PROJECT_DIR$/result/result_q_weight5short1st_weight1short2nd_intersect_all(1).txt" />
         <option value="$PROJECT_DIR$/usage.py" />
         <option value="$PROJECT_DIR$/try_to_improve.py" />
@@ -159,9 +171,11 @@
         <option value="$PROJECT_DIR$/addTfIdf.py" />
         <option value="$PROJECT_DIR$/create_DB_sqlite.py" />
         <option value="$PROJECT_DIR$/addSynnonyms.py" />
-        <option value="$PROJECT_DIR$/plot_graph_histogram.py" />
         <option value="$PROJECT_DIR$/findDocuments.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/preprocess/addTfIdf.py" />
+        <option value="$PROJECT_DIR$/plot_graph_histogram.py" />
+        <option value="$PROJECT_DIR$/elastic_search_index.py" />
       </list>
     </option>
   </component>
@@ -178,7 +192,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -189,12 +202,13 @@
             <path>
               <item name="TF" type="b2602c69:ProjectViewProjectNode" />
               <item name="TF" type="462c0819:PsiDirectoryNode" />
-              <item name="result" type="462c0819:PsiDirectoryNode" />
+              <item name="document_candidate" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,16 +232,16 @@
     <option name="myUseBundledCoveragePy" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\CPE#Y4\TF\preprocess" />
-      <recent name="E:\CPE#Y4\TF\output\old" />
-      <recent name="E:\CPE#Y4\TF\output" />
-      <recent name="E:\CPE#Y4\TF\test_set" />
-      <recent name="E:\CPE#Y4\TF\word_class\word_10class" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\CPE#Y4\TF\output" />
       <recent name="E:\CPE#Y4\TF" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\CPE#Y4\TF\document_candidate" />
+      <recent name="E:\CPE#Y4\TF\test_set" />
+      <recent name="E:\CPE#Y4\TF\result\old_result" />
+      <recent name="E:\CPE#Y4\TF\preprocess" />
+      <recent name="E:\CPE#Y4\TF\output\old" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -452,7 +466,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49473685" visible="true" weight="0.3216783" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49920508" weight="0.3986014" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -549,18 +563,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/output/output_answer_4000.json" />
-    <entry file="file://$PROJECT_DIR$/test_set/new_sample_questions_answer.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output_findDOC4000.json" />
-    <entry file="file://$PROJECT_DIR$/classify.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="41" column="78" selection-start-line="41" selection-start-column="78" selection-end-line="41" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/output/output_answer_4000_top5doc_rankNone.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -599,7 +601,7 @@
     <entry file="file://$PROJECT_DIR$/usage.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/all_word.json">
+    <entry file="file://$PROJECT_DIR$/test_set/all_word.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test_set/questions_tokenize.json">
@@ -677,7 +679,7 @@
     <entry file="file://$PROJECT_DIR$/readJSON.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/result/result_q_weight5_fill_c[0](best).txt">
+    <entry file="file://$PROJECT_DIR$/result/old_result/result_q_weight5_fill_c[0](BEST).txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test_set/new_sample_questions.json">
@@ -717,10 +719,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result/result_q_weight5_fill_missing.txt">
+    <entry file="file://$PROJECT_DIR$/result/old_result/result_q_weight5_fill_missing.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/result/result_q_weight5_fill_cant_find.txt">
+    <entry file="file://$PROJECT_DIR$/result/old_result/result_q_weight5_fill_cant_find.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/preprocess/indexing.py">
@@ -739,16 +741,6 @@
           <caret line="66" selection-start-line="66" selection-end-line="66" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/preprocess/addTfIdf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="72" column="45" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -792,19 +784,7 @@
     <entry file="file://$PROJECT_DIR$/questionsPreprocess.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/no_word.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plot_graph_histogram.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2635">
-          <caret line="159" column="41" selection-start-line="159" selection-start-column="41" selection-end-line="159" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/no_word.json" />
     <entry file="file://$USER_HOME$/Anaconda3/envs/TF/Lib/site-packages/urllib3/util/connection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="784">
@@ -812,10 +792,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess/addTfIdf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/document_candidate/candidate_doc_ESsearch_w_title.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/TF/Lib/site-packages/elasticsearch/connection/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/candidate_document_4000.json" />
+    <entry file="file://$PROJECT_DIR$/test_set/all_word_no_space.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot_graph_histogram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="167" lean-forward="true" selection-start-line="167" selection-end-line="167" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#2246#2952#0" />
+            <element signature="e#3883#4207#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/findDocuments.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="23" />
+        <state relative-caret-position="238">
+          <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
           <folding>
             <element signature="e#15#24#0" expanded="true" />
           </folding>
@@ -824,11 +840,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/elastic_search_index.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#6#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="62" column="18" lean-forward="true" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
         </state>
       </provider>
     </entry>

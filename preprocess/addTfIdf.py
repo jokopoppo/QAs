@@ -48,7 +48,7 @@ vowel = 'เแโใไ'
 e_alphabet = 'abcdefghijklmnopqrstuvwxyz'
 be_alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 num = '0123456789'
-dictset = [be_alphabet] # TODO change dictset and run this
+dictset = [be_alphabet]
 for d in dictset:
     alp = []
     for i in d:

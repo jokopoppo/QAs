@@ -3,15 +3,17 @@ import os
 from pprint import pprint
 import json
 import random
+import numpy as np
 
 def similar(a, b):
     from difflib import SequenceMatcher
     return SequenceMatcher(None, a, b).ratio()
 
-def plotAccuracy(file):
-    for f in file :
 
-        data = open('result\\'+f, 'r', encoding='utf-8-sig')
+def plotAccuracy(file, label):
+    for f in file:
+
+        data = open('result\\old_result\\' + f, 'r', encoding='utf-8-sig')
 
         a = []
         topN = []
@@ -26,7 +28,7 @@ def plotAccuracy(file):
             except IndexError:
                 print(a[-1])
                 exit(0)
-        if(topN.__len__() < 4000):
+        if (topN.__len__() < 4000):
             continue
         for i in range(a.__len__()):
             try:
@@ -34,7 +36,7 @@ def plotAccuracy(file):
             except IndexError:
                 topN[i] = 1000000
 
-        rank = [1,5, 10, 20,30, 50, 100 ,200 ,300]
+        rank = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 50]
         acc = []
         for n in rank:
             acc.append(0)
@@ -44,44 +46,41 @@ def plotAccuracy(file):
             acc[-1] = acc[-1] / topN.__len__()
             # print(n, acc[-1])
 
-        plt.xlabel('Rank N',size = 25)
-        plt.ylabel('Accuracy' , size=25)
-        plt.title('Accuracy in N rank',size =25)
+        plt.xlabel('Rank N', size=25)
+        plt.ylabel('Accuracy', size=25)
+        plt.title('Accuracy in N rank', size=25)
 
-        plt.plot(rank, acc,marker='o', label=str(file.index(f)))
-        plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left', borderaxespad=0.)
+        plt.plot(rank, acc, marker='o', label=label)
+        plt.legend(loc='upper right')
 
-    plt.grid(axis='y')
-    plt.grid(axis='x')
     plt.tick_params(axis='x', labelsize=20)
     plt.tick_params(axis='y', labelsize=20)
+    plt.grid(axis='y', )
 
-def plotAccuracy_withList(topN,label):
 
-    rank = [1,5, 10, 20,30, 50, 100 ,200 ,300]
+def plotAccuracy_withList(topN, label):
+    rank = np.arange(50)
     acc = []
     for n in rank:
         acc.append(0)
         for i in topN:
             if i < n:
                 acc[-1] += 1
-        acc[-1] = acc[-1] / topN.__len__()
+        acc[-1] = acc[-1] / 4000
         # print(n, acc[-1])
 
-    plt.xlabel('Rank N',size = 25)
-    plt.ylabel('Accuracy' , size=25)
-    plt.title('Accuracy in N rank',size =25)
+    plt.xlabel('Rank N', size=25)
+    plt.ylabel('Accuracy', size=25)
+    plt.title('Accuracy in N rank', size=25)
 
-    plt.plot(rank, acc,marker='o', label=label)
-    plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left', borderaxespad=0.)
+    plt.plot(rank, acc, marker='o', label=label)
+    plt.legend(loc='upper right')
 
-    plt.grid(axis='y')
-    plt.grid(axis='x')
     plt.tick_params(axis='x', labelsize=20)
     plt.tick_params(axis='y', labelsize=20)
+    plt.grid(axis='y', )
 
-def plot_histogram(file,n,color):
-
+def plot_histogram(file, n, color):
     data = open('result\\' + file, 'r', encoding='utf-8-sig')
 
     l = []
@@ -91,23 +90,23 @@ def plot_histogram(file,n,color):
         for j in range(tmp.__len__()):
             if tmp[j].isnumeric():
                 try:
-                    l.append(int(tmp[j+n]))
+                    l.append(int(tmp[j + n]))
                     break
                 except ValueError:
                     l.append(0)
                     break
 
-
     plt.tick_params(axis='x', labelsize=20)
     plt.tick_params(axis='y', labelsize=20)
     plt.hist(l, 50, color=color)
-    plt.grid(axis='y',)
-    plt.xlabel('Length of list',size=25)
-    plt.ylabel('Number of list',size=25)
-    plt.title('Histogram of shortest list',size=25)
+    plt.grid(axis='y', )
+    plt.xlabel('Length of list', size=25)
+    plt.ylabel('Number of list', size=25)
+    plt.title('Histogram of shortest list', size=25)
     plt.show()
 
-def plot_histogram_with_list(data,color,label):
+
+def plot_histogram_with_list(data, color, label):
     # This is  the colormap I'd like to use.
     # cm = plt.cm.get_cmap('RdYlBu_r')
 
@@ -127,35 +126,46 @@ def plot_histogram_with_list(data,color,label):
     plt.legend(loc='upper right')
     plt.tick_params(axis='x', labelsize=10)
     plt.tick_params(axis='y', labelsize=10)
-    plt.grid(axis='y',)
-    plt.xlabel('Similarity Score',size=15)
-    plt.ylabel('Number of Answer',size=15)
-    plt.title('Histogram of Similarity',size=15)
+    plt.grid(axis='y', )
+    plt.xlabel('Similarity Score', size=15)
+    plt.ylabel('Number of Answer', size=15)
+    plt.title('Histogram of Similarity', size=15)
 
     plt.show()
+
+
+def accuracy_from_doc_candidate(doc, validate):
+    acc = []
+    out_of_range = 0
+    for i in range(doc.__len__()):
+        try:
+            # print(i,test_output[i].index(str(validate[i])))
+            acc.append(doc[i].index(str(validate[i])))
+        except ValueError:
+            out_of_range += 1
+            # print(q[i])
+    print("OUT:", out_of_range)
+    return acc
 
 
 color = []
 r = lambda: random.randint(0, 255)
 color.append('#%02X%02X%02X' % (r(), r(), r()))
 
-test_output = json.load(open('test_output.json', 'r', encoding='utf-8'))
-no_word = json.load(open('no_word.json', 'r', encoding='utf-8'))
 validate = json.load(open("test_set\\new_sample_questions_answer.json", mode='r', encoding="utf-8-sig"))
+q = json.load(open('test_set\\new_sample_questions_tokenize.json', mode='r', encoding="utf-8-sig"))
 
-acc = []
-out_of_range = 0
-for i in range(no_word.__len__()):
-    try:
-        print(i,test_output[i].index(str(validate[i])))
-        acc.append(test_output[i].index(str(validate[i])))
-        if test_output[i].index(str(validate[i])) > 5:
-            out_of_range+=1
-    except ValueError:
-        print(i, no_word[i])
+plotAccuracy(['result_q_weight5_fill_c[0](BEST).txt'], "old-db")  ###
 
-print(acc,out_of_range)
-# plot_histogram_with_list(acc,color,'accuracy in n rank')
-plotAccuracy(['result_q_weight5_fill_c[0](best).txt'])
-plotAccuracy_withList(acc,'new-preprocess')
+path = 'document_candidate\\'
+file = os.listdir(path)
+print(file)
+
+for f in file:
+    test_output = json.load(open(path + f, 'r', encoding='utf-8'))
+    acc = accuracy_from_doc_candidate(test_output, validate)
+    plotAccuracy_withList(acc, f.replace('.json', ''))
+
+plt.grid(axis='y')
+plt.grid(axis='x')
 plt.show()

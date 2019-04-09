@@ -18,17 +18,25 @@ def es_index(es,start):
         print(i, '/', files.__len__(), res['result'],files[i])
 
 def search_index(question):
-
+    content = ['text','title']
     query = []
-    for i in question:
-        q = {
+    for k in range(content.__len__()):
+        for i in question:
+            boost = 1
+            if k == 0:
+                boost = 3
+            q = {
                   "match": {
-                    "text": i
+                    content[k]: {
+                        "query": i,
+                        "boost": boost
+                    }
                   }
                 }
-        query.append(q)
+            query.append(q)
 
     body = {
+        "from": 0, "size": 50,
         "query": {
             "bool": {
               "should": query
@@ -36,18 +44,32 @@ def search_index(question):
           }
     }
     res = es.search(index="index", doc_type="doc", body=body)
-    print("Got %d Hits:" % res['hits']['total'])
+    # print("Got %d Hits:" % res['hits']['total'])
+
+    doc_candidate = []
     for doc in res['hits']['hits']:
-        print(doc["_id"],doc['_source']['title'])
+        doc_candidate.append(doc["_id"])
+        # print(doc["_id"], doc['_source']['title'])
+
+    return doc_candidate
+
 
 es = Elasticsearch()
 
-es_index(es,35777)
-# q = json.load(open('test_set\\new_sample_questions_tokenize.json', mode='r', encoding="utf-8-sig"))
-#
-# search_index(q[0])
+# es_index(es, 111266)
 
+q = json.load(open('test_set\\new_sample_questions_tokenize.json', mode='r', encoding="utf-8-sig"))
 
+candidate_doc = []
+
+for i in range(q.__len__()):
+    candidate_doc.append(search_index(q[i]))
+    print(i,candidate_doc[-1])
+
+with open('document_candidate\\candidate_doc_ESsearch_w_text_boost3.json', 'w', encoding="utf-8") as outfile:
+    json.dump(candidate_doc, outfile, ensure_ascii=False)
+
+os.system("shutdown /s /t 30")
 
 
 
