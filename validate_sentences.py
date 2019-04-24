@@ -11,7 +11,7 @@ def sentence_similar(a, b):
     return a.intersection(b).__len__() / a.union(b).__len__()
 
 
-def make_validate_sentences(validate_doc, validate_answer, answer_position):
+def make_validate_sentences(validate_doc, validate_answer):
     path = 'E:\\CPE#Y4\\databaseTF\\new-documents-tokenize\\'
     validate_sentences = []
     for i in range(validate_doc.__len__()):
@@ -29,7 +29,7 @@ def make_validate_sentences(validate_doc, validate_answer, answer_position):
                 if similar(validate_answer[i], k) > 0.4:
                     validate_sentences[-1].append(tmp)
                     break
-                elif k.endswith(validate_answer[i]) or validate_answer[i].endswith(k) or k in validate_answer[i]:
+                elif k != ' ' and k in validate_answer[i]:
                     validate_sentences[-1].append(tmp)
                     break
             if validate_sentences[-1].__len__() > 1:
@@ -38,20 +38,18 @@ def make_validate_sentences(validate_doc, validate_answer, answer_position):
         if validate_sentences[-1].__len__() < 1:
             print(doc)
             break
-    with open('test_set\\validate_sentences.json', 'w',
-              encoding="utf-8") as outfile:
+    with open('test_set\\validate_sentences.json', 'w', encoding="utf-8") as outfile:
         json.dump(validate_sentences, outfile, ensure_ascii=False)
 
-def compare2sentence():
 
 validate_doc = json.load(open("test_set\\new_sample_questions_answer.json", mode='r', encoding="utf-8-sig"))
-data = json.load(open('test_set/new_sample_questions.json', mode='r', encoding="utf-8-sig"))
 q = json.load(open('test_set\\no_space_questions_tokenize.json', mode='r', encoding="utf-8-sig"))
+
 validate_answer = []
-answer_position = []
+data = json.load(open('test_set/new_sample_questions.json', mode='r', encoding="utf-8-sig"))
 for i in data['data']:
     validate_answer.append(i['answer'])
-print(validate_answer)
+# print(validate_answer)
 
-# make_validate_sentences(validate_doc, validate_answer, answer_position)
+make_validate_sentences(validate_doc, validate_answer)
 
