@@ -59,7 +59,7 @@ def plotAccuracy(file, label):
 
 
 def plotAccuracy_withList(topN, label):
-    rank = np.arange(50)
+    rank = np.arange(12)
     acc = []
     for n in rank:
         acc.append(0)
@@ -142,6 +142,7 @@ def accuracy_from_doc_candidate(doc, validate):
             # print(i,test_output[i].index(str(validate[i])))
             acc.append(doc[i].index(str(validate[i])))
         except ValueError:
+            print(i,''.join(q[i]))
             out_of_range += 1
             # print(q[i])
     print("OUT:", out_of_range)

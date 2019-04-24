@@ -3,7 +3,6 @@ from keras.layers import Input, Dense, LSTM, Concatenate, Multiply, Subtract,Bid
 from keras.backend import expand_dims,stack
 import tensorflow as tf
 
-
 question_length = 30
 sentence_length = 20
 word_vector_length = 100
