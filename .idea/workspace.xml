@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1435f1f5-46db-4b0a-9944-9c0267199b80" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/elastic_search_index.py" beforeDir="false" afterPath="$PROJECT_DIR$/elastic_search_index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/findSentence.py" beforeDir="false" afterPath="$PROJECT_DIR$/findSentence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_graph_histogram.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_graph_histogram.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,25 +24,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/elastic_search_index.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="69" selection-start-line="69" selection-end-line="70" selection-end-column="57" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/findSentence.py">
+        <entry file="file://$PROJECT_DIR$/plot_graph_histogram.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+            <state relative-caret-position="204">
+              <caret line="178" column="26" selection-start-line="178" selection-start-column="26" selection-end-line="178" selection-end-column="26" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#2203#2909#0" />
               </folding>
             </state>
           </provider>
@@ -50,15 +40,6 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sentence_candidate/candidate_sen_each_doc_10rank.json">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_set/validate_sentences.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret column="1288187" selection-start-column="1288187" selection-end-column="1288187" />
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -156,15 +137,15 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/preprocess/addTfIdf.py" />
         <option value="$PROJECT_DIR$/qa_model2.py" />
-        <option value="$PROJECT_DIR$/plot_graph_histogram.py" />
         <option value="$PROJECT_DIR$/find_Sentences.py" />
         <option value="$PROJECT_DIR$/validate_sentences.py" />
         <option value="$PROJECT_DIR$/elastic_search_index.py" />
         <option value="$PROJECT_DIR$/findSentence.py" />
+        <option value="$PROJECT_DIR$/plot_graph_histogram.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="15" />
     <option name="width" value="1890" />
     <option name="height" value="1020" />
@@ -177,6 +158,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -188,7 +170,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -236,7 +217,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.findSentence">
+  <component name="RunManager" selected="Python.plot_graph_histogram">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="TF" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -447,10 +428,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.plot_graph_histogram" />
         <item itemvalue="Python.findSentence" />
         <item itemvalue="Python.elastic_search_index" />
         <item itemvalue="Python.validate_sentences" />
-        <item itemvalue="Python.plot_graph_histogram" />
       </list>
     </recent_temporary>
   </component>
@@ -488,13 +469,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2400636" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49473685" weight="0.3216783" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49473685" visible="true" weight="0.3216783" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49920508" weight="0.3986014" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -800,18 +782,6 @@
     <entry file="file://$PROJECT_DIR$/test_set/new_sample_questions_tokenize.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/plot_graph_histogram.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="172" lean-forward="true" selection-start-line="172" selection-end-line="172" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-            <element signature="e#2203#2909#0" />
-            <element signature="e#2966#3785#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_set/questions_answer.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -872,20 +842,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/elastic_search_index.py">
+    <entry file="file://$PROJECT_DIR$/test_set/validate_sentences.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="69" selection-start-line="69" selection-end-line="70" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="21896">
+          <caret column="1288187" selection-start-column="1288187" selection-end-column="1288187" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_set/validate_sentences.json">
+    <entry file="file://$PROJECT_DIR$/elastic_search_index.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret column="1288187" selection-start-column="1288187" selection-end-column="1288187" />
+        <state relative-caret-position="102">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -894,10 +864,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/findSentence.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+        <state relative-caret-position="238">
+          <caret line="82" lean-forward="true" selection-start-line="80" selection-end-line="82" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot_graph_histogram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="178" column="26" selection-start-line="178" selection-start-column="26" selection-end-line="178" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#2203#2909#0" />
           </folding>
         </state>
       </provider>

@@ -78,5 +78,5 @@ for i in range(candidate_doc.__len__()):
     acc += sentence_acc()
 
 print(acc)
-with open('sentence_candidate\\candidate_sen_each_doc_10rank.json', 'w', encoding="utf-8") as outfile:
-    json.dump(sentence_candidate, outfile, ensure_ascii=False)
+# with open('sentence_candidate\\candidate_sen_each_doc_10rank.json', 'w', encoding="utf-8") as outfile:
+#     json.dump(sentence_candidate, outfile, ensure_ascii=False)

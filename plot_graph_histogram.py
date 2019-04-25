@@ -78,7 +78,8 @@ def plotAccuracy_withList(topN, label):
 
     plt.tick_params(axis='x', labelsize=20)
     plt.tick_params(axis='y', labelsize=20)
-    plt.grid(axis='y', )
+    plt.grid(axis='y')
+    plt.grid(axis='x')
 
 def plot_histogram(file, n, color):
     data = open('result\\' + file, 'r', encoding='utf-8-sig')
@@ -108,20 +109,20 @@ def plot_histogram(file, n, color):
 
 def plot_histogram_with_list(data, color, label):
     # This is  the colormap I'd like to use.
-    # cm = plt.cm.get_cmap('RdYlBu_r')
+    cm = plt.cm.get_cmap('RdYlBu_r')
 
     # Plot histogram.
-    # n, bins, patches = plt.hist(data, 50,color=color,alpha=0.5,label=[i for i in range(data.__len__())])
-    # bin_centers = 0.5 * (bins[:-1] + bins[1:])
+    n, bins, patches = plt.hist(data, 50,color=color,alpha=0.5,label=label)
+    bin_centers = 0.5 * (bins[:-1] + bins[1:])
 
     # scale values to interval [0,1]
-    # col = bin_centers - min(bin_centers)
-    # col /= max(col)
+    col = bin_centers - min(bin_centers)
+    col /= max(col)
 
-    # for c, p in zip(col, patches):
-    #     plt.setp(p, 'facecolor', cm(c))
+    for c, p in zip(col, patches):
+        plt.setp(p, 'facecolor', cm(c))
 
-    plt.hist(data, 4000, color=color, alpha=0.5, label=[i for i in label])
+    # plt.hist(data, max(data), color=color, alpha=0.5, label=label)
 
     plt.legend(loc='upper right')
     plt.tick_params(axis='x', labelsize=10)
@@ -142,31 +143,69 @@ def accuracy_from_doc_candidate(doc, validate):
             # print(i,test_output[i].index(str(validate[i])))
             acc.append(doc[i].index(str(validate[i])))
         except ValueError:
-            print(i,''.join(q[i]))
+            # print(i,''.join(q[i]))
             out_of_range += 1
             # print(q[i])
     print("OUT:", out_of_range)
     return acc
 
+def plot_doc_candidate():
+    color = []
+    r = lambda: random.randint(0, 255)
+    color.append('#%02X%02X%02X' % (r(), r(), r()))
 
-color = []
-r = lambda: random.randint(0, 255)
-color.append('#%02X%02X%02X' % (r(), r(), r()))
+    validate = json.load(open("test_set\\new_sample_questions_answer.json", mode='r', encoding="utf-8-sig"))
+    q = json.load(open('test_set\\new_sample_questions_tokenize.json', mode='r', encoding="utf-8-sig"))
 
-validate = json.load(open("test_set\\new_sample_questions_answer.json", mode='r', encoding="utf-8-sig"))
-q = json.load(open('test_set\\new_sample_questions_tokenize.json', mode='r', encoding="utf-8-sig"))
+    plotAccuracy(['result_q_weight5_fill_c[0](BEST).txt'], "old-db")  ###
 
-plotAccuracy(['result_q_weight5_fill_c[0](BEST).txt'], "old-db")  ###
+    path = 'document_candidate\\'
+    file = os.listdir(path)
+    print(file)
 
-path = 'document_candidate\\'
-file = os.listdir(path)
-print(file)
+    for f in file:
+        test_output = json.load(open(path + f, 'r', encoding='utf-8'))
+        acc = accuracy_from_doc_candidate(test_output, validate)
+        plotAccuracy_withList(acc, f.replace('.json', ''))
 
-for f in file:
-    test_output = json.load(open(path + f, 'r', encoding='utf-8'))
-    acc = accuracy_from_doc_candidate(test_output, validate)
-    plotAccuracy_withList(acc, f.replace('.json', ''))
+    plt.grid(axis='y')
+    plt.grid(axis='x')
+    plt.show()
 
-plt.grid(axis='y')
-plt.grid(axis='x')
-plt.show()
+def sentence_acc(sentence_candidate, validate_sentences):
+    for j in range(sentence_candidate.__len__()):
+        for k in validate_sentences:
+            if sentence_candidate[j][-1] == k:
+                return j+1
+    return 10000
+def accuracy_from_sen_candidate(sentence_candidate,validate_sentences):
+    acc = []
+    for i in range(validate_sentences.__len__()):
+        for j in range(sentence_candidate[i].__len__()):
+            print(sentence_candidate[i][j][-1])
+            for k in validate_sentences[i]:
+                if sentence_candidate[i][j][-1] == k:
+                    acc.append(sentence_acc(sentence_candidate[i], validate_sentences[i]))
+
+    return acc
+
+def plot_sen_candidate():
+    validate = json.load(open("test_set\\validate_sentences.json", mode='r', encoding="utf-8-sig"))
+
+    color = []
+    r = lambda: random.randint(0, 255)
+    color.append('#%02X%02X%02X' % (r(), r(), r()))
+
+    path = 'sentence_candidate\\'
+    file = os.listdir(path)
+    print(file)
+
+    for f in file:
+        sentence_candidate = json.load(open(path + f, 'r', encoding='utf-8'))
+        acc = accuracy_from_sen_candidate(sentence_candidate, validate)
+        plotAccuracy_withList(acc, f.replace('.json', ''))
+        # plot_histogram_with_list(acc, 'blue', f.replace('.json', ''))
+    plt.show()
+
+# plot_doc_candidate()
+plot_sen_candidate()
