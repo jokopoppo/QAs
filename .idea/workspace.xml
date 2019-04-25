@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1435f1f5-46db-4b0a-9944-9c0267199b80" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elastic_search_index.py" beforeDir="false" afterPath="$PROJECT_DIR$/elastic_search_index.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/findSentence.py" beforeDir="false" afterPath="$PROJECT_DIR$/findSentence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_set/validate_sentences.json" beforeDir="false" afterPath="$PROJECT_DIR$/test_set/validate_sentences.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validate_sentences.py" beforeDir="false" afterPath="$PROJECT_DIR$/validate_sentences.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,10 +24,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/validate_sentences.py">
+        <entry file="file://$PROJECT_DIR$/elastic_search_index.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-221">
-              <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+            <state relative-caret-position="105">
+              <caret line="69" selection-start-line="69" selection-end-line="70" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -37,10 +38,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/findSentence.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+            <state relative-caret-position="405">
+              <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sentence_candidate/candidate_sen_each_doc_10rank.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -147,10 +156,10 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/preprocess/addTfIdf.py" />
         <option value="$PROJECT_DIR$/qa_model2.py" />
-        <option value="$PROJECT_DIR$/elastic_search_index.py" />
         <option value="$PROJECT_DIR$/plot_graph_histogram.py" />
         <option value="$PROJECT_DIR$/find_Sentences.py" />
         <option value="$PROJECT_DIR$/validate_sentences.py" />
+        <option value="$PROJECT_DIR$/elastic_search_index.py" />
         <option value="$PROJECT_DIR$/findSentence.py" />
       </list>
     </option>
@@ -174,16 +183,6 @@
             <path>
               <item name="TF" type="b2602c69:ProjectViewProjectNode" />
               <item name="TF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TF" type="462c0819:PsiDirectoryNode" />
-              <item name="document_candidate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TF" type="462c0819:PsiDirectoryNode" />
-              <item name="test_set" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -449,9 +448,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.findSentence" />
+        <item itemvalue="Python.elastic_search_index" />
         <item itemvalue="Python.validate_sentences" />
         <item itemvalue="Python.plot_graph_histogram" />
-        <item itemvalue="Python.elastic_search_index" />
       </list>
     </recent_temporary>
   </component>
@@ -489,7 +488,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2400636" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -592,16 +590,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/preprocess/space_segment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_umd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -782,16 +770,8 @@
         <state relative-caret-position="-357" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readJSON2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2210" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readJSON.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2162" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/readJSON2.py" />
+    <entry file="file://$PROJECT_DIR$/readJSON.py" />
     <entry file="file://$PROJECT_DIR$/remove_spaces_modifyDict.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -842,12 +822,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_set/all_word_no_space.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_set/all_word.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test_set/all_word_no_space.json" />
+    <entry file="file://$PROJECT_DIR$/test_set/all_word.json" />
     <entry file="file://$PROJECT_DIR$/rnn_compare_twotext.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -867,13 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/elastic_search_index.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="68" selection-start-line="68" selection-end-line="69" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../databaseTF/new_model_dataset/correct_sentences_tokens_readable.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1287917" />
@@ -883,13 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret column="766718" selection-start-column="766718" selection-end-column="766718" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_set/validate_sentences.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret column="1288187" selection-start-column="1288187" selection-end-column="1288187" />
         </state>
       </provider>
     </entry>
@@ -905,15 +867,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/validate_sentences.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
+        <state relative-caret-position="476">
           <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/elastic_search_index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="69" selection-start-line="69" selection-end-line="70" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_set/validate_sentences.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret column="1288187" selection-start-column="1288187" selection-end-column="1288187" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sentence_candidate/candidate_sen_each_doc_10rank.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/findSentence.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        <state relative-caret-position="405">
+          <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

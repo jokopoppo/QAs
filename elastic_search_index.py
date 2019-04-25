@@ -44,12 +44,12 @@ def search_index(question):
           }
     }
     res = es.search(index="index", doc_type="doc", body=body)
-    print("Got %d Hits:" % res['hits']['total'])
+    # print("Got %d Hits:" % res['hits']['total'])
 
     doc_candidate = []
     for doc in res['hits']['hits']:
         doc_candidate.append(doc["_id"])
-        # print(doc["_id"], doc['_source']['title'])
+        # print(doc["_id"], doc['_source'])
 
     return doc_candidate
 
@@ -65,6 +65,7 @@ candidate_doc = []
 for i in range(q.__len__()):
     candidate_doc.append(search_index(q[i]))
     print(i, candidate_doc[-1])
+
 
 with open('document_candidate\\candidate_doc_ESsearch_w_text_boost3_q_no_space.json', 'w', encoding="utf-8") as outfile:
     json.dump(candidate_doc, outfile, ensure_ascii=False)
