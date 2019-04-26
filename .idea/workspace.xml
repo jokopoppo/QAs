@@ -7,7 +7,7 @@
     <list default="true" id="1435f1f5-46db-4b0a-9944-9c0267199b80" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/findSentence.py" beforeDir="false" afterPath="$PROJECT_DIR$/findSentence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plot_graph_histogram.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_graph_histogram.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_graph_histogram.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_graph.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,22 +24,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/plot_graph_histogram.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/findSentence.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="178" column="26" selection-start-line="178" selection-start-column="26" selection-end-line="178" selection-end-column="26" />
+            <state relative-caret-position="156">
+              <caret line="78" column="5" selection-start-line="78" selection-end-line="78" selection-end-column="5" />
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
-                <element signature="e#2203#2909#0" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sentence_candidate/candidate_sen_each_doc_10rank.json">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/plot_graph.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1003">
+              <caret line="121" selection-start-line="121" selection-end-line="121" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#4205#4951#0" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -53,7 +60,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>releva</find>
       <find>similarity_score</find>
       <find>doc</find>
       <find>rele</find>
@@ -83,6 +89,7 @@
       <find>7</find>
       <find>โคคา</find>
       <find>โคลา</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -91,7 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/fill_missing_doc.py" />
         <option value="$PROJECT_DIR$/try_to_improve_findDOC.py" />
         <option value="$PROJECT_DIR$/findAswer.py" />
         <option value="$PROJECT_DIR$/result_find_answer_word(2).txt" />
@@ -140,12 +146,13 @@
         <option value="$PROJECT_DIR$/find_Sentences.py" />
         <option value="$PROJECT_DIR$/validate_sentences.py" />
         <option value="$PROJECT_DIR$/elastic_search_index.py" />
-        <option value="$PROJECT_DIR$/findSentence.py" />
         <option value="$PROJECT_DIR$/plot_graph_histogram.py" />
+        <option value="$PROJECT_DIR$/plot_graph.py" />
+        <option value="$PROJECT_DIR$/findSentence.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="15" />
     <option name="width" value="1890" />
     <option name="height" value="1020" />
@@ -165,6 +172,11 @@
             <path>
               <item name="TF" type="b2602c69:ProjectViewProjectNode" />
               <item name="TF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TF" type="462c0819:PsiDirectoryNode" />
+              <item name="sentence_candidate" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -217,7 +229,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.plot_graph_histogram">
+  <component name="RunManager" selected="Python.plot_graph">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="TF" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -350,6 +362,50 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="plot_graph" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TF" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\WiNNER\Anaconda3\envs\TF\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plot_graph.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="plot_graph_histogram (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TF" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\WiNNER\Anaconda3\envs\TF\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\CPE#Y4\TF\plot_graph.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="plot_graph_histogram" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TF" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -363,7 +419,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plot_graph_histogram.py" />
+      <option name="SCRIPT_NAME" value="E:\CPE#Y4\TF\plot_graph.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -394,28 +450,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="validate_sentences" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TF" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\WiNNER\Anaconda3\envs\TF\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/validate_sentences.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.addSynnonyms" />
       <item itemvalue="Python.create_DB_sqlite" />
@@ -423,15 +457,17 @@
       <item itemvalue="Python.test1" />
       <item itemvalue="Python.elastic_search_index" />
       <item itemvalue="Python.plot_graph_histogram" />
-      <item itemvalue="Python.validate_sentences" />
       <item itemvalue="Python.findSentence" />
+      <item itemvalue="Python.plot_graph" />
+      <item itemvalue="Python.plot_graph_histogram (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.plot_graph_histogram" />
+        <item itemvalue="Python.plot_graph" />
         <item itemvalue="Python.findSentence" />
+        <item itemvalue="Python.plot_graph_histogram (1)" />
+        <item itemvalue="Python.plot_graph_histogram" />
         <item itemvalue="Python.elastic_search_index" />
-        <item itemvalue="Python.validate_sentences" />
       </list>
     </recent_temporary>
   </component>
@@ -469,7 +505,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2400636" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -572,21 +607,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_umd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="196" selection-start-line="196" selection-end-line="196" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/word2vecTraining.py" />
-    <entry file="file://$USER_HOME$/Anaconda3/envs/TF/Lib/site-packages/sklearn/feature_extraction/text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="1595" column="8" selection-start-line="1595" selection-start-column="8" selection-end-line="1595" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/result/old_result/result_q_weight5_fill_c[0](BEST).txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -859,26 +879,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/plotW2V.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-612" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POStagTraining.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1326" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sentence_candidate/candidate_sen_each_doc_10rank.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/plot_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/findSentence.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="82" lean-forward="true" selection-start-line="80" selection-end-line="82" />
+        <state relative-caret-position="156">
+          <caret line="78" column="5" selection-start-line="78" selection-end-line="78" selection-end-column="5" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plot_graph_histogram.py">
+    <entry file="file://$PROJECT_DIR$/plot_graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="178" column="26" selection-start-line="178" selection-start-column="26" selection-end-line="178" selection-end-column="26" />
+        <state relative-caret-position="-1003">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <element signature="e#2203#2909#0" />
+            <element signature="e#4205#4951#0" />
           </folding>
         </state>
       </provider>

@@ -67,16 +67,15 @@ for i in range(candidate_doc.__len__()):
     for j in candidate_doc[i]:
         doc = query_doc_data(j)
         sentences = sentences_in_doc(doc)
-        scores = []
         for k in sentences:
-            scores.append(sentence_similar(k, q[i]))
-        index = scores.index(max(scores))
-        # print(i, j, max(scores), sentences[index])
-        sentence_rank.append([max(scores), validate_answer[i], sentences[index]])
+            scores = sentence_similar(k, q[i])
+            sentence_rank.append([scores, validate_answer[i], k])
+
     sentence_rank.sort(key=lambda s: s[0], reverse=True)
+    sentence_rank = sentence_rank[:100]
     sentence_candidate.append(sentence_rank)
     acc += sentence_acc()
 
 print(acc)
-# with open('sentence_candidate\\candidate_sen_each_doc_10rank.json', 'w', encoding="utf-8") as outfile:
-#     json.dump(sentence_candidate, outfile, ensure_ascii=False)
+with open('sentence_candidate\\candidate_sen_each_doc_100rank.json', 'w', encoding="utf-8") as outfile:
+    json.dump(sentence_candidate, outfile, ensure_ascii=False)

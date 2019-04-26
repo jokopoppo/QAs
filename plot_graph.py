@@ -107,12 +107,21 @@ def plot_histogram(file, n, color):
     plt.show()
 
 
-def plot_histogram_with_list(data, color, label):
+def modify_data_for_histogram(data):
+    for i in range(data.__len__()):
+        if data[i]>=10000:
+            data[i] = -5
+        else:
+            data[i] += 1
+    return data
+
+def plot_histogram_with_list(data, label):
     # This is  the colormap I'd like to use.
     cm = plt.cm.get_cmap('RdYlBu_r')
+    data = modify_data_for_histogram(data)
 
     # Plot histogram.
-    n, bins, patches = plt.hist(data, 50,color=color,alpha=0.5,label=label)
+    n, bins, patches = plt.hist(data, max(data),alpha=0.5,label=label)
     bin_centers = 0.5 * (bins[:-1] + bins[1:])
 
     # scale values to interval [0,1]
@@ -176,16 +185,12 @@ def sentence_acc(sentence_candidate, validate_sentences):
     for j in range(sentence_candidate.__len__()):
         for k in validate_sentences:
             if sentence_candidate[j][-1] == k:
-                return j+1
+                return j
     return 10000
 def accuracy_from_sen_candidate(sentence_candidate,validate_sentences):
     acc = []
     for i in range(validate_sentences.__len__()):
-        for j in range(sentence_candidate[i].__len__()):
-            print(sentence_candidate[i][j][-1])
-            for k in validate_sentences[i]:
-                if sentence_candidate[i][j][-1] == k:
-                    acc.append(sentence_acc(sentence_candidate[i], validate_sentences[i]))
+        acc.append(sentence_acc(sentence_candidate[i], validate_sentences[i]))
 
     return acc
 
@@ -203,8 +208,8 @@ def plot_sen_candidate():
     for f in file:
         sentence_candidate = json.load(open(path + f, 'r', encoding='utf-8'))
         acc = accuracy_from_sen_candidate(sentence_candidate, validate)
-        plotAccuracy_withList(acc, f.replace('.json', ''))
-        # plot_histogram_with_list(acc, 'blue', f.replace('.json', ''))
+        # plotAccuracy_withList(acc, f.replace('.json', ''))
+        plot_histogram_with_list(acc, f.replace('.json', ''))
     plt.show()
 
 # plot_doc_candidate()
