@@ -181,35 +181,43 @@ def plot_doc_candidate():
     plt.grid(axis='x')
     plt.show()
 
-def sentence_acc(sentence_candidate, validate_sentences):
+def sentence_acc(sentence_candidate, validate_sentences, q):
     for j in range(sentence_candidate.__len__()):
         for k in validate_sentences:
             if sentence_candidate[j][-1] == k:
+                # if j == 0:
+                    # print(q)
+                    # print('\t', validate_sentences)
                 return j
+    print(q)
+    print('\t')
+    for i in sentence_candidate[:10]:
+        print(i)
     return 10000
-def accuracy_from_sen_candidate(sentence_candidate,validate_sentences):
+def accuracy_from_sen_candidate(sentence_candidate,validate_sentences, q):
     acc = []
     for i in range(validate_sentences.__len__()):
-        acc.append(sentence_acc(sentence_candidate[i], validate_sentences[i]))
+        acc.append(sentence_acc(sentence_candidate[i], validate_sentences[i], q[i]))
 
     return acc
 
 def plot_sen_candidate():
     validate = json.load(open("test_set\\validate_sentences.json", mode='r', encoding="utf-8-sig"))
-
+    q = json.load(open('test_set\\no_space_questions_tokenize.json', mode='r', encoding="utf-8-sig"))
     color = []
     r = lambda: random.randint(0, 255)
     color.append('#%02X%02X%02X' % (r(), r(), r()))
 
-    path = 'sentence_candidate\\'
+    path = 'E:\CPE#Y4\databaseTF\sentence_candidate\\'
     file = os.listdir(path)
     print(file)
 
     for f in file:
         sentence_candidate = json.load(open(path + f, 'r', encoding='utf-8'))
-        acc = accuracy_from_sen_candidate(sentence_candidate, validate)
+        acc = accuracy_from_sen_candidate(sentence_candidate, validate, q)
         # plotAccuracy_withList(acc, f.replace('.json', ''))
         plot_histogram_with_list(acc, f.replace('.json', ''))
+        exit()
     plt.show()
 
 # plot_doc_candidate()
