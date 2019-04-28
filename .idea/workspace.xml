@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1435f1f5-46db-4b0a-9944-9c0267199b80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plot_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/new_answer_position.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_set/validate_sentences.json" beforeDir="false" afterPath="$PROJECT_DIR$/test_set/validate_sentences.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validate_sentences.py" beforeDir="false" afterPath="$PROJECT_DIR$/validate_sentences.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/findSentence.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="81" lean-forward="true" selection-start-line="79" selection-end-line="81" />
+            <state relative-caret-position="1360">
+              <caret line="81" selection-start-line="79" selection-end-line="81" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -37,34 +38,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test.py">
+        <entry file="file://$PROJECT_DIR$/validate_sentences.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+            <state relative-caret-position="-102">
+              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plot_graph.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="193" column="16" lean-forward="true" selection-start-line="193" selection-start-column="16" selection-end-line="193" selection-end-column="16" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/preprocess/new_preprocess.py">
+        <entry file="file://$PROJECT_DIR$/test_set/new_answer_positions.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="10" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_set/new_sample_questions.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret column="389" lean-forward="true" selection-start-column="383" selection-end-column="389" />
+            <state>
+              <caret column="9" selection-start-column="8" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -80,9 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ปีพ.ศ.2518เบนจี้ในภาพยนตร์เบนจี้ในภาพยนตร์พ.ศ.2517ภาพยนตร์พ.ศ.2520ภาพยนตร์พ.ศ.2521ภาพยนตร์โทรทัศน์</find>
-      <find>&quot;doc_rank&quot;:</find>
-      <find>&quot;doc_rank&quot;: 9</find>
       <find>&quot;doc_rank&quot;: 0</find>
       <find>for j</find>
       <find>doc_rank</find>
@@ -110,6 +105,9 @@
       <find>x</find>
       <find>พาราโบลา x</find>
       <find>พาราโบลา</find>
+      <find>เมชตา</find>
+      <find>เรื่อง คู่กรรม</find>
+      <find>ฮิกกิ้นส์</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -163,12 +161,12 @@
         <option value="$PROJECT_DIR$/preprocess/addTfIdf.py" />
         <option value="$PROJECT_DIR$/qa_model2.py" />
         <option value="$PROJECT_DIR$/find_Sentences.py" />
-        <option value="$PROJECT_DIR$/validate_sentences.py" />
         <option value="$PROJECT_DIR$/elastic_search_index.py" />
         <option value="$PROJECT_DIR$/plot_graph_histogram.py" />
         <option value="$PROJECT_DIR$/findSentence.py" />
         <option value="$PROJECT_DIR$/plot_graph.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/validate_sentences.py" />
       </list>
     </option>
   </component>
@@ -185,6 +183,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,7 +200,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -249,7 +247,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.validate_sentences">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="TF" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -404,28 +402,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="plot_graph_histogram" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TF" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\WiNNER\Anaconda3\envs\TF\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:\CPE#Y4\TF\plot_graph.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TF" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -439,7 +415,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="E:\CPE#Y4\TF\new_answer_position.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -470,24 +446,46 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="validate_sentences" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TF" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\WiNNER\Anaconda3\envs\TF\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/validate_sentences.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.addSynnonyms" />
       <item itemvalue="Python.create_DB_sqlite" />
       <item itemvalue="Python.findDocuments" />
       <item itemvalue="Python.test1" />
-      <item itemvalue="Python.plot_graph_histogram" />
       <item itemvalue="Python.findSentence" />
       <item itemvalue="Python.plot_graph" />
       <item itemvalue="Python.plot_graph_histogram (1)" />
       <item itemvalue="Python.test" />
+      <item itemvalue="Python.validate_sentences" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.validate_sentences" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.plot_graph" />
         <item itemvalue="Python.findSentence" />
         <item itemvalue="Python.plot_graph_histogram (1)" />
-        <item itemvalue="Python.plot_graph_histogram" />
       </list>
     </recent_temporary>
   </component>
@@ -527,12 +525,12 @@
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2400636" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2400636" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49473685" visible="true" weight="0.3216783" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49473685" visible="true" weight="0.3216783" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49920508" weight="0.3986014" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -635,9 +633,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/result/old_result/result_q_weight5_fill_cant_find.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/preprocess/indexing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -850,20 +845,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/validate_sentences.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_set/validate_sentences.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21896">
-          <caret column="1288187" selection-start-column="1288187" selection-end-column="1288187" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/elastic_search_index.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -894,6 +875,58 @@
     <entry file="file://$PROJECT_DIR$/test_set/new_sample_questions_tokenize.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$USER_HOME$/Downloads/main.py" />
+    <entry file="file://$PROJECT_DIR$/findSentence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="81" selection-start-line="79" selection-end-line="81" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess/new_preprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="5" selection-start-line="5" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_set/new_sample_questions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="389" selection-start-column="383" selection-end-column="389" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new_answer_position.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_set/validate_sentences.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret column="1220381" selection-start-column="1220381" selection-end-column="1220381" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_set/new_answer_positions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/plot_graph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -904,41 +937,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/main.py" />
-    <entry file="file://$PROJECT_DIR$/preprocess/new_preprocess.py">
+    <entry file="file://$PROJECT_DIR$/validate_sentences.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_set/new_sample_questions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret column="389" lean-forward="true" selection-start-column="383" selection-end-column="389" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/findSentence.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="81" lean-forward="true" selection-start-line="79" selection-end-line="81" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-102">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
         </state>
       </provider>
     </entry>
