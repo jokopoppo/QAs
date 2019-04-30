@@ -31,38 +31,48 @@ def find_question_word(question, question_words):
                         if question[idx].endswith(c[0]):
                             tmp = question[idx].split(c[0])
                             question[idx] = tmp[0]
-                            question.insert(idx+1, c[0])
+                            question.insert(idx + 1, c[0])
                             return [idx, c[0]], question
 
             else:
                 return [question.index(c[1]), c[1]], question
 
 
-def find_rrscore(l):
+def index_outlier(question):
+    for j in range(question.__len__()):
+        if question[j].startswith('กี่'):
+            tmp = question[j].split('กี่')
+            question[j] = 'กี่'
+            question.insert(j + 1, tmp[1])
+            print(question)
+            return 1, question, [j, 'กี่']
+    question.append('อะไร')
+    return 2, question, [question.__len__() - 1, 'อะไร']
+
+
+def find_rrscore(question, sentence_candidate, l, word_class, question_type, thai_number_text):
     rr_score = []
     word_candidate = []
     word_candidate_idx = []
     if l == 5:
-        question[i].append(' ')
-        question_word_index = [question[i].__len__() - 1 , '']
-        l = 4
+        l, question, question_word_index = index_outlier(question)
     else:
-        question_word_index, question[i] = find_question_word(question[i], question_type[l])
+        question_word_index, question = find_question_word(question, question_type[l])
 
-    for j in sentence_candidate[i]:
+    for j in sentence_candidate:
         if l > 1:
-            word_candidate, word_candidate_idx = find_candidate(j, l)
+            word_candidate, word_candidate_idx = find_candidate(j, l, word_class)
         elif l <= 1:
-            word_candidate, word_candidate_idx = find_date_candidate(j)
+            word_candidate, word_candidate_idx = find_date_candidate(j, thai_number_text)
 
-        rr_score.append(find_answer_word(question[i], j, word_candidate_idx, question_word_index))
+        rr_score.append(find_answer_word(question, j, word_candidate_idx, question_word_index))
         # print(rr_score[-1])
 
     rr_score.sort(key=lambda s: s[0], reverse=True)
     return rr_score
 
 
-def find_date_candidate(sentence):
+def find_date_candidate(sentence, thai_number_text):
     word_candidate_idx = []
     word_candidate = []
     for i in range(sentence[2].__len__()):
@@ -79,7 +89,7 @@ def find_date_candidate(sentence):
     return word_candidate, word_candidate_idx
 
 
-def find_candidate(sentence, l):
+def find_candidate(sentence, l, word_class):
     word_candidate = []
     word_candidate_idx = []
     for i in range(sentence[2].__len__()):
@@ -129,49 +139,52 @@ def relevance_score(question, sentence, word_candidate_index, question_word_inde
     return score
 
 
-thai_number_text = [u'หนึ่ง', u'สอง', u'สาม', u'สี่', u'ห้า', u'หก', u'เจ็ด', u'แปด', u'เก้า', u'สิบ', u'สิบเอ็ด']
-question_type = [
-    ['กี่', 'ปี ใด', 'ปี อะไร', 'พ.ศ.  อะไร', 'ค.ศ.  อะไร', 'พ.ศ. อะไร', 'ค.ศ. อะไร', 'พ.ศ. ใด', 'พ.ศ.  ใด',
-     'ค.ศ. ใด',
-     'ค.ศ.  ใด', 'เท่า ไร', 'เท่า ไหร่', 'เท่า ใด', 'คริสต์ศักราช ใด', 'จำนวน ใด']
-    , ['เมื่อ ไร', 'เวลา ใด', 'วัน ใด', 'เมื่อ ใด', 'วัน ที่']  # date format
-    , ['ใคร', 'ว่า อะไร', 'ชื่อ อะไร', 'คน ใด', 'คน ไหน', 'คือใคร', 'ผู้ ใด']  # human name
-    , ['ประเทศ ใด', 'ประเทศ อะไร'
-        , 'จังหวัดใด', 'จังหวัด ใด', 'จังหวัด อะไร'
-        , 'เมืองใด', 'เมือง ใด', 'เมือง อะไร'
-        , 'ภาค ใด'
-        , 'แคว้น ใด'
-        , 'ทวีปใด', 'ทวีป อะไร', 'ทวีป ใด', 'ภูมิภาค ไหน'
-        , 'ที่ ไหน', 'ที่ ใด', 'ใด', 'ไหน']  # where
-    , ['อะไร', 'อย่าง ไร']  # other what, other dai, other nhai
-]
+def findAnswer():
+    thai_number_text = [u'หนึ่ง', u'สอง', u'สาม', u'สี่', u'ห้า', u'หก', u'เจ็ด', u'แปด', u'เก้า', u'สิบ', u'สิบเอ็ด']
+    question_type = [
+        ['กี่', 'ปี ใด', 'ปี อะไร', 'พ.ศ.  อะไร', 'ค.ศ.  อะไร', 'พ.ศ. อะไร', 'ค.ศ. อะไร', 'พ.ศ. ใด', 'พ.ศ.  ใด',
+         'ค.ศ. ใด',
+         'ค.ศ.  ใด', 'เท่า ไร', 'เท่า ไหร่', 'เท่า ใด', 'คริสต์ศักราช ใด', 'จำนวน ใด']
+        , ['เมื่อ ไร', 'เวลา ใด', 'วัน ใด', 'เมื่อ ใด', 'วัน ที่']  # date format
+        , ['ใคร', 'ว่า อะไร', 'ชื่อ อะไร', 'คน ใด', 'คน ไหน', 'คือใคร', 'ผู้ ใด']  # human name
+        , ['ประเทศ ใด', 'ประเทศ อะไร'
+            , 'จังหวัดใด', 'จังหวัด ใด', 'จังหวัด อะไร'
+            , 'เมืองใด', 'เมือง ใด', 'เมือง อะไร'
+            , 'ภาค ใด'
+            , 'แคว้น ใด'
+            , 'ทวีปใด', 'ทวีป อะไร', 'ทวีป ใด', 'ภูมิภาค ไหน'
+            , 'ที่ ไหน', 'ที่ ใด', 'ใด', 'ไหน']  # where
+        , ['อะไร', 'อย่าง ไร']  # other what, other dai, other nhai
+    ]
 
-question = json.load(open('test_set\\no_space_questions_tokenize.json', mode='r', encoding="utf-8-sig"))
-validate_answer = json.load(open('test_set/validate_answer_word.json', mode='r', encoding="utf-8-sig"))
-sentence_candidate = json.load(
-    open('E:\CPE#Y4\databaseTF\sentence_candidate\\candidate_sen_2_doc_100rank_40len.json', mode='r',
-         encoding="utf-8-sig"))
+    question = json.load(open('test_set\\no_space_questions_tokenize.json', mode='r', encoding="utf-8-sig"))
+    validate_answer = json.load(open('test_set/validate_answer_word.json', mode='r', encoding="utf-8-sig"))
+    sentence_candidate = json.load(
+        open('E:\CPE#Y4\databaseTF\sentence_candidate\\candidate_sen_2_doc_100rank_40len.json', mode='r',
+             encoding="utf-8-sig"))
 
-word_class = [[], [], [], [], []]
-for i in range(2, word_class.__len__()):
-    word_class[i] = set(json.load(open('word_class/' + str(i) + '.json', mode='r', encoding="utf-8-sig")))
+    word_class = [[], [], [], [], []]
+    for i in range(2, word_class.__len__()):
+        word_class[i] = set(json.load(open('word_class/' + str(i) + '.json', mode='r', encoding="utf-8-sig")))
 
-answer = []
-bug = 0
-for i in range(bug, question.__len__()):
-    for l in range(question_type.__len__()):
-        if any(check_question_type(k, question[i]) for k in question_type[l]):
-            rr_score = find_rrscore(l)
+    answer = []
+    bug = 0
+    for i in range(bug, question.__len__()):
+        for l in range(question_type.__len__()):
+            if any(check_question_type(k, question[i]) for k in question_type[l]):
+                rr_score = find_rrscore(question[i], sentence_candidate[i], l, word_class, question_type,
+                                        thai_number_text)
+                answer.append(rr_score[:10])
+                print(i + 1, answer.__len__())
+                break
+
+        if i + 1 != answer.__len__():
+            print("Outlier", i, question[i])
+            rr_score = find_rrscore(question[i], sentence_candidate[i], 5, word_class, question_type, thai_number_text)
             answer.append(rr_score[:10])
             print(i + 1, answer.__len__())
-            break
+    return answer
 
-    if i + 1 != answer.__len__():
-        print("Outlier",i,question[i])
-        rr_score = find_rrscore(5)
-        answer.append(rr_score[:10])
-        print(i + 1, answer.__len__())
-
-
+answer = findAnswer()
 with open('./output/TEST_output.json', 'w', encoding="utf-8") as outfile:
     json.dump(answer, outfile, ensure_ascii=False)

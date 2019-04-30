@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1435f1f5-46db-4b0a-9944-9c0267199b80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elastic_search_index.py" beforeDir="false" afterPath="$PROJECT_DIR$/findDocuments_improve.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findAnswer_improve.py" beforeDir="false" afterPath="$PROJECT_DIR$/findAnswer_improve.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/TEST_output.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/TEST_output.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plot_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_graph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_set/new_sample_questions.json" beforeDir="false" afterPath="$PROJECT_DIR$/test_set/new_sample_questions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_set/no_space_questions_tokenize.json" beforeDir="false" afterPath="$PROJECT_DIR$/test_set/no_space_questions_tokenize.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/findAnswer_improve.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="169" column="22" selection-start-line="169" selection-start-column="22" selection-end-line="169" selection-end-column="22" />
+            <state relative-caret-position="411">
+              <caret line="170" column="34" lean-forward="true" selection-start-line="170" selection-start-column="34" selection-end-line="170" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -50,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plot_graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="207" selection-start-line="207" selection-end-line="207" />
+            <state relative-caret-position="204">
+              <caret line="212" column="36" selection-start-line="212" selection-start-column="36" selection-end-line="212" selection-end-column="36" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -73,7 +67,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ฮิ</find>
       <find>ฮิกกินส์</find>
       <find>ฮิกกิ้นส์</find>
       <find>4</find>
@@ -93,7 +86,6 @@
       <find>check</find>
       <find>find_question_word</find>
       <find>&quot;question_id&quot;:647</find>
-      <find>similar</find>
       <find>exit</find>
       <find>646</find>
       <find>&quot;question_id&quot;:646</find>
@@ -101,8 +93,10 @@
       <find>839</find>
       <find>find_date_candidate</find>
       <find>&quot;ศุภชัย&quot;</find>
-      <find>find_rr</find>
       <find>&quot;เอ ศุภชัย</find>
+      <find>Outl</find>
+      <find>similar</find>
+      <find>find_rr</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,11 +151,11 @@
         <option value="$PROJECT_DIR$/findSentence.py" />
         <option value="$PROJECT_DIR$/word_class/word_10class/3.json" />
         <option value="$PROJECT_DIR$/findAnswer.py" />
-        <option value="$PROJECT_DIR$/plot_graph.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/test_set/no_space_questions_tokenize.json" />
         <option value="$PROJECT_DIR$/test_set/new_sample_questions.json" />
         <option value="$PROJECT_DIR$/findAnswer_improve.py" />
+        <option value="$PROJECT_DIR$/plot_graph.py" />
       </list>
     </option>
   </component>
@@ -189,6 +183,12 @@
               <item name="TF" type="b2602c69:ProjectViewProjectNode" />
               <item name="TF" type="462c0819:PsiDirectoryNode" />
               <item name="output" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TF" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TF" type="b2602c69:ProjectViewProjectNode" />
@@ -760,13 +760,6 @@
     <entry file="file://$PROJECT_DIR$/output/test/output_answerNSC.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/output/test/output_answer_from_ideal_sentence.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/word_class/word_5class/2.json">
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state relative-caret-position="111">
@@ -909,28 +902,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plot_graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="207" selection-start-line="207" selection-end-line="207" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_set/new_sample_questions_answer.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_set/no_space_questions_tokenize.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -948,8 +921,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/findAnswer_improve.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="169" column="22" selection-start-line="169" selection-start-column="22" selection-end-line="169" selection-end-column="22" />
+        <state relative-caret-position="411">
+          <caret line="170" column="34" lean-forward="true" selection-start-line="170" selection-start-column="34" selection-end-line="170" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/test/output_answer_from_ideal_sentence.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="212" column="36" selection-start-line="212" selection-start-column="36" selection-end-line="212" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
