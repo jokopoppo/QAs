@@ -13,7 +13,7 @@ def sentence_similar(a, b):
     return a.intersection(b).__len__() / a.union(b).__len__()
 
 
-def make_validate_sentences(validate_doc, validate_answer, answer_postition):
+def make_validate_sentences(validate_doc, validate_answer, answer_postition, overlap, sen_len):
     path = 'E:\\CPE#Y4\\databaseTF\\new-documents-tokenize\\'
     validate_sentences = []
     for i in range(validate_doc.__len__()):
@@ -28,24 +28,23 @@ def make_validate_sentences(validate_doc, validate_answer, answer_postition):
             if pos > answer_postition[i][0]:
                 answer_idx = j
                 break
-        for j in range(0, doc.__len__(), 10):
-            if j + 20 <= doc.__len__():
-                tmp = doc[j:j + 20]
+        for j in range(0, doc.__len__(), overlap):
+            if j + sen_len <= doc.__len__():
+                tmp = doc[j:j + sen_len]
             else:
-                tmp = doc[doc.__len__() - 20:]
+                tmp = doc[doc.__len__() - sen_len:]
 
-            if j <= answer_idx < j + 20:
+            if j <= answer_idx < j + sen_len:
                 validate_sentences[-1].append(tmp)
             if validate_sentences[-1].__len__() > 2:
                 print(validate_sentences[-1])
                 break
-        # print(validate_sentences[-1])
-        # print(validate_sentences[-1])
+
         if validate_sentences[-1].__len__() < 1:
             print("ERROR no validate sentence")
             print(doc)
             break
-    with open('test_set\\validate_sentences.json', 'w', encoding="utf-8") as outfile:
+    with open('test_set\\validate_sentences_40.json', 'w', encoding="utf-8") as outfile:
         json.dump(validate_sentences, outfile, ensure_ascii=False)
 
 
@@ -60,4 +59,4 @@ for i in data['data']:
     validate_answer.append(i['answer'])
 # print(validate_answer)
 
-make_validate_sentences(validate_doc, validate_answer, answer_postition)
+make_validate_sentences(validate_doc, validate_answer, answer_postition, 20, 40)

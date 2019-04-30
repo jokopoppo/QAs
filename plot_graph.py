@@ -5,57 +5,28 @@ import json
 import random
 import numpy as np
 
+def sentence_similar(a, b):
+    a = set(a)
+    b = set(b)
+
+    return a.intersection(b).__len__() / a.union(b).__len__()
+
+def questions_and_validate_similar_score():
+    validate = json.load(open("test_set\\validate_sentences_40.json", mode='r', encoding="utf-8-sig"))
+    q = json.load(open('test_set\\no_space_questions_tokenize.json', mode='r', encoding="utf-8-sig"))
+
+    similar = []
+    for i in range(q.__len__()):
+        pool = []
+        for j in validate[i]:
+            pool.append(sentence_similar(q[i], j))
+        similar.append(max(pool))
+
+    return similar
+
 def similar(a, b):
     from difflib import SequenceMatcher
     return SequenceMatcher(None, a, b).ratio()
-
-
-def plotAccuracy(file, label):
-    for f in file:
-
-        data = open('result\\old_result\\' + f, 'r', encoding='utf-8-sig')
-
-        a = []
-        topN = []
-        for i in data:
-            i = i.replace('cant find in best tf-idf', 'ct')
-            i = i.replace('cant find in shortest', 'cs')
-            i = i.replace('Cant find doc', 'cd')
-            a.append(i.split())
-
-            try:
-                topN.append(a[-1][3])
-            except IndexError:
-                print(a[-1])
-                exit(0)
-        if (topN.__len__() < 4000):
-            continue
-        for i in range(a.__len__()):
-            try:
-                topN[i] = int(topN[i].split('rank')[1])
-            except IndexError:
-                topN[i] = 1000000
-
-        rank = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 50]
-        acc = []
-        for n in rank:
-            acc.append(0)
-            for i in topN:
-                if i < n:
-                    acc[-1] += 1
-            acc[-1] = acc[-1] / topN.__len__()
-            # print(n, acc[-1])
-
-        plt.xlabel('Rank N', size=25)
-        plt.ylabel('Accuracy', size=25)
-        plt.title('Accuracy in N rank', size=25)
-
-        plt.plot(rank, acc, marker='o', label=label)
-        plt.legend(loc='upper right')
-
-    plt.tick_params(axis='x', labelsize=20)
-    plt.tick_params(axis='y', labelsize=20)
-    plt.grid(axis='y', )
 
 
 def plotAccuracy_withList(topN, label):
@@ -80,6 +51,7 @@ def plotAccuracy_withList(topN, label):
     plt.tick_params(axis='y', labelsize=20)
     plt.grid(axis='y')
     plt.grid(axis='x')
+
 
 def plot_histogram(file, n, color):
     data = open('result\\' + file, 'r', encoding='utf-8-sig')
@@ -109,11 +81,12 @@ def plot_histogram(file, n, color):
 
 def modify_data_for_histogram(data):
     for i in range(data.__len__()):
-        if data[i]>=10000:
+        if data[i] >= 10000:
             data[i] = -5
         else:
             data[i] += 1
     return data
+
 
 def plot_histogram_with_list(data, label):
     # This is  the colormap I'd like to use.
@@ -121,7 +94,7 @@ def plot_histogram_with_list(data, label):
     data = modify_data_for_histogram(data)
 
     # Plot histogram.
-    n, bins, patches = plt.hist(data, max(data),alpha=0.5,label=label)
+    n, bins, patches = plt.hist(data, alpha=0.5, label=label)
     bin_centers = 0.5 * (bins[:-1] + bins[1:])
 
     # scale values to interval [0,1]
@@ -158,6 +131,7 @@ def accuracy_from_doc_candidate(doc, validate):
     print("OUT:", out_of_range)
     return acc
 
+
 def plot_doc_candidate():
     color = []
     r = lambda: random.randint(0, 255)
@@ -165,8 +139,6 @@ def plot_doc_candidate():
 
     validate = json.load(open("test_set\\new_sample_questions_answer.json", mode='r', encoding="utf-8-sig"))
     q = json.load(open('test_set\\new_sample_questions_tokenize.json', mode='r', encoding="utf-8-sig"))
-
-    plotAccuracy(['result_q_weight5_fill_c[0](BEST).txt'], "old-db")  ###
 
     path = 'document_candidate\\'
     file = os.listdir(path)
@@ -181,28 +153,33 @@ def plot_doc_candidate():
     plt.grid(axis='x')
     plt.show()
 
+
 def sentence_acc(sentence_candidate, validate_sentences, q):
     for j in range(sentence_candidate.__len__()):
         for k in validate_sentences:
             if sentence_candidate[j][-1] == k:
                 # if j == 0:
-                    # print(q)
-                    # print('\t', validate_sentences)
+                #     print(q)
+                #     print('\t', validate_sentences)
                 return j
-    print(q)
-    print('\t')
-    for i in sentence_candidate[:10]:
-        print(i)
+    # print(''.join(q))
+    # print(validate_sentences)
+    # print('\t',sentence_candidate[0])
+    # print('\t',sentence_candidate[-1])
     return 10000
-def accuracy_from_sen_candidate(sentence_candidate,validate_sentences, q):
+
+
+def accuracy_from_sen_candidate(sentence_candidate, validate_sentences, q):
     acc = []
     for i in range(validate_sentences.__len__()):
         acc.append(sentence_acc(sentence_candidate[i], validate_sentences[i], q[i]))
 
     return acc
 
+
 def plot_sen_candidate():
     validate = json.load(open("test_set\\validate_sentences.json", mode='r', encoding="utf-8-sig"))
+    validate_40 = json.load(open("test_set\\validate_sentences_40.json", mode='r', encoding="utf-8-sig"))
     q = json.load(open('test_set\\no_space_questions_tokenize.json', mode='r', encoding="utf-8-sig"))
     color = []
     r = lambda: random.randint(0, 255)
@@ -214,11 +191,19 @@ def plot_sen_candidate():
 
     for f in file:
         sentence_candidate = json.load(open(path + f, 'r', encoding='utf-8'))
-        acc = accuracy_from_sen_candidate(sentence_candidate, validate, q)
-        # plotAccuracy_withList(acc, f.replace('.json', ''))
-        plot_histogram_with_list(acc, f.replace('.json', ''))
-        exit()
+        if f == 'candidate_sen_2_doc_100rank_40len.json':
+            acc = accuracy_from_sen_candidate(sentence_candidate, validate_40, q)
+        else:
+            acc = accuracy_from_sen_candidate(sentence_candidate, validate, q)
+        plotAccuracy_withList(acc, f.replace('.json', ''))
+        # plot_histogram_with_list(acc, f.replace('.json', ''))
+        # exit()
+    plt.grid(axis='y')
+    plt.grid(axis='x')
     plt.show()
+
 
 # plot_doc_candidate()
 plot_sen_candidate()
+# q_v_similar = np.array(questions_and_validate_similar_score()).astype('float') - 1
+# plot_histogram_with_list(q_v_similar, 'q and v similar score')
