@@ -202,8 +202,23 @@ def plot_sen_candidate():
     plt.grid(axis='x')
     plt.show()
 
+def plot_output():
+    answer = json.load(open('test_set/validate_answer_word.json','r',encoding='utf-8-sig'))
+    output = json.load(open('output/TEST_output.json', 'r',encoding='utf-8-sig'))
+
+    s = []
+    for i in range(answer.__len__()):
+        pool = []
+        for j in output[i]:
+            pool.append(similar(j[3], answer[i]))
+        # print(answer[i],output[i])
+        print(i,pool)
+        s.append(max(pool))
+
+    return np.asarray(s) - 1
 
 # plot_doc_candidate()
-plot_sen_candidate()
-# q_v_similar = np.array(questions_and_validate_similar_score()).astype('float') - 1
-# plot_histogram_with_list(q_v_similar, 'q and v similar score')
+# plot_sen_candidate()
+# similar = np.array(questions_and_validate_similar_score()).astype('float') - 1
+similar = plot_output()
+plot_histogram_with_list(similar, 'answer and output similar score')

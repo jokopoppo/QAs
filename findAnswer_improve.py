@@ -13,7 +13,7 @@ def check_question_type(a, question):
     n = a.count(' ')
 
     if n == 0:
-        return c[0] in question
+        return c[0] in question or any(word.endswith(c[0]) for word in question)
     else:
         return c[1] in question and question[question.index(c[1]) - n] == c[0]
 
@@ -24,9 +24,42 @@ def find_question_word(question, question_words):
         n = w.count(' ')
         if check_question_type(w, question):
             if n == 0:
-                return [question.index(c[0]), c[0]]
+                try:
+                    return [question.index(c[0]), c[0]], question
+                except:
+                    for idx in range(question.__len__()):
+                        if question[idx].endswith(c[0]):
+                            tmp = question[idx].split(c[0])
+                            question[idx] = tmp[0]
+                            question.insert(idx+1, c[0])
+                            return [idx, c[0]], question
+
             else:
-                return [question.index(c[1]), c[1]]
+                return [question.index(c[1]), c[1]], question
+
+
+def find_rrscore(l):
+    rr_score = []
+    word_candidate = []
+    word_candidate_idx = []
+    if l == 5:
+        question[i].append(' ')
+        question_word_index = [question[i].__len__() - 1 , '']
+        l = 4
+    else:
+        question_word_index, question[i] = find_question_word(question[i], question_type[l])
+
+    for j in sentence_candidate[i]:
+        if l > 1:
+            word_candidate, word_candidate_idx = find_candidate(j, l)
+        elif l <= 1:
+            word_candidate, word_candidate_idx = find_date_candidate(j)
+
+        rr_score.append(find_answer_word(question[i], j, word_candidate_idx, question_word_index))
+        # print(rr_score[-1])
+
+    rr_score.sort(key=lambda s: s[0], reverse=True)
+    return rr_score
 
 
 def find_date_candidate(sentence):
@@ -37,9 +70,10 @@ def find_date_candidate(sentence):
             word_candidate_idx.append(i)
             word_candidate.append(sentence[2][i])
     if word_candidate.__len__() < 1:
-        for k in range(sentence[2].__len__()):
-            word_candidate_idx.append(i)
-            word_candidate.append(sentence[2][i])
+        for i in range(sentence[2].__len__()):
+            if sentence[2][i] != ' ':
+                word_candidate_idx.append(i)
+                word_candidate.append(sentence[2][i])
 
     word_candidate.insert(0, sentence[1])
     return word_candidate, word_candidate_idx
@@ -54,6 +88,11 @@ def find_candidate(sentence, l):
             word_candidate_idx.append(i)
     word_candidate.insert(0, sentence[1])
 
+    if not word_candidate_idx:
+        for i in range(sentence[2].__len__()):
+            if sentence[2][i] != ' ':
+                word_candidate.append(sentence[2][i])
+                word_candidate_idx.append(i)
     return word_candidate, word_candidate_idx
 
 
@@ -118,30 +157,21 @@ for i in range(2, word_class.__len__()):
     word_class[i] = set(json.load(open('word_class/' + str(i) + '.json', mode='r', encoding="utf-8-sig")))
 
 answer = []
-for i in range(question.__len__()):
+bug = 0
+for i in range(bug, question.__len__()):
     for l in range(question_type.__len__()):
         if any(check_question_type(k, question[i]) for k in question_type[l]):
-
-            question_word_index = find_question_word(question[i], question_type[l])
-            rr_score = []
-            word_candidate = []
-            word_candidate_idx = []
-            for j in sentence_candidate[i]:
-                if l > 1:
-                    word_candidate, word_candidate_idx = find_candidate(j, l)
-                elif l == 0:
-                    word_candidate, word_candidate_idx = find_date_candidate(j)
-
-                if not word_candidate_idx:
-                    continue
-                rr_score.append(find_answer_word(question[i], j, word_candidate_idx, question_word_index))
-                # print(rr_score[-1])
-
-            rr_score.sort(key=lambda s: s[0], reverse=True)
+            rr_score = find_rrscore(l)
             answer.append(rr_score[:10])
-            print(i,rr_score[:2])
-            # print("DONE")
+            print(i + 1, answer.__len__())
             break
 
+    if i + 1 != answer.__len__():
+        print("Outlier",i,question[i])
+        rr_score = find_rrscore(5)
+        answer.append(rr_score[:10])
+        print(i + 1, answer.__len__())
+
+
 with open('./output/TEST_output.json', 'w', encoding="utf-8") as outfile:
-    json.dump(answer, outfile, ensure_ascii=False, indent=4)
+    json.dump(answer, outfile, ensure_ascii=False)
