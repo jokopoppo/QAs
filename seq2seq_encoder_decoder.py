@@ -57,3 +57,4 @@ print(y_pred[0])
 # cm = confusion_matrix(y_train[length:, :, :], y_pred.argmax(axis=1))
 # print('Confusion Matrix')
 # print(cm)
+## TODO train this shit
