@@ -49,8 +49,7 @@ def plotAccuracy_withList(topN, label):
 
     plt.tick_params(axis='x', labelsize=20)
     plt.tick_params(axis='y', labelsize=20)
-    plt.grid(axis='y')
-    plt.grid(axis='x')
+
 
 
 def plot_histogram(file, n, color):
@@ -88,13 +87,14 @@ def modify_data_for_histogram(data):
     return data
 
 
-def plot_histogram_with_list(data, label):
+def plot_histogram_with_list(data, label=None, modify=True,bin=None):
     # This is  the colormap I'd like to use.
     cm = plt.cm.get_cmap('RdYlBu_r')
-    data = modify_data_for_histogram(data)
+    if modify:
+        data = modify_data_for_histogram(data)
 
     # Plot histogram.
-    n, bins, patches = plt.hist(data, alpha=0.5, label=label)
+    n, bins, patches = plt.hist(data,bin, alpha=0.5, label=label)
     bin_centers = 0.5 * (bins[:-1] + bins[1:])
 
     # scale values to interval [0,1]
@@ -117,15 +117,14 @@ def plot_histogram_with_list(data, label):
     plt.show()
 
 
-def accuracy_from_doc_candidate(doc, validate):
+def accuracy_from_doc_candidate(doc, validate, q):
     acc = []
     out_of_range = 0
     for i in range(doc.__len__()):
         try:
-            # print(i,test_output[i].index(str(validate[i])))
             acc.append(doc[i].index(str(validate[i])))
         except ValueError:
-            # print(i,''.join(q[i]))
+            acc.append(-1)
             out_of_range += 1
             # print(q[i])
     print("OUT:", out_of_range)
@@ -138,17 +137,25 @@ def plot_doc_candidate():
     color.append('#%02X%02X%02X' % (r(), r(), r()))
 
     validate = json.load(open("test_set\\new_sample_questions_answer.json", mode='r', encoding="utf-8-sig"))
-    q = json.load(open('test_set\\new_sample_questions_tokenize.json', mode='r', encoding="utf-8-sig"))
+    q = json.load(open('test_set/no_space_questions_tokenize.json', mode='r', encoding="utf-8-sig"))
 
     path = 'document_candidate\\'
     file = os.listdir(path)
     print(file)
 
-    for f in file:
+    check = []
+    for f in [file[2],file[-1]]:
         test_output = json.load(open(path + f, 'r', encoding='utf-8'))
-        acc = accuracy_from_doc_candidate(test_output, validate)
+        acc = accuracy_from_doc_candidate(test_output, validate, q)
+        check.append(acc)
         plotAccuracy_withList(acc, f.replace('.json', ''))
-
+    n=0
+    for i in range(4000):
+        if check[0][i] > check[1][i]:
+            n+=1
+            print(i,''.join(q[i]),check[0][i]+1,check[1][i]+1)
+    print(n)
+    exit()
     plt.grid(axis='y')
     plt.grid(axis='x')
     plt.show()
@@ -189,36 +196,78 @@ def plot_sen_candidate():
     file = os.listdir(path)
     print(file)
 
-    for f in file:
+    for f in file[1:3]:
         sentence_candidate = json.load(open(path + f, 'r', encoding='utf-8'))
         if f == 'candidate_sen_2_doc_100rank_40len.json':
             acc = accuracy_from_sen_candidate(sentence_candidate, validate_40, q)
         else:
             acc = accuracy_from_sen_candidate(sentence_candidate, validate, q)
-        plotAccuracy_withList(acc, f.replace('.json', ''))
-        # plot_histogram_with_list(acc, f.replace('.json', ''))
+        # plotAccuracy_withList(acc, f.replace('.json', ''))
+        plot_histogram_with_list(acc, f.replace('.json', ''),bin=50)
         # exit()
     plt.grid(axis='y')
     plt.grid(axis='x')
     plt.show()
 
-def plot_output():
-    answer = json.load(open('test_set/validate_answer_word.json','r',encoding='utf-8-sig'))
-    output = json.load(open('output/TEST_output.json', 'r',encoding='utf-8-sig'))
+def plot_output(rank):
+    answer = json.load(open('test_set/validate_answer_word.json', 'r', encoding='utf-8-sig'))
+    output = json.load(open('output/output_answer_4000_2doc_10rank.json', 'r', encoding='utf-8-sig'))
 
+    all_q_type = []
+    exact_match = []
+    no_match = []
     s = []
+
     for i in range(answer.__len__()):
         pool = []
-        for j in output[i]:
+        for j in output[i][0][:rank]:
             pool.append(similar(j[3], answer[i]))
-        # print(answer[i],output[i])
-        print(i,pool)
+
+        all_q_type.append(output[i][1])
+        if 1 in pool:
+            exact_match.append(output[i][1])
+        elif all(element == 0 for element in pool):
+            no_match.append(output[i][1])
         s.append(max(pool))
 
-    return np.asarray(s) - 1
+    return np.asarray(s) - 1, [np.asarray(exact_match), np.asarray(no_match), np.asarray(all_q_type)]
+
+
+def MRR_score(rank,score):
+    answer = json.load(open('test_set/validate_answer_word.json', 'r', encoding='utf-8-sig'))
+    output = json.load(open('output/output_answer_4000_2doc_10rank.json', 'r', encoding='utf-8-sig'))
+
+    exact_match = []
+    for i in range(answer.__len__()):
+        pool = []
+        for j in output[i][0][:rank]:
+            pool.append(similar(j[3], answer[i]))
+        for idx in range(pool.__len__()):
+            if pool[idx] >= score:
+                exact_match.append(idx)
+                break
+        if exact_match.__len__() != i+1:
+            exact_match.append(-1)
+    # print(exact_match.__len__(), end=' ')
+    mrr_score = 0
+    for i in exact_match:
+        if i >= 0:
+            mrr_score += (1/(i+1))
+        else:
+            mrr_score += 0
+
+    return mrr_score/exact_match.__len__()
 
 # plot_doc_candidate()
 # plot_sen_candidate()
+
 # similar = np.array(questions_and_validate_similar_score()).astype('float') - 1
-similar = plot_output()
-plot_histogram_with_list(similar, 'answer and output similar score')
+# similar,q_type  = plot_output(10)
+# print(similar)
+# print(q_type)
+#
+# plot_histogram_with_list(similar,bin=50)
+# plot_histogram_with_list(q_type, 'Exact match in each question type', modify=False)
+
+for i in range(1,11,1):
+    print(MRR_score(i, 0.5))

@@ -50,7 +50,7 @@ def index_outlier(question):
     return 2, question, [question.__len__() - 1, 'อะไร']
 
 
-def find_rrscore(question, sentence_candidate, l, word_class, question_type, thai_number_text):
+def find_rrscore(question, sentence_candidate, l, word_class, question_type, thai_number_text, sp):
     rr_score = []
     word_candidate = []
     word_candidate_idx = []
@@ -61,7 +61,7 @@ def find_rrscore(question, sentence_candidate, l, word_class, question_type, tha
 
     for j in sentence_candidate:
         if l > 1:
-            word_candidate, word_candidate_idx = find_candidate(j, l, word_class)
+            word_candidate, word_candidate_idx = find_candidate(j, l, word_class, sp)
         elif l <= 1:
             word_candidate, word_candidate_idx = find_date_candidate(j, thai_number_text)
 
@@ -69,7 +69,7 @@ def find_rrscore(question, sentence_candidate, l, word_class, question_type, tha
         # print(rr_score[-1])
 
     rr_score.sort(key=lambda s: s[0], reverse=True)
-    return rr_score
+    return rr_score, l
 
 
 def find_date_candidate(sentence, thai_number_text):
@@ -89,7 +89,7 @@ def find_date_candidate(sentence, thai_number_text):
     return word_candidate, word_candidate_idx
 
 
-def find_candidate(sentence, l, word_class):
+def find_candidate(sentence, l, word_class, sp):
     word_candidate = []
     word_candidate_idx = []
     for i in range(sentence[2].__len__()):
@@ -100,7 +100,7 @@ def find_candidate(sentence, l, word_class):
 
     if not word_candidate_idx:
         for i in range(sentence[2].__len__()):
-            if sentence[2][i] != ' ':
+            if sentence[2][i] != ' ' and sentence[2][i] not in sp:
                 word_candidate.append(sentence[2][i])
                 word_candidate_idx.append(i)
     return word_candidate, word_candidate_idx
@@ -156,7 +156,7 @@ def findAnswer():
             , 'ที่ ไหน', 'ที่ ใด', 'ใด', 'ไหน']  # where
         , ['อะไร', 'อย่าง ไร']  # other what, other dai, other nhai
     ]
-
+    special_char = "!@#$%^&*()[]{};:,./<>?\|`~-=_+ "
     question = json.load(open('test_set\\no_space_questions_tokenize.json', mode='r', encoding="utf-8-sig"))
     validate_answer = json.load(open('test_set/validate_answer_word.json', mode='r', encoding="utf-8-sig"))
     sentence_candidate = json.load(
@@ -172,19 +172,19 @@ def findAnswer():
     for i in range(bug, question.__len__()):
         for l in range(question_type.__len__()):
             if any(check_question_type(k, question[i]) for k in question_type[l]):
-                rr_score = find_rrscore(question[i], sentence_candidate[i], l, word_class, question_type,
-                                        thai_number_text)
-                answer.append(rr_score[:10])
+                rr_score, l = find_rrscore(question[i], sentence_candidate[i], l, word_class, question_type,
+                                        thai_number_text, special_char)
+                answer.append([rr_score[:10], l])
                 print(i + 1, answer.__len__())
                 break
 
         if i + 1 != answer.__len__():
             print("Outlier", i, question[i])
-            rr_score = find_rrscore(question[i], sentence_candidate[i], 5, word_class, question_type, thai_number_text)
-            answer.append(rr_score[:10])
+            rr_score, l = find_rrscore(question[i], sentence_candidate[i], 5, word_class, question_type, thai_number_text, special_char)
+            answer.append([rr_score[:10], l])
             print(i + 1, answer.__len__())
     return answer
 
 answer = findAnswer()
-with open('./output/TEST_output.json', 'w', encoding="utf-8") as outfile:
-    json.dump(answer, outfile, ensure_ascii=False)
+with open('./output/output_answer_4000_2doc_10rank.json', 'w', encoding="utf-8") as outfile:
+    json.dump(answer, outfile, ensure_ascii=False,indent=4)
