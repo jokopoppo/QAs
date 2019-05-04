@@ -9,10 +9,11 @@ def init_train_set(OUTPUT_CLASS=2):
     path = 'E:\\CPE#Y4\\databaseTF\\npy_for_train\\'
     x1_train = np.load(path + 'x1_train.npy')
     x2_train = np.load(path + 'x2_train.npy')
-    y_train = np.load(path + 'y_train.npy')
-    y_train = to_categorical(y_train, OUTPUT_CLASS)
+    y_test = np.load(path + 'y_train.npy')
+    y_train = to_categorical(y_test, OUTPUT_CLASS)
 
-    return x1_train, x2_train, y_train
+    return x1_train, x2_train, y_train, y_test
+
 
 def init_model():
     MAX_INPUT_LENGTH = 40
@@ -31,30 +32,40 @@ def init_model():
     outputLayer = Dense(OUTPUT_CLASS, activation='softmax')(decoder)
 
     model = Model(inputs=[inputEncoder, inputDecoder], outputs=outputLayer)
-
     model.compile(optimizer='adam',
                   loss='categorical_crossentropy',
-                  metrics=['accuracy'])
+                  metrics=['accuracy'],
+                  )
 
     print(model.summary())
 
     return model
 
-x1_train, x2_train, y_train = init_train_set()
+
+x1_train, x2_train, y_train, y_test = init_train_set()
 input_for_encoder = x1_train
 input_for_decoder = x2_train
 
 model = init_model()
-# model_name = 'extract_word_model.h5'
-# model.load_weights(model_name)
+model_name = 'extract_word_model.h5'
+model.load_weights(model_name)
 
-model.fit([input_for_encoder, input_for_decoder], y_train, epochs=1, batch_size=100, validation_split=0.2)
-model.save('extract_word_model.h5')
+# class_weight = [1, 20]
+# model.fit([input_for_encoder, input_for_decoder], y_train,class_weight=class_weight, epochs=1, batch_size=100,
+#           validation_split=0.2)
+# model.save('extract_word_model.h5')
 
-length = int(y_train.__len__() * 20 / 100)
-y_pred = model.predict([input_for_encoder[length:, :, :], input_for_decoder[length:, :, :]])
-print(y_pred[0])
-# cm = confusion_matrix(y_train[length:, :, :], y_pred.argmax(axis=1))
-# print('Confusion Matrix')
-# print(cm)
-## TODO train this shit
+# length = int(y_train.__len__() * 20 / 100)
+y_pred = model.predict([input_for_encoder[:, :, :], input_for_decoder[:, :, :]])
+np.save('y_pred.npy',y_pred)
+
+y_test = y_test.reshape((len(y_test) * 40))
+
+y_pred  = y_pred.argmax(axis=2)
+y_pred = y_pred.reshape((len(y_pred) * 40))
+
+cm = confusion_matrix(y_test, y_pred)
+print('Confusion Matrix')
+print(cm)
+
+## TODO test this shit

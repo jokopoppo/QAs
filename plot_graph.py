@@ -29,7 +29,7 @@ def similar(a, b):
     return SequenceMatcher(None, a, b).ratio()
 
 
-def plotAccuracy_withList(topN, label):
+def plotAccuracy_withList(topN, label, l):
     rank = np.arange(12)
     acc = []
     for n in rank:
@@ -37,7 +37,7 @@ def plotAccuracy_withList(topN, label):
         for i in topN:
             if i < n:
                 acc[-1] += 1
-        acc[-1] = acc[-1] / 4000
+        acc[-1] = acc[-1] / l
         # print(n, acc[-1])
 
     plt.xlabel('Rank N', size=25)
@@ -106,7 +106,7 @@ def plot_histogram_with_list(data, label=None, modify=True,bin=None):
 
     # plt.hist(data, max(data), color=color, alpha=0.5, label=label)
 
-    plt.legend(loc='upper right')
+    # plt.legend(loc='upper right')
     plt.tick_params(axis='x', labelsize=10)
     plt.tick_params(axis='y', labelsize=10)
     plt.grid(axis='y', )
@@ -124,7 +124,6 @@ def accuracy_from_doc_candidate(doc, validate, q):
         try:
             acc.append(doc[i].index(str(validate[i])))
         except ValueError:
-            acc.append(-1)
             out_of_range += 1
             # print(q[i])
     print("OUT:", out_of_range)
@@ -147,15 +146,12 @@ def plot_doc_candidate():
     for f in [file[2],file[-1]]:
         test_output = json.load(open(path + f, 'r', encoding='utf-8'))
         acc = accuracy_from_doc_candidate(test_output, validate, q)
+        print(acc)
+        print(MRR_score_with_list(acc,4000))
+
         check.append(acc)
-        plotAccuracy_withList(acc, f.replace('.json', ''))
-    n=0
-    for i in range(4000):
-        if check[0][i] > check[1][i]:
-            n+=1
-            print(i,''.join(q[i]),check[0][i]+1,check[1][i]+1)
-    print(n)
-    exit()
+        plotAccuracy_withList(acc, f.replace('.json', ''), 4000)
+
     plt.grid(axis='y')
     plt.grid(axis='x')
     plt.show()
@@ -181,7 +177,7 @@ def accuracy_from_sen_candidate(sentence_candidate, validate_sentences, q):
     for i in range(validate_sentences.__len__()):
         acc.append(sentence_acc(sentence_candidate[i], validate_sentences[i], q[i]))
 
-    return acc
+    return list(filter(lambda a: a != 10000, acc))
 
 
 def plot_sen_candidate():
@@ -202,9 +198,12 @@ def plot_sen_candidate():
             acc = accuracy_from_sen_candidate(sentence_candidate, validate_40, q)
         else:
             acc = accuracy_from_sen_candidate(sentence_candidate, validate, q)
-        # plotAccuracy_withList(acc, f.replace('.json', ''))
-        plot_histogram_with_list(acc, f.replace('.json', ''),bin=50)
-        # exit()
+        plotAccuracy_withList(acc, f.replace('.json', ''), 3382)
+        print(acc)
+        print(MRR_score_with_list(acc,3382))
+
+        # plot_histogram_with_list(acc, f.replace('.json', ''),bin=50)
+
     plt.grid(axis='y')
     plt.grid(axis='x')
     plt.show()
@@ -230,10 +229,10 @@ def plot_output(rank):
             no_match.append(output[i][1])
         s.append(max(pool))
 
-    return np.asarray(s) - 1, [np.asarray(exact_match), np.asarray(no_match), np.asarray(all_q_type)]
+    return np.asarray(s) - 1, [np.asarray(exact_match)]
 
 
-def MRR_score(rank,score):
+def MRR_score(rank,score,l):
     answer = json.load(open('test_set/validate_answer_word.json', 'r', encoding='utf-8-sig'))
     output = json.load(open('output/output_answer_4000_2doc_10rank.json', 'r', encoding='utf-8-sig'))
 
@@ -247,7 +246,8 @@ def MRR_score(rank,score):
                 exact_match.append(idx)
                 break
         if exact_match.__len__() != i+1:
-            exact_match.append(-1)
+            # exact_match.append(-1)
+            pass
     # print(exact_match.__len__(), end=' ')
     mrr_score = 0
     for i in exact_match:
@@ -255,10 +255,18 @@ def MRR_score(rank,score):
             mrr_score += (1/(i+1))
         else:
             mrr_score += 0
+    print(exact_match)
+    plotAccuracy_withList(exact_match,str(score),l)
+    return mrr_score/l
 
-    return mrr_score/exact_match.__len__()
-
-# plot_doc_candidate()
+def MRR_score_with_list(l,n):
+    l = np.array(l)
+    l += 1
+    score = 0
+    for i in l:
+        score += 1/i
+    return score/n
+plot_doc_candidate()
 # plot_sen_candidate()
 
 # similar = np.array(questions_and_validate_similar_score()).astype('float') - 1
@@ -266,8 +274,14 @@ def MRR_score(rank,score):
 # print(similar)
 # print(q_type)
 #
-# plot_histogram_with_list(similar,bin=50)
+# plot_histogram_with_list(similar,bin=30)
 # plot_histogram_with_list(q_type, 'Exact match in each question type', modify=False)
 
-for i in range(1,11,1):
-    print(MRR_score(i, 0.5))
+#
+# print(MRR_score(10, 1,3106))
+# print(MRR_score(10, 0.8,3106))
+# print(MRR_score(10, 0.5,3106))
+# plt.grid(axis='y')
+# plt.grid(axis='x')
+# plt.show()
+

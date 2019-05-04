@@ -5,24 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1435f1f5-46db-4b0a-9944-9c0267199b80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/prepare_data_for_extract_word.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seq2seq_encoder_decoder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findAnswer_improve.py" beforeDir="false" afterPath="$PROJECT_DIR$/findAnswer_improve.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/TEST_output.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/TEST_output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extract_word_model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/extract_word_model.h5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plot_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_graph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_set_for_classify/10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_set_for_classify/2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_set_for_classify/3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_set_for_classify/4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_set_for_classify/5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_set_for_classify/6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_set_for_classify/7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_set_for_classify/8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_set_for_classify/9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_set_for_classify/x_train.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_set_for_classify/y_train.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prepare_data_for_extract_word.py" beforeDir="false" afterPath="$PROJECT_DIR$/prepare_data_for_extract_word.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seq2seq_encoder_decoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/seq2seq_encoder_decoder.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/prepare_data_for_extract_word.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="85" selection-start-line="85" selection-end-line="85" selection-end-column="29" />
+              <caret line="90" selection-start-line="90" selection-end-line="90" selection-end-column="39" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -51,13 +39,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/seq2seq_encoder_decoder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="56" selection-start-line="56" selection-start-column="2" selection-end-line="58" selection-end-column="11" />
+            <state relative-caret-position="136">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,10 +159,10 @@
         <option value="$PROJECT_DIR$/test_set/no_space_questions_tokenize.json" />
         <option value="$PROJECT_DIR$/test_set/new_sample_questions.json" />
         <option value="$PROJECT_DIR$/findAnswer_improve.py" />
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/plot_graph.py" />
         <option value="$PROJECT_DIR$/prepare_data_for_extract_word.py" />
+        <option value="$PROJECT_DIR$/plot_graph.py" />
         <option value="$PROJECT_DIR$/seq2seq_encoder_decoder.py" />
+        <option value="$PROJECT_DIR$/test.py" />
       </list>
     </option>
   </component>
@@ -185,16 +185,6 @@
             <path>
               <item name="TF" type="b2602c69:ProjectViewProjectNode" />
               <item name="TF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TF" type="462c0819:PsiDirectoryNode" />
-              <item name="test_set" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TF" type="462c0819:PsiDirectoryNode" />
-              <item name="train_set_for_classify" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -248,7 +238,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.seq2seq_encoder_decoder">
+  <component name="RunManager" selected="Python.test (1)">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="TF" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -307,28 +297,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="E:\CPE#Y4\TF\preprocess\create_DB_sqlite.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="findAnswer_improve" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TF" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\WiNNER\Anaconda3\envs\TF\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/findAnswer_improve.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -425,6 +393,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TF" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\WiNNER\Anaconda3\envs\TF\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TF" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -475,18 +465,18 @@
       <item itemvalue="Python.findDocuments" />
       <item itemvalue="Python.test1" />
       <item itemvalue="Python.plot_graph" />
-      <item itemvalue="Python.findAnswer_improve" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.seq2seq_encoder_decoder" />
       <item itemvalue="Python.prepare_data_for_extract_word" />
+      <item itemvalue="Python.test (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.seq2seq_encoder_decoder" />
-        <item itemvalue="Python.prepare_data_for_extract_word" />
         <item itemvalue="Python.plot_graph" />
+        <item itemvalue="Python.prepare_data_for_extract_word" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.findAnswer_improve" />
       </list>
     </recent_temporary>
   </component>
@@ -524,25 +514,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23290938" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49473685" visible="true" weight="0.3216783" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4936407" visible="true" weight="0.3216783" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49920508" weight="0.3986014" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49920508" weight="0.32867134" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32890365" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32867134" />
       <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49602544" weight="0.32692307" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49554655" type="SLIDING" weight="0.32867134" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50526315" side_tool="true" weight="0.3210084" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5063593" side_tool="true" weight="0.3216783" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.32867134" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -553,17 +542,17 @@
       <window_info anchor="right" id="Coverage" order="6" side_tool="true" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2400636" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23290938" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49473685" visible="true" weight="0.3216783" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49473685" visible="true" weight="0.3216783" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49920508" weight="0.3986014" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49920508" weight="0.32867134" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32890365" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32867134" />
       <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49602544" weight="0.32692307" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49554655" type="SLIDING" weight="0.32867134" />
@@ -634,56 +623,8 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_set/validate_sentences.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret column="1220381" selection-start-column="1220381" selection-end-column="1220381" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_set/new_answer_positions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_set/validate_sentences_40.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/validate_sentences.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="59" column="24" lean-forward="true" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/findSentence.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="57" column="17" selection-start-line="57" selection-end-line="58" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../databaseTF/candidate_sentence/candidate_sentences4000_top5doc_rank5.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="17">
-          <caret column="262" selection-start-column="241" selection-end-column="262" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_set/questions_answer.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../databaseTF/sentence_candidate/candidate_sen_2_doc_100rank_40len.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state>
-          <caret column="4" selection-start-column="4" selection-end-column="4" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/output/test/output_answerNSC.json">
       <provider selected="true" editor-type-id="text-editor" />
@@ -765,13 +706,6 @@
     <entry file="file://$PROJECT_DIR$/../databaseTF/candidate_sentence/candidate_sentences4000_top7doc_rankNone.json">
       <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_set/validate_answer_word.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/word_class/3.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -846,36 +780,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train_set_for_classify/positive_sentences/positive_question1.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train_set_for_classify/positive_sentences/positive_question0.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="126" selection-start-column="126" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/train_set_for_classify/positive_sentences/positive_question1.json" />
+    <entry file="file://$PROJECT_DIR$/train_set_for_classify/positive_sentences/positive_question0.json" />
     <entry file="file://$PROJECT_DIR$/save_data_for_classify.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-578" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train_set_for_classify/positive_sentences/positive_question9.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train_set_for_classify/x2.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train_set_for_classify/x1.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/train_set_for_classify/positive_sentences/positive_question9.json" />
+    <entry file="file://$PROJECT_DIR$/train_set_for_classify/x2.json" />
+    <entry file="file://$PROJECT_DIR$/train_set_for_classify/x1.json" />
     <entry file="file://$USER_HOME$/Anaconda3/envs/TF/Lib/site-packages/keras/engine/network.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-185">
@@ -892,15 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qa_model2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-201">
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/findDocuments.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -908,13 +813,6 @@
           <folding>
             <element signature="e#15#24#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/findAnswer_improve.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="159" column="25" selection-start-line="159" selection-end-line="160" />
         </state>
       </provider>
     </entry>
@@ -934,16 +832,75 @@
     <entry file="file://$PROJECT_DIR$/../databaseTF/npy_for_train/positive_tokenized/positive_question0.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="2567" selection-start-column="2547" selection-end-column="2567" />
+          <caret column="2673" selection-start-column="2673" selection-end-column="2673" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_set/validate_sentences.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret column="1220381" selection-start-column="1220381" selection-end-column="1220381" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_set/validate_sentences_40.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_set/validate_answer_word.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../databaseTF/npy_for_train/positive_tokenized/positive_question8.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qa_model1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-391">
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/TF/Lib/site-packages/keras/engine/training_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="498" column="16" selection-start-line="498" selection-start-column="16" selection-end-line="498" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../databaseTF/sentence_candidate/candidate_sen_2_doc_100rank_40len.json">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="-84991">
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/findAnswer_improve.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="156" column="21" lean-forward="true" selection-start-line="156" selection-start-column="21" selection-end-line="156" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plot_graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="272" column="26" selection-start-line="272" selection-start-column="26" selection-end-line="272" selection-end-column="26" />
+        <state relative-caret-position="116">
+          <caret line="269" column="16" selection-start-line="269" selection-start-column="16" selection-end-line="269" selection-end-column="16" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qa_model2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-609">
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -951,7 +908,7 @@
     <entry file="file://$PROJECT_DIR$/prepare_data_for_extract_word.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="85" selection-start-line="85" selection-end-line="85" selection-end-column="29" />
+          <caret line="90" selection-start-line="90" selection-end-line="90" selection-end-column="39" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -960,10 +917,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/seq2seq_encoder_decoder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="56" selection-start-line="56" selection-start-column="2" selection-end-line="58" selection-end-column="11" />
+        <state relative-caret-position="136">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -53,6 +53,7 @@ def save_w2v():
     np.save('train_set_for_classify/x1_train.npy', np.asarray(x1_train))
     np.save('train_set_for_classify/x2_train.npy', np.asarray(x2_train))
 
+
 # path = 'E:\\CPE#Y4\\databaseTF\\npy_for_train\\positive_embedded\\'
 # path2 = 'E:\\CPE#Y4\\databaseTF\\npy_for_train\\'
 # mask_path = 'E:\CPE#Y4\databaseTF\\npy_for_train\positive_tokenized\\'
@@ -74,15 +75,17 @@ def save_w2v():
 # np.save(path + 'x2_train.npy', np.asarray(x2_train))
 
 path2 = 'E:\\CPE#Y4\\databaseTF\\npy_for_train\\'
-mask_path = 'E:\CPE#Y4\databaseTF\\npy_for_train\positive_tokenized\\'
-y_train = []
+mask_path = 'E:\CPE#Y4\databaseTF\\npy_for_train\\positive_tokenized\\'
+y_train = np.zeros((20000, 40))
+print(y_train.shape)
 for i in range(4000):
-    print(i)
-    mask = json.load(open(mask_path + 'positive_question' + str(i) + '.json','r',encoding='utf-8-sig'))
+    mask = json.load(open(mask_path + 'positive_question' + str(i) + '.json', 'r', encoding='utf-8-sig'))
     for j in range(mask.__len__()):
-        # print(np.asarray(mask[j]["sample_answer_maks"]))
-        y_train.append(np.asarray(mask[j]["sample_answer_maks"]))
-
-y_train = np.asarray(y_train)
-print(y_train[-1])
-np.save(path2 + 'y_train.npy', np.asarray(y_train))
+        if mask[j]["sample_answer_maks"].__len__() < 40:
+            for k in range(40 - mask[j]["sample_answer_maks"].__len__()):
+                mask[j]["sample_answer_maks"].insert(0,0)
+        print(i * mask.__len__() + j, np.array(mask[j]["sample_answer_maks"]).__len__())
+        y_train[i*mask.__len__() + j] = np.array(mask[j]["sample_answer_maks"])
+# exit()
+print(y_train.shape)
+np.save(path2 + 'y_train.npy', y_train)
