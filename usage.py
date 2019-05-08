@@ -4,6 +4,6 @@ def rreplace(s, old, new, occurrence):
 
 def alarm():
     import winsound
-    duration = 4000  # millisecond
+    duration = 10000  # millisecond
     freq = 440  # Hz
     winsound.Beep(freq, duration)

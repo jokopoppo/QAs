@@ -1,24 +1,49 @@
 import numpy as np
-from keras.utils import to_categorical
+import json
+
+
+def similar(a, b):
+    from difflib import SequenceMatcher
+    return SequenceMatcher(None, a, b).ratio()
+
 
 path2 = 'E:\\CPE#Y4\\databaseTF\\npy_for_train\\'
-y_train = np.load(path2 + 'y_train.npy')
+# sen = json.load(open('E:\\CPE#Y4\\databaseTF\\sentence_candidate\\candidate_sen_2_doc_100rank_40len.json', 'r',
+#                      encoding='utf-8-sig'))
 y_pred = np.load('y_pred.npy')
+q_index = np.load('q_index.npy')
+sen = np.load('sen.npy')
+# y_pred = y_pred.reshape((39629, 10, 40))
+y_pred = y_pred.argmax(axis=2)
+print(y_pred.shape)
 
-y_pred = y_pred.reshape((4000,5,40))
-y_train = y_train.reshape((4000,5,40))
+ans = []
+check = []
+for i in range(4000):
+    check.append(-1)
+    ans.append([])
+for i in range(y_pred.__len__()):
+    for j in range(y_pred[i].__len__()):
+        if y_pred[i][j] == 1:
+            try:
+                if sen[i][j] != " ":
+                    # print(sen[i][j])
+                    ans[q_index[i]].append(sen[i][j])
+            except:
+                pass
 
-mrr = []
-for i in range(len(y_train)):
-    for j in range(len(y_train[i])):
-        if np.array_equal(y_train[i][j], y_pred[i][j]):
-            mrr.append(j)
+answer = json.load(open('test_set/validate_answer_word.json', 'r', encoding='utf-8-sig'))
+
+for i in range(ans.__len__()):
+    for j in range(ans[i].__len__()):
+        score = similar(answer[i], ans[i][j])
+        print(score)
+        if score >=0.5:
+            check[i] = j
             break
-print(mrr.__len__())
-print(mrr)
 
-score = 0
-for i in mrr:
-    score+=1/(i+1)
-
-print(score/4000)
+n = 0
+for i in check:
+    if i > -1:
+        n+=1
+print(n)

@@ -5,11 +5,13 @@ import json
 import random
 import numpy as np
 
+
 def sentence_similar(a, b):
     a = set(a)
     b = set(b)
 
     return a.intersection(b).__len__() / a.union(b).__len__()
+
 
 def questions_and_validate_similar_score():
     validate = json.load(open("test_set\\validate_sentences_40.json", mode='r', encoding="utf-8-sig"))
@@ -24,12 +26,13 @@ def questions_and_validate_similar_score():
 
     return similar
 
+
 def similar(a, b):
     from difflib import SequenceMatcher
     return SequenceMatcher(None, a, b).ratio()
 
 
-def plotAccuracy_withList(topN, label, l):
+def plotAccuracy_withList(topN, label, l, modify=1):
     rank = np.arange(12)
     acc = []
     for n in rank:
@@ -37,7 +40,8 @@ def plotAccuracy_withList(topN, label, l):
         for i in topN:
             if i < n:
                 acc[-1] += 1
-        acc[-1] = acc[-1] / l
+        acc[-1] = acc[-1] / (l*modify)
+
         # print(n, acc[-1])
 
     plt.xlabel('Rank N', size=25)
@@ -45,11 +49,10 @@ def plotAccuracy_withList(topN, label, l):
     plt.title('Accuracy in N rank', size=25)
 
     plt.plot(rank, acc, marker='o', label=label)
-    plt.legend(loc='upper right')
+    # plt.legend(loc='upper right')
 
     plt.tick_params(axis='x', labelsize=20)
     plt.tick_params(axis='y', labelsize=20)
-
 
 
 def plot_histogram(file, n, color):
@@ -87,14 +90,14 @@ def modify_data_for_histogram(data):
     return data
 
 
-def plot_histogram_with_list(data, label=None, modify=True,bin=None):
+def plot_histogram_with_list(data, label=None, modify=True, bin=None):
     # This is  the colormap I'd like to use.
     cm = plt.cm.get_cmap('RdYlBu_r')
     if modify:
         data = modify_data_for_histogram(data)
 
     # Plot histogram.
-    n, bins, patches = plt.hist(data,bin, alpha=0.5, label=label)
+    n, bins, patches = plt.hist(data, bin, alpha=0.5, label=label)
     bin_centers = 0.5 * (bins[:-1] + bins[1:])
 
     # scale values to interval [0,1]
@@ -143,11 +146,11 @@ def plot_doc_candidate():
     print(file)
 
     check = []
-    for f in [file[2],file[-1]]:
+    for f in [file[2], file[-1]]:
         test_output = json.load(open(path + f, 'r', encoding='utf-8'))
         acc = accuracy_from_doc_candidate(test_output, validate, q)
         print(acc)
-        print(MRR_score_with_list(acc,4000))
+        print(MRR_score_with_list(acc, 4000))
 
         check.append(acc)
         plotAccuracy_withList(acc, f.replace('.json', ''), 4000)
@@ -200,13 +203,25 @@ def plot_sen_candidate():
             acc = accuracy_from_sen_candidate(sentence_candidate, validate, q)
         plotAccuracy_withList(acc, f.replace('.json', ''), 3382)
         print(acc)
-        print(MRR_score_with_list(acc,3382))
+        print(MRR_score_with_list(acc, 3382))
 
         # plot_histogram_with_list(acc, f.replace('.json', ''),bin=50)
+
+    l = json.load(
+        open('E:\CPE#Y4\databaseTF\sentence_candidate\evaluate_sentence_rank.json', 'r', encoding='utf-8-sig'))
+    for i in range(l.__len__()):
+        if l[i] == 0:
+            l[i] = 10000
+        else:
+            l[i] -= 1
+
+    print(l)
+    plotAccuracy_withList(l, "", 3382)
 
     plt.grid(axis='y')
     plt.grid(axis='x')
     plt.show()
+
 
 def plot_output(rank):
     answer = json.load(open('test_set/validate_answer_word.json', 'r', encoding='utf-8-sig'))
@@ -217,11 +232,15 @@ def plot_output(rank):
     no_match = []
     s = []
 
+    rankN = []
     for i in range(answer.__len__()):
         pool = []
-        for j in output[i][0][:rank]:
-            pool.append(similar(j[3], answer[i]))
-
+        for j in range(output[i][0][:rank].__len__()):
+            score = similar(output[i][0][:rank][j][3], answer[i])
+            pool.append(score)
+            if score == 1:
+                rankN.append(j)
+                break
         all_q_type.append(output[i][1])
         if 1 in pool:
             exact_match.append(output[i][1])
@@ -229,10 +248,10 @@ def plot_output(rank):
             no_match.append(output[i][1])
         s.append(max(pool))
 
-    return np.asarray(s) - 1, [np.asarray(exact_match)]
+    return np.asarray(s) - 1, [np.asarray(exact_match)], np.asarray(rankN)
 
 
-def MRR_score(rank,score,l):
+def MRR_score(rank, score, l):
     answer = json.load(open('test_set/validate_answer_word.json', 'r', encoding='utf-8-sig'))
     output = json.load(open('output/output_answer_4000_2doc_10rank.json', 'r', encoding='utf-8-sig'))
 
@@ -245,43 +264,45 @@ def MRR_score(rank,score,l):
             if pool[idx] >= score:
                 exact_match.append(idx)
                 break
-        if exact_match.__len__() != i+1:
+        if exact_match.__len__() != i + 1:
             # exact_match.append(-1)
             pass
     # print(exact_match.__len__(), end=' ')
     mrr_score = 0
     for i in exact_match:
         if i >= 0:
-            mrr_score += (1/(i+1))
+            mrr_score += (1 / (i + 1))
         else:
             mrr_score += 0
     print(exact_match)
-    plotAccuracy_withList(exact_match,str(score),l)
-    return mrr_score/l
+    plotAccuracy_withList(exact_match, str(score), l)
+    return mrr_score / l
 
-def MRR_score_with_list(l,n):
+
+def MRR_score_with_list(l, n):
     l = np.array(l)
     l += 1
     score = 0
     for i in l:
-        score += 1/i
-    return score/n
-plot_doc_candidate()
+        score += 1 / i
+    return score / n
+
+
+# plot_doc_candidate()
 # plot_sen_candidate()
 
-# similar = np.array(questions_and_validate_similar_score()).astype('float') - 1
-# similar,q_type  = plot_output(10)
-# print(similar)
+# similiar = np.array(questions_and_validate_similar_score()).astype('float') - 1
+similiar, q_type, rankN = plot_output(10)
 # print(q_type)
-#
+plotAccuracy_withList(rankN , '', 4000)
+plotAccuracy_withList(rankN, '', 4000,modify=2)
+plt.grid(axis='y')
+plt.grid(axis='x')
+plt.show()
 # plot_histogram_with_list(similar,bin=30)
 # plot_histogram_with_list(q_type, 'Exact match in each question type', modify=False)
 
-#
+
 # print(MRR_score(10, 1,3106))
 # print(MRR_score(10, 0.8,3106))
 # print(MRR_score(10, 0.5,3106))
-# plt.grid(axis='y')
-# plt.grid(axis='x')
-# plt.show()
-

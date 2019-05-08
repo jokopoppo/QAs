@@ -4,6 +4,24 @@ import numpy as np
 from gensim.models import KeyedVectors
 
 
+def save_y_train():
+    path2 = 'E:\\CPE#Y4\\databaseTF\\npy_for_train\\'
+    mask_path = 'E:\CPE#Y4\databaseTF\\npy_for_train\\positive_tokenized\\'
+    y_train = np.zeros((20000, 40))
+    print(y_train.shape)
+    for i in range(4000):
+        mask = json.load(open(mask_path + 'positive_question' + str(i) + '.json', 'r', encoding='utf-8-sig'))
+        for j in range(mask.__len__()):
+            if mask[j]["sample_answer_maks"].__len__() < 40:
+                for k in range(40 - mask[j]["sample_answer_maks"].__len__()):
+                    mask[j]["sample_answer_maks"].insert(0, 0)
+            print(i * mask.__len__() + j, np.array(mask[j]["sample_answer_maks"]).__len__())
+            y_train[i * mask.__len__() + j] = np.array(mask[j]["sample_answer_maks"])
+    # exit()
+    print(y_train.shape)
+    np.save(path2 + 'y_train.npy', y_train)
+
+
 def save_data_for_extract_answer():
     path = 'train_set_for_classify/positive_sentences/'
     file = os.listdir(path)
@@ -54,38 +72,23 @@ def save_w2v():
     np.save('train_set_for_classify/x2_train.npy', np.asarray(x2_train))
 
 
-# path = 'E:\\CPE#Y4\\databaseTF\\npy_for_train\\positive_embedded\\'
-# path2 = 'E:\\CPE#Y4\\databaseTF\\npy_for_train\\'
-# mask_path = 'E:\CPE#Y4\databaseTF\\npy_for_train\positive_tokenized\\'
-# q = np.load(path2 + 'embedded_questions_4000_40_300.npy')
-#
-# x2_train = []
-# x1_train = []
-# y_train = []
-# for i in range(4000):
-#     print(i)
-#     tmp = np.load(path + 'positive_question'+str(i)+'.npy')
-#     mask = json.load(open(mask_path + 'positive_question' + str(i) + '.json','r',encoding='utf-8-sig'))
-#     for j in range(tmp.__len__()):
-#         y_train.append(mask[j]["sample_answer_maks"])
-#         x1_train.append(q[i])
-#         x2_train.append(tmp[j])
+word_vec_file = KeyedVectors.load_word2vec_format('E:\\CPE#Y4\\NLP\\wiki.th.vec')
+path = 'E:\CPE#Y4\databaseTF\\npy_for_train\positive_tokenized\\'
+file = os.listdir(path)
+question = json.load(open('test_set\\no_space_questions_tokenize.json', mode='r', encoding="utf-8-sig"))
+n = 0
 
-# np.save(path + 'x1_train.npy', np.asarray(x1_train))
-# np.save(path + 'x2_train.npy', np.asarray(x2_train))
+x1_for_train = []
+x2_for_train = []
+for i in file:
+    f = json.load(open(path + i, 'r', encoding='utf-8-sig'))
+    for j in f:
+        x1_for_train.append(question[n])
+        x2_for_train.append(j['sample_sentence'])
+    n += 1
 
-path2 = 'E:\\CPE#Y4\\databaseTF\\npy_for_train\\'
-mask_path = 'E:\CPE#Y4\databaseTF\\npy_for_train\\positive_tokenized\\'
-y_train = np.zeros((20000, 40))
-print(y_train.shape)
-for i in range(4000):
-    mask = json.load(open(mask_path + 'positive_question' + str(i) + '.json', 'r', encoding='utf-8-sig'))
-    for j in range(mask.__len__()):
-        if mask[j]["sample_answer_maks"].__len__() < 40:
-            for k in range(40 - mask[j]["sample_answer_maks"].__len__()):
-                mask[j]["sample_answer_maks"].insert(0,0)
-        print(i * mask.__len__() + j, np.array(mask[j]["sample_answer_maks"]).__len__())
-        y_train[i*mask.__len__() + j] = np.array(mask[j]["sample_answer_maks"])
-# exit()
-print(y_train.shape)
-np.save(path2 + 'y_train.npy', y_train)
+x1_train = init_word_vectors(x1_for_train, word_vec_file, 40)
+x2_train = init_word_vectors(x2_for_train, word_vec_file, 40)
+
+np.save('E:\\CPE#Y4\\databaseTF\\npy_for_train\\x1_train.npy', np.asarray(x1_train))
+np.save('E:\\CPE#Y4\\databaseTF\\npy_for_train\\x2_train.npy', np.asarray(x2_train))
