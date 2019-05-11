@@ -1,5 +1,5 @@
 from keras.models import Model
-from keras.layers import Input, Dense, LSTM, RepeatVector, Concatenate
+from keras.layers import Input, Dense, LSTM, RepeatVector, Concatenate, Bidirectional
 from keras.utils import to_categorical
 import numpy as np
 from sklearn.metrics import confusion_matrix
@@ -81,32 +81,76 @@ def init_model():
     return model
 
 
-x1_train, x2_train = init_test_set()
-print("Init test set")
-# x1_train, x2_train, y_train, y_test = init_train_set()
-input_for_encoder = x1_train
-input_for_decoder = x2_train
+def init_Bidirectional_model():
+    MAX_INPUT_LENGTH = 40
+    INPUT_VECTOR_SIZE = 300
+    LSTM_SIZE = 100
+    MAX_OUTPUT_LENGTH = 40
+    OUTPUT_CLASS = 2
+    EMBEDED_OUTPUT_SIZE = 100
 
-model = init_model()
-model_name = 'extract_word_model.h5'
-model.load_weights(model_name)
+    inputEncoder = Input(shape=(MAX_INPUT_LENGTH, INPUT_VECTOR_SIZE,))
+    encoder = Bidirectional(LSTM(LSTM_SIZE, activation='relu'))(inputEncoder)
 
-# class_weight = [1, 20]
-# model.fit([input_for_encoder, input_for_decoder], y_train,class_weight=class_weight, epochs=10, batch_size=100,
-#           validation_split=0.2)
-# model.save('extract_word_model.h5')
+    quest_vec = RepeatVector(40)(encoder)
 
-print('Predict')
-y_pred = model.predict([input_for_encoder[:, :, :], input_for_decoder[:, :, :]])
-np.save('y_pred.npy', y_pred)
-exit()
+    inputDecoder = Input(shape=(MAX_OUTPUT_LENGTH, INPUT_VECTOR_SIZE,))
+    concat = Concatenate(axis=2)([inputDecoder, quest_vec])
+    dense = Dense(EMBEDED_OUTPUT_SIZE, activation='relu')(concat)
 
-# y_pred  = y_pred.argmax(axis=2)
-# y_pred = y_pred.reshape((len(y_pred) * 40))
-#
-# y_test = y_test.reshape((len(y_test) * 40))
-# cm = confusion_matrix(y_test, y_pred)
-# print('Confusion Matrix')
-# print(cm)
+    decoder = Bidirectional(LSTM(LSTM_SIZE, return_sequences=True))(dense)
+    outputLayer = Dense(OUTPUT_CLASS, activation='softmax')(decoder)
 
-## TODO train and test this shit
+    model = Model(inputs=[inputEncoder, inputDecoder], outputs=outputLayer)
+    model.compile(optimizer='adam',
+                  loss='categorical_crossentropy',
+                  metrics=['accuracy'],
+                  )
+
+    print(model.summary())
+
+    return model
+
+
+def train_model():
+    x1_train, x2_train, y_train, y_test = init_train_set()
+
+    input_for_encoder = x1_train
+    input_for_decoder = x2_train
+
+    model = init_Bidirectional_model()
+    model_name = 'extract_word_model_bidirectional.h5'
+    model.load_weights(model_name)
+
+    class_weight = [1, 20]
+    model.fit([input_for_encoder, input_for_decoder], y_train, class_weight=class_weight, epochs=5, batch_size=100,
+              validation_split=0.2)
+    model.save('extract_word_model_bidirectional.h5')
+
+    print('Predict')
+    y_pred = model.predict([input_for_encoder[:, :, :], input_for_decoder[:, :, :]])
+
+    y_pred = y_pred.argmax(axis=2)
+    y_pred = y_pred.reshape((len(y_pred) * 40))
+    #
+    y_test = y_test.reshape((len(y_test) * 40))
+    cm = confusion_matrix(y_test, y_pred)
+    print('Confusion Matrix')
+    print(cm)
+
+def test_model():
+    x1_train, x2_train = init_test_set()
+    # x1_train, x2_train, y_train, y_test = init_train_set()
+    print("Init test set")
+
+    input_for_encoder = x1_train
+    input_for_decoder = x2_train
+
+    model = init_Bidirectional_model()
+    model_name = 'extract_word_model_bidirectional.h5'
+    model.load_weights(model_name)
+
+    print('Predict')
+    y_pred = model.predict([input_for_encoder[:, :, :], input_for_decoder[:, :, :]])
+    np.save('y_pred_Bidirectional.npy', y_pred)
+

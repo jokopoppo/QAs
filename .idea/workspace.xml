@@ -6,13 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1435f1f5-46db-4b0a-9944-9c0267199b80" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extract_word_model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/extract_word_model.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plot_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_graph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prepare_data_for_extract_word.py" beforeDir="false" afterPath="$PROJECT_DIR$/prepare_data_for_extract_word.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/seq2seq_encoder_decoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/seq2seq_encoder_decoder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usage.py" beforeDir="false" afterPath="$PROJECT_DIR$/usage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/y_pred.npy" beforeDir="false" afterPath="$PROJECT_DIR$/y_pred.npy" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plot_graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="31" selection-end-column="46" />
+            <state relative-caret-position="243">
+              <caret line="307" column="28" selection-start-line="307" selection-start-column="28" selection-end-line="307" selection-end-column="28" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -44,10 +39,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+            <state relative-caret-position="-301">
+              <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/seq2seq_encoder_decoder.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="155" lean-forward="true" selection-start-line="155" selection-end-line="155" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -82,7 +89,6 @@
       <find>459</find>
       <find>468</find>
       <find>490</find>
-      <find>0</find>
       <find>สุนัขตัวแรกรับบทเป็นเบนจี้ในภาพยนตร์เรื่อง Benji ที่ออกฉายในปี พ.ศ. 2517 มีชื่อว่าอะไร</find>
       <find>3961</find>
       <find>3996</find>
@@ -94,6 +100,7 @@
       <find>3950</find>
       <find>3940</find>
       <find>&quot;sample_answer_maks&quot;</find>
+      <find>0</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -525,7 +532,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23290938" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -539,7 +545,7 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49920508" weight="0.32867134" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32867134" />
       <window_info anchor="bottom" id="Messages" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49602544" weight="0.32692307" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49602544" weight="0.32669982" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49554655" type="SLIDING" weight="0.32867134" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
@@ -910,16 +916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seq2seq_encoder_decoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_set/validate_answer_word.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-67343">
@@ -929,18 +925,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plot_graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="31" selection-end-column="46" />
+        <state relative-caret-position="243">
+          <caret line="307" column="28" selection-start-line="307" selection-start-column="28" selection-end-line="307" selection-end-column="28" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/seq2seq_encoder_decoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="155" lean-forward="true" selection-start-line="155" selection-end-line="155" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+        <state relative-caret-position="-301">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
