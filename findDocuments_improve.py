@@ -54,21 +54,6 @@ def search_index(question):
     return doc_candidate
 
 
-es = Elasticsearch()
-
-# es_index(es, 111266)
-
-q = json.load(open('test_set\\no_space_questions_tokenize.json', mode='r', encoding="utf-8-sig"))
-
-candidate_doc = []
-
-for i in range(q.__len__()):
-    candidate_doc.append(search_index(q[i]))
-    print(i, candidate_doc[-1])
-
-
-with open('document_candidate\\candidate_doc_ESsearch_w_text_boost3_q_no_space.json', 'w', encoding="utf-8") as outfile:
-    json.dump(candidate_doc, outfile, ensure_ascii=False)
 
 
 

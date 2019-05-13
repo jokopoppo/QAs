@@ -1,34 +1,69 @@
-import findDocuments as fd
-import findAnswer as fa
+from findDocuments_improve import *
+from findSentence import *
+from findAnswer_improve import *
 import json
-import numpy as np
-import preprocessing as prep
-import os
-import re
-import sentence_vectorization as sv
-import candidates_listing as cl
-import candidates_sentences_selection as css
 
-from gensim.models import Word2Vec
-from keras.models import load_model, Model
-from pprint import pprint
+if (__name__ == '__main__'):
 
-if(__name__ == '__main__'):
-    # candidate_output = fd.findDocuments(end_idx=None)
-    # with open('./results/final/candidate_doc_ids.json', 'w', errors='ignore') as find_doc:
-    #     json.dump(candidate_output, find_doc)
-    
-    # candidate_document_ids = fd.findDocuments()
-    # candidate_sentences = css.candidate_similarity()
-    # css.candidate_similarity(candidate_document_ids)
-    candidate_sentences = []
-    PATH = 'C:/Users/Patdanai/Workspace/th-qa-system-261491/results/final/candidate_sentences/'
-    files = os.listdir(PATH)
-    for i in range(len(files)):
-        with open(PATH + files[i], encoding='utf-8') as f:
-            temp = json.load(f)
-        candidate_sentences.append(temp)
-        print('File: %d was read' % (i))
-    doc_n = 7
-    fa.find_answer(candidate_sentences)
-    
+    ## find documents
+
+    es = Elasticsearch()
+
+    # es_index(es, 111266)
+
+    q = json.load(open('test_set\\no_space_questions_tokenize.json', mode='r', encoding="utf-8-sig"))
+
+    candidate_doc = []
+
+    for i in range(q.__len__()):
+        candidate_doc.append(search_index(q[i]))
+        print(i, candidate_doc[-1])
+
+    with open('document_candidate\\candidate_doc_ESsearch_w_text_boost3_q_no_space.json', 'w',
+              encoding="utf-8") as outfile:
+        json.dump(candidate_doc, outfile, ensure_ascii=False)
+
+    ## find sentences
+
+    validate_doc = json.load(open("test_set\\new_sample_questions_answer.json", mode='r', encoding="utf-8-sig"))
+    validate_sentences = json.load(open("test_set\\validate_sentences_40.json", mode='r', encoding="utf-8-sig"))
+    candidate_doc = json.load(
+        open("document_candidate/candidate_doc_ESsearch_w_text_boost3_q_no_space.json", mode='r', encoding="utf-8-sig"))
+
+    validate_answer = []
+    data = json.load(open('test_set/new_sample_questions.json', mode='r', encoding="utf-8-sig"))
+    for i in data['data']:
+        validate_answer.append(i['answer'])
+
+    es = Elasticsearch()
+    path = 'E:\\CPE#Y4\\databaseTF\\new-documents-tokenize\\'
+    acc = 0
+
+    sentence_candidate = []
+    n_doc = 2
+    for i in range(validate_doc.__len__()):
+        sentence_rank = []
+        for j in candidate_doc[i][:n_doc]:
+            doc = query_doc_data(j)
+            sentences = sentences_in_doc(doc, 20, 40)
+            for k in sentences:
+                scores = sentence_similar(k, q[i])
+                sentence_rank.append([scores, j, k])
+
+        sentence_rank.sort(key=lambda s: s[0], reverse=True)
+        sentence_rank = unique_items(sentence_rank)
+
+        sentence_rank = sentence_rank[:100]
+        sentence_candidate.append(sentence_rank)
+        acc += sentence_acc()
+
+    print(acc)
+    with open('E:\\CPE#Y4\\databaseTF\\sentence_candidate\\candidate_sen_2_doc_100rank_40len.json',
+              'w', encoding="utf-8") as outfile:
+        json.dump(sentence_candidate, outfile, ensure_ascii=False)
+
+    ## find answer
+
+    answer = findAnswer()
+    with open('./output/output_answer_4000_2doc_10rank.json', 'w', encoding="utf-8") as outfile:
+        json.dump(answer, outfile, ensure_ascii=False, indent=4)
